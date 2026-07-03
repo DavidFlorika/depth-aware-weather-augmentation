@@ -1,0 +1,97 @@
+\section{Limitations and Discussion}
+Although our method can achieve compelling results in many cases, the results are far from uniformly positive. \reffig{failure} shows several typical failure cases. On translation tasks that involve color and texture changes, as many of those reported above, the method often succeeds. We have also explored tasks that require geometric changes, with little success. For example, on the task of dog$\rightarrow$cat transfiguration, the learned translation degenerates into making minimal changes to the input (\reffig{failure}). This failure might be caused by our generator architectures which are tailored for good performance on the appearance changes. Handling more varied and extreme transformations, especially geometric changes, is an important problem for future work.
+
+Some failure cases are caused by the distribution characteristics of the training datasets. For example, our method  has got confused in the horse $\rightarrow$ zebra example (\reffig{failure}, right), because our model was trained on the {\it wild horse} and {\it zebra} synsets of ImageNet, which does not contain images of a person riding a horse or zebra.
+
+We also observe a lingering gap between the results achievable with paired training data and those achieved by our unpaired method. In some cases, this gap may be very hard -- or even impossible -- to close: for example, our method sometimes permutes the labels for tree and building in the output of the photos$\rightarrow$labels task. Resolving this ambiguity may require some form of weak semantic supervision. Integrating weak or semi-supervised data may lead to substantially more powerful translators, still at a fraction of the annotation cost of the fully-supervised systems.
+
+Nonetheless, in many cases completely unpaired data is plentifully available and should be made use of. This paper pushes the boundaries of what is possible in this ``unsupervised" setting.
+
+{\bf Acknowledgments:} We thank Aaron Hertzmann, Shiry Ginosar, Deepak Pathak, Bryan Russell, Eli Shechtman, Richard Zhang, and Tinghui Zhou for many helpful comments. This work was supported in part by NSF SMA-1514512, NSF IIS-1633310, a Google Research Award, Intel Corp, and hardware donations from NVIDIA. JYZ is supported by the Facebook Graduate Fellowship and TP is supported by the Samsung Scholarship. The photographs used for style transfer were taken by AE, mostly in France.
+
+
+
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=1.0\linewidth]{figs/photo2painting.pdf}
+\end{center}
+ \caption{Collection style transfer I: we transfer input images into the artistic styles of Monet, Van Gogh, Cezanne, and Ukiyo-e. Please see our \href{https://junyanz.github.io/CycleGAN/}{website} for additional examples.}
+\lblfig{painting}
+\end{figure*}
+
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=1.0\linewidth]{figs/photo2painting_fig2.pdf}
+\end{center}
+ \caption{Collection style transfer II: we transfer input images into the artistic styles of Monet, Van Gogh, Cezanne, Ukiyo-e. Please see our \href{https://junyanz.github.io/CycleGAN/}{website} for additional examples.}
+\lblfig{painting2}
+\end{figure*}
+
+
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=1\linewidth]{figs/painting2photo.pdf}
+\end{center}
+ \caption{Relatively successful results on mapping Monet's paintings to a photographic style. Please see our \href{https://junyanz.github.io/CycleGAN/}{website} for additional examples.}
+\lblfig{painting2photo}
+ \vspace{24mm}
+\end{figure*}
+
+\begin{figure*}[t]
+\begin{center}
+\includegraphics[width=1.0\linewidth]{figs/big_results.pdf}
+\end{center}
+ \vspace{-3 mm}
+  \caption{Our method applied to several translation problems. These images are selected as relatively successful results -- please see our \href{https://junyanz.github.io/CycleGAN/}{website} for more comprehensive and random results. In the top two rows, we show results on object transfiguration between horses and zebras, trained on 939 images from the \emph{wild horse} class and 1177 images from the \emph{zebra} class in Imagenet~\cite{deng2009imagenet}. Also check out the horse$\rightarrow$zebra demo \href{https://youtu.be/9reHvktowLY}{video}. The middle two rows show results on season transfer, trained on winter and summer photos of Yosemite from Flickr. In the bottom two rows, we train our method on 996 \emph{apple} images and 1020 \emph{navel orange} images from ImageNet.}
+\lblfig{big}
+\end{figure*}
+
+
+\begin{figure*}[t]
+\begin{center}
+\includegraphics[width=1.0\linewidth]{figs/flower.pdf}
+\end{center}
+ \vspace{-4 mm}
+ \caption{Photo enhancement: mapping from a set of smartphone snaps to professional DSLR photographs, the system often learns to produce shallow focus. Here we show some of the most successful results in our test set -- average performance is considerably worse. Please see our \href{https://junyanz.github.io/CycleGAN/}{website} for more comprehensive and random examples. }
+\lblfig{flower}
+ \vspace{-4 mm}
+\end{figure*}
+
+\begin{figure*}[t]
+\begin{center}
+\includegraphics[width=1.0\linewidth]{figs/gatys.pdf}
+\end{center}
+ \vspace{-4 mm}
+ \caption{We compare our method with neural style transfer~\cite{gatys2015neural} on photo stylization. Left to right: input image, results from Gatys et al.~\cite{gatys2015neural} using two different representative artworks as style images, results from Gatys et al.~\cite{gatys2015neural} using the entire collection of the artist, and CycleGAN (ours).}
+\lblfig{gatys_style}
+ \vspace{-4 mm}
+\end{figure*}
+
+
+
+
+\begin{figure*}[t]
+\begin{center}
+\includegraphics[width=1.0\linewidth]{figs/gatys_others.pdf}
+\end{center}
+ \vspace{-4 mm}
+ \caption{We compare our method with neural style transfer~\cite{gatys2015neural} on various applications. From top to bottom:  apple$\rightarrow$orange, horse$\rightarrow$zebra, and Monet$\rightarrow$photo. Left to right: input image, results from Gatys et al.~\cite{gatys2015neural} using two different images as style images, results from Gatys et al.~\cite{gatys2015neural} using all the images from the target domain, and CycleGAN (ours).} 
+\lblfig{gatys_others}
+ \vspace{-4 mm}
+\end{figure*}
+
+
+\begin{figure*}[t]
+\begin{center}
+  \centering
+\subfloat{\includegraphics[width =1.0\linewidth]{figs/failures_combined.pdf}} 
+
+\end{center}
+ \vspace{-4 mm}
+ \caption{Typical failure cases of our method. Left: in the task of dog$\rightarrow$cat transfiguration, CycleGAN can only make minimal changes to the input.
+ Right: CycleGAN also fails in this horse $\rightarrow$ zebra example as our model has not seen images of horseback riding during training.
+ Please see our \href{https://junyanz.github.io/CycleGAN/}{website} for more  comprehensive results.}
+  \vspace{-2 mm}
+\lblfig{failure}
+\end{figure*}
+

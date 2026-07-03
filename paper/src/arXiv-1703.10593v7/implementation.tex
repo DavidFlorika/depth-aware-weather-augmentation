@@ -1,0 +1,17 @@
+\section{Implementation}
+\lblsec{implementation}
+
+\paragraph{Network Architecture}
+We adopt the architecture for our generative networks from Johnson et al.~\shortcite{johnson2016perceptual} who have shown impressive results for neural style transfer and super-resolution. This network contains three convolutions, several residual blocks~\cite{he2016deep},  two fractionally-strided convolutions with stride $\frac{1}{2}$,  and one convolution that maps features to RGB. We use $6$ blocks for $128\times128$ images and $9$ blocks for $256\times 256$ and higher-resolution training images. Similar to Johnson et al.~\shortcite{johnson2016perceptual}, we use instance normalization~\cite{ulyanov2016instance}. For the discriminator networks we use $70\times 70$ PatchGANs~\cite{isola2016image,li2016precomputed,ledig2016photo}, which aim to classify whether $70 \times 70$ overlapping image patches are real or fake. Such a patch-level discriminator architecture has fewer parameters than a full-image discriminator and can work on arbitrarily-sized images in a fully convolutional fashion~\cite{isola2016image}. 
+
+
+\paragraph{Training details}
+We apply two techniques from recent works to stabilize our model training procedure. First, for $\mathcal{L}_{\text{GAN}}$ (\refeq{GAN}), we replace the negative log likelihood objective by a least-squares loss~\cite{mao2017least}. This loss is more stable during training and generates higher quality results. In particular, for a GAN loss $\mathcal{L}_{\text{GAN}}(G,D,X,Y)$, we train the $G$ to minimize $\mathbb{E}_{x \sim p_{\text{data}}(x)}[(D(G(x))-1)^2]$ and train the $D$ to minimize $\mathbb{E}_{y \sim p_{\text{data}}(y)}[(D(y)-1)^2]+\mathbb{E}_{x \sim p_{\text{data}}(x)}[D(G(x))^2]$.
+
+Second, to reduce model oscillation~\cite{goodfellow2016nips}, we follow Shrivastava et al.'s strategy~\cite{shrivastava2016learning} and update the discriminators using a history of generated images rather than the ones produced by the
+latest generators. We keep an image buffer that stores the $50$ previously created images. 
+
+
+For all the experiments, we set $\lambda=10$ in \refeq{full_objective}.
+We use the Adam solver~\cite{kingma2014adam} with a batch size of $1$. All networks were trained from scratch with a learning rate of $0.0002$. We keep the same learning rate for the first $100$ epochs and linearly decay the rate to zero over the next $100$ epochs.
+Please see the appendix (\refsec{appendix}) for more details about the datasets, architectures, and training procedures.

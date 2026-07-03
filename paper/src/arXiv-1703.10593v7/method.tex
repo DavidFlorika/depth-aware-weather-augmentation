@@ -1,0 +1,59 @@
+    
+
+\section{Formulation}
+\lblsec{method}
+
+
+Our goal is to learn mapping functions between two domains $X$ and $Y$ given training samples $\{x_i\}_{i=1}^N$ where $x_i \in X$ and $\{y_j\}_{j=1}^M$ where $y_j \in Y$\footnote{We often omit the subscript $i$ and $j$ for simplicity.}. We denote the data distribution as $x\sim p_{data}(x)$ and $y\sim p_{data}(y)$. As illustrated in \reffig{overview} (a), our model includes two mappings $G: X\rightarrow Y$ and $F: Y\rightarrow X$. In addition, we introduce two adversarial discriminators $D_X$ and $D_Y$, where $D_X$ aims to distinguish between images $\{x\}$ and translated images $\{F(y)\}$; in the same way, $D_Y$ aims to discriminate between $\{y\}$ and $\{G(x)\}$. Our objective contains two types of terms: \textit{adversarial losses}~\cite{goodfellow2014generative} for matching the distribution of generated images to the data distribution in the target domain; and \textit{cycle consistency losses} to prevent the learned mappings $G$ and $F$ from contradicting each other.
+
+\subsection{Adversarial Loss}
+We apply adversarial losses~\cite{goodfellow2014generative} to both mapping functions. For the mapping function $G: X\rightarrow Y$ and its discriminator $D_Y$, we express the objective as: 
+\begin{align}
+    \mathcal{L}_{\text{GAN}}(G,D_Y,X,Y) =& \ \mathbb{E}_{y \sim p_{\text{data}}(y)}[\log D_Y(y)] \nonumber \\
+   +& \ \mathbb{E}_{x \sim p_{\text{data}}(x)}[\log (1-D_Y(G(x))],\lbleq{GAN}
+\end{align}
+where $G$ tries to generate images $G(x)$ that look similar to images from domain $Y$, while $D_Y$ aims to distinguish between translated samples $G(x)$ and real samples $y$. $G$ aims to minimize this objective against an adversary $D$ that tries to maximize it, i.e., $\min_G \max_{D_Y} \mathcal{L}_{\text{GAN}}(G,D_Y,X,Y)$.
+We introduce a similar adversarial loss for the mapping function $F:Y\rightarrow X$ and its discriminator $D_X$ as well: i.e., $\min_F \max_{D_X} \mathcal{L}_{\text{GAN}}(F,D_X,Y,X)$.
+
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=1.0\linewidth]{figs/reconstruction.pdf}
+\end{center}
+ \vspace{-5 mm}
+ \caption{The input images $x$, output images $G(x)$ and the reconstructed images $F(G(x))$ from various experiments. From top to bottom: photo$\leftrightarrow$Cezanne, horses$\leftrightarrow$zebras,  winter$\rightarrow$summer Yosemite, aerial photos$\leftrightarrow$Google maps.}
+  \vspace{-5 mm}
+\lblfig{reconstruction}
+\end{figure}
+
+\subsection{Cycle Consistency Loss}
+Adversarial training can, in theory, learn mappings $G$ and $F$ that produce outputs identically distributed as target domains $Y$ and $X$ respectively (strictly speaking, this requires $G$ and $F$ to be stochastic functions)~\cite{goodfellow2016nips}. However, with large enough capacity, a network can map the same set of input images to any random permutation of images in the target domain, where any of the learned mappings can induce an output distribution that matches the target distribution. Thus, adversarial losses alone cannot guarantee that the learned function can map an individual input $x_i$ to a desired output $y_i$. To further reduce the space of possible mapping functions, we argue that the learned mapping functions should be cycle-consistent: as shown in \reffig{overview} (b), for each image $x$ from domain $X$, the image translation cycle should be able to bring $x$ back to the original image, i.e., $x \rightarrow G(x) \rightarrow F(G(x)) \approx x$. We call this {\em forward cycle consistency}. Similarly, as illustrated in \reffig{overview} (c), for each image $y$ from domain $Y$, $G$ and $F$ should also satisfy {\em backward cycle consistency}: $y \rightarrow F(y) \rightarrow G(F(y)) \approx y$.
+We incentivize this behavior using a \emph{cycle consistency loss}:
+\begin{align}
+    \mathcal{L}_{\text{cyc}}(G, F) =  & \ \mathbb{E}_{x\sim p_{\text{data}}(x)}[\norm{F(G(x))-x}_1] \nonumber \\ 
+    + &\ \mathbb{E}_{y\sim p_{\text{data}}(y)}[\norm{G(F(y))-y}_1].\lbleq{cycle}
+\end{align}
+In preliminary experiments, we also tried replacing the L1 norm in this loss with an adversarial loss between $F(G(x))$ and $x$, and between $G(F(y))$ and $y$, but did not observe improved performance.
+
+The behavior induced by the cycle consistency loss can be observed in \reffig{reconstruction}: the reconstructed images $F(G(x))$ end up matching closely to the input images $x$.
+
+
+
+\bigskip
+\subsection{Full Objective}
+Our full objective is:
+\begin{align}
+     \mathcal{L}(G,F,D_X,D_Y) = &、 \mathcal{L}_{\text{GAN}}(G,D_Y,X,Y) \nonumber \\
+    +&\ \mathcal{L}_{\text{GAN}}(F,D_X,Y,X) \nonumber \\
+    +& \  \lambda \mathcal{L}_{\text{cyc}}(G, F),\lbleq{full_objective}
+\end{align}
+where $\lambda$ controls the relative importance of the two objectives. We aim to solve:
+\begin{equation}
+    G^*,F^* = \arg\min_{G,F}\max_{D_x,D_Y} \mathcal{L}(G, F, D_X, D_Y).
+    \lbleq{minmax}
+\end{equation}
+
+Notice that our model can be viewed as training two ``autoencoders"~\cite{hinton2006reducing}: we learn one autoencoder $F \circ G: X \rightarrow X$ jointly with another $G \circ F: Y \rightarrow Y$. However, these autoencoders each have special internal structures: they map an image to itself via an intermediate representation that is a translation of the image into another domain. Such a setup can also be seen as a special case of ``adversarial autoencoders"~\cite{makhzani2015adversarial}, which use an adversarial loss to train the bottleneck layer of an autoencoder to match an arbitrary target distribution. In our case, the target distribution for the $X \rightarrow X$ autoencoder is that of the domain $Y$.
+
+
+In \refsec{ablation}, we compare our method against ablations of the full objective, including the adversarial loss $\mathcal{L}_{\text{GAN}}$ alone and the cycle consistency loss $\mathcal{L}_{\text{cyc}}$ alone, and empirically show that both objectives play critical roles in arriving at high-quality results. We also evaluate our method with only cycle loss in one direction and show that a single cycle is not sufficient to regularize the training for this under-constrained problem.

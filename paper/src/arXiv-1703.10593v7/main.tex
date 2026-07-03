@@ -1,0 +1,113 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage{iccv}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{color}
+\usepackage{subfig}
+\usepackage{lipsum}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+
+\newcommand\todo[1]{\textcolor{red}{TODO: #1}}
+\newcommand{\junyanz}[1]{\textcolor{blue}{JY: #1}}
+
+\newcommand{\reffig}[1]{Figure~\ref{fig:#1}}
+\newcommand{\refsec}[1]{Section~\ref{sec:#1}}
+\newcommand{\refapp}[1]{Appendix~\ref{sec:#1}}
+\newcommand{\reftbl}[1]{Table~\ref{tbl:#1}}
+\newcommand{\refalg}[1]{Algorithm~\ref{alg:#1}}
+\newcommand{\refline}[1]{Line~\ref{line:#1}}
+\newcommand{\shortrefsec}[1]{\S~\ref{sec:#1}}
+\newcommand{\refeq}[1]{Equation~\ref{eq:#1}}
+\newcommand{\refeqshort}[1]{(\ref{eq:#1})}
+\newcommand{\shortrefeq}[1]{\ref{eq:#1}}
+\newcommand{\lblfig}[1]{\label{fig:#1}}
+\newcommand{\lblsec}[1]{\label{sec:#1}}
+\newcommand{\lbleq}[1]{\label{eq:#1}}
+\newcommand{\lbltbl}[1]{\label{tbl:#1}}
+\newcommand{\lblalg}[1]{\label{alg:#1}}
+\newcommand{\lblline}[1]{\label{line:#1}}
+\newcommand{\shortcite}[1]{\cite{#1}}
+\newcommand{\ignorethis}[1]{}
+\iccvfinalcopy %
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+\ificcvfinal\pagestyle{empty}\fi
+
+\newcommand{\norm}[1]{\lVert#1\rVert}
+
+\newcommand{\chapquote}[2]{\begin{quotation} \textit{#1} \end{quotation} \begin{flushright} \vspace{-.14in} 
+-- #2\end{flushright} }
+
+\begin{document}
+
+
+
+\title{Unpaired Image-to-Image Translation \\ using Cycle-Consistent Adversarial Networks}
+
+\author{
+Jun-Yan Zhu\thanks{empty}
+\and
+Taesung Park\footnotemark[1]
+\and 
+Phillip Isola
+\and
+Alexei A. Efros
+\and
+Berkeley AI Research (BAIR) laboratory, UC Berkeley
+}
+
+
+
+\twocolumn[{%
+\renewcommand\twocolumn[1][]{#1}%
+\vspace{-3em}
+\maketitle
+\vspace{-3em}
+\begin{center}
+    \centering
+    \includegraphics[width=\linewidth]{figs/teaser_final2.pdf}
+    \vspace{-2.5em}
+    \captionof{figure}{
+    Given any two unordered image collections $X$ and $Y$, our algorithm learns to automatically ``translate'' an image from one into the other and vice versa: {\em (left)} Monet paintings and landscape photos from Flickr; {\em (center)} zebras and horses from ImageNet; {\em (right)} summer and winter Yosemite photos from Flickr.  Example application {\em (bottom)}: using a collection of paintings of famous artists, our method learns to render natural photographs into the respective styles.
+    }
+    \lblfig{teaser}
+\end{center}%
+}]
+
+\begin{abstract}
+\vspace{-1.5em}
+Image-to-image translation is a class of vision and graphics problems where the goal is to learn the mapping between an input image and an output image using a training set of aligned image pairs.   
+However, for many tasks, paired training data will not be available.  We present an approach for learning to translate an image from a source domain $X$ to a target domain $Y$ in the absence of paired examples.  Our goal is to learn a mapping $G: X \rightarrow Y$ such that the distribution of images from $G(X)$ is indistinguishable from the distribution $Y$ using an adversarial loss.  
+Because this mapping is highly under-constrained, we couple it with an inverse mapping $F: Y \rightarrow X$ and introduce a {\em cycle consistency loss} 
+to enforce $F(G(X)) \approx X$ (and vice versa).
+Qualitative results are presented on several tasks where paired training data does not exist, including collection style transfer, object transfiguration, season transfer, photo enhancement, etc.  Quantitative comparisons against several prior methods demonstrate the superiority of our approach.
+\end{abstract}
+
+\input{intro}
+\input{relatedwork}
+\input{method}
+\input{implementation}
+\input{results}
+\input{discussion}
+
+\clearpage
+
+\bibliographystyle{ieee}
+\bibliography{main}
+\clearpage 
+\input{appendix}
+\end{document}

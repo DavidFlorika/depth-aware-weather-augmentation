@@ -1,0 +1,357 @@
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{aytar2016cross}
+Y.~Aytar, L.~Castrejon, C.~Vondrick, H.~Pirsiavash, and A.~Torralba.
+\newblock Cross-modal scene networks.
+\newblock {\em PAMI}, 2016.
+
+\bibitem{bousmalis2016unsupervised}
+K.~Bousmalis, N.~Silberman, D.~Dohan, D.~Erhan, and D.~Krishnan.
+\newblock Unsupervised pixel-level domain adaptation with generative
+  adversarial networks.
+\newblock In {\em CVPR}, 2017.
+
+\bibitem{brislin1970back}
+R.~W. Brislin.
+\newblock Back-translation for cross-cultural research.
+\newblock {\em Journal of cross-cultural psychology}, 1(3):185--216, 1970.
+
+\bibitem{Cordts2016Cityscapes}
+M.~Cordts, M.~Omran, S.~Ramos, T.~Rehfeld, M.~Enzweiler, R.~Benenson,
+  U.~Franke, S.~Roth, and B.~Schiele.
+\newblock The cityscapes dataset for semantic urban scene understanding.
+\newblock In {\em CVPR}, 2016.
+
+\bibitem{deng2009imagenet}
+J.~Deng, W.~Dong, R.~Socher, L.-J. Li, K.~Li, and L.~Fei-Fei.
+\newblock Imagenet: A large-scale hierarchical image database.
+\newblock In {\em CVPR}, 2009.
+
+\bibitem{denton2015deep}
+E.~L. Denton, S.~Chintala, R.~Fergus, et~al.
+\newblock Deep generative image models using a laplacian pyramid of adversarial
+  networks.
+\newblock In {\em NIPS}, 2015.
+
+\bibitem{donahue2016adversarial}
+J.~Donahue, P.~Kr{\"a}henb{\"u}hl, and T.~Darrell.
+\newblock Adversarial feature learning.
+\newblock In {\em ICLR}, 2017.
+
+\bibitem{dosovitskiy2016generating}
+A.~Dosovitskiy and T.~Brox.
+\newblock Generating images with perceptual similarity metrics based on deep
+  networks.
+\newblock In {\em NIPS}, 2016.
+
+\bibitem{dumoulin2016adversarially}
+V.~Dumoulin, I.~Belghazi, B.~Poole, A.~Lamb, M.~Arjovsky, O.~Mastropietro, and
+  A.~Courville.
+\newblock Adversarially learned inference.
+\newblock In {\em ICLR}, 2017.
+
+\bibitem{efros1999texture}
+A.~A. Efros and T.~K. Leung.
+\newblock Texture synthesis by non-parametric sampling.
+\newblock In {\em ICCV}, 1999.
+
+\bibitem{eigen2015predicting}
+D.~Eigen and R.~Fergus.
+\newblock Predicting depth, surface normals and semantic labels with a common
+  multi-scale convolutional architecture.
+\newblock In {\em ICCV}, 2015.
+
+\bibitem{gatys2016preserving}
+L.~A. Gatys, M.~Bethge, A.~Hertzmann, and E.~Shechtman.
+\newblock Preserving color in neural artistic style transfer.
+\newblock {\em arXiv preprint arXiv:1606.05897}, 2016.
+
+\bibitem{gatys2015neural}
+L.~A. Gatys, A.~S. Ecker, and M.~Bethge.
+\newblock Image style transfer using convolutional neural networks.
+\newblock {\em CVPR}, 2016.
+
+\bibitem{godard2016unsupervised}
+C.~Godard, O.~Mac~Aodha, and G.~J. Brostow.
+\newblock Unsupervised monocular depth estimation with left-right consistency.
+\newblock In {\em CVPR}, 2017.
+
+\bibitem{goodfellow2016nips}
+I.~Goodfellow.
+\newblock {NIPS} 2016 tutorial: Generative adversarial networks.
+\newblock {\em arXiv preprint arXiv:1701.00160}, 2016.
+
+\bibitem{goodfellow2014generative}
+I.~Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley, S.~Ozair,
+  A.~Courville, and Y.~Bengio.
+\newblock Generative adversarial nets.
+\newblock In {\em NIPS}, 2014.
+
+\bibitem{he2016dual}
+D.~He, Y.~Xia, T.~Qin, L.~Wang, N.~Yu, T.~Liu, and W.-Y. Ma.
+\newblock Dual learning for machine translation.
+\newblock In {\em NIPS}, 2016.
+
+\bibitem{he2016deep}
+K.~He, X.~Zhang, S.~Ren, and J.~Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In {\em CVPR}, 2016.
+
+\bibitem{hertzmann2001image}
+A.~Hertzmann, C.~E. Jacobs, N.~Oliver, B.~Curless, and D.~H. Salesin.
+\newblock Image analogies.
+\newblock In {\em SIGGRAPH}, 2001.
+
+\bibitem{hinton2006reducing}
+G.~E. Hinton and R.~R. Salakhutdinov.
+\newblock Reducing the dimensionality of data with neural networks.
+\newblock {\em Science}, 313(5786):504--507, 2006.
+
+\bibitem{huang2013consistent}
+Q.-X. Huang and L.~Guibas.
+\newblock Consistent shape maps via semidefinite programming.
+\newblock In {\em Symposium on Geometry Processing}, 2013.
+
+\bibitem{isola2016image}
+P.~Isola, J.-Y. Zhu, T.~Zhou, and A.~A. Efros.
+\newblock Image-to-image translation with conditional adversarial networks.
+\newblock In {\em CVPR}, 2017.
+
+\bibitem{johnson2016perceptual}
+J.~Johnson, A.~Alahi, and L.~Fei-Fei.
+\newblock Perceptual losses for real-time style transfer and super-resolution.
+\newblock In {\em ECCV}, 2016.
+
+\bibitem{kalal2010forward}
+Z.~Kalal, K.~Mikolajczyk, and J.~Matas.
+\newblock Forward-backward error: Automatic detection of tracking failures.
+\newblock In {\em ICPR}, 2010.
+
+\bibitem{karacan2016learning}
+L.~Karacan, Z.~Akata, A.~Erdem, and E.~Erdem.
+\newblock Learning to generate images of outdoor scenes from attributes and
+  semantic layouts.
+\newblock {\em arXiv preprint arXiv:1612.00215}, 2016.
+
+\bibitem{kingma2014adam}
+D.~Kingma and J.~Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock In {\em ICLR}, 2015.
+
+\bibitem{kingma2013auto}
+D.~P. Kingma and M.~Welling.
+\newblock Auto-encoding variational bayes.
+\newblock {\em ICLR}, 2014.
+
+\bibitem{laffont2014transient}
+P.-Y. Laffont, Z.~Ren, X.~Tao, C.~Qian, and J.~Hays.
+\newblock Transient attributes for high-level understanding and editing of
+  outdoor scenes.
+\newblock {\em ACM TOG}, 33(4):149, 2014.
+
+\bibitem{ledig2016photo}
+C.~Ledig, L.~Theis, F.~Husz{\'a}r, J.~Caballero, A.~Cunningham, A.~Acosta,
+  A.~Aitken, A.~Tejani, J.~Totz, Z.~Wang, et~al.
+\newblock Photo-realistic single image super-resolution using a generative
+  adversarial network.
+\newblock In {\em CVPR}, 2017.
+
+\bibitem{li2016precomputed}
+C.~Li and M.~Wand.
+\newblock Precomputed real-time texture synthesis with markovian generative
+  adversarial networks.
+\newblock {\em ECCV}, 2016.
+
+\bibitem{liu2017unsupervised}
+M.-Y. Liu, T.~Breuel, and J.~Kautz.
+\newblock Unsupervised image-to-image translation networks.
+\newblock In {\em NIPS}, 2017.
+
+\bibitem{liu2016coupled}
+M.-Y. Liu and O.~Tuzel.
+\newblock Coupled generative adversarial networks.
+\newblock In {\em NIPS}, 2016.
+
+\bibitem{long2015fully}
+J.~Long, E.~Shelhamer, and T.~Darrell.
+\newblock Fully convolutional networks for semantic segmentation.
+\newblock In {\em CVPR}, 2015.
+
+\bibitem{makhzani2015adversarial}
+A.~Makhzani, J.~Shlens, N.~Jaitly, I.~Goodfellow, and B.~Frey.
+\newblock Adversarial autoencoders.
+\newblock In {\em ICLR}, 2016.
+
+\bibitem{mao2017least}
+X.~Mao, Q.~Li, H.~Xie, R.~Y. Lau, Z.~Wang, and S.~P. Smolley.
+\newblock Least squares generative adversarial networks.
+\newblock In {\em CVPR}. IEEE, 2017.
+
+\bibitem{mathieu2015deep}
+M.~Mathieu, C.~Couprie, and Y.~LeCun.
+\newblock Deep multi-scale video prediction beyond mean square error.
+\newblock In {\em ICLR}, 2016.
+
+\bibitem{mathieu2016disentangling}
+M.~F. Mathieu, J.~Zhao, A.~Ramesh, P.~Sprechmann, and Y.~LeCun.
+\newblock Disentangling factors of variation in deep representation using
+  adversarial training.
+\newblock In {\em NIPS}, 2016.
+
+\bibitem{pathak2016context}
+D.~Pathak, P.~Krahenbuhl, J.~Donahue, T.~Darrell, and A.~A. Efros.
+\newblock Context encoders: Feature learning by inpainting.
+\newblock {\em CVPR}, 2016.
+
+\bibitem{radford2015unsupervised}
+A.~Radford, L.~Metz, and S.~Chintala.
+\newblock Unsupervised representation learning with deep convolutional
+  generative adversarial networks.
+\newblock In {\em ICLR}, 2016.
+
+\bibitem{Tylecek13}
+R.~{\v S}. Radim~Tyle{\v c}ek.
+\newblock Spatial pattern templates for recognition of objects with regular
+  structure.
+\newblock In {\em Proc. GCPR}, Saarbrucken, Germany, 2013.
+
+\bibitem{reed2016generative}
+S.~Reed, Z.~Akata, X.~Yan, L.~Logeswaran, B.~Schiele, and H.~Lee.
+\newblock Generative adversarial text to image synthesis.
+\newblock In {\em ICML}, 2016.
+
+\bibitem{rosales2003unsupervised}
+R.~Rosales, K.~Achan, and B.~J. Frey.
+\newblock Unsupervised image translation.
+\newblock In {\em ICCV}, 2003.
+
+\bibitem{salimans2016improved}
+T.~Salimans, I.~Goodfellow, W.~Zaremba, V.~Cheung, A.~Radford, and X.~Chen.
+\newblock Improved techniques for training {GANs}.
+\newblock In {\em NIPS}, 2016.
+
+\bibitem{sangkloy2016scribbler}
+P.~Sangkloy, J.~Lu, C.~Fang, F.~Yu, and J.~Hays.
+\newblock Scribbler: Controlling deep image synthesis with sketch and color.
+\newblock In {\em CVPR}, 2017.
+
+\bibitem{shih2013data}
+Y.~Shih, S.~Paris, F.~Durand, and W.~T. Freeman.
+\newblock Data-driven hallucination of different times of day from a single
+  outdoor photo.
+\newblock {\em ACM TOG}, 32(6):200, 2013.
+
+\bibitem{shrivastava2016learning}
+A.~Shrivastava, T.~Pfister, O.~Tuzel, J.~Susskind, W.~Wang, and R.~Webb.
+\newblock Learning from simulated and unsupervised images through adversarial
+  training.
+\newblock In {\em CVPR}, 2017.
+
+\bibitem{simonyan2014very}
+K.~Simonyan and A.~Zisserman.
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock In {\em ICLR}, 2015.
+
+\bibitem{sundaram2010dense}
+N.~Sundaram, T.~Brox, and K.~Keutzer.
+\newblock Dense point trajectories by gpu-accelerated large displacement
+  optical flow.
+\newblock In {\em ECCV}, 2010.
+
+\bibitem{taigman2016unsupervised}
+Y.~Taigman, A.~Polyak, and L.~Wolf.
+\newblock Unsupervised cross-domain image generation.
+\newblock In {\em ICLR}, 2017.
+
+\bibitem{turmukhambetov2015modeling}
+D.~Turmukhambetov, N.~D. Campbell, S.~J. Prince, and J.~Kautz.
+\newblock Modeling object appearance using context-conditioned component
+  analysis.
+\newblock In {\em CVPR}, 2015.
+
+\bibitem{twain1903}
+M.~Twain.
+\newblock The jumping frog: in english, then in french, and then clawed back
+  into a civilized language once more by patient.
+\newblock {\em Unremunerated Toil}, 3, 1903.
+
+\bibitem{ulyanov2016texture}
+D.~Ulyanov, V.~Lebedev, A.~Vedaldi, and V.~Lempitsky.
+\newblock Texture networks: Feed-forward synthesis of textures and stylized
+  images.
+\newblock In {\em ICML}, 2016.
+
+\bibitem{ulyanov2016instance}
+D.~Ulyanov, A.~Vedaldi, and V.~Lempitsky.
+\newblock Instance normalization: The missing ingredient for fast stylization.
+\newblock {\em arXiv preprint arXiv:1607.08022}, 2016.
+
+\bibitem{vondrick2016generating}
+C.~Vondrick, H.~Pirsiavash, and A.~Torralba.
+\newblock Generating videos with scene dynamics.
+\newblock In {\em NIPS}, 2016.
+
+\bibitem{wang2013image}
+F.~Wang, Q.~Huang, and L.~J. Guibas.
+\newblock Image co-segmentation via consistent functional maps.
+\newblock In {\em ICCV}, 2013.
+
+\bibitem{wang2016generative}
+X.~Wang and A.~Gupta.
+\newblock Generative image modeling using style and structure adversarial
+  networks.
+\newblock In {\em ECCV}, 2016.
+
+\bibitem{wu2016learning}
+J.~Wu, C.~Zhang, T.~Xue, B.~Freeman, and J.~Tenenbaum.
+\newblock Learning a probabilistic latent space of object shapes via 3d
+  generative-adversarial modeling.
+\newblock In {\em NIPS}, 2016.
+
+\bibitem{xie2015holistically}
+S.~Xie and Z.~Tu.
+\newblock Holistically-nested edge detection.
+\newblock In {\em ICCV}, 2015.
+
+\bibitem{yi2017dualgan}
+Z.~Yi, H.~Zhang, T.~Gong, Tan, and M.~Gong.
+\newblock Dualgan: Unsupervised dual learning for image-to-image translation.
+\newblock In {\em ICCV}, 2017.
+
+\bibitem{yu2014fine}
+A.~Yu and K.~Grauman.
+\newblock Fine-grained visual comparisons with local learning.
+\newblock In {\em CVPR}, 2014.
+
+\bibitem{zach2010disambiguating}
+C.~Zach, M.~Klopschitz, and M.~Pollefeys.
+\newblock Disambiguating visual relations using loop constraints.
+\newblock In {\em CVPR}, 2010.
+
+\bibitem{zhang2016colorful}
+R.~Zhang, P.~Isola, and A.~A. Efros.
+\newblock Colorful image colorization.
+\newblock In {\em ECCV}, 2016.
+
+\bibitem{zhao2016energy}
+J.~Zhao, M.~Mathieu, and Y.~LeCun.
+\newblock Energy-based generative adversarial network.
+\newblock In {\em ICLR}, 2017.
+
+\bibitem{zhou2016learning}
+T.~Zhou, P.~Krahenbuhl, M.~Aubry, Q.~Huang, and A.~A. Efros.
+\newblock Learning dense correspondence via 3d-guided cycle consistency.
+\newblock In {\em CVPR}, 2016.
+
+\bibitem{zhou2015flowweb}
+T.~Zhou, Y.~J. Lee, S.~Yu, and A.~A. Efros.
+\newblock Flowweb: Joint image set alignment by weaving consistent, pixel-wise
+  correspondences.
+\newblock In {\em CVPR}, 2015.
+
+\bibitem{zhu2016generative}
+J.-Y. Zhu, P.~Kr{\"a}henb{\"u}hl, E.~Shechtman, and A.~A. Efros.
+\newblock Generative visual manipulation on the natural image manifold.
+\newblock In {\em ECCV}, 2016.
+
+\end{thebibliography}

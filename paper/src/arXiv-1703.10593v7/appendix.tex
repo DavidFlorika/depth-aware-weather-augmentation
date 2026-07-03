@@ -1,0 +1,51 @@
+\section{Appendix}
+\lblsec{appendix}
+
+
+\subsection{Training details}
+We train our networks from scratch,  with a learning rate of $0.0002$. In practice, we divide the objective by $2$ while optimizing $D$, which slows down the rate at which $D$ learns, relative to the rate of $G$. We keep the same learning rate for the first $100$ epochs and linearly decay the rate to zero over the next $100$ epochs. Weights are initialized from a Gaussian distribution $\mathcal{N}(0, 0.02)$.
+
+{\bf Cityscapes label$\leftrightarrow$Photo} $2975$ training images from the Cityscapes training set \cite{Cordts2016Cityscapes} with image size $128 \times 128$. We used the Cityscapes val set for testing.
+
+{\bf Maps$\leftrightarrow$aerial photograph} $1096$ training images were scraped from Google Maps~\cite{isola2016image} with image size $256 \times 256$. Images were sampled from in and around New York City. Data was then split into train and test about the median latitude of the sampling region (with a buffer region added to ensure that no training pixel appeared in the test set).
+
+
+{\bf Architectural facades labels$\leftrightarrow$photo} $400$ training images from the CMP Facade Database~\cite{Tylecek13}.
+
+{\bf Edges$\rightarrow$shoes} around $50,000$ training images from UT Zappos50K dataset~\cite{yu2014fine}. The model was trained for $5$ epochs. 
+
+{\bf Horse$\leftrightarrow$Zebra and Apple$\leftrightarrow$Orange} We downloaded the images from ImageNet~\cite{deng2009imagenet} using keywords \textit{wild horse}, \textit{zebra}, \textit{apple}, and \textit{navel orange}. The images were scaled to $256 \times 256$ pixels. The training set size of each class: $939$ (horse), $1177$ (zebra), $996$ (apple), and $1020$ (orange).
+
+{\bf Summer$\leftrightarrow$Winter Yosemite} The images were downloaded using Flickr API with the tag \textit{yosemite} and the \textit{datetaken} field. Black-and-white photos were pruned. The images were scaled to $256 \times 256$ pixels. The training size of each class: $1273$ (summer) and $854$ ( winter).
+
+{\bf Photo$\leftrightarrow$Art for style transfer} The art images were downloaded from Wikiart.org. Some artworks that were sketches or too obscene were pruned by hand. The photos were downloaded from Flickr using the combination of tags \textit{landscape} and \textit{landscapephotography}. Black-and-white photos were pruned. The images were scaled to $256 \times 256$ pixels. The training set size of each class was $1074$ (Monet), $584$ (Cezanne), $401$ (Van Gogh),  $1433$ (Ukiyo-e), and $6853$ (Photographs). The Monet dataset was particularly pruned to include only landscape paintings, and the Van Gogh dataset  included only his later works that represent his most recognizable artistic style. 
+
+{\bf Monet's paintings$\rightarrow$photos} To achieve high resolution while conserving memory, we used random square crops of the original images for training. To generate results, we passed images of width $512$ pixels with correct aspect ratio to the generator network as input. The weight for the identity mapping loss was $0.5\lambda$ where $\lambda$ was the weight for cycle consistency loss. We set $\lambda=10$.
+
+{\bf Flower photo enhancement} Flower images taken on smartphones were downloaded from Flickr by searching for the photos taken by 
+\textit{Apple iPhone 5, 5s, or 6}, with search text \textit{flower}. DSLR images with shallow DoF were also downloaded from Flickr by search tag \textit{flower, dof}. The images were scaled to $360$ pixels by width. The identity mapping loss of weight $0.5\lambda$ was used. The training set size of the smartphone and DSLR dataset were $1813$ and $3326$, respectively. We set $\lambda=10$.
+
+
+\subsection{Network architectures}
+We provide both \href{https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix}{PyTorch} and \href{https://github.com/junyanz/CycleGAN}{Torch} implementations. 
+
+{\bf Generator architectures}
+We adopt our architectures from Johnson et al.~\shortcite{johnson2016perceptual}. We use $6$ residual blocks for $128\times128$ training images, and $9$ residual blocks for $256\times 256$ or higher-resolution training images. Below, we follow the naming convention used in the Johnson et al.'s Github \href{https://github.com/jcjohnson/fast-neural-style}{repository}.
+
+Let \texttt{c7s1-k} denote a $7\times7$ Convolution-InstanceNorm-ReLU layer with $k$ filters and stride $1$. \texttt{dk} denotes a $3\times3$ Convolution-InstanceNorm-ReLU layer with $k$ filters and stride $2$. Reflection padding was used to reduce artifacts. \texttt{Rk} denotes a residual block that contains two $3\times3$ convolutional layers with the same number of filters on both layer. \texttt{uk} denotes a $3\times3$ fractional-strided-Convolution-InstanceNorm-ReLU layer with $k$ filters and stride $\frac{1}{2}$. 
+
+
+The network with 6 residual blocks consists of:\\
+\texttt{c7s1-64,d128,d256,R256,R256,R256,\\
+R256,R256,R256,u128,u64,c7s1-3}
+
+The network with 9 residual blocks consists of:\\
+\texttt{c7s1-64,d128,d256,R256,R256,R256,\\
+R256,R256,R256,R256,R256,R256,u128} \\
+\texttt{u64,c7s1-3}
+
+
+{\bf Discriminator architectures}
+For discriminator networks, we use $70\times 70$ PatchGAN~\cite{isola2016image}. 
+Let \texttt{Ck} denote a $4\times4$ Convolution-InstanceNorm-LeakyReLU layer with k filters and stride $2$. After the last layer, we apply a convolution to produce a $1$-dimensional output. We do not use InstanceNorm for the first \texttt{C64} layer. We use leaky ReLUs with a slope of $0.2$. The discriminator architecture is:\\
+\texttt{C64-C128-C256-C512}
