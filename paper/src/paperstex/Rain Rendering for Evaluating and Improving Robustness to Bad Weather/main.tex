@@ -1,0 +1,85 @@
+\documentclass[twocolumn]{svjour3}       %
+
+\usepackage[utf8]{inputenc}  
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[caption=false,font=footnotesize]{subfig}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{stackengine}
+\usepackage{microtype}
+\usepackage{textcomp}
+\usepackage{anyfontsize}
+\usepackage{psfrag}
+\usepackage{adjustbox}
+\usepackage{ulem} 
+\usepackage{array}
+\sloppy
+
+\normalem
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+
+\begin{document}
+
+\title{Rain rendering for evaluating and improving robustness to bad weather}
+
+\author{
+Maxime Tremblay  \and
+Shirsendu Sukanta Halder \and
+Raoul de Charette \and \\
+Jean-François Lalonde
+}
+
+\date{Received: date / Accepted: date}
+
+\maketitle
+
+\begin{abstract}
+Rain fills the atmosphere with water particles, which breaks the common assumption that light travels unaltered from the scene to the camera. While it is well-known that rain affects computer vision algorithms, quantifying its impact is difficult. In this context, we present a rain rendering pipeline that enables the systematic evaluation of common computer vision algorithms to controlled amounts of rain. We present three different ways to add synthetic rain to existing images datasets: completely physic-based; completely data-driven; and a combination of both. The physic-based rain augmentation combines a physical particle simulator and accurate rain photometric modeling. We validate our rendering methods with a user study, demonstrating our rain is judged as much as 73\% more realistic than the state-of-the-art. Using our generated rain-augmented KITTI, Cityscapes, and nuScenes datasets, we conduct a thorough evaluation of object detection, semantic segmentation, and depth estimation algorithms and show that their performance decreases in degraded weather, on the order of 15\% for object detection, 60\% for semantic segmentation, and 6-fold increase in depth estimation error. Finetuning on our augmented synthetic data results in improvements of 21\% on object detection, 37\% on semantic segmentation, and 8\% on depth estimation. 
+
+
+\keywords{Adverse weather \and vision and rain \and physics-based rendering \and image to image translation \and GAN}
+\end{abstract}
+
+\input{intro}
+
+\input{related_work}
+
+\input{rain_aug}
+
+\input{rain_validation}
+
+\input{impact_real_rain}
+
+\input{impact_synt_fallrate}
+
+\input{rain_improv_robustness}
+
+\input{discussion}
+
+\section*{Acknowledgements}
+
+This work was partially supported by the Service de coopération et d'action culturelle du Consulat général de France à Québec, as well as the FRQ-NT with the Samuel-de-Champlain grant. We gratefully thank Pierre Bourré for his priceless technical help, Aitor Gomez Torres for his initial input, and Srinivas Narasimhan for letting us reuse the physical simulator. We also thank the Nvidia corporation for the donation of the GPU used in this research.
+
+
+\appendix
+\input{supp-drop-fov}
+\input{supp-compositing-rainstreak}
+\input{supp-data-splits}
+
+
+{\small
+\input{egbib.bbl}
+}
+
+\end{document}

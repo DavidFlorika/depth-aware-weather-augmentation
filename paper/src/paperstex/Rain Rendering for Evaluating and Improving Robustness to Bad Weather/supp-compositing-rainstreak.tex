@@ -1,0 +1,22 @@
+\section{Compositing a rain streak with different exposure time}
+\label{sec:app-comp_diff_exp}
+
+In their seminal work, Garg and Nayar~\cite{garg2005does} demonstrated that the streak appearance is closely related to the amount of time $\tau$ a drop stays on a pixel.
+It is thus important to account for the difference of exposure time in the streak appearance database~\cite{garg2006photorealistic} when adding rain to existing images. 
+Given that the appearance database does not provide enough calibration data to recompute the exact original $\tau_0$, we estimate it using observations made in appendix 10.3 of~\cite{garg2007vision}.
+The latter states that for a constant exposure time $\tau$ can be safely approximated with $\sqrt{a}/50$ ($a$ the drop diameter, in meters), which we use to compute $\tau_0$ according to simulation settings in~\cite{garg2006photorealistic}.
+
+Using the notation defined in eq.~(6) from the main paper, the radiance of streak $S'$ is corrected with
+\begin{equation}
+S'\frac{\tau_1}{\tau_0}\,,
+\end{equation}
+where $\tau_1$ is the time the current drop stays on a pixel, as obtained in a streak-wise fashion by the physical simulator. Noteworthy,~\cite{garg2007vision} also emphasizes that for a given streak the changes of $\tau$ across pixels are negligible, so $\tau$ can safely be assumed constant.
+
+Finally, after normalization, the alpha of each streak is scaled according to $\tau_1$ and the targeted exposure time $T$. 
+According to Garg and Nayar equations (cf. eq.~(18) from~\cite{garg2007vision}), the composite rainy image is an alpha blending of the background image $I_{bg}$ and the rain layer $I_r$. For pixel $\mathbf{x}$ corresponding to $\mathbf{x'}$ in the streak coordinates, it leads to:
+\begin{equation}
+\begin{split}
+I_{rainy}(\mathbf{x}) &= \alpha{}I_{bg}(\mathbf{x}) + I_{r}(\mathbf{x'})\,,\\
+ &= \frac{T-S'_{\alpha}(\mathbf{x'})\tau_1}{T}I(\mathbf{x}) + S'(\mathbf{x'})\frac{\tau_1}{\tau_0}\,.\\
+\end{split}
+\end{equation}

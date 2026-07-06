@@ -1,0 +1,428 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem{atlas1973doppler}
+Atlas, D., Srivastava, R., Sekhon, R.S.: Doppler radar characteristics of
+  precipitation at vertical incidence.
+\newblock Reviews of Geophysics \textbf{11}(1), 1--35 (1973)
+
+\bibitem{bansal2018recycle}
+Bansal, A., Ma, S., Ramanan, D., Sheikh, Y.: Recycle-gan: {U}nsupervised video
+  retargeting.
+\newblock In: European Conference on Computer Vision (2018)
+
+\bibitem{barnum2010analysis}
+Barnum, P.C., Narasimhan, S., Kanade, T.: Analysis of rain and snow in
+  frequency space.
+\newblock International Journal of Computer Vision \textbf{86}(2-3), 256 (2010)
+
+\bibitem{barron2016fast}
+Barron, J.T., Poole, B.: The fast bilateral solver.
+\newblock In: European Conference on Computer Vision (2016)
+
+\bibitem{bengio2009curriculum}
+Bengio, Y., Louradour, J., Collobert, R., Weston, J.: Curriculum learning.
+\newblock In: International Conference on Machine Learning (2009)
+
+\bibitem{bijelic2019seeing}
+Bijelic, M., Mannan, F., Gruber, T., Ritter, W., Dietmayer, K., Heide, F.:
+  Seeing through fog without seeing fog: {D}eep sensor fusion in the absence of
+  labeled training data.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2020)
+
+\bibitem{van1997numerical}
+van Boxel, J.H., et~al.: Numerical model for the fall speed of rain drops in a
+  rain fall simulator.
+\newblock In: Workshop on wind and water erosion (1997)
+
+\bibitem{brock2018large}
+Brock, A., Donahue, J., Simonyan, K.: Large scale gan training for high
+  fidelity natural image synthesis.
+\newblock arXiv preprint arXiv:1809.11096  (2018)
+
+\bibitem{caesar2019nuscenes}
+Caesar, H., Bankiti, V., Lang, A.H., Vora, S., Liong, V.E., Xu, Q., Krishnan,
+  A., Pan, Y., Baldan, G., Beijbom, O.: {nuScenes}: {A} multimodal dataset for
+  autonomous driving.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2020)
+
+\bibitem{Cameron2005}
+Cameron, C.: Hallucinating environment maps from single images.
+\newblock Tech. rep. (2005)
+
+\bibitem{de2012fast}
+de~Charette, R., Tamburo, R., Barnum, P.C., Rowe, A., Kanade, T., Narasimhan,
+  S.G.: Fast reactive control for illumination through rain and snow.
+\newblock In: IEEE International Conference on Computational Photography (2012)
+
+\bibitem{chen2013generalized}
+Chen, Y.L., Hsu, C.T.: A generalized low-rank appearance model for
+  spatio-temporally correlated rain streaks.
+\newblock In: IEEE International Conference on Computer Vision (2013)
+
+\bibitem{Cordts2016Cityscapes}
+Cordts, M., Omran, M., Ramos, S., Rehfeld, T., Enzweiler, M., Benenson, R.,
+  Franke, U., Roth, S., Schiele, B.: The {Cityscapes} dataset for semantic
+  urban scene understanding.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2016)
+
+\bibitem{creus2013r4}
+Creus, C., Patow, G.A.: R4: Realistic rain rendering in realtime.
+\newblock Computers \& Graphics \textbf{37}(1-2), 33--40 (2013)
+
+\bibitem{dai2016r}
+Dai, J., Li, Y., He, K., Sun, J.: {R-FCN}: {O}bject detection via region-based
+  fully convolutional networks.
+\newblock In: Advances in Neural Information Processing Systems (2016)
+
+\bibitem{dong2015image}
+Dong, C., Loy, C.C., He, K., Tang, X.: Image super-resolution using deep
+  convolutional networks.
+\newblock IEEE Transactions on Pattern Analysis and Machine Intelligence
+  \textbf{38}(2), 295--307 (2015)
+
+\bibitem{eigen2013restoring}
+Eigen, D., Krishnan, D., Fergus, R.: Restoring an image taken through a window
+  covered with dirt or rain.
+\newblock In: IEEE International Conference on Computer Vision (2013)
+
+\bibitem{garg2004detection}
+Garg, K., Nayar, S.K.: Detection and removal of rain from videos.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2004)
+
+\bibitem{garg2005does}
+Garg, K., Nayar, S.K.: When does a camera see rain?
+\newblock In: IEEE International Conference on Computer Vision (2005)
+
+\bibitem{garg2006photorealistic}
+Garg, K., Nayar, S.K.: Photorealistic rendering of rain streaks.
+\newblock ACM Transactions on Graphics (SIGGRAPH) \textbf{25}(3), 996--1002
+  (2006)
+
+\bibitem{garg2007vision}
+Garg, K., Nayar, S.K.: Vision and rain.
+\newblock International Journal of Computer Vision \textbf{75}(1), 3--27 (2007)
+
+\bibitem{Geiger2013IJRR}
+Geiger, A., Lenz, P., Stiller, C., Urtasun, R.: Vision meets robotics: {T}he
+  {KITTI} dataset.
+\newblock International Journal of Robotics Research \textbf{32}(11),
+  1231--1237 (2013)
+
+\bibitem{Geiger2012CVPR}
+Geiger, A., Lenz, P., Urtasun, R.: Are we ready for autonomous driving? {T}he
+  {KITTI} vision benchmark suite.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2012)
+
+\bibitem{monodepth17}
+Godard, C., {Mac Aodha}, O., Brostow, G.J.: Unsupervised monocular depth
+  estimation with left-right consistency.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2017)
+
+\bibitem{godard2019digging}
+Godard, C., Mac~Aodha, O., Firman, M., Brostow, G.J.: Digging into
+  self-supervised monocular depth estimation.
+\newblock In: IEEE International Conference on Computer Vision (2019)
+
+\bibitem{gruber-3dv-19}
+Gruber, T., Bijelic, M., Heide, F., Ritter, W., Dietmayer, K.: Pixel-accurate
+  depth evaluation in realistic driving scenarios.
+\newblock In: International Conference on 3D Vision (2019)
+
+\bibitem{halder2019physics}
+Halder, S.S., Lalonde, J.F., Charette, R.d.: Physics-based rendering for
+  improving robustness to rain.
+\newblock In: IEEE International Conference on Computer Vision (2019)
+
+\bibitem{halimeh2009raindrop}
+Halimeh, J.C., Roser, M.: Raindrop detection on car windshields using
+  geometric-photometric environment construction and intensity-based
+  correlation.
+\newblock In: IEEE Intelligent Vehicles Symposium (2009)
+
+\bibitem{hao2019learning}
+Hao, Z., You, S., Li, Y., Li, K., Lu, F.: Learning from synthetic
+  photorealistic raindrop for single image raindrop removal.
+\newblock In: IEEE International Conference on Computer Vision Workshops (2019)
+
+\bibitem{holdgeoffroy-cvpr-19}
+Hold-Geoffroy, Y., Athawale, A., Lalonde, J.F.: Deep sky modeling for single
+  image outdoor lighting estimation.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2019)
+
+\bibitem{holdgeoffroy-cvpr-17}
+Hold-Geoffroy, Y., Sunkavalli, K., Hadap, S., Gambaretto, E., Lalonde, J.F.:
+  Deep outdoor illumination estimation.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2017)
+
+\bibitem{horn1986robot}
+Horn, B., Klaus, B., Horn, P.: Robot vision.
+\newblock MIT press (1986)
+
+\bibitem{huang2018multimodal}
+Huang, X., Liu, M.Y., Belongie, S., Kautz, J.: Multimodal unsupervised
+  image-to-image translation.
+\newblock In: European Conference on Computer Vision (2018)
+
+\bibitem{isola2017image}
+Isola, P., Zhu, J.Y., Zhou, T., Efros, A.A.: Image-to-image translation with
+  conditional adversarial networks.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2017)
+
+\bibitem{jacobs07amos}
+Jacobs, N., Roman, N., Pless, R.: Consistent temporal variations in many
+  outdoor scenes.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2007)
+
+\bibitem{jaritz2018sparse}
+Jaritz, M., de~Charette, R., Wirbel, E., Perrotton, X., Nashashibi, F.: Sparse
+  and dense data with {CNNs}: Depth completion and semantic segmentation.
+\newblock In: International Conference on 3D Vision (2018)
+
+\bibitem{johnson2016perceptual}
+Johnson, J., Alahi, A., Fei-Fei, L.: Perceptual losses for real-time style
+  transfer and super-resolution.
+\newblock In: European Conference on Computer Vision (2016)
+
+\bibitem{johnson2016driving}
+Johnson-Roberson, M., Barto, C., Mehta, R., Sridhar, S.N., Rosaen, K.,
+  Vasudevan, R.: Driving in the matrix: Can virtual worlds replace
+  human-generated annotations for real world tasks?
+\newblock In: International Conference on Robotics and Automation (2016)
+
+\bibitem{khan2019procsy}
+Khan, S., Phan, B., Salay, R., Czarnecki, K.: Procsy: Procedural synthetic
+  dataset generation towards influence factor studies of semantic segmentation
+  networks.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition
+  Workshops (2019)
+
+\bibitem{Laffont14}
+Laffont, P.Y., Ren, Z., Tao, X., Qian, C., Hays, J.: Transient attributes for
+  high-level understanding and editing of outdoor scenes.
+\newblock ACM Transactions on Graphics (SIGGRAPH) \textbf{33}(4), 1--11 (2014)
+
+\bibitem{lalonde2009webcam}
+Lalonde, J.F., Efros, A.A., Narasimhan, S.G.: Webcam clip art: {A}ppearance and
+  illuminant transfer from time-lapse sequences.
+\newblock ACM Transactions on Graphics (SIGGRAPH) \textbf{28}(5), 1--10 (2009)
+
+\bibitem{ledig2017photo}
+Ledig, C., Theis, L., Husz{\'a}r, F., Caballero, J., Cunningham, A., Acosta,
+  A., Aitken, A., Tejani, A., Totz, J., Wang, Z., et~al.: Photo-realistic
+  single image super-resolution using a generative adversarial network.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2017)
+
+\bibitem{lee2020big}
+Lee, J.H., Han, M.K., Ko, D.W., Suh, I.H.: From big to small: {M}ulti-scale
+  local planar guidance for monocular depth estimation.
+\newblock arXiv preprint arXiv:1907.10326v5  (2020)
+
+\bibitem{li2018semantic}
+Li, P., Liang, X., Jia, D., Xing, E.P.: Semantic-aware grad-gan for
+  virtual-to-real urban scene adaption.
+\newblock arXiv preprint arXiv:1801.01726  (2018)
+
+\bibitem{Li_2018_ECCV}
+Li, R., Tan, R.T., Cheong, L.F.: Robust optical flow in rainy scenes.
+\newblock In: European Conference on Computer Vision (2018)
+
+\bibitem{li2016rain}
+Li, Y., Tan, R.T., Guo, X., Lu, J., Brown, M.S.: Rain streak removal using
+  layer priors.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2016)
+
+\bibitem{liu2017unsupervised}
+Liu, M.Y., Breuel, T., Kautz, J.: Unsupervised image-to-image translation
+  networks.
+\newblock In: Advances in Neural Information Processing Systems (2017)
+
+\bibitem{liu2019few}
+Liu, M.Y., Huang, X., Mallya, A., Karras, T., Aila, T., Lehtinen, J., Kautz,
+  J.: Few-shot unsupervised image-to-image translation.
+\newblock In: IEEE International Conference on Computer Vision (2019)
+
+\bibitem{liu2016ssd}
+Liu, W., Anguelov, D., Erhan, D., Szegedy, C., Reed, S., Fu, C.Y., Berg, A.C.:
+  {SSD}: Single shot multibox detector.
+\newblock In: European Conference on Computer Vision (2016)
+
+\bibitem{liu2019dual}
+Liu, X., Suganuma, M., Sun, Z., Okatani, T.: Dual residual networks leveraging
+  the potential of paired operations for image restoration.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2019)
+
+\bibitem{luo2015removing}
+Luo, Y., Xu, Y., Ji, H.: Removing rain from a single image via discriminative
+  sparse coding.
+\newblock In: IEEE International Conference on Computer Vision (2015)
+
+\bibitem{RobotCarDatasetIJRR}
+Maddern, W., Pascoe, G., Linegar, C., Newman, P.: {1 Year, 1000km: The Oxford
+  RobotCar Dataset}.
+\newblock International Journal of Robotics Research \textbf{36}(1), 3--15
+  (2017)
+
+\bibitem{marshall1948distribution}
+Marshall, J.S., Palmer, W.M.K.: The distribution of raindrops with size.
+\newblock Journal of meteorology \textbf{5}(4), 165--166 (1948)
+
+\bibitem{narasimhan2002vision}
+Narasimhan, S.G., Nayar, S.K.: Vision and the atmosphere.
+\newblock International Journal of Computer Vision \textbf{48}(3), 233--254
+  (2002)
+
+\bibitem{narasimhan2002all}
+Narasimhan, S.G., Wang, C., Nayar, S.K.: All the images of an outdoor scene.
+\newblock In: European Conference on Computer Vision (2002)
+
+\bibitem{pizzati2020model}
+Pizzati, F., Cerri, P., de~Charette, R.: Model-based occlusions disentanglement
+  for image-to-image translation.
+\newblock European Conference on Computer Vision  (2020)
+
+\bibitem{porav2019can}
+Porav, H., Bruls, T., Newman, P.: I can see clearly now: Image restoration via
+  de-raining.
+\newblock In: IEEE International Conference on Robotics and Automation (2019)
+
+\bibitem{potmesil1981lens}
+Potmesil, M., Chakravarty, I.: A lens and aperture camera model for synthetic
+  image generation.
+\newblock ACM Transactions on Graphics (SIGGRAPH) \textbf{15}(3), 297--305
+  (1981)
+
+\bibitem{redmon2017yolo9000}
+Redmon, J., Farhadi, A.: {YOLO9000}: {B}etter, faster, stronger.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2017)
+
+\bibitem{ren2015faster}
+Ren, S., He, K., Girshick, R., Sun, J.: Faster {R-CNN}: Towards real-time
+  object detection with region proposal networks.
+\newblock In: Advances in Neural Information Processing Systems (2015)
+
+\bibitem{romera2018erfnet}
+Romera, E., Alvarez, J.M., Bergasa, L.M., Arroyo, R.: {ERFNet}: {E}fficient
+  residual factorized convnet for real-time semantic segmentation.
+\newblock IEEE Transactions on Intelligent Transportation Systems
+  \textbf{19}(1), 263--272 (2018)
+
+\bibitem{roser2009video}
+Roser, M., Geiger, A.: Video-based raindrop detection for improved image
+  registration.
+\newblock In: IEEE International Conference on Computer Vision Workshops (2009)
+
+\bibitem{roser2010realistic}
+Roser, M., Kurz, J., Geiger, A.: Realistic modeling of water droplets for
+  monocular adherent raindrop recognition using bezier curves.
+\newblock In: Asian Conference on Computer Vision (2010)
+
+\bibitem{rousseau2006realistic}
+Rousseau, P., Jolivet, V., Ghazanfarpour, D.: Realistic real-time rain
+  rendering.
+\newblock Computers \& Graphics \textbf{30}(4), 507--518 (2006)
+
+\bibitem{mehta2018espnet}
+Sachin~Mehta, M.R., Caspi, A., Shapiro, L., Hajishirzi, H.: {ESPNet}:
+  {E}fficient spatial pyramid of dilated convolutions for semantic
+  segmentation.
+\newblock In: European Conference on Computer Vision (2018)
+
+\bibitem{SDV18}
+Sakaridis, C., Dai, D., Van~Gool, L.: Semantic foggy scene understanding with
+  synthetic data.
+\newblock International Journal of Computer Vision \textbf{126}(9), 973--992
+  (2018)
+
+\bibitem{Shen2017DSOD}
+Shen, Z., Liu, Z., Li, J., Jiang, Y.G., Chen, Y., Xue, X.: {DSOD}: {L}earning
+  deeply supervised object detectors from scratch.
+\newblock In: IEEE International Conference on Computer Vision (2017)
+
+\bibitem{tasar2020semi2i}
+Tasar, O., Happy, S., Tarabalka, Y., Alliez, P.: Semi2i: Semantically
+  consistent image-to-image translation for domain adaptation of remote sensing
+  data.
+\newblock arXiv preprint arXiv:2002.05925  (2020)
+
+\bibitem{tatarchuk2006artist}
+Tatarchuk, N.: Artist-directable real-time rain rendering in city environments.
+\newblock In: SIGGRAPH 2006 Courses, pp. 23--64. ACM (2006)
+
+\bibitem{Tsai_adaptseg_2018}
+Tsai, Y.H., Hung, W.C., Schulter, S., Sohn, K., Yang, M.H., Chandraker, M.:
+  Learning to adapt structured output space for semantic segmentation.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2018)
+
+\bibitem{weber2015multiscale}
+Weber, Y., Jolivet, V., Gilet, G., Ghazanfarpour, D.: A multiscale model for
+  rain rendering in real-time.
+\newblock Computers \& Graphics \textbf{50}, 61--70 (2015)
+
+\bibitem{xie2018tempogan}
+Xie, Y., Franz, E., Chu, M., Thuerey, N.: tempogan: {A} temporally coherent,
+  volumetric gan for super-resolution fluid flow.
+\newblock ACM Transactions on Graphics (SIGGRAPH) \textbf{37}(4), 1--15 (2018)
+
+\bibitem{yang2016exploit}
+Yang, F., Choi, W., Lin, Y.: Exploit all the layers: {F}ast and accurate cnn
+  object detector with scale dependent pooling and cascaded rejection
+  classifiers.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2016)
+
+\bibitem{yang2017deep}
+Yang, W., Tan, R.T., Feng, J., Liu, J., Guo, Z., Yan, S.: Deep joint rain
+  detection and removal from a single image.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2017)
+
+\bibitem{yi2017dualgan}
+Yi, Z., Zhang, H., Tan, P., Gong, M.: Dualgan: {U}nsupervised dual learning for
+  image-to-image translation.
+\newblock In: IEEE International Conference on Computer vision (2017)
+
+\bibitem{yu2018bdd100k}
+Yu, F., Xian, W., Chen, Y., Liu, F., Liao, M., Madhavan, V., Darrell, T.:
+  Bdd100k: A diverse driving video database with scalable annotation tooling.
+\newblock arXiv preprint arXiv:1805.04687  (2018)
+
+\bibitem{zendel2018wilddash}
+Zendel, O., Honauer, K., Murschitz, M., Steininger, D., Fernandez~Dominguez,
+  G.: Wilddash-creating hazard-aware benchmarks.
+\newblock In: European Conference on Computer Vision (2018)
+
+\bibitem{zhang2018density}
+Zhang, H., Patel, V.M.: Density-aware single image de-raining using a
+  multi-stream dense network.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2018)
+
+\bibitem{zhang2019image}
+Zhang, H., Sindagi, V., Patel, V.M.: Image de-raining using a conditional
+  generative adversarial network.
+\newblock IEEE Transactions on Circuits and Systems for Video Technology
+  (2019)
+
+\bibitem{zhang-cvpr-19}
+Zhang, J., Sunkavalli, K., Hold-Geoffroy, Y., Hadap, S., Eisenman, J., Lalonde,
+  J.F.: All-weather deep outdoor lighting estimation.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2019)
+
+\bibitem{zhao2018icnet}
+Zhao, H., Qi, X., Shen, X., Shi, J., Jia, J.: {ICNet} for real-time semantic
+  segmentation on high-resolution images.
+\newblock In: European Conference on Computer Vision (2018)
+
+\bibitem{zhao2017pspnet}
+Zhao, H., Shi, J., Qi, X., Wang, X., Jia, J.: Pyramid scene parsing network.
+\newblock In: IEEE Conference on Computer Vision and Pattern Recognition (2017)
+
+\bibitem{zhu2017unpaired}
+Zhu, J.Y., Park, T., Isola, P., Efros, A.A.: Unpaired image-to-image
+  translation using cycle-consistent adversarial networks.
+\newblock In: IEEE International Conference on Computer Vision (2017)
+
+\end{thebibliography}

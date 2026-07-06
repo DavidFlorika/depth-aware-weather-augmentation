@@ -16,6 +16,7 @@
 \usepackage{booktabs}
 \usepackage{microtype}
 \usepackage{xurl}
+\usepackage{subcaption}
 \usepackage[section]{placeins}
 \usepackage[breaklinks=true,bookmarks=false]{hyperref}
 
@@ -53,7 +54,89 @@ from its original expectation. When the original iamge/video is unavailable, an 
 on the aesthetic visual appearance is also considered as a distortion~\cite{muhammadaliqureshiDistortionClassificationComputer}. These distortions could be
 sorted as In-Capture Distortion, including blur, noise, uneven illumination, color shifts, haze,
 rain, snow, and other visibility changes; and Post-Capture Distortion, such as transmission,
-impairments, enhancement artefacts, and adversarial distortion. Although these effects may
+impairments, enhancement artefacts, and adversarial distortion.
+
+{
+\captionsetup[subfigure]{
+    font=scriptsize,
+    labelfont=scriptsize,
+    justification=centering,
+    singlelinecheck=false,
+    skip=1pt}
+\newcommand{\distortioncaption}[1]{%
+  \caption[#1]{%
+    \parbox[t][2\baselineskip][t]{\linewidth}{%
+      \centering #1%
+    }%
+  }%
+}
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}{0.30\columnwidth}
+    \centering
+    \includegraphics[width=\linewidth]{src/images/distortionA.png}
+    \distortioncaption{Image affected by rain}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}{0.30\columnwidth}
+    \centering
+    \includegraphics[width=\linewidth]{src/images/distortionB.png}
+    \distortioncaption{Surgery frame affected by smoke}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}{0.30\columnwidth}
+    \centering
+    \includegraphics[width=\linewidth]{src/images/distortionC.png}
+    \distortioncaption{Packet loss in image transmission}
+  \end{subfigure}
+
+  \vspace{2mm}
+
+  \begin{subfigure}{0.30\columnwidth}
+    \centering
+    \includegraphics[width=\linewidth]{src/images/distortionD.png}
+    \distortioncaption{Haze effect on traffic road}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}{0.30\columnwidth}
+    \centering
+    \includegraphics[width=\linewidth]{src/images/distortionE.png}
+    \distortioncaption{Image affected by colour bleeding}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}{0.30\columnwidth}
+    \centering
+    \includegraphics[width=\linewidth]{src/images/distortionF.png}
+    \distortioncaption{Colour loss in underwater imaging}
+  \end{subfigure}
+
+  \vspace{2mm}
+
+  \begin{subfigure}{0.30\columnwidth}
+    \centering
+    \includegraphics[width=\linewidth]{src/images/distortionG.png}
+    \distortioncaption{Human action recognition affected by motion blur}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}{0.30\columnwidth}
+    \centering
+    \includegraphics[width=\linewidth]{src/images/distortionH.png}
+    \distortioncaption{Visual tracking affected by uneven illumination}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}{0.30\columnwidth}
+    \centering
+    \includegraphics[width=\linewidth]{src/images/distortionI.png}
+    \distortioncaption{Auto-focus system failure in surveillance cameras}
+  \end{subfigure}
+
+  \caption{Examples of distortions encountered in computer vision and image/video analysis tasks, adapted from \cite{muhammadaliqureshiDistortionClassificationComputer}}
+  \label{fig:nine-grid}
+\end{figure}
+}
+
+Although these effects may
 appear minor to human observers, they can change the statistical structure of an image and reduce
 the reliability of machine learning models trained primarily on clean
 data~\cite{muhammadaliqureshiDistortionClassificationComputer}. Distortions affect the
@@ -125,7 +208,7 @@ or ACDC, are all unpaired datasets\cite{wolfeBDD100KLargescaleDiverse,cordtsCity
 Figure~\ref{fig:paired-unpaired} illustrates the difference between paired and unpaired training data. 
 
 \begin{figure}[H]
-\includegraphics[width=\columnwidth]{src/paired_unpaired2.png}
+\includegraphics[width=\columnwidth]{src/images/paired_unpaired2.png}
 \caption{\textit{Paired} training data (left) consists of training examples $\{x_i, y_i\}_{i=1}^N$. 
 \textit{Unpaired} training data (right) consists of a source set $\{x_i\}_{i=1}^N$ ($x_i \in X$) and a target set $\{y_i\}_{i=1}^N$ ($y_i \in Y$). 
 Unpaired training contains no correspondence from the source set $X$ to the target set $Y$. Figure adapted from \cite{zhuUnpairedImagetoImageTranslation2020}.}\label{fig:paired-unpaired}
@@ -212,6 +295,36 @@ surfaces such as water on the ground, and it creates raindrops that are supposed
 behind buildings~\cite{tremblayRainRenderingEvaluating2021}.
 Though, this framework supported rain detection, removal, rendering, and camera-based rain
 measurement~\cite{gargVisionRain2007}.
+
+Below examplifies three traditional rain rendering methods: rain100H, rain800, and did-MDN~\cite{tremblayRainRenderingEvaluating2021}.
+
+\begin{figure}[H]
+    \centering
+
+    \begin{subfigure}{0.32\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{src/images/rain100H.png}
+        \caption{Rain100H}
+        \label{fig:rain100H}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.32\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{src/images/rain800.jpg}
+        \caption{Rain800}
+        \label{fig:rain800}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.32\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{src/images/did-MDN.jpg}
+        \caption{DID-MDN}
+        \label{fig:did-MDN}
+    \end{subfigure}
+
+    \caption{Three traditional rain rendering methods, adapted from \cite{tremblayRainRenderingEvaluating2021}}
+    \label{fig:three-images}
+\end{figure}
 
 
 \subsection{Modern Rain Rendering}
@@ -333,6 +446,31 @@ geographic, environmental, and weather variation. The limitation is missing pair
 clean/adverse views and controlled severity labels. A depth-aware rain and haze renderer would
 turn BDD100K into a controlled robustness testbed while keeping real driving diversity.
 \cite{yuBDD100KDiverseDriving2018}.
+
+\begin{figure}
+  \begin{subfigure}{0.32\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{src/images/bdd100k_clear.jpg}
+    \caption{Clear image from BDD100K}
+    \label{fig:bdd-clear}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}{0.32\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{src/images/bdd100k_rainy.jpg}
+    \caption{Rainy image from BDD100K}
+    \label{fig:bdd-rain}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}{0.32\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{src/images/bdd100k_foggy.jpg}
+    \caption{Foggy image from BDD100K}
+    \label{fig:bdd-fog}
+  \end{subfigure}
+  \caption{Examples of clear, rainy, and foggy images from BDD100K~\cite{yuBDD100KDiverseDriving2018}}
+  \label{fig:bdd100k}
+\end{figure}
 
 
 \nocite{*}

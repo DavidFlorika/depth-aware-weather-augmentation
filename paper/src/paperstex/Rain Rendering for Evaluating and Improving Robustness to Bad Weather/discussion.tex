@@ -1,0 +1,18 @@
+\section{Discussion}
+
+In this paper, we presented the first intensity-controlled physical framework for augmenting existing image databases with realistic rain. This allows us to systematically study the impact of rain on existing computer vision algorithms on three important tasks: object detection, semantic segmentation, and depth estimation. 
+
+\paragraph{Limitations and future work.}
+
+While we demonstrated highly realistic rain rendering results, our approach still has limitations that set the stage for future work. 
+
+For our PBR approach, the approximation of the lighting conditions~\ref{sec:rendering.fog-like} yielded reasonable results (fig.~\ref{fig:drop_cam_fov}), but it may under/over estimate the scene radiance when the sky is not/too visible. This approximation is more visible when streaks are imaged against a darker sky. More robust approaches for outdoor lighting estimation could potentially be used~\cite{holdgeoffroy-cvpr-19,zhang-cvpr-19}. 
+Second, we make an explicit distinction between fog-like rain and drops imaged on more than 1 pixel, individually rendered as streaks. While this distinction is widely used in the literature~\cite{garg2007vision,garg2005does,de2012fast,Li_2018_ECCV}, it causes an inappropriate sharp distinction between fog-like and streaks. A possible solution would be to render all drops as streaks weighting them as a function of their imaging surface. However, our experiments show it comes at a prohibitive computation cost. 
+Finally, rain streaks are added to image irrespective of the scene contents. Here, the depth estimate could be used to mask out streaks that appear behind objects and under the ground plane.
+Another limitation is the computational cost of PBR. While this has no downside for benchmarking purpose as PBR may be run off-line, simulation requires increasing time with larger rainfall rates. With our current unoptimized implementation, the simulation of 1 / 25 / 50 / 100 mm/hr rainfall rates on Cityscapes requires 0.35 / 5.65 / 16.60 / 20.67 seconds respectively for the rain physics~\cite{de2012fast} and an additional 6.71 / 34.92 / 62.94 / 104.76 seconds for the rendering (times are per image, on single core, and averaged over 100 frames).
+This restricts the usage of PBR to off-line processing though significant speed up could be obtained at the cost of additional optimization efforts.
+
+The GAN employed also has limitations. First, while PBR is well-suited for videos since the rain simulator is temporally consistent, this is not the case for CycleGAN which does not guarantee temporal smoothness. Existing approaches such as \cite{bansal2018recycle} are alternatives, but GANs are known for their non-realistic physical outcome~\cite{xie2018tempogan}. Second, CycleGAN imposes a limit on the image resolution. Here, super-resolution networks such as SRResNet~\cite{dong2015image} or SRGAN~\cite{ledig2017photo} could potentially be used, or large-scale GANs such as BigGAN~\cite{brock2018large} are also an option. More importantly, GANs tend to have difficulty in generating rain on images of datasets different than which they are trained on since the learning process does not disentangle rain from scene appearance, demonstrating a strong domain dependence.
+
+Finally, while our results demonstrate that fine-tuning on synthetically generated rain does improve performance on real rainy images (cf. sec.~\ref{sec:improving}), the improvements obtained are still quite modest. Further efforts are necessary to develop algorithms that are truly robust to challenging rainy conditions.
+

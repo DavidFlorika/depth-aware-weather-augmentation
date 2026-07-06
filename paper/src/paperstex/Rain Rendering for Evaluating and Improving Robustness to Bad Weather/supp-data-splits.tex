@@ -1,0 +1,54 @@
+\section{Experiments data splits}
+\label{sec:app-data-splits}
+
+\begin{table}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{0.001\linewidth}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{L{0.225\linewidth}C{0.145\linewidth}C{0.184\linewidth}C{0.229\linewidth}C{0.209\linewidth}}
+ \toprule
+ &
+  Kitti \cite{Geiger2012CVPR} & 
+  Cityscapes \cite{Cordts2016Cityscapes} & 
+  nuScenes-clear \cite{caesar2019nuscenes} & 
+  nuScenes-rain \cite{caesar2019nuscenes} \\ 
+ &
+ 7,481 & 
+ 2,995 & 
+ 24,134 & 
+ 4,996 \\
+ \midrule
+Effect of real rain (sec. \ref{sec:real_data}) &
+\multirow{2}{*}{-} &
+\multirow{2}{*}{-} &
+\multirow{2}{*}{1,000 (test)} &
+\multirow{2}{*}{*609 / 25 (test)} \\
+Effect of synth. rain (sec. \ref{sec:impact_synth}) &
+  \multirow{2}{*}{\textcolor{orange}{7,481 (test)}} &
+  \multirow{2}{*}{\textcolor{orange}{2,995 (test)}} &
+  \multirow{2}{*}{\textcolor{orange}{4,449 (test)}} &
+  \multirow{2}{*}{-} \\
+GAN training (sec.~\ref{sec:rain_setup}) &
+ \multirow{2}{*}{-} &
+ \multirow{2}{*}{-} &
+ 19,685 (train) 4,449 (test) &
+ 5,419 (train) 609~(test)\\
+Improving synth. robustness (sec.~\ref{sec:perf_synth_data}) &
+  \multirow{3}{*}{\shortstack[c]{\textcolor{orange}{1,000 (train)} \\ \textcolor{orange}{1,000 (test)}}} &
+  \multirow{3}{*}{\shortstack[c]{\textcolor{orange}{1,000 (train)} \\ \textcolor{orange}{1,000 (test)}}} &
+  \multirow{3}{*}{\shortstack[c]{\textcolor{orange}{1,000 (train)} \\ \textcolor{orange}{1,000 (test)}}} &
+  \multirow{3}{*}{-} \\
+Improving real robustness (sec.~\ref{sec:perf_real_data}) &
+  \multirow{3}{*}{-} &
+  \multirow{3}{*}{-} &
+  \multirow{3}{*}{\shortstack[c]{\textcolor{orange}{1,000 (train)} \\ *1,000 / 25 (test)}} &
+  \multirow{3}{*}{*609 / 25 (test)} \\
+ \bottomrule
+\end{tabular}
+*Number of images for object\&depth / semantics
+\caption{\textbf{Data splits for all experiments.} The splits are separated per context and datasets ; \textcolor{orange}{orange} indicates our rain augmented images. Notably, both the train and the test sets for improving the robustness to synthetic and real rain are sampled from the test set of the GAN training phase; this is valid since the computer tasks trained with these subsets have not seen images from neither set.}
+\label{tab:splits}
+\end{table}
+
+Table~\ref{tab:splits} contains the minutiae of the data splits of the various experimental steps of this paper.

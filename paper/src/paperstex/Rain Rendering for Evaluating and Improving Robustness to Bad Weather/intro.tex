@@ -1,0 +1,58 @@
+\section{Introduction}
+
+\begin{figure}	
+	\centering
+	\footnotesize
+	\setlength{\tabcolsep}{0.0025\linewidth}
+	\renewcommand{\arraystretch}{0.5}
+	\begin{tabular}{ccc}
+		\multirow{2}{*}[1cm]{\rotatebox{90}{Object detection~\cite{yang2016exploit}}} &
+		\adjincludegraphics[width=0.4775\linewidth,trim={{0.1938\width} 0 0 0},clip]{figures/results/qualitative_rain/kitti/clear/000004_lr.jpg} &
+		\adjincludegraphics[width=0.4775\linewidth,trim={{0.1938\width} 0 0 0},clip]{figures/results/qualitative_rain/kitti/pbr/200mm/000004_lr.jpg}\\
+		& 
+		\adjincludegraphics[width=0.4775\linewidth,trim={{0.1938\width} 0 0 0},clip]{figures/results/obj_detection/MxRCNN/000004_MxRCNN_clear_lr.jpg} &
+		\adjincludegraphics[width=0.4775\linewidth,trim={{0.1938\width} 0 0 0},clip]{figures/results/obj_detection/MxRCNN/000004_MxRCNN_200mm_lr.jpg}\\
+		\midrule
+		\multirow{2}{*}[1.5cm]{\rotatebox{90}{Semantic segmentation~\cite{mehta2018espnet}}} &
+		\adjincludegraphics[width=0.4775\linewidth,trim={0 {0.110728\height} 0 0},clip]{figures/results/qualitative_rain/cityscapes/clear/bochum_000000_037039_leftImg8bit_lr.jpg} &
+		\adjincludegraphics[width=0.4775\linewidth,trim={0 {0.110728\height} 0 0},clip]{figures/results/qualitative_rain/cityscapes/pbr/200mm/bochum_000000_037039_leftImg8bit_lr.jpg}\\
+		& 
+		\adjincludegraphics[width=0.4775\linewidth,trim={0 {0.110728\height} 0 0},clip]{figures/results/semantic_seg/ESPNet/bochum_000000_037039_leftImg8bit_ESPNet_clear_lr.png} &
+		\adjincludegraphics[width=0.4775\linewidth,trim={0 {0.110728\height} 0 0},clip]{figures/results/semantic_seg/ESPNet/bochum_000000_037039_leftImg8bit_ESPNet_200mm_lr.png}\\
+		\midrule
+		\multirow{2}{*}[1.15cm]{\rotatebox{90}{Depth estimation~\cite{godard2019digging}}} &
+		\adjincludegraphics[width=0.4775\linewidth,trim={0 {0.1\height} 0 {0.1\height}},clip]{figures/results/qualitative_rain/nuscenes/clear_small/007.jpg} &
+		\adjincludegraphics[width=0.4775\linewidth,trim={0 {0.1\height} 0 {0.1\height}},clip]{figures/results/qualitative_rain/nuscenes/hybrid/200mm/007.png}\\
+		&
+		\adjincludegraphics[width=0.4775\linewidth,trim={0 {0.1\height} 0 {0.1\height}},clip]{figures/results/hybrid/monodepth2/clear/007.png} &
+		\adjincludegraphics[width=0.4775\linewidth,trim={0 {0.1\height} 0 {0.1\height}},clip]{figures/results/hybrid/monodepth2/200mm/007.png}\\
+		&
+		Clear weather &
+		Rain (200~mm/hr) \\
+	\end{tabular}
+	\vspace{.25em}
+	\caption{\textbf{Vision tasks in clear and rain-augmented images.} Our synthetic rain rendering framework allows for the evaluation of computer vision algorithms in challenging bad weather scenarios.  We render physically-based, realistic rain on images from the KITTI~\cite{Geiger2012CVPR} (rows 1-2) and Cityscapes~\cite{Cordts2016Cityscapes} (rows 3-4) datasets with object detection from mx-RCNN~\cite{yang2016exploit} (row 2), semantic segmentation from ESPNet~\cite{mehta2018espnet} (row 4). We also present a combined data-driven and physic-based rain rendering approach which we apply to the nuScenes~\cite{caesar2019nuscenes} (rows 5-6) dataset with depth estimation from Monodepth2~\cite{godard2019digging} (row 6). All algorithms are quite significantly affected by rainy conditions.}
+	\label{fig:overview}
+	\vspace{-1em}
+\end{figure}
+
+
+A common assumption in computer vision is that light travels unaltered from the scene to the camera. In clear weather, this assumption is reasonable: the atmosphere behaves like a transparent medium and transmits light with very little attenuation or scattering. However, inclement weather conditions such as rain fill the atmosphere with particles producing spatio-temporal artifacts such as attenuation or rain streaks. This creates noticeable changes to the appearance of images (see fig.~\ref{fig:overview}), thus creating additional challenges to computer vision algorithms which must be robust to these conditions. 
+
+While the influence of rain on image appearance is well-known and understood~\cite{garg2005does}, its impact on the performance of computer vision tasks is not.
+Indeed, how can one evaluate what the impact of, say, a rainfall rate of 100~mm/hour (a typical autumn shower) is on the performance of an object detector, when our existing databases all contain images overwhelmingly captured under clear weather conditions? To measure this effect, one would need a labeled object detection dataset where all the images have been captured under 100~mm/hour rain. Needless to say, such a "rain-calibrated" dataset does not exist, and capturing one is prohibitive. Indeed, datasets with bad weather information are few and sparse, and typically include only high-level tags (rain or not) without mentioning \emph{how much} rain is falling. While they can be used to improve vision algorithms under adverse conditions by including rainy images in the training set, they cannot help us in systematically evaluating performance degradation under increasing amounts of rain.
+
+Alternatively, one can attempt to remove its effects from images---i.e., create a ``clear weather'' version of the image---prior to applying subsequent algorithms. For example, rain can be detected and attenuated from images~\cite{garg2007vision,barnum2010analysis,yang2017deep,zhang2019image,liu2019dual}. We experiment with this approach in sec.~\ref{sec:deraining}. An alternative approach is to employ programmable lighting to reduce the rain visibility, by shining light between raindrops~\cite{de2012fast}. Unfortunately, these solutions either add significant processing times to already constrained time budgets, or require custom hardware. Instead, if we could systematically study the effect of weather on images, we could better understand the robustness of existing algorithms, and, potentially, increase their robustness afterwards. 
+
+In this paper, we propose methods to realistically \emph{augment} existing image databases with rainy conditions. 
+We rely on well-understood physical models as well as on recent image-to-image translations to generate visually convincing results. First, we experiment with our novel physics-based approach, which is the first to allow controlling the \emph{amount} of rain in order to generate arbitrary amounts, ranging from very light rain (5~mm/hour rainfall) to very heavy storms (200+~mm/hour). 
+This key feature allows us to produce weather-augmented datasets, where the rainfall rate is known and calibrated. Subsequently, we augment two existing datasets (KITTI~\cite{Geiger2012CVPR} and Cityscapes~\cite{Cordts2016Cityscapes}) with rain, and evaluate the robustness of popular object detection and segmentation algorithms on these augmented databases. Second, we experiment with a combination of physics- and learning-based approaches, where a popular unpaired image-to-image translation method~\cite{zhu2017unpaired} is used to convey a sense of ``wetness'' to the scene, and physics-based rain is subsequently composited on the resulting image. Here, we augment the nuScenes dataset~\cite{caesar2019nuscenes}, and use it to evaluate the robustness of object detection and depth estimation algorithms. 
+Finally, we also use the latter to refine algorithms using curriculum learning~\cite{bengio2009curriculum}, and demonstrate improved robustness on real rainy images.
+
+In short, we make the following contributions. 
+First, we present two different realistic rain rendering approaches: the first is a purely physic-based method and the second is a combination of a GAN-based approach and this physic-based framework. 
+Second, we augment KITTI~\cite{Geiger2012CVPR}, Cityscapes~\cite{Cordts2016Cityscapes}, and nuScenes~\cite{caesar2019nuscenes} datasets with rain. 
+Third, we present a methodology for systematically evaluating the performance of 13 popular algorithms---for object detection, semantic segmentation and depth estimation---on rainy images. Our findings indicate that rain affects \emph{all} algorithms: performance drops of 15\% mAP for object detection, 60\% AP for semantic segmentation, and a 6-fold increase in depth estimation error. 
+Finally, our augmented database can also be used to finetune these same algorithms in order to \emph{improve} their performance in real-world rainy conditions. 
+
+This paper significantly extends an earlier version of this work published in~\cite{halder2019physics}, by combining physics-based rendering with learning-based image-to-image translation methods, conducting a novel, more in-depth user study, evaluating depth estimation algorithms, comparing to a deraining approach, and by providing a more extensive evaluation of the performance improvement on real images. Our framework is readily usable to augment existing image with realistic rainy conditions. Code and data are available at the following URL: \url{https://team.inria.fr/rits/computer-vision/weather-augment/}.

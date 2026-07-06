@@ -249,6 +249,23 @@ Data Efficiency Study of Synthetic Fog for Object Detection Using the Clear2Fog 
   file = {/Users/david/Zotero/storage/9ZGHSE5B/Muhammad Ali Qureshi et al. - Distortion Classification in Computer Vision Applications Current Progress, Challenges, and Perspec.pdf;/Users/david/Zotero/storage/CSZDV9SC/Distortion Review Research Notes.docx;/Users/david/Zotero/storage/8N9HWDZG/3773023.html}
 }
 
+@misc{perezEffectivenessDataAugmentation2017,
+  title = {The {{Effectiveness}} of {{Data Augmentation}} in {{Image Classification}} Using {{Deep Learning}}},
+  author = {Perez, Luis and Wang, Jason},
+  year = 2017,
+  month = dec,
+  number = {arXiv:1712.04621},
+  eprint = {1712.04621},
+  primaryclass = {cs.CV},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1712.04621},
+  urldate = {2026-07-05},
+  abstract = {In this paper, we explore and compare multiple solutions to the problem of data augmentation in image classification. Previous work has demonstrated the effectiveness of data augmentation through simple techniques, such as cropping, rotating, and flipping input images. We artificially constrain our access to data to a small subset of the ImageNet dataset, and compare each data augmentation technique in turn. One of the more successful data augmentations strategies is the traditional transformations mentioned above. We also experiment with GANs to generate images of different styles. Finally, we propose a method to allow a neural net to learn augmentations that best improve the classifier, which we call neural augmentation. We discuss the successes and shortcomings of this method on various datasets.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/Users/david/Zotero/storage/553ZFAUB/Perez and Wang - 2017 - The Effectiveness of Data Augmentation in Image Classification using Deep Learning.pdf;/Users/david/Zotero/storage/CUUMWRQM/1712.html}
+}
+
 @misc{sakaridisACDCAdverseConditions2021,
   title = {{{ACDC}}: {{The Adverse Conditions Dataset}} with {{Correspondences}} for {{Robust Semantic Driving Scene Perception}}},
   shorttitle = {{{ACDC}}},
@@ -303,100 +320,6 @@ Data Efficiency Study of Synthetic Fog for Object Detection Using the Clear2Fog 
   abstract = {Rain fills the atmosphere with water particles, which breaks the common assumption that light travels unaltered from the scene to the camera. While it is well-known that rain affects computer vision algorithms, quantifying its impact is difficult. In this context, we present a rain rendering pipeline that enables the systematic evaluation of common computer vision algorithms to controlled amounts of rain. We present three different ways to add synthetic rain to existing images datasets: completely physic-based; completely data-driven; and a combination of both. The physic-based rain augmentation combines a physical particle simulator and accurate rain photometric modeling. We validate our rendering methods with a user study, demonstrating our rain is judged as much as 73\% more realistic than the state-of-the-art. Using our generated rain-augmented KITTI, Cityscapes, and nuScenes datasets, we conduct a thorough evaluation of object detection, semantic segmentation, and depth estimation algorithms and show that their performance decreases in degraded weather, on the order of 15\% for object detection, 60\% for semantic segmentation, and 6-fold increase in depth estimation error. Finetuning on our augmented synthetic data results in improvements of 21\% on object detection, 37\% on semantic segmentation, and 8\% on depth estimation.},
   langid = {english},
   keywords = {Adverse weather,GAN,Image to image translation,Physics-based rendering,Vision and rain},
-  note = {Rain Rendering for Evaluating and Improving Robustness to Bad Weather
-\par
-Notes: This paper is very similar and directly related to my research idea; it focuses on intensity control
-\par
-Limitations
-\par
-For PBR:
-\par
-\begin{enumerate}
-
-\item Lighting estimation ``may under/over estimate the scene radiance when the sky is not/too visible.'' (Tremblay et al., 2021, p. 356)
-\item Explicit distinction between fog-like rain and rain drops causes an inappropriate distinction between fog-like and streaks
-\item Could use depth estimation to mask out rain drops behind objects and under the ground plane
-\item Computational cost of PBR
-
-\end{enumerate}
-
-\par
-For GAN
-\par
-\begin{enumerate}
-
-\item GAN generates not realistic scenes
-\item limited image resolution
-\item Improvements on performances are modest: absolute gains are small; GAN+PBR performs the worst on clean images but best on rainy images.
-
-\end{enumerate}
-
-\par
-Datasets: KITTY, Cityscapes, nuScenes
-\par
-Focus: object detection, semantic segmentation, and depth estimation
-\par
-Contribution:
-\par
-\begin{itemize}
-
-\item Presents a purely physics -based method and a combination of a GAN-based approach
-\item Augmentation on the datasets
-\item ``methodology for systematically evaluating the performance of 14 popular algorithms---for object detection, semantic segmentation and depth estimation---on rainy images'' (Tremblay et al., 2021, p. 342)
-
-\end{itemize}
-
-\par
-Rain Features
-\par
-\begin{itemize}
-
-\item Water particles fill air -{$>$} alters light
-\item Not realistic to have controlled ``rain dataset`` in the study of the affect of rain on CV
-
-\end{itemize}
-
-\par
-Methods
-\par
-Physics-based Rendering
-\par
-\begin{enumerate}
-
-\item Fog-like Rain
-\item Particle simulator; involves estimation for environment map - camera view range is approx. 70 - 100 degree, while rain ``sees`` \textasciitilde 160 degree -{$>$} its photometry depends on a wider environment \& lighting
-\item ``the global luminosity average of the rainy image denoted I\_rain is adjusted.'' (Tremblay et al., 2021, p. 345)
-\item Limitation: lighting estimation (the fact that rain sees more) effects its photometry -{$>$} especially prominent when radiance is not symmetric
-
-\end{enumerate}
-
-\par
-Deep Learning approach - GAN
-\par
-\begin{enumerate}
-
-\item Uses Cycle-GAN (256x256 architecture)
-\item Input size: 448x256
-\item Generator: 2 downsampling blocks + 9 ResNet blocks + 2 unsampling blocks
-\item Discriminator: 3 hidden layers patch-GAN-like-ConvNet
-\item 40 epochs Adam, batch size = 1, learning rate = 0.0002, {$\beta$} = \textbraceleft 0.5, 0.999\textbraceright{}
-
-\end{enumerate}
-
-\par
-Full framework: GAN + PBR; after GAN, unsample the output, which helps generating fog-like rain; it then downsamples imaes to 448x256.
-\par
-Evaluation
-\par
-Dataset: nuScenes dataset into two subsets: with and without rain
-\par
-Models: YOLOv2 -{$>$} object detection (trained on ImageNet \& KITTI first)
-\par
-PSPNet -{$>$} semantic segmentation
-\par
-Monodepth2 -{$>$} depth estimation (trained on ImageNet \& KITTI first too)
-\par
-This paper also tests on synthesizing rain augmentation in model training -{$>$} positive result, models are more robust},
   file = {/Users/david/Zotero/storage/HN43MFGK/Tremblay et al. - 2021 - Rain Rendering for Evaluating and Improving Robustness to Bad Weather.pdf}
 }
 
