@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber paper"] 1783220056.05022 "paper.bcf" "paper.bbl" "paper" 1783220062.38881 0
-  "ComputerVision.bib" 1783220055.78348 38724 1198c0a1449a39eec8bef2ad77106dba ""
-  "paper.bcf" 1783220062.32024 112802 04293f7545010a5fd0842a63d63362ba "pdflatex"
+["biber paper"] 1783220056.05022 "paper.bcf" "paper.bbl" "paper" 1783831858.96056 0
+  "ComputerVision.bib" 1783324147.51832 38724 1198c0a1449a39eec8bef2ad77106dba ""
+  "paper.bcf" 1783831858.90296 113066 3e31c5f93a3ea33d95e0b8bcf0732700 "pdflatex"
   (generated)
   "paper.bbl"
   "paper.blg"
   (rewritten before read)
-["pdflatex"] 1783220060.84833 "/Users/david/Desktop/CV_Research/paper/paper.tex" "paper.pdf" "paper" 1783220062.38906 0
-  "/Users/david/Desktop/CV_Research/paper/paper.tex" 1783218917.10549 24409 f5f9595f8a4c503b065b261016cea9a5 ""
+["pdflatex"] 1783831857.42248 "/Users/david/Desktop/CV_Research/paper/paper.tex" "paper.pdf" "paper" 1783831858.96081 0
+  "/Users/david/Desktop/CV_Research/paper/paper.tex" 1783831855.80028 39490 3e8bab121fe195b6fbb104b2c69d61de ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -37,6 +37,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1248133631 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
@@ -142,13 +143,19 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1757549450 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "paper.aux" 1783220062.31631 13745 2c6db37712e5c33665eafe6d56d79ad5 "pdflatex"
+  "paper.aux" 1783831858.89886 15849 96c699cadd69275b073cf86ea6804c1a "pdflatex"
   "paper.bbl" 1783220057.71143 80381 5bb8df551b4fd9b66d7f02a56dfe67b2 "biber paper"
-  "paper.run.xml" 1783220062.32081 2316 0845a884fd50d354062435a7a74ab69c "pdflatex"
-  "paper.tex" 1783218917.10549 24409 f5f9595f8a4c503b065b261016cea9a5 ""
+  "paper.run.xml" 1783831858.90351 2316 0845a884fd50d354062435a7a74ab69c "pdflatex"
+  "paper.tex" 1783831855.80028 39490 3e8bab121fe195b6fbb104b2c69d61de ""
   "src/images/bdd100k_clear.jpg" 1783218526.21194 79380 18372d61fb84dcb606d36543baf2d793 ""
   "src/images/bdd100k_foggy.jpg" 1783218609.56356 39021 b14944b1f721fb873197d78ced78495a ""
   "src/images/bdd100k_rainy.jpg" 1783218526.03908 92220 6dca263dfef1da14e4c16a069f52ba0b ""
+  "src/images/depth1_clear.jpg" 1783490268.27365 65511 6ca6323561f73b3b8d368efe02b7c79b ""
+  "src/images/depth1_rain.jpg" 1783490241.8641 177443 00edc5af618a233f402f726501e6febb ""
+  "src/images/depth2_clear.jpg" 1783490213.53359 28442 36f3bc5deae9e1ba4e9bee3fb1c82b02 ""
+  "src/images/depth2_rain.jpg" 1783490172.71788 138474 8016676a6666635a86cb17ed8da4261f ""
+  "src/images/depth3_clean.jpg" 1783490443.63501 33397 f2719fdf253a21853905372a64787a2a ""
+  "src/images/depth3_rain.jpg" 1783490422.18175 133128 35d2c49654cfaec23a6ebdc86102017f ""
   "src/images/did-MDN.jpg" 1783212126.70963 118581 6f8f22cb3c0df11f39eedef5708f78cb ""
   "src/images/distortionA.png" 1783212450.26884 449785 0b7ffe584abaa186ec39ccf659ccd3ba ""
   "src/images/distortionB.png" 1783212450.5605 427117 8d5179481c5ad4f79ffa0f0382f08732 ""
@@ -162,6 +169,10 @@
   "src/images/paired_unpaired2.png" 1782805075.92541 812680 30ae9f2010bc64167a6bbd249eafa8a2 ""
   "src/images/rain100H.png" 1783212126.74474 370658 66676554a07c31b8ab89f565bf96caed ""
   "src/images/rain800.jpg" 1783212126.74748 93382 531dcb13a96f9d3a235fb2fbe602a9ee ""
+  "src/images/rainGAN1_clean.jpg" 1783310195.53396 49796 b8ba3b98af9f772bd2b63d12cfd5b3bc ""
+  "src/images/rainGAN1_gan.jpg" 1783310118.5911 157139 9fae7bb45f59bc499e80809661ddea4e ""
+  "src/images/rainGAN2_clean.jpg" 1783310218.39666 46489 9f6665cd93d1c329af6097e9e7136d16 ""
+  "src/images/rainGAN2_gan.jpg" 1783310208.61237 135492 11cce236313e916ec3fc563e52e65766 ""
   (generated)
   "paper.aux"
   "paper.bcf"

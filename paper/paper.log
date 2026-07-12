@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  4 JUL 2026 19:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  11 JUL 2026 21:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -558,7 +558,11 @@ Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 39.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-) (./paper.aux)
+) (./paper.aux
+
+LaTeX Warning: Label `fig:six-subfigures' multiply defined.
+
+)
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
@@ -779,103 +783,161 @@ Package pdftex.def Info: src/images/did-MDN.jpg  used on input line 320.
 [3 <./src/images/rain100H.png (PNG copy)> <./src/images/rain800.jpg> <./src/images/did-MDN.jpg>]
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 431--438
-\OT1/ptm/m/n/10 (+20) ACDC in-cludes fog, night-time, rain, and snow with
- []
-
-
-Underfull \hbox (badness 1910) in paragraph at lines 431--438
-\OT1/ptm/m/n/10 (+20) dense driving-scene an-no-ta-tions and normal-condition
+Underfull \hbox (badness 2717) in paragraph at lines 431--438
+[]\OT1/ptm/m/n/10 (+20) Weather-specific datasets match the project more
  []
 
 <src/images/bdd100k_clear.jpg, id=134, 1284.8pt x 722.7pt>
 File: src/images/bdd100k_clear.jpg Graphic file (type jpg)
 <use src/images/bdd100k_clear.jpg>
-Package pdftex.def Info: src/images/bdd100k_clear.jpg  used on input line 453.
+Package pdftex.def Info: src/images/bdd100k_clear.jpg  used on input line 452.
 (pdftex.def)             Requested size: 75.88524pt x 42.67642pt.
 <src/images/bdd100k_rainy.jpg, id=135, 1284.8pt x 722.7pt>
 File: src/images/bdd100k_rainy.jpg Graphic file (type jpg)
 <use src/images/bdd100k_rainy.jpg>
-Package pdftex.def Info: src/images/bdd100k_rainy.jpg  used on input line 460.
+Package pdftex.def Info: src/images/bdd100k_rainy.jpg  used on input line 459.
 (pdftex.def)             Requested size: 75.88524pt x 42.67642pt.
 <src/images/bdd100k_foggy.jpg, id=136, 1284.8pt x 722.7pt>
 File: src/images/bdd100k_foggy.jpg Graphic file (type jpg)
 <use src/images/bdd100k_foggy.jpg>
-Package pdftex.def Info: src/images/bdd100k_foggy.jpg  used on input line 467.
+Package pdftex.def Info: src/images/bdd100k_foggy.jpg  used on input line 466.
 (pdftex.def)             Requested size: 75.88524pt x 42.67642pt.
 
 
 [4]
-Overfull \hbox (7.5186pt too wide) in paragraph at lines 477--477
+
+
+
+[5 <./src/images/bdd100k_clear.jpg> <./src/images/bdd100k_rainy.jpg> <./src/images/bdd100k_foggy.jpg>]
+
+<src/images/depth1_clear.jpg, id=168, 1284.8pt x 722.7pt>
+File: src/images/depth1_clear.jpg Graphic file (type jpg)
+<use src/images/depth1_clear.jpg>
+Package pdftex.def Info: src/images/depth1_clear.jpg  used on input line 639.
+(pdftex.def)             Requested size: 113.82423pt x 64.02565pt.
+<src/images/depth1_rain.jpg, id=169, 1284.8pt x 722.7pt>
+File: src/images/depth1_rain.jpg Graphic file (type jpg)
+<use src/images/depth1_rain.jpg>
+Package pdftex.def Info: src/images/depth1_rain.jpg  used on input line 644.
+(pdftex.def)             Requested size: 113.82423pt x 64.02565pt.
+<src/images/depth2_clear.jpg, id=170, 1284.8pt x 722.7pt>
+File: src/images/depth2_clear.jpg Graphic file (type jpg)
+<use src/images/depth2_clear.jpg>
+Package pdftex.def Info: src/images/depth2_clear.jpg  used on input line 651.
+(pdftex.def)             Requested size: 113.82423pt x 64.02565pt.
+<src/images/depth2_rain.jpg, id=171, 1284.8pt x 722.7pt>
+File: src/images/depth2_rain.jpg Graphic file (type jpg)
+<use src/images/depth2_rain.jpg>
+Package pdftex.def Info: src/images/depth2_rain.jpg  used on input line 656.
+(pdftex.def)             Requested size: 113.82423pt x 64.02565pt.
+<src/images/depth3_clean.jpg, id=172, 1284.8pt x 722.7pt>
+File: src/images/depth3_clean.jpg Graphic file (type jpg)
+<use src/images/depth3_clean.jpg>
+Package pdftex.def Info: src/images/depth3_clean.jpg  used on input line 663.
+(pdftex.def)             Requested size: 113.82423pt x 64.02565pt.
+<src/images/depth3_rain.jpg, id=173, 1284.8pt x 722.7pt>
+File: src/images/depth3_rain.jpg Graphic file (type jpg)
+<use src/images/depth3_rain.jpg>
+Package pdftex.def Info: src/images/depth3_rain.jpg  used on input line 668.
+(pdftex.def)             Requested size: 113.82423pt x 64.02565pt.
+
+
+[6]
+<src/images/rainGAN1_clean.jpg, id=181, 1284.8pt x 722.7pt>
+File: src/images/rainGAN1_clean.jpg Graphic file (type jpg)
+<use src/images/rainGAN1_clean.jpg>
+Package pdftex.def Info: src/images/rainGAN1_clean.jpg  used on input line 705.
+(pdftex.def)             Requested size: 113.82423pt x 64.02565pt.
+<src/images/rainGAN1_gan.jpg, id=182, 1284.8pt x 722.7pt>
+File: src/images/rainGAN1_gan.jpg Graphic file (type jpg)
+<use src/images/rainGAN1_gan.jpg>
+Package pdftex.def Info: src/images/rainGAN1_gan.jpg  used on input line 710.
+(pdftex.def)             Requested size: 113.82423pt x 64.02565pt.
+<src/images/rainGAN2_clean.jpg, id=183, 1284.8pt x 722.7pt>
+File: src/images/rainGAN2_clean.jpg Graphic file (type jpg)
+<use src/images/rainGAN2_clean.jpg>
+Package pdftex.def Info: src/images/rainGAN2_clean.jpg  used on input line 717.
+(pdftex.def)             Requested size: 113.82423pt x 64.02565pt.
+<src/images/rainGAN2_gan.jpg, id=184, 1284.8pt x 722.7pt>
+File: src/images/rainGAN2_gan.jpg Graphic file (type jpg)
+<use src/images/rainGAN2_gan.jpg>
+Package pdftex.def Info: src/images/rainGAN2_gan.jpg  used on input line 722.
+(pdftex.def)             Requested size: 113.82423pt x 64.02565pt.
+
+
+
+
+[7 <./src/images/depth1_clear.jpg> <./src/images/depth1_rain.jpg> <./src/images/depth2_clear.jpg> <./src/images/depth2_rain.jpg> <./src/images/depth3_clean.jpg> <./src/images/depth3_rain.jpg> <./src/images/rainGAN1_clean.jpg> <./src/images/rainGAN1_gan.jpg> <./src/images/rainGAN2_clean.jpg> <./src/images/rainGAN2_gan.jpg>]
+Overfull \hbox (7.5186pt too wide) in paragraph at lines 768--768
 \OT1/ptm/m/it/10 (-20) put-ing Sur-veys\OT1/ptm/m/n/10 (-20) . https://dl.acm.org/doi/10.1145/3773023.
  []
 
 
-Overfull \hbox (25.7007pt too wide) in paragraph at lines 477--477
+Overfull \hbox (25.7007pt too wide) in paragraph at lines 768--768
 \OT1/ptm/m/it/10 (-20) Com-put-ing Sur-veys\OT1/ptm/m/n/10 (-20) . https://dl.acm.org/doi/10.1145/3578516.
  []
 
 
-Overfull \hbox (58.79308pt too wide) in paragraph at lines 477--477
+Overfull \hbox (58.79308pt too wide) in paragraph at lines 768--768
 \OT1/ptm/m/it/10 (-20) man-tic Driv-ing Scene Per-cep-tion\OT1/ptm/m/n/10 (-20) . https://arxiv.org/abs/2104.13395v5.
  []
 
 
-Overfull \hbox (71.96346pt too wide) in paragraph at lines 477--477
+Overfull \hbox (71.96346pt too wide) in paragraph at lines 768--768
 []\OT1/ptm/m/it/10 (-20) Explore Ul-tr-a-lyt-ics YOLOv8\OT1/ptm/m/n/10 (-20) . https://docs.ultralytics.com/models/yolov8.
  []
 
 
 
 
-Overfull \hbox (1.21202pt too wide) in paragraph at lines 477--477
+Overfull \hbox (1.21202pt too wide) in paragraph at lines 768--768
 \OT1/ptm/m/n/10 (-20) ``Im-age Dis-tor-tion De-tec-tion Us-ing Con-vo-lu-tional Neu-
  []
 
 
-Underfull \hbox (badness 2096) in paragraph at lines 477--477
+Underfull \hbox (badness 2096) in paragraph at lines 768--768
 \OT1/ptm/m/it/10 (+20) for Im-prov-ing Ro-bust-ness to Rain\OT1/ptm/m/n/10 (+20) . Aug. 2019.
  []
 
 
 
-[5 <./src/images/bdd100k_clear.jpg> <./src/images/bdd100k_rainy.jpg> <./src/images/bdd100k_foggy.jpg>]
-Overfull \hbox (67.6658pt too wide) in paragraph at lines 477--477
+[8]
+Overfull \hbox (67.6658pt too wide) in paragraph at lines 768--768
 []\OT1/ptm/m/n/10 (-20) Lihe Yang et al. \OT1/ptm/m/it/10 (-20) Depth Any-thing V2\OT1/ptm/m/n/10 (-20) . https://arxiv.org/abs/2406.09414v2.
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 477--477
+Underfull \hbox (badness 1014) in paragraph at lines 768--768
 []\OT1/ptm/m/n/10 (+20) Fisher Yu et al. \OT1/ptm/m/it/10 (+20) BDD100K: A Di-verse Driv-ing
  []
 
 
-Underfull \hbox (badness 3354) in paragraph at lines 477--477
+Underfull \hbox (badness 3354) in paragraph at lines 768--768
 \OT1/ptm/m/it/10 (+20) Dataset for Het-ero-ge-neous Mul-ti-task Learn-ing\OT1/ptm/m/n/10 (+20) .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 477--477
+Underfull \hbox (badness 10000) in paragraph at lines 768--768
 \OT1/ptm/m/n/10 (+20) https://arxiv.org/abs/1805.04687v2. May 2018.
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 477--477
+Underfull \hbox (badness 1389) in paragraph at lines 768--768
 []\OT1/ptm/m/n/10 (+20) Md. Imtiyaz An-war and Arun Khosla. ``Vi-sion
  []
 
 
-Underfull \hbox (badness 1122) in paragraph at lines 477--477
+Underfull \hbox (badness 1122) in paragraph at lines 768--768
 \OT1/ptm/m/it/10 (+20) Data Ef-fi-ciency Study of Syn-thetic Fog for Ob-
  []
 
 
-Underfull \hbox (badness 5388) in paragraph at lines 477--477
+Underfull \hbox (badness 5388) in paragraph at lines 768--768
 \OT1/ptm/m/it/10 (+20) ject De-tec-tion Us-ing the Clear2Fog Pipeline\OT1/ptm/m/n/10 (+20) .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 477--477
+Underfull \hbox (badness 10000) in paragraph at lines 768--768
 \OT1/ptm/m/n/10 (+20) https://arxiv.org/abs/2605.12608v1. May 2026.
  []
 
@@ -883,30 +945,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 477--477
 
 
 
-[6
+[9
 
 ] (./paper.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'paper.run.xml'.
 \openout1 = `paper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21706 strings out of 473190
- 383345 string characters out of 5715801
- 1234253 words of memory out of 5000000
- 44431 multiletter control sequences out of 15000+600000
- 593304 words of font info for 241 fonts, out of 8000000 for 9000
+ 21808 strings out of 473190
+ 386122 string characters out of 5715801
+ 1234569 words of memory out of 5000000
+ 44506 multiletter control sequences out of 15000+600000
+ 595344 words of font info for 250 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,9n,81p,2106b,1530s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (6 pages, 7853907 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (9 pages, 8859688 bytes).
 PDF statistics:
- 274 PDF objects out of 1000 (max. 8388607)
- 208 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
- 47697 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 319 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 51843 words of extra memory for PDF output out of 61914 (max. 10000000)
 

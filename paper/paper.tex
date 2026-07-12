@@ -49,8 +49,8 @@ Pioneer Research Institute\\
 \end{@twocolumnfalse}
 ]
 \section{Introduction}
-Images used in computer vision are often distored. Distortion in computer vision refers to any signal that produces visual deviation in image/video 
-from its original expectation. When the original iamge/video is unavailable, an observed visual comfort or simply annoying effect
+Images used in computer vision are often distorted. Distortion in computer vision refers to any signal that produces visual deviation in image/video 
+from its original expectation. When the original image/video is unavailable, an observed visual comfort or simply annoying effect
 on the aesthetic visual appearance is also considered as a distortion~\cite{muhammadaliqureshiDistortionClassificationComputer}. These distortions could be
 sorted as In-Capture Distortion, including blur, noise, uneven illumination, color shifts, haze,
 rain, snow, and other visibility changes; and Post-Capture Distortion, such as transmission,
@@ -145,7 +145,7 @@ understanding~\cite{muhammadaliqureshiDistortionClassificationComputer}. Therefo
 detection and removal are a possible preprocessing step for high-level tasks to decrease the
 impact on performance.
 
-For machine learning, distortion is not only an image-quality issue but also is affected by dataset and
+For machine learning, distortion is not only an image-quality issue but is also affected by dataset and
 training. Models usually learn from the distribution of inputs they are given, so a model
 trained only on clean images may have poor generalizability when working on the same object
 appearing under poor visibility, weather effects, or degraded contrast. Distortion-specified
@@ -159,7 +159,7 @@ across weather type, severity, scene category, and annotation quality. Many benc
 also include distortions as broad corruptions rather than as physically meaningful,
 scene-dependent effects. This limits how well they can support controlled robustness studies or
 targeted training strategies. The need for environment-aware image formation is also visible in
-underwater computer vision, where more complicated distortions present due to an uneven
+underwater computer vision, where more complicated distortions are present due to an uneven
 refractive index of water, such as attenuation, scattering, color-shifting, halo effect,
 etc.~\cite{SurveyUnderwaterComputer}.
 
@@ -201,9 +201,9 @@ loss and maximize the discriminator loss. The loss function of GAN is given belo
 
 Traditional GANs use paired training data, which consists of training examples $\{x_i, y_i\}_{i=1}^N$, where 
 $x_i$ is the input and $y_i$ is the corresponding output. GAN is useful for image-to-image translation tasks, such as photo 
-reconstruction from edge maps, colorization, photo synthesis fromlabel maps, etc\cite{isolaImagetoImageTranslationConditional2018}. 
-However, in many cases, paired training data is not available. In the context of our work, it is difficult to collect paried
-training data of clear images and corresponding rainy or foggy images at same places. Existing datasets, such as BDD100K, cityscapes,
+reconstruction from edge maps, colorization, photo synthesis from label maps, etc\cite{isolaImagetoImageTranslationConditional2018}. 
+However, in many cases, paired training data is not available. In the context of our work, it is difficult to collect paired
+training data of clear images and corresponding rainy or foggy images at the same places. Existing datasets, such as BDD100K, cityscapes,
 or ACDC, are all unpaired datasets\cite{wolfeBDD100KLargescaleDiverse,cordtsCityscapesDatasetSemantic2016,sakaridisACDCAdverseConditions2021}.
 Figure~\ref{fig:paired-unpaired} illustrates the difference between paired and unpaired training data. 
 
@@ -231,11 +231,11 @@ The cycle-consistency loss is given below, defined by Zhu et al\cite{zhuUnpaired
 \end{equation}
 
 The objective of Cycle-GAN is to minimize the adversarial loss, maximize the discriminator loss, and minimize
-the cycle-consistency loss. The key idea for Cycle-GAN is that if an image is transformed from doamin $X$ to domain $Y$ by G, and then it is transformed back to domain $X$ by F, 
+the cycle-consistency loss. The key idea for Cycle-GAN is that if an image is transformed from domain $X$ to domain $Y$ by G, and then it is transformed back to domain $X$ by F, 
 the resulting image should be similar to the original image. This cycle-consistency allows the model to not only produces an image that looks like it belongs to the target domain,
 but also preserves the content, or the structure of the original image\cite{zhuUnpairedImagetoImageTranslation2020}.
 
-In weather augmentation, cycle-GAN is useful because it generates realistic rainy or foggy images from clear images while it preserves the scene structures and it does not require paired training data. 
+In weather augmentation, cycle-GAN is useful because it generates realistic rainy or foggy images from clear images while it preserves the scene structures, and it does not require paired training data. 
 However, a limitation of Cycle-GAN, as well as other GANs, is that it is not controllable. It is impossible to control how much wetness, rain, or fog is generated,
 and it is impossible to control the depth-dependent effects of rain and fog\cite{zhuUnpairedImagetoImageTranslation2020,tremblayRainRenderingEvaluating2021}. Therefore, our work uses Cycle-GAN to generate rainy and foggy images, but it also uses
 a physics-based, depth-aware renderer to generate rain with controllable appearance.
@@ -275,9 +275,9 @@ Datasets}
 Current distortion datasets give labels and severity levels, but many examples come from
 synthetic, single-type, quality-assessment settings. LIVE, TID2008, TID2013, CSIQ, Waterloo,
 KADID-10K, LIVEMD, and MDID help keep a controlled evaluation. However, they do not contain
-natural weather withprecise physical labels. Rain, haze, fog, and snow depend on lighting, exposure, particle
+natural weather with precise physical labels. Rain, haze, fog, and snow depend on lighting, exposure, particle
 density, scene depth, and occlusion. There is a lack of labeled, controlled multi-distortion
-datasets. Consequently, classification and localization of multiple distortions remains
+datasets. Consequently, classification and localization of multiple distortions remain
 challenging due to lack of labeled, controlled
 datasets~\cite{muhammadaliqureshiDistortionClassificationComputer,
 tremblayRainRenderingEvaluating2021}. Our work adds controlled, artificial distortions, which
@@ -296,7 +296,7 @@ behind buildings~\cite{tremblayRainRenderingEvaluating2021}.
 Though, this framework supported rain detection, removal, rendering, and camera-based rain
 measurement~\cite{gargVisionRain2007}.
 
-Below examplifies three traditional rain rendering methods: rain100H, rain800, and did-MDN~\cite{tremblayRainRenderingEvaluating2021}.
+Below exemplifies three traditional rain rendering methods: rain100H, rain800, and did-MDN~\cite{tremblayRainRenderingEvaluating2021}.
 
 \begin{figure}[H]
     \centering
@@ -377,7 +377,7 @@ and foggy visual effects.
 \subsection{Fog Rendering}
 
 Fog rendering often follows the atmospheric image formation model. Scene radiance attenuates
-with distance, while airlight grows along the camera's ray. Sakaridis, Dai, and Van Gool applies
+with distance, while airlight grows along the camera's ray. Sakaridis, Dai, and Van Gool apply
 this model to clear Cityscapes images and produce Foggy Cityscapes. Depth makes fog stronger
 for far regions rather than uniform across the image. Training with synthetic fog improves
 semantic foggy scene understanding, but results depend on depth quality, density choices, and
@@ -428,7 +428,7 @@ resources help robustness framing. They do not model depth-aware rain, haze, or 
 \cite{muhammadaliqureshiDistortionClassificationComputer}.
 
 
-eather-specific datasets match the project more closely. ACDC includes fog, nighttime, rain,
+Weather-specific datasets match the project more closely. ACDC includes fog, nighttime, rain,
 and snow with dense driving-scene annotations and normal-condition correspondences for many
 scenes. Foggy Cityscapes and rain-augmented KITTI, Cityscapes, and nuScenes preserve existing
 labels while adding synthetic weather. The limitation of these datasets is the lack of
@@ -444,8 +444,7 @@ driving-focused. The dataset contains 100,000 driving videos and supports detect
 segmentation, lane marking, drivable area, and related driving labels. BDD100K also includes
 geographic, environmental, and weather variation. The limitation is missing paired
 clean/adverse views and controlled severity labels. A depth-aware rain and haze renderer would
-turn BDD100K into a controlled robustness testbed while keeping real driving diversity.
-\cite{yuBDD100KDiverseDriving2018}.
+turn BDD100K into a controlled robustness testbed while keeping real driving diversity \cite{yuBDD100KDiverseDriving2018}.
 
 \begin{figure}
   \begin{subfigure}{0.32\linewidth}
@@ -471,6 +470,298 @@ turn BDD100K into a controlled robustness testbed while keeping real driving div
   \caption{Examples of clear, rainy, and foggy images from BDD100K~\cite{yuBDD100KDiverseDriving2018}}
   \label{fig:bdd100k}
 \end{figure}
+
+\section{Methodology}
+
+Data augmentation is a strategy for improving computer vision models by artificially 
+increasing the diversity of training images through transformations such as cropping, 
+rotating, flipping and adding noise. These methods are especially useful when access to 
+labeled image data is limited, because they expose a model to variations it may encounter
+in real-world visual tasks. In computer vision, data augmentation helps image classifiers
+learn features that are less dependent on a single viewpoint, orientation, or image style, 
+reducing overfitting and improving generalization \cite{perezEffectivenessDataAugmentation2017}. 
+
+Data augmentation is the primary method to increase a dataset's size and variety. 
+In the context of this paper, it refers to adding rain and fog to images. As discussed 
+in previous sections, collecting data with various natural distortions for an outdoor 
+dataset is challenging. Therefore, using data augmentation to render natural distortions 
+improves the performance of deep learning models. Our work focuses on rain and fog 
+distortions in outdoor RGB images.
+
+\subsection{Rain Rendering}
+
+Rain appears as dynamic-looking particles and brings a rainy effect to the image. Inspired by 
+Tremblay et al \cite{tremblayRainRenderingEvaluating2021}, our rain rendering method uses a physics-based rain 
+rendering method that simulates raindrops and a Cycle-GAN model that creates rainy effects. 
+
+\subsubsection{Physics-based Rendering (PRB)}
+To generate synthetic raindrop appearance, the physics-based rain rendering (PBR) method combines
+image-rspace rain streak synthesis, atmospheric scattering and linear-light compositing, based on the
+monocular depth map produced by Depth Anything V2\cite{yangDepthAnythingV22024}. The objective of this
+renderer is to produce controllable raindrops while being consistent with scene geometry and depth.
+
+Given an input RGB/BGR image $I$ and an estimated depth map $D$, the raw depth values are first normalized into a relative distance map:
+\begin{equation}
+\begin{aligned}
+D_n = \frac{\operatorname{clip}(D, p_1, p_{99})-min(D)}{max(D)-min_(D) + \epsilon}
+\end{aligned}
+\end{equation}
+where $p_1$ and $p_{99}$ are the 1st and 99th percentiles of the depth values used to exclude extreme values, and $\epsilon$ is a small constant to avoid division by zero. 
+The normalized scene distance is then defined as $d(x,y) = 1 - D_{n}(x,y)$, where a $d(x,y)=0$ represents foreground regions close to the camera and
+$d(x,y)=1$ represents distant scene regions.
+
+The renderer models rain as layered rain streaks. Four rain-depth layers are used: near, mid, far, and background.
+Each layer $l$ has a fixed normalized depth $z_l$, a streak count $N_l$, streak length $L_l$, streak width $W_l$, base opacity $\alpha_l$, 
+defocus blur, and angular jitter. For an image of height H, width W, minimum dimension $m = min(H, W)$, 
+area scale $A=HW/1000$, and rain severity s. The layer parameters are defined as functions of severity. For example, 
+the near layer uses:
+\[
+\begin{aligned}
+N_{near}&=A(0.025+0.13s) \\
+L_{near}&=m(0.025+0.080s) \\
+W_{near}&=1.75+2.20s \\
+\alpha_{near}&=0.020+0.055s
+\end{aligned}
+\]
+
+The mid, far, and background layers follow the same structure, with progressively smaller streak widths and lengths but larger particle counts.
+This models the physical appearance of raindrops, which appear to be smaller and more numerous as they are positioned further from an observer. 
+Nearby raindrops appear longer, thicker and more defocused, while distant raindrops appear denser and smaller.
+
+Depth is used to determine whether rain in a given layer should be visible at each pixel. A rain layer is only visible when it lies in front of the visible
+scene surface. Raindrops from a given layer do not suddenly appear or dissapper; rather, they fade in or out when their depth $d(x,y)$ is at a depth-edge, where it is 
+close to a layer's fixed normalized depth $z_l$. The visibility is computed using a smooth transition function:
+
+\begin{equation}
+\begin{aligned}
+V_l(x,y)=smoothstep(-\delta, \delta, d(x,y)-z_l)
+\end{aligned}
+\end{equation}
+
+where $\delta_l$ is the layer softness parameter that controls how rapidly the raindrops fade in or out. A smaller $\delta_l$ means 
+a sharper transition, while a larger $\delta_l$ means a smoother transition. The near layer has the smallest $\delta_l$, while the background layer has the largest
+$\delta_l$. The smoothstep function is:
+
+\[
+\begin{aligned}
+smoothstep(a, b, x) = t^2(3-2t) \\
+t = \operatorname{clip}(\frac{x-a}{b-a+\epsilon}, 0, 1)
+\end{aligned}
+\]
+
+This prevenst distant rain from being visible in front of foreground objects. The smoothstep function and visibility
+function prevents discontinuities in the rain appearance at a depth-edge. It also prevents halo spaces around object boundaries.
+
+Individual rain streaks are generated using an anisotropic motion kernal, which is a kernal that blurs
+differently in different directions, rather than hard lines. For a streak angle $\theta$, each kernal pixel is projected into coordinates along and across the
+rain direction:
+\[
+\begin{aligned}
+u=x\,cos\theta + y\,sin\theta \\
+v = -x\,sin\theta + y\,cos\theta
+\end{aligned}
+\]
+where $u$ is distance along the rain streak and $v$ is distance across the rain streak.
+
+The streak intensity (how strong each pixel of a rain streak is inside the filter) is tapered along its length
+and Gaussian blurred along its width:
+\begin{equation}
+\begin{aligned}
+K(u,v)=\left[\max\left(0,1-\frac{|u|}{L/2}\right)\right]^p \cdot \exp\left(-\frac{1}{2}\left(\frac{v}{\sigma_w}\right)^2\right)
+\end{aligned}
+\end{equation}
+where $p=1.45$ controls tapering and:
+\[
+\sigma_w = max(0.35, 0.55W_l)
+\]
+
+The kernel is normalized, so its peak value is one. By applying this kernel on point-like rain particle, it creates
+motional rain streaks that resembles real rain's photometry rather than opaque white streaks.
+
+For each sampled rain streak, the opacity $\alpha_i$ is defined by a log-nromal distribution and the layer opacity:
+\[
+\alpha_i = \operatorname{clip}(\alpha_l \cdot LogNormal(0, 0.22), 0.001, 0.18)
+\]
+
+The brightness level $Y$ of a streak is made dependent on the local scene brightness. The local scene brightness is obtained from
+converting the image to linear light:
+\[
+Y=0.0722B+0.7152G+0.2126R
+\]
+
+The rain streak contrast factor controls how visible a rain streak should be depending on local brightness.
+It is stronger over dark regions and weaker over bright regions:
+\[
+C=0.34+1.05(1-Y)^{0.72}
+\]
+
+The pixel intensity delta for a rain streak is its change in brightness compared to the scene brightness $Y$:
+\[
+\Delta_i=\epsilon_l C-\eta_l Y^{1.15}+\mathcal{N}(0,4+5\alpha_l)
+\]
+where $\epsilon_l$ is the layer highlight strength constant and $\eta_l$ is a shadow suppression constant. Delta is then
+clipped to a range $\operatorname{clip}(\Delta_i, -16, 135)$.
+
+The renderer then accumulates rain as an optical thickness map. Each raindrop's pixel intensity $\Delta_i$, convolved with the motion kernel, is added to the map. 
+The optical thickness map is denoted as $\tau(x,y)$. Then, the renderer generates an opacity-weighted brightness map as:
+\[
+\tau\Delta(x,y)=\sum_{l}\tau(x,y)\Delta_i
+\]
+
+The final rain alpha is defined as:
+\[
+\alpha_{rain} = \operatorname{clip}(1-e^{-\operatorname{clip(\tau,0,3.5)}},0,0.62)
+\]
+
+The final rain color delta map $\Delta_{rain}$ is the opacity-weighted average and clipped within the plausible range $(-18, 145)$.
+
+A light mist layer is applied before compositing the streaks, based on the depth map. The mist intensity depends on layer, where a more distant layer has a higher intensity,
+a smoothstep function is applied, preventing abrupt change in mist appearance between across layers. The mist map is denoted as $I_{mist}$, and it is then added with the slightly tinted 
+rain delta map $\Delta_{rain}$ to produce a weather augmentation mask, $I_{target}$.
+
+The output image is then:
+\begin{equation}
+\begin{aligned}
+I_{out} = I_{mist}(1-\alpha_{rain})+I_{target} \alpha_{rain}
+\end{aligned}
+\end{equation}
+
+Overall, the renderer combines depth estimation with physics-based optical accumulation. The depth-based layer visibility prevents rain from incorrectly appearing over foreground objects.
+the optical thickness map $\tau$ blends the opacities of rain streaks that are co-linear in a line from the observer, 
+rather than overlaying rain streaks directly onto the input image, causing a local-unrealistic exposure. The brightness-aware streaks ensure the brightness to be adjustable 
+depending on the background and depth. 
+
+\begin{figure}[H]
+    \centering
+
+    \begin{subfigure}[t]{0.48\columnwidth}
+        \centering
+        \includegraphics[width=\linewidth]{src/images/depth1_clear.jpg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\columnwidth}
+        \centering
+        \includegraphics[width=\linewidth]{src/images/depth1_rain.jpg}
+    \end{subfigure}
+
+    \vspace{1mm}
+
+    \begin{subfigure}[t]{0.48\columnwidth}
+        \centering
+        \includegraphics[width=\linewidth]{src/images/depth2_clear.jpg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\columnwidth}
+        \centering
+        \includegraphics[width=\linewidth]{src/images/depth2_rain.jpg}
+    \end{subfigure}
+
+    \vspace{1mm}
+
+    \begin{subfigure}[t]{0.48\columnwidth}
+        \centering
+        \includegraphics[width=\linewidth]{src/images/depth3_clean.jpg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\columnwidth}
+        \centering
+        \includegraphics[width=\linewidth]{src/images/depth3_rain.jpg}
+    \end{subfigure}
+
+    \vspace{1mm}
+
+    \makebox[0.48\columnwidth][c]{\small Clear weather input}
+    \hfill
+    \makebox[0.48\columnwidth][c]{\small Depth-aware rain augmented output}
+
+    \caption{Images in the left column are the clear-weather-labeled inputs from the BDD100K dataset.
+    Images in the right column are the corresponding depth-aware rain augmented output, severity parameter being set as "medium".}
+    \label{fig:six-subfigures}
+\end{figure}
+
+\subsubsection{Rain Cycle-GAN}
+
+While the physics-based renderer simulates raindrops and fine mist, it lacks rainy characteristics 
+such as wetness, reflections, sky and lighting. Scenes generated from the physics-based render 
+may have realistic raindrops and mist, but they lack an overall rainy look. These characteristics 
+are hard to generate through a controlled method, whereas Cycle-GAN can handle image-to-image translation 
+tasks.
+
+The dataset used for training is BDD100K. It contains seven labels: “clear”, “overcast”, “undefined”, 
+“snowy”, “rainy”, “partly cloudy” and “foggy”. The corresponding numbers of images in train split are 
+37344, 8700, 8119, 5549, 5070, 5881, 130, respectively; the corresponding numbers of images in validation 
+split are 5346, 1239, 1157, 769, 738, 738, 13, respectively. Labels “clear” and “rainy” are used for 
+training, which refer to clear weather and rainy weather, respectively. 
+
+For unpaired Cycle-GAN training, the training process loads 3000 clear images and 3000 rainy
+images. Training images are loaded as 512*512, then they are randomly cropped at 384*384. The model 
+is optimized with 10 epochs and 10 decaying epochs, a learning rate of 0.0001 and a batch size of 1. 
+
+\begin{figure}[H]
+    \centering
+
+    \begin{subfigure}[t]{0.48\columnwidth}
+        \centering
+        \includegraphics[width=\linewidth]{src/images/rainGAN1_clean.jpg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\columnwidth}
+        \centering
+        \includegraphics[width=\linewidth]{src/images/rainGAN1_gan.jpg}
+    \end{subfigure}
+
+    \vspace{1mm}
+
+    \begin{subfigure}[t]{0.48\columnwidth}
+        \centering
+        \includegraphics[width=\linewidth]{src/images/rainGAN2_clean.jpg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\columnwidth}
+        \centering
+        \includegraphics[width=\linewidth]{src/images/rainGAN2_gan.jpg}
+    \end{subfigure}
+
+    \vspace{1mm}
+
+    \makebox[0.48\columnwidth][c]{\small Clear weather input}
+    \hfill
+    \makebox[0.48\columnwidth][c]{\small GAN augmented output}
+
+    \caption{Images in the left column are the clear-weather-labeled inputs from the BDD100K dataset.
+    Images in the right column are the corresponding Rain Cycle-GAN augmented output.}
+    \label{fig:six-subfigures}
+\end{figure}
+
+The generated images have more foggy and desaturated skies and wet effects on the ground in common. However, some 
+of them have random white noise. This issue is common when the size of training images is too small, 
+or the size of the train split is small. It could be fixed by increasing image resolution or using a 
+bigger training dataset.
+
+A large portion of the rainy images in BDD100K appear to have been captured after rainfall rather than during active rain. 
+This may explain why the differences between the GAN-generated outputs and the input images are subtle and not always noticeable to the naked eye.
+
+\subsubsection{Framework Combining PBR and Rain Cycle-GAN}
+
+The final rain augmentation framework combines the Rain Cycle-GAN model and the depth-aware physics-based renderer into a hybrid pipeline.
+The purpose is to use the strengths of both methods. Rain Cycle-GAN generates the overall rainy appearance, while the physics-based rain renderer adds controllable
+rainfall, including rain streaks, fine mist, and depth-aware visibility.
+
+The pipeline starts with a clear-weather image from BDD100K. First, the image is passed through the trained Rain Cycle-GAN generator to produce a rainy-looking output of the same scene.
+The output preserves structures such as road layout, vehicles, buildings, etc; it shifts the image toward the rainy domain. 
+Depth Anything V2 also estimates a monocular depth map from the input image, which is used by the PBR renderer.
+
+After the Cycle-GAN translation, the PBR renderer composites rain onto the GAN-generated image. The severity parameter controls the
+number and appearance of rain streaks. Near rain layers contain larger and more visible streaks, while far layers contain smaller and denser streaks.
+The depth map prevents inconsistent results, such as distant rain appearing in front of nearby cars or buildings.
+
+The order is important. If the physics-based rain is added before Cycle-GAN, the generator may weaken or distort the synthetic rain streaks.
+By applying PBR after Cycle-GAN, the result may consistently keep the global rainy style while adding controllable rain.
+
+Compared with Cycle-GAN alone, the hybrid framework provides direct control over rain intensity and depth placement. Compared with PBR alone, 
+it produces a more complete rainy scene because it includes wetness and lighting changes. Therefore, the combined PBR and Rain Cycle-GAN framework
+assembles real rainy images better than PBR or GAN alone, and it can produce controlled rainy training data with a smaller visual gap between synthetic rain and real rainy scenes.
+
 
 
 \nocite{*}
