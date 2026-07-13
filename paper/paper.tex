@@ -2,11 +2,10 @@
 
 \usepackage[
   letterpaper,
-  left=0.8125in,
-  right=0.8125in,
+  left=1in,
+  right=1in,
   top=1in,
-  bottom=1.125in,
-  columnsep=0.3125in
+  bottom=1in
 ]{geometry}
 \usepackage{times}
 \usepackage{graphicx}
@@ -16,14 +15,60 @@
 \usepackage{booktabs}
 \usepackage{microtype}
 \usepackage{xurl}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage{setspace}
 \usepackage{subcaption}
 \usepackage[section]{placeins}
-\usepackage[breaklinks=true,bookmarks=false]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[breaklinks=true,bookmarks=false,hidelinks]{hyperref}
 
-\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+\usepackage[backend=biber,style=apa,sorting=nyt,sortcites=true]{biblatex}
 \addbibresource{ComputerVision.bib}
+\RenewDocumentCommand{\cite}{O{} O{} m}{\unskip~\parencite[#1][#2]{#3}}
 
-\pagestyle{empty}
+\captionsetup[figure]{
+  font=small,
+  labelfont=bf,
+  textfont=it,
+  labelsep=newline,
+  justification=centering,
+  singlelinecheck=false,
+  skip=6pt
+}
+\captionsetup[subfigure]{
+  font=small,
+  labelfont=bf,
+  justification=centering,
+  singlelinecheck=false,
+  skip=2pt
+}
+\setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
+\setlength{\floatsep}{10pt plus 2pt minus 2pt}
+\setlength{\intextsep}{10pt plus 2pt minus 2pt}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.65}
+\renewcommand{\textfraction}{0.10}
+\renewcommand{\floatpagefraction}{0.75}
+
+\setlength{\bibhang}{0.5in}
+\setlength{\bibitemsep}{0pt}
+\defbibheading{bibliography}[\bibname]{%
+  \begin{center}
+    \normalfont\bfseries #1
+  \end{center}%
+}
+
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[R]{\thepage}%
+  \renewcommand{\headrulewidth}{0pt}%
+}
 \setlength{\emergencystretch}{2em}
 
 \title{A Depth-Aware, Physics-Based Data Augmentation Framework for Simulating Rain and Fog
@@ -38,23 +83,30 @@ Pioneer Research Institute\\
 
 \begin{document}
 
-\twocolumn[
-\begin{@twocolumnfalse}
 \maketitle
 
 \begin{abstract}
 \end{abstract}
 
 \vspace{1em}
-\end{@twocolumnfalse}
-]
+
 \section{Introduction}
 Images used in computer vision are often distorted. Distortion in computer vision refers to any signal that produces visual deviation in image/video 
-from its original expectation. When the original image/video is unavailable, an observed visual comfort or simply annoying effect
-on the aesthetic visual appearance is also considered as a distortion~\cite{muhammadaliqureshiDistortionClassificationComputer}. These distortions could be
-sorted as In-Capture Distortion, including blur, noise, uneven illumination, color shifts, haze,
-rain, snow, and other visibility changes; and Post-Capture Distortion, such as transmission,
-impairments, enhancement artefacts, and adversarial distortion.
+from its original expectation. When the original image/video is unavailable, \textcite{muhammadaliqureshiDistortionClassificationComputer} considers "observed visual comfort or simply annoying effect
+on the aesthetic visual appearance" also as a distortion. These distortions could be
+sorted as In-Capture Distortion that occurs during the initial aquisition phase, including physical artifacts like blur, noise, uneven illumination, color shifts, haze,
+rain, snow, and other visibility changes; and Post-Capture Distortion which refers to image deformation or degredation that occurs after images being captured, such as transmission,
+impairments, enhancement artefacts, and adversarial distortion. 
+
+Although these effects may
+appear minor to human observers, they can change the statistical structure of an image and reduce
+the reliability of machine learning models trained primarily on clean
+data~\cite{muhammadaliqureshiDistortionClassificationComputer}. Distortions affect the
+performances of high-level tasks, such as object classification, object detection, and scene
+understanding~\cite{muhammadaliqureshiDistortionClassificationComputer}. High-level tasks are more sensitive to distortions than low-level tasks, such as 
+edge detection, image enhancement and image colorization, because models often learn specified, localized semantic features rather than global context.
+Therefore, distortion detection and removal are a possible preprocessing step for high-level tasks to decrease the
+impact on performance. \autoref{fig:nine-grid} demonstrates several common distortions in high-level tasks.
 
 {
 \captionsetup[subfigure]{
@@ -71,85 +123,75 @@ impairments, enhancement artefacts, and adversarial distortion.
   }%
 }
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
   \centering
-  \begin{subfigure}{0.30\columnwidth}
+  \begin{subfigure}{0.30\textwidth}
     \centering
-    \includegraphics[width=\linewidth]{src/images/distortionA.png}
+    \includegraphics[width=\linewidth,height=0.105\textheight,keepaspectratio]{src/images/distortionA.png}
     \distortioncaption{Image affected by rain}
   \end{subfigure}
   \hfill
-  \begin{subfigure}{0.30\columnwidth}
+  \begin{subfigure}{0.30\textwidth}
     \centering
-    \includegraphics[width=\linewidth]{src/images/distortionB.png}
+    \includegraphics[width=\linewidth,height=0.105\textheight,keepaspectratio]{src/images/distortionB.png}
     \distortioncaption{Surgery frame affected by smoke}
   \end{subfigure}
   \hfill
-  \begin{subfigure}{0.30\columnwidth}
+  \begin{subfigure}{0.30\textwidth}
     \centering
-    \includegraphics[width=\linewidth]{src/images/distortionC.png}
+    \includegraphics[width=\linewidth,height=0.105\textheight,keepaspectratio]{src/images/distortionC.png}
     \distortioncaption{Packet loss in image transmission}
   \end{subfigure}
 
   \vspace{2mm}
 
-  \begin{subfigure}{0.30\columnwidth}
+  \begin{subfigure}{0.30\textwidth}
     \centering
-    \includegraphics[width=\linewidth]{src/images/distortionD.png}
+    \includegraphics[width=\linewidth,height=0.105\textheight,keepaspectratio]{src/images/distortionD.png}
     \distortioncaption{Haze effect on traffic road}
   \end{subfigure}
   \hfill
-  \begin{subfigure}{0.30\columnwidth}
+  \begin{subfigure}{0.30\textwidth}
     \centering
-    \includegraphics[width=\linewidth]{src/images/distortionE.png}
+    \includegraphics[width=\linewidth,height=0.105\textheight,keepaspectratio]{src/images/distortionE.png}
     \distortioncaption{Image affected by colour bleeding}
   \end{subfigure}
   \hfill
-  \begin{subfigure}{0.30\columnwidth}
+  \begin{subfigure}{0.30\textwidth}
     \centering
-    \includegraphics[width=\linewidth]{src/images/distortionF.png}
+    \includegraphics[width=\linewidth,height=0.105\textheight,keepaspectratio]{src/images/distortionF.png}
     \distortioncaption{Colour loss in underwater imaging}
   \end{subfigure}
 
   \vspace{2mm}
 
-  \begin{subfigure}{0.30\columnwidth}
+  \begin{subfigure}{0.30\textwidth}
     \centering
-    \includegraphics[width=\linewidth]{src/images/distortionG.png}
+    \includegraphics[width=\linewidth,height=0.105\textheight,keepaspectratio]{src/images/distortionG.png}
     \distortioncaption{Human action recognition affected by motion blur}
   \end{subfigure}
   \hfill
-  \begin{subfigure}{0.30\columnwidth}
+  \begin{subfigure}{0.30\textwidth}
     \centering
-    \includegraphics[width=\linewidth]{src/images/distortionH.png}
+    \includegraphics[width=\linewidth,height=0.105\textheight,keepaspectratio]{src/images/distortionH.png}
     \distortioncaption{Visual tracking affected by uneven illumination}
   \end{subfigure}
   \hfill
-  \begin{subfigure}{0.30\columnwidth}
+  \begin{subfigure}{0.30\textwidth}
     \centering
-    \includegraphics[width=\linewidth]{src/images/distortionI.png}
+    \includegraphics[width=\linewidth,height=0.105\textheight,keepaspectratio]{src/images/distortionI.png}
     \distortioncaption{Auto-focus system failure in surveillance cameras}
   \end{subfigure}
-
-  \caption{Examples of distortions encountered in computer vision and image/video analysis tasks, adapted from \cite{muhammadaliqureshiDistortionClassificationComputer}}
+  \caption{Examples of distortions encountered in computer vision and image/video analysis tasks, adapted from \textcite{muhammadaliqureshiDistortionClassificationComputer}}
   \label{fig:nine-grid}
 \end{figure}
 }
-
-Although these effects may
-appear minor to human observers, they can change the statistical structure of an image and reduce
-the reliability of machine learning models trained primarily on clean
-data~\cite{muhammadaliqureshiDistortionClassificationComputer}. Distortions affect the
-performances of high-level tasks, such as object classification, object detection, and scene
-understanding~\cite{muhammadaliqureshiDistortionClassificationComputer}. Therefore, distortion
-detection and removal are a possible preprocessing step for high-level tasks to decrease the
-impact on performance.
 
 For machine learning, distortion is not only an image-quality issue but is also affected by dataset and
 training. Models usually learn from the distribution of inputs they are given, so a model
 trained only on clean images may have poor generalizability when working on the same object
 appearing under poor visibility, weather effects, or degraded contrast. Distortion-specified
-datasets are important because they make it possible to evaluate model robustness by type and severity, 
+datasets are important because they make it possible to evaluate model robustness by distortion type and severity, 
 rather than reporting only a single clean-data accuracy score~\cite{muhammadaliqureshiDistortionClassificationComputer}.
 
 
@@ -157,11 +199,8 @@ Current datasets of natural distortions have important limitations. Real rain, h
 and snow images can be difficult to collect at scale, and the resulting data may be unbalanced
 across weather type, severity, scene category, and annotation quality. Many benchmark datasets
 also include distortions as broad corruptions rather than as physically meaningful,
-scene-dependent effects. This limits how well they can support controlled robustness studies or
-targeted training strategies. The need for environment-aware image formation is also visible in
-underwater computer vision, where more complicated distortions are present due to an uneven
-refractive index of water, such as attenuation, scattering, color-shifting, halo effect,
-etc.~\cite{SurveyUnderwaterComputer}.
+scene-dependent effects. This limits how well they can support controlled robustness studies on deep learning models' performance under
+different types of distortions or targeted traning strategies, which introduces controlled distortions to training models for more stable performances facing distortions.
 
 
 Related work has explored both distortion recognition and natural-distortion simulation. Survey
@@ -175,59 +214,51 @@ driving scenes, also shows that real weather can strongly affect downstream reco
 detection performance.
 
 
-The model trains a distortion augmentation framework, which adds controlled rain and fog
-effects to existing baseline datasets such as BDD100K, ACDC and Cityscapes~\cite{wolfeBDD100KLargescaleDiverse,sakaridisACDCAdverseConditions2021,cordtsCityscapesDatasetSemantic2016}. The framework is evaluated by comparing the
+My model trains a distortion augmentation framework, which adds controlled rain and fog
+effects to an existing baseline dataset BDD100K \cite{wolfeBDD100KLargescaleDiverse}. The framework is evaluated by comparing the
 performances of a downstream object detection model, YOLOv8n~\cite{WhatYOLOv8InDepth,ExploreUltralyticsYOLOv82023}, on the original dataset and the
 augmented dataset.
 
 
-\subsection{Cycle-GAN (Generative Adversarial Network)}
+\section{Background}
 
-Generative Adversarial Network (GAN) is a deep learning model that consists of two networks that c
+\textbf{Generative Adversarial Network} (GAN) is a deep learning model that consists of two networks that c
 ompete against each other: a generator G and a discriminator D. The generator G tries to generate 
 realistic images from a target domain X, while the discriminator D tries
 to discriminate generated images from real images. That is, the generator learns a mapping: $G: X \rightarrow Y$.
-For example, in the context of our work, the generator G tries to create rainy or foggy looking images from clear images,
+For example, in the context of my work, the generator G tries to create rainy or foggy looking images from clear images,
 while the discriminator D tries to distinguish between real rainy or foggy images and generated images. The generator and
 discriminator are trained in an adversarial manner, where the adversarial framework's objective is to minimize the generator
 loss and maximize the discriminator loss. The loss function of GAN is given below, defined by Goodfellow et al\cite{goodfellowGenerativeAdversarialNets}.
 \begin{equation}
-\begin{aligned}
-\min_G \max_D \quad
-&\mathbb{E}_{x \sim p_{\mathrm{data}}(x)}[\log D(x)] \\
-&{}+\mathbb{E}_{z \sim p_z(z)}[\log(1 - D(G(z)))].
-\end{aligned}
+\min_G \max_D \quad \mathbb{E}_{x \sim p_{\mathrm{data}}(x)}[\log D(x)] + \mathbb{E}_{z \sim p_z(z)}[\log(1 - D(G(z)))].
 \end{equation}
 
 Traditional GANs use paired training data, which consists of training examples $\{x_i, y_i\}_{i=1}^N$, where 
 $x_i$ is the input and $y_i$ is the corresponding output. GAN is useful for image-to-image translation tasks, such as photo 
 reconstruction from edge maps, colorization, photo synthesis from label maps, etc\cite{isolaImagetoImageTranslationConditional2018}. 
-However, in many cases, paired training data is not available. In the context of our work, it is difficult to collect paired
+However, in many cases, paired training data is not available. In the context of my work, it is difficult to collect paired
 training data of clear images and corresponding rainy or foggy images at the same places. Existing datasets, such as BDD100K, cityscapes,
 or ACDC, are all unpaired datasets\cite{wolfeBDD100KLargescaleDiverse,cordtsCityscapesDatasetSemantic2016,sakaridisACDCAdverseConditions2021}.
 Figure~\ref{fig:paired-unpaired} illustrates the difference between paired and unpaired training data. 
 
-\begin{figure}[H]
-\includegraphics[width=\columnwidth]{src/images/paired_unpaired2.png}
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.88\textwidth,height=0.42\textheight,keepaspectratio]{src/images/paired_unpaired2.png}
 \caption{\textit{Paired} training data (left) consists of training examples $\{x_i, y_i\}_{i=1}^N$. 
 \textit{Unpaired} training data (right) consists of a source set $\{x_i\}_{i=1}^N$ ($x_i \in X$) and a target set $\{y_i\}_{i=1}^N$ ($y_i \in Y$). 
-Unpaired training contains no correspondence from the source set $X$ to the target set $Y$. Figure adapted from \cite{zhuUnpairedImagetoImageTranslation2020}.}\label{fig:paired-unpaired}
+Unpaired training contains no correspondence from the source set $X$ to the target set $Y$. Figure adapted from \textcite{zhuUnpairedImagetoImageTranslation2020}.}
+\label{fig:paired-unpaired}
 \end{figure}
 
-Our work uses Cycle-GAN, which is a type of GAN that learns from unpaired training data. Cycle-GAN uses two generators and
+My work uses Cycle-GAN, which is a type of GAN that learns from unpaired training data. Cycle-GAN uses two generators and
 two discriminators. A generator $G: X \rightarrow Y$ transforms images from domain $X$ to domain $Y$; a reverse generator
 $F: Y \rightarrow X$ transforms images from domain $Y$ to domain $X$. The first discriminator $D_Y$ distinguishes between real images in domain $Y$ and 
 generated images from generator $G$; the second discriminator $D_X$ distinguishes between real images in domain $X$ and generated images 
 from generator $F$. The Cycle-GAN framework uses a cycle-consistency loss to ensure that the generated images can be transformed back to the original domain.
 The cycle-consistency loss is given below, defined by Zhu et al\cite{zhuUnpairedImagetoImageTranslation2020}.
 \begin{equation}
-\begin{aligned}
-\mathcal{L}_{\mathrm{cyc}}(G,F)
-&= \mathbb{E}_{x \sim p_{\mathrm{data}}(x)}
-\left[\|F(G(x)) - x\|_1\right] \\
-&\quad + \mathbb{E}_{y \sim p_{\mathrm{data}}(y)}
-\left[\|G(F(y)) - y\|_1\right].
-\end{aligned}
+\mathcal{L}_{\mathrm{cyc}}(G,F) = \mathbb{E}_{x \sim p_{\mathrm{data}}(x)} \left[\|F(G(x)) - x\|_1\right] + \mathbb{E}_{y \sim p_{\mathrm{data}}(y)} \left[\|G(F(y)) - y\|_1\right].
 \end{equation}
 
 The objective of Cycle-GAN is to minimize the adversarial loss, maximize the discriminator loss, and minimize
@@ -237,7 +268,7 @@ but also preserves the content, or the structure of the original image\cite{zhuU
 
 In weather augmentation, cycle-GAN is useful because it generates realistic rainy or foggy images from clear images while it preserves the scene structures, and it does not require paired training data. 
 However, a limitation of Cycle-GAN, as well as other GANs, is that it is not controllable. It is impossible to control how much wetness, rain, or fog is generated,
-and it is impossible to control the depth-dependent effects of rain and fog\cite{zhuUnpairedImagetoImageTranslation2020,tremblayRainRenderingEvaluating2021}. Therefore, our work uses Cycle-GAN to generate rainy and foggy images, but it also uses
+and it is impossible to control the depth-dependent effects of rain and fog\cite{zhuUnpairedImagetoImageTranslation2020,tremblayRainRenderingEvaluating2021}. Therefore, my work uses Cycle-GAN to generate rainy and foggy images, but it also uses
 a physics-based, depth-aware renderer to generate rain with controllable appearance.
 
 
@@ -247,21 +278,20 @@ a physics-based, depth-aware renderer to generate rain with controllable appeara
 
 \subsection{Distortion Classification and Evaluation}
 
-Traditional distortion classification models and evaluation use blur indices, noise estimators,
-natural scene statistics, image quality metrics, Support Vector Machines (SVM), and K-Nearest
-Neighbours (KNN) to evaluate the impact of distortions. Recent distortion classification and
-detection models use Convolutional Neural Networks (CNN) and temporal models. Ahn, Kang, and
-Sohn train a Y-shaped CNN for joint distortion classification and localization. Other methods
+Traditional distortion classification models and evaluation utilize blur indices, noise estimators,
+natural scene statistics, image quality metrics for distorton severity evaluation and Support Vector Machines (SVM) and K-Nearest
+Neighbours (KNN) for distortion classification\cite{muhammadaliqureshiDistortionClassificationComputer}. Recent distortion classification and
+detection models use Convolutional Neural Networks (CNN) and temporal models. \textcite{ahnImageDistortionDetection2017} train a Y-shaped CNN for joint distortion classification and localization. Other methods
 for distortion classification include feature pool, relating metrics with specific distortions,
 and Natural Scene Statistics (NSS). The method supports learned distortion features, yet most
 datasets focus on controlled distortions rather than natural
-weather~\cite{muhammadaliqureshiDistortionClassificationComputer,ahnImageDistortionDetection2017}.
+weather.
 
 
 The quality of visual content in images and distortion severity are important factors that
 affect performance in high-level tasks, including object classification, object detection, and
 scene understanding. Using distortion classification and detection models could help
-researchers finetune models that are more resistant to distortions. However, our work helps
+researchers finetune models that are more resistant to distortions. However, my work helps
 finetuning models by presenting a data augmentation framework that increases models’
 resilience to rain and fog distortions from training, which does not require distortion
 detection and distortion removal process.
@@ -280,7 +310,7 @@ density, scene depth, and occlusion. There is a lack of labeled, controlled mult
 datasets. Consequently, classification and localization of multiple distortions remain
 challenging due to lack of labeled, controlled
 datasets~\cite{muhammadaliqureshiDistortionClassificationComputer,
-tremblayRainRenderingEvaluating2021}. Our work adds controlled, artificial distortions, which
+tremblayRainRenderingEvaluating2021}. My work adds controlled, artificial distortions, which
 addresses lack of labeled, controlled datasets, especially for outdoor datasets.
 
 
@@ -296,34 +326,34 @@ behind buildings~\cite{tremblayRainRenderingEvaluating2021}.
 Though, this framework supported rain detection, removal, rendering, and camera-based rain
 measurement~\cite{gargVisionRain2007}.
 
-Below exemplifies three traditional rain rendering methods: rain100H, rain800, and did-MDN~\cite{tremblayRainRenderingEvaluating2021}.
+\autoref{fig:three-traditional-rain-augmentation} exemplifies three traditional rain rendering methods: rain100H, rain800, and did-MDN~\cite{tremblayRainRenderingEvaluating2021}.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
     \centering
 
     \begin{subfigure}{0.32\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{src/images/rain100H.png}
+        \includegraphics[width=\linewidth,height=0.16\textheight,keepaspectratio]{src/images/rain100H.png}
         \caption{Rain100H}
         \label{fig:rain100H}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.32\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{src/images/rain800.jpg}
+        \includegraphics[width=\linewidth,height=0.16\textheight,keepaspectratio]{src/images/rain800.jpg}
         \caption{Rain800}
         \label{fig:rain800}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.32\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{src/images/did-MDN.jpg}
+        \includegraphics[width=\linewidth,height=0.16\textheight,keepaspectratio]{src/images/did-MDN.jpg}
         \caption{DID-MDN}
         \label{fig:did-MDN}
     \end{subfigure}
-
-    \caption{Three traditional rain rendering methods, adapted from \cite{tremblayRainRenderingEvaluating2021}}
+    \caption{Three traditional rain rendering methods, adapted from \textcite{tremblayRainRenderingEvaluating2021}}
     \label{fig:three-images}
+    \label{fig:three-traditional-rain-augmentation}
 \end{figure}
 
 
@@ -368,9 +398,9 @@ user-rated as the most realistic images; outputs from GAN plus PBR perform the b
 augmentation~\cite{tremblayRainRenderingEvaluating2021}.
 
 
-Our work is inspired from the framework from Tremblay et al. our work uses the traditional rain
+My work is inspired from the framework from Tremblay et al. my work uses the traditional rain
 rendering framework with depth estimation to build rain streaks with controlled,
-depth-dependent rain streaks; our work also involves using a Cycle-GAN model that adds rainy
+depth-dependent rain streaks; my work also involves using a Cycle-GAN model that adds rainy
 and foggy visual effects.
 
 
@@ -412,10 +442,10 @@ makes Depth Anything V2 useful for RGB-only distortion
 rendering~\cite{jaritzSparseDenseData2018,yangDepthAnythingV22024}.
 
 
-Our work uses the depth-map output from Depth Anything V2 as the guiding parameter for
+My work uses the depth-map output from Depth Anything V2 as the guiding parameter for
 transparency and appearance of rain streaks and translucency and intensity of fog. The
 depth-map output from Depth Anything V2 is stable and reliable, and it is a strong model for
-completing our computer vision tasks.
+completing my computer vision tasks.
 
 
 \subsection{Datasets With Distortions}
@@ -439,35 +469,36 @@ tremblayRainRenderingEvaluating2021}.
 
 \subsection{BDD100K}
 
-BDD100K serves as a baseline dataset for our work, because the data are large, diverse, and
+BDD100K serves as a baseline dataset for my work, because the data are large, diverse, and
 driving-focused. The dataset contains 100,000 driving videos and supports detection,
-segmentation, lane marking, drivable area, and related driving labels. BDD100K also includes
+segmentation, lane marking, drivable area, and related driving labels. \autoref{fig:bdd100k} selects three images with various weather labels from the BDD100K dataset. It also includes
 geographic, environmental, and weather variation. The limitation is missing paired
 clean/adverse views and controlled severity labels. A depth-aware rain and haze renderer would
 turn BDD100K into a controlled robustness testbed while keeping real driving diversity \cite{yuBDD100KDiverseDriving2018}.
 
-\begin{figure}
+\begin{figure}[!htbp]
+  \centering
   \begin{subfigure}{0.32\linewidth}
     \centering
-    \includegraphics[width=\linewidth]{src/images/bdd100k_clear.jpg}
+    \includegraphics[width=\linewidth,height=0.16\textheight,keepaspectratio]{src/images/bdd100k_clear.jpg}
     \caption{Clear image from BDD100K}
     \label{fig:bdd-clear}
   \end{subfigure}
   \hfill
   \begin{subfigure}{0.32\linewidth}
     \centering
-    \includegraphics[width=\linewidth]{src/images/bdd100k_rainy.jpg}
+    \includegraphics[width=\linewidth,height=0.16\textheight,keepaspectratio]{src/images/bdd100k_rainy.jpg}
     \caption{Rainy image from BDD100K}
     \label{fig:bdd-rain}
   \end{subfigure}
   \hfill
   \begin{subfigure}{0.32\linewidth}
     \centering
-    \includegraphics[width=\linewidth]{src/images/bdd100k_foggy.jpg}
+    \includegraphics[width=\linewidth,height=0.16\textheight,keepaspectratio]{src/images/bdd100k_foggy.jpg}
     \caption{Foggy image from BDD100K}
     \label{fig:bdd-fog}
   \end{subfigure}
-  \caption{Examples of clear, rainy, and foggy images from BDD100K~\cite{yuBDD100KDiverseDriving2018}}
+  \caption{Examples of clear, rainy, and foggy images from BDD100K~\textcite{yuBDD100KDiverseDriving2018}}
   \label{fig:bdd100k}
 \end{figure}
 
@@ -485,26 +516,24 @@ Data augmentation is the primary method to increase a dataset's size and variety
 In the context of this paper, it refers to adding rain and fog to images. As discussed 
 in previous sections, collecting data with various natural distortions for an outdoor 
 dataset is challenging. Therefore, using data augmentation to render natural distortions 
-improves the performance of deep learning models. Our work focuses on rain and fog 
+improves the performance of deep learning models. My work focuses on rain and fog 
 distortions in outdoor RGB images.
 
 \subsection{Rain Rendering}
 
 Rain appears as dynamic-looking particles and brings a rainy effect to the image. Inspired by 
-Tremblay et al \cite{tremblayRainRenderingEvaluating2021}, our rain rendering method uses a physics-based rain 
+Tremblay et al \cite{tremblayRainRenderingEvaluating2021}, my rain rendering method uses a physics-based rain 
 rendering method that simulates raindrops and a Cycle-GAN model that creates rainy effects. 
 
 \subsubsection{Physics-based Rendering (PRB)}
-To generate synthetic raindrop appearance, the physics-based rain rendering (PBR) method combines
+To generate synthetic raindrop appearance, my physics-based rain rendering (PBR) method combines
 image-rspace rain streak synthesis, atmospheric scattering and linear-light compositing, based on the
 monocular depth map produced by Depth Anything V2\cite{yangDepthAnythingV22024}. The objective of this
 renderer is to produce controllable raindrops while being consistent with scene geometry and depth.
 
-Given an input RGB/BGR image $I$ and an estimated depth map $D$, the raw depth values are first normalized into a relative distance map:
+Given an input RGB/BGR image $I$, Depth Anything V2 outputs an estimated depth map $D$ from the input $I$. The raw depth values are normalized into a relative distance map:
 \begin{equation}
-\begin{aligned}
 D_n = \frac{\operatorname{clip}(D, p_1, p_{99})-min(D)}{max(D)-min_(D) + \epsilon}
-\end{aligned}
 \end{equation}
 where $p_1$ and $p_{99}$ are the 1st and 99th percentiles of the depth values used to exclude extreme values, and $\epsilon$ is a small constant to avoid division by zero. 
 The normalized scene distance is then defined as $d(x,y) = 1 - D_{n}(x,y)$, where a $d(x,y)=0$ represents foreground regions close to the camera and
@@ -513,15 +542,11 @@ $d(x,y)=1$ represents distant scene regions.
 The renderer models rain as layered rain streaks. Four rain-depth layers are used: near, mid, far, and background.
 Each layer $l$ has a fixed normalized depth $z_l$, a streak count $N_l$, streak length $L_l$, streak width $W_l$, base opacity $\alpha_l$, 
 defocus blur, and angular jitter. For an image of height H, width W, minimum dimension $m = min(H, W)$, 
-area scale $A=HW/1000$, and rain severity s. The layer parameters are defined as functions of severity. For example, 
+area scale $A=HW/1000$, and rain severity $s$. Given that each layer has a fixed severity $s$, the formulae for other parameters are constructed through experimentation. 
+The layer parameters are defined as functions of severity. For example, 
 the near layer uses:
 \[
-\begin{aligned}
-N_{near}&=A(0.025+0.13s) \\
-L_{near}&=m(0.025+0.080s) \\
-W_{near}&=1.75+2.20s \\
-\alpha_{near}&=0.020+0.055s
-\end{aligned}
+N_{near}=A(0.025+0.13s) \quad L_{near}=m(0.025+0.080s) \quad W_{near}=1.75+2.20s \quad \alpha_{near}=0.020+0.055s
 \]
 
 The mid, far, and background layers follow the same structure, with progressively smaller streak widths and lengths but larger particle counts.
@@ -529,13 +554,11 @@ This models the physical appearance of raindrops, which appear to be smaller and
 Nearby raindrops appear longer, thicker and more defocused, while distant raindrops appear denser and smaller.
 
 Depth is used to determine whether rain in a given layer should be visible at each pixel. A rain layer is only visible when it lies in front of the visible
-scene surface. Raindrops from a given layer do not suddenly appear or dissapper; rather, they fade in or out when their depth $d(x,y)$ is at a depth-edge, where it is 
-close to a layer's fixed normalized depth $z_l$. The visibility is computed using a smooth transition function:
+scene surface. Raindrops from a given layer do not suddenly appear or dissapper; rather, they fade in or out when their normalized depth $D_n(x,y)$ is at a depth-edge, where it is 
+close to a layer's fixed normalized depth $z_l$. A visibility function tells how visible a rain streak at coordinate $(x,y)$ is, and it is computed using a smooth transition function:
 
 \begin{equation}
-\begin{aligned}
-V_l(x,y)=smoothstep(-\delta, \delta, d(x,y)-z_l)
-\end{aligned}
+V_l(x,y)=smoothstep(-\delta, \delta, d(x,y)-z_l) \quad V_l: [0,1]\rightarrow[0,1]
 \end{equation}
 
 where $\delta_l$ is the layer softness parameter that controls how rapidly the raindrops fade in or out. A smaller $\delta_l$ means 
@@ -543,11 +566,12 @@ a sharper transition, while a larger $\delta_l$ means a smoother transition. The
 $\delta_l$. The smoothstep function is:
 
 \[
-\begin{aligned}
-smoothstep(a, b, x) = t^2(3-2t) \\
-t = \operatorname{clip}(\frac{x-a}{b-a+\epsilon}, 0, 1)
-\end{aligned}
+smoothstep(a, b, x) = t^2(3-2t) \quad t = \operatorname{clip}(\frac{x-a}{b-a+\epsilon}, 0, 1)
 \]
+
+In the smoothstep function, $t$ is clipped to a value between 0 and 1. Therefore, the domain of visibility $V_l$ is $[0, 1]$, and its range is $[0, 1]$.
+The defined smoothstep function is a special cubic function with three inputs, and it gradually decreases in its domain $[0, 1]$. Therefore, a streak that is closer has
+a larger visibility value, while a streak that is more distant has a smaller visibility value.
 
 This prevenst distant rain from being visible in front of foreground objects. The smoothstep function and visibility
 function prevents discontinuities in the rain appearance at a depth-edge. It also prevents halo spaces around object boundaries.
@@ -556,19 +580,14 @@ Individual rain streaks are generated using an anisotropic motion kernal, which 
 differently in different directions, rather than hard lines. For a streak angle $\theta$, each kernal pixel is projected into coordinates along and across the
 rain direction:
 \[
-\begin{aligned}
-u=x\,cos\theta + y\,sin\theta \\
-v = -x\,sin\theta + y\,cos\theta
-\end{aligned}
+u=x\,cos\theta + y\,sin\theta \quad v = -x\,sin\theta + y\,cos\theta
 \]
 where $u$ is distance along the rain streak and $v$ is distance across the rain streak.
 
 The streak intensity (how strong each pixel of a rain streak is inside the filter) is tapered along its length
 and Gaussian blurred along its width:
 \begin{equation}
-\begin{aligned}
 K(u,v)=\left[\max\left(0,1-\frac{|u|}{L/2}\right)\right]^p \cdot \exp\left(-\frac{1}{2}\left(\frac{v}{\sigma_w}\right)^2\right)
-\end{aligned}
 \end{equation}
 where $p=1.45$ controls tapering and:
 \[
@@ -621,62 +640,60 @@ rain delta map $\Delta_{rain}$ to produce a weather augmentation mask, $I_{targe
 
 The output image is then:
 \begin{equation}
-\begin{aligned}
 I_{out} = I_{mist}(1-\alpha_{rain})+I_{target} \alpha_{rain}
-\end{aligned}
 \end{equation}
 
-Overall, the renderer combines depth estimation with physics-based optical accumulation. The depth-based layer visibility prevents rain from incorrectly appearing over foreground objects.
+Overall, the renderer combines depth estimation with physics-based optical accumulation. \autoref{fig:depth-aware-rain} includes three input-output pairs, justaposing the original and the output images for comparison. 
+The depth-based layer visibility prevents rain from incorrectly appearing over foreground objects.
 the optical thickness map $\tau$ blends the opacities of rain streaks that are co-linear in a line from the observer, 
 rather than overlaying rain streaks directly onto the input image, causing a local-unrealistic exposure. The brightness-aware streaks ensure the brightness to be adjustable 
 depending on the background and depth. 
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
     \centering
-
-    \begin{subfigure}[t]{0.48\columnwidth}
+    \begin{subfigure}[t]{0.48\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{src/images/depth1_clear.jpg}
+        \includegraphics[width=\linewidth,height=0.155\textheight,keepaspectratio]{src/images/depth1_clear.jpg}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[t]{0.48\columnwidth}
+    \begin{subfigure}[t]{0.48\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{src/images/depth1_rain.jpg}
+        \includegraphics[width=\linewidth,height=0.155\textheight,keepaspectratio]{src/images/depth1_rain.jpg}
     \end{subfigure}
 
     \vspace{1mm}
 
-    \begin{subfigure}[t]{0.48\columnwidth}
+    \begin{subfigure}[t]{0.48\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{src/images/depth2_clear.jpg}
+        \includegraphics[width=\linewidth,height=0.155\textheight,keepaspectratio]{src/images/depth2_clear.jpg}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[t]{0.48\columnwidth}
+    \begin{subfigure}[t]{0.48\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{src/images/depth2_rain.jpg}
+        \includegraphics[width=\linewidth,height=0.155\textheight,keepaspectratio]{src/images/depth2_rain.jpg}
     \end{subfigure}
 
     \vspace{1mm}
 
-    \begin{subfigure}[t]{0.48\columnwidth}
+    \begin{subfigure}[t]{0.48\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{src/images/depth3_clean.jpg}
+        \includegraphics[width=\linewidth,height=0.155\textheight,keepaspectratio]{src/images/depth3_clean.jpg}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[t]{0.48\columnwidth}
+    \begin{subfigure}[t]{0.48\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{src/images/depth3_rain.jpg}
+        \includegraphics[width=\linewidth,height=0.155\textheight,keepaspectratio]{src/images/depth3_rain.jpg}
     \end{subfigure}
 
     \vspace{1mm}
 
-    \makebox[0.48\columnwidth][c]{\small Clear weather input}
+    \makebox[0.48\textwidth][c]{\small Clear weather input}
     \hfill
-    \makebox[0.48\columnwidth][c]{\small Depth-aware rain augmented output}
+    \makebox[0.48\textwidth][c]{\small Depth-aware rain augmented output}
 
     \caption{Images in the left column are the clear-weather-labeled inputs from the BDD100K dataset.
     Images in the right column are the corresponding depth-aware rain augmented output, severity parameter being set as "medium".}
-    \label{fig:six-subfigures}
+    \label{fig:depth-aware-rain}
 \end{figure}
 
 \subsubsection{Rain Cycle-GAN}
@@ -697,46 +714,63 @@ For unpaired Cycle-GAN training, the training process loads 3000 clear images an
 images. Training images are loaded as 512*512, then they are randomly cropped at 384*384. The model 
 is optimized with 10 epochs and 10 decaying epochs, a learning rate of 0.0001 and a batch size of 1. 
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
     \centering
 
-    \begin{subfigure}[t]{0.48\columnwidth}
+    \begin{subfigure}[t]{0.48\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{src/images/rainGAN1_clean.jpg}
+        \includegraphics[width=\linewidth,height=0.18\textheight,keepaspectratio]{src/images/rainGAN1_clean.jpg}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[t]{0.48\columnwidth}
+    \begin{subfigure}[t]{0.48\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{src/images/rainGAN1_gan.jpg}
+        \includegraphics[width=\linewidth,height=0.18\textheight,keepaspectratio]{src/images/rainGAN1_gan.jpg}
     \end{subfigure}
 
     \vspace{1mm}
 
-    \begin{subfigure}[t]{0.48\columnwidth}
+    \begin{subfigure}[t]{0.48\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{src/images/rainGAN2_clean.jpg}
+        \includegraphics[width=\linewidth,height=0.18\textheight,keepaspectratio]{src/images/rainGAN2_clean.jpg}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[t]{0.48\columnwidth}
+    \begin{subfigure}[t]{0.48\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{src/images/rainGAN2_gan.jpg}
+        \includegraphics[width=\linewidth,height=0.18\textheight,keepaspectratio]{src/images/rainGAN2_gan.jpg}
     \end{subfigure}
 
     \vspace{1mm}
 
-    \makebox[0.48\columnwidth][c]{\small Clear weather input}
+    \makebox[0.48\textwidth][c]{\small Clear weather input}
     \hfill
-    \makebox[0.48\columnwidth][c]{\small GAN augmented output}
+    \makebox[0.48\textwidth][c]{\small GAN augmented output}
 
     \caption{Images in the left column are the clear-weather-labeled inputs from the BDD100K dataset.
     Images in the right column are the corresponding Rain Cycle-GAN augmented output.}
-    \label{fig:six-subfigures}
+    \label{fig:rain-cyclegan}
 \end{figure}
 
-The generated images have more foggy and desaturated skies and wet effects on the ground in common. However, some 
-of them have random white noise. This issue is common when the size of training images is too small, 
+\autoref{fig:rain-cyclegan} demonstrates three pairs of input-output images from the rain Cycle-GAN. The generated images have more foggy and desaturated skies and wet effects on the ground in common. However, some 
+of them have random white noise, as demonstrated in \autoref{fig:noise-gan}. This issue is common when the size of training images is too small, 
 or the size of the train split is small. It could be fixed by increasing image resolution or using a 
 bigger training dataset.
+
+\begin{figure}[!htbp]
+    \centering
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.20\textheight,keepaspectratio]{src/images/GANnoise_clean.jpg}
+        \caption{Clean Input Image}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.20\textheight,keepaspectratio]{src/images/GANnoise_gan.jpg}
+        \caption{Cycle-GAN output}
+    \end{subfigure}
+    \caption{A paired input and output image from the rain GAN model. Obvious random pixel noise is observed.}
+    \label{fig:noise-gan}
+\end{figure}
 
 A large portion of the rainy images in BDD100K appear to have been captured after rainfall rather than during active rain. 
 This may explain why the differences between the GAN-generated outputs and the input images are subtle and not always noticeable to the naked eye.
@@ -765,6 +799,9 @@ assembles real rainy images better than PBR or GAN alone, and it can produce con
 
 
 \nocite{*}
-\printbibliography[title={References}]
+\clearpage
+{\doublespacing
+\printbibliography[heading=bibliography,title={Bibliography}]
+}
 
 \end{document}
