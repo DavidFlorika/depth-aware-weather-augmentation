@@ -1,0 +1,2945 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/apasortcite//global/global/global}
+    \entry{ahnImageDistortionDetection2017}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=907e0e35870f48a0bf73a73681c97d1b}{%
+           family={Ahn},
+           familyi={A\bibinitperiod},
+           given={Namhyuk},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b248681884ab3e3b83c729b6d7cf8089}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Byungkon},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a96e38bb31042990dde78174eb92f949}{%
+           family={Sohn},
+           familyi={S\bibinitperiod},
+           given={Kyung-Ah},
+           giveni={K\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Nanjing, China}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{983e2edc7bf179048d4a1227b4795f19}
+      \strng{fullhash}{afc2d31658182eec611420e6e826eb02}
+      \strng{fullhashraw}{afc2d31658182eec611420e6e826eb02}
+      \strng{bibnamehash}{afc2d31658182eec611420e6e826eb02}
+      \strng{authorbibnamehash}{afc2d31658182eec611420e6e826eb02}
+      \strng{authornamehash}{983e2edc7bf179048d4a1227b4795f19}
+      \strng{authorfullhash}{afc2d31658182eec611420e6e826eb02}
+      \strng{authorfullhashraw}{afc2d31658182eec611420e6e826eb02}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-5386-3354-0}
+      \field{journaltitle}{2017 4th {{IAPR Asian Conference}} on {{Pattern Recognition}} ({{ACPR}})}
+      \field{month}{11}
+      \field{title}{Image {{Distortion Detection Using Convolutional Neural Network}}}
+      \field{urlday}{10}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{220\bibrangedash 225}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ACPR.2017.95
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/Z9S4MRIQ/Ahn et al. - 2017 - Image Distortion Detection Using Convolutional Neural Network.pdf
+      \endverb
+    \endentry
+    \entry{bijelicSeeingFogSeeing2020}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=2d8bb4f69d41491c1a1572b91f37318f}{%
+           family={Bijelic},
+           familyi={B\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ef3f9fff8c37663c2e80a6c5ac1e639}{%
+           family={Gruber},
+           familyi={G\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6e0f8920db831925fcdf16c430f36df9}{%
+           family={Mannan},
+           familyi={M\bibinitperiod},
+           given={Fahim},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d5fa511313088859d5833467b78a44e4}{%
+           family={Kraus},
+           familyi={K\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=076985ffe4e1604f46c00e64e2fd4afe}{%
+           family={Ritter},
+           familyi={R\bibinitperiod},
+           given={Werner},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2f1c83e71a33d1c7df6e6b4962d375bb}{%
+           family={Dietmayer},
+           familyi={D\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2487c826a0790a643c4f24e93cbfd4eb}{%
+           family={Heide},
+           familyi={H\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e4c4dd1a0c5095b2b6606d72980fcd00}
+      \strng{fullhash}{1ea3a4a20988f1b3e2d6209ec7365311}
+      \strng{fullhashraw}{1ea3a4a20988f1b3e2d6209ec7365311}
+      \strng{bibnamehash}{1ea3a4a20988f1b3e2d6209ec7365311}
+      \strng{authorbibnamehash}{1ea3a4a20988f1b3e2d6209ec7365311}
+      \strng{authornamehash}{e4c4dd1a0c5095b2b6606d72980fcd00}
+      \strng{authorfullhash}{1ea3a4a20988f1b3e2d6209ec7365311}
+      \strng{authorfullhashraw}{1ea3a4a20988f1b3e2d6209ec7365311}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})}
+      \field{month}{6}
+      \field{title}{Seeing {{Through Fog Without Seeing Fog}}: {{Deep Multimodal Sensor Fusion}} in {{Unseen Adverse Weather}}}
+      \field{year}{2020}
+      \field{pages}{11682\bibrangedash 11692}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/CVPR42600.2020.01170
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/3S5VT9UB/Bijelic et al. - 2020 - Seeing Through Fog Without Seeing Fog Deep Multimodal Sensor Fusion in Unseen Adverse Weather.pdf
+      \endverb
+    \endentry
+    \entry{cordtsCityscapesDatasetSemantic2016}{misc}{}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=51a6c58200922aa207f1eb5b87370852}{%
+           family={Cordts},
+           familyi={C\bibinitperiod},
+           given={Marius},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a67129b4cc460ffe2151ef557de4284e}{%
+           family={Omran},
+           familyi={O\bibinitperiod},
+           given={Mohamed},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38d7c0cd81e6578aa4006ed0d723e223}{%
+           family={Ramos},
+           familyi={R\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=abf9780f694eb55731358b7ce25f6747}{%
+           family={Rehfeld},
+           familyi={R\bibinitperiod},
+           given={Timo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc0b5ffe4782bf03abc1388a401f92e5}{%
+           family={Enzweiler},
+           familyi={E\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b85b9efefe92bdad29985847fb978d46}{%
+           family={Benenson},
+           familyi={B\bibinitperiod},
+           given={Rodrigo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d996aac909f5d2ef612d23aaebcb75ce}{%
+           family={Franke},
+           familyi={F\bibinitperiod},
+           given={Uwe},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=507b5db9b42e37f1dc7fd50bac7cd869}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=457dd3049a60059cf69e775a47f0c154}{%
+           family={Schiele},
+           familyi={S\bibinitperiod},
+           given={Bernt},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{9d24662d1803e2774f8899435bffa2b5}
+      \strng{fullhash}{cc545828e2bf016705d2e732a65c3d91}
+      \strng{fullhashraw}{cc545828e2bf016705d2e732a65c3d91}
+      \strng{bibnamehash}{cc545828e2bf016705d2e732a65c3d91}
+      \strng{authorbibnamehash}{cc545828e2bf016705d2e732a65c3d91}
+      \strng{authornamehash}{9d24662d1803e2774f8899435bffa2b5}
+      \strng{authorfullhash}{cc545828e2bf016705d2e732a65c3d91}
+      \strng{authorfullhashraw}{cc545828e2bf016705d2e732a65c3d91}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Visual understanding of complex urban street scenes is an enabling factor for a wide range of applications. Object detection has benefited enormously from large-scale datasets, especially in the context of deep learning. For semantic urban scene understanding, however, no current dataset adequately captures the complexity of real-world urban scenes. To address this, we introduce Cityscapes, a benchmark suite and large-scale dataset to train and test approaches for pixel-level and instance-level semantic labeling. Cityscapes is comprised of a large, diverse set of stereo video sequences recorded in streets from 50 different cities. 5000 of these images have high quality pixel-level annotations; 20000 additional images have coarse annotations to enable methods that leverage large volumes of weakly-labeled data. Crucially, our effort exceeds previous attempts in terms of dataset size, annotation richness, scene variability, and complexity. Our accompanying empirical study provides an in-depth analysis of the dataset characteristics, as well as a performance evaluation of several state-of-the-art approaches based on our benchmark.}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{month}{4}
+      \field{number}{arXiv:1604.01685}
+      \field{title}{The {{Cityscapes Dataset}} for {{Semantic Urban Scene Understanding}}}
+      \field{urlday}{2}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1604.01685
+      \endverb
+      \verb{eprint}
+      \verb 1604.01685
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/64X59ZLB/Cordts et al. - 2016 - The Cityscapes Dataset for Semantic Urban Scene Understanding.pdf;/Users/david/Zotero/storage/A4SIRELP/1604.html
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{ExploreUltralyticsYOLOv82023}{misc}{}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Discover Ultralytics YOLOv8, an advancement in real-time object detection, optimizing performance with an array of pretrained models for diverse tasks.}
+      \field{howpublished}{https://docs.ultralytics.com/models/yolov8}
+      \field{journaltitle}{Ultralytics Docs}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{title}{Explore {{Ultralytics YOLOv8}}}
+      \field{urlday}{3}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{gargVisionRain2007}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=31ca05cd3ce3d31313057b3cf34065b9}{%
+           family={Garg},
+           familyi={G\bibinitperiod},
+           given={Kshitiz},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9272cbc8c0135d92b32e936f50633bf2}{%
+           family={Nayar},
+           familyi={N\bibinitperiod},
+           given={Shree\bibnamedelima K.},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{327bfbda98f748d6ca06453a826f0dca}
+      \strng{fullhash}{327bfbda98f748d6ca06453a826f0dca}
+      \strng{fullhashraw}{327bfbda98f748d6ca06453a826f0dca}
+      \strng{bibnamehash}{327bfbda98f748d6ca06453a826f0dca}
+      \strng{authorbibnamehash}{327bfbda98f748d6ca06453a826f0dca}
+      \strng{authornamehash}{327bfbda98f748d6ca06453a826f0dca}
+      \strng{authorfullhash}{327bfbda98f748d6ca06453a826f0dca}
+      \strng{authorfullhashraw}{327bfbda98f748d6ca06453a826f0dca}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The visual effects of rain are complex. Rain produces sharp intensity changes in images and videos that can severely impair the performance of outdoor vision systems. In this paper, we provide a comprehensive analysis of the visual effects of rain and the various factors that affect it. Based on this analysis, we develop efficient algorithms for handling rain in computer vision as well as for photorealistic rendering of rain in computer graphics. We first develop a photometric model that describes the intensities produced by individual rain streaks and a dynamic model that captures the spatio-temporal properties of rain. Together, these models describe the complete visual appearance of rain. Using these models, we develop a simple and effective post-processing algorithm for detection and removal of rain from videos. We show that our algorithm can distinguish rain from complex motion of scene objects and other time-varying textures. We then extend our analysis by studying how various factors such as camera parameters, rain properties and scene brightness affect the appearance of rain. We show that the unique physical properties of rain---its small size, high velocity and spatial distribution---makes its visibility depend strongly on camera parameters. This dependence is used to reduce the visibility of rain during image acquisition by judiciously selecting camera parameters. Conversely, camera parameters can also be chosen to enhance the visibility of rain. This ability can be used to develop an inexpensive and portable camera-based rain gauge that provides instantaneous rain-rate measurements. Finally, we develop a rain streak appearance model that accounts for the rapid shape distortions (i.e. oscillations) that a raindrop undergoes as it falls. We show that modeling these distortions allows us to faithfully render the complex intensity patterns that are visible in the case of raindrops that are close to the camera.}
+      \field{issn}{1573-1405}
+      \field{journaltitle}{International Journal of Computer Vision}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{1}
+      \field{title}{Vision and {{Rain}}}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{75}
+      \field{year}{2007}
+      \field{urldateera}{ce}
+      \field{pages}{3\bibrangedash 27}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1007/s11263-006-0028-6
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/XFATYZ4U/Garg and Nayar - 2007 - Vision and Rain.pdf
+      \endverb
+      \keyw{appearance modeling,atmospheric scattering,natural phenomena,outdoor vision and weather,physics-based vision,video analysis,video enhancement}
+    \endentry
+    \entry{goodfellowGenerativeAdversarialNets}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=d4f74ef4c79f3bb1e51e378184d8850e}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian\bibnamedelima J},
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a341d25f80a8118cdbb90b272adc8b4f}{%
+           family={{Pouget-Abadie}},
+           familyi={P\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e80f4779b032f68a6106e1424345450}{%
+           family={Mirza},
+           familyi={M\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=743dd6cdaa6639320289d219d351d7b7}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Bing},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e8151f1b8f85a048cacb34f374ec922b}{%
+           family={{Warde-Farley}},
+           familyi={W\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ca00ffd7cc35f7cfb8f698aa9239c76}{%
+           family={Ozair},
+           familyi={O\bibinitperiod},
+           given={Sherjil},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ccec1ccd2e1aa86960eb2e872c6b7020}{%
+           family={Courville},
+           familyi={C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8b5c7065f4df4f81627df9460343f166}
+      \strng{fullhash}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
+      \strng{fullhashraw}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
+      \strng{bibnamehash}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
+      \strng{authorbibnamehash}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
+      \strng{authornamehash}{8b5c7065f4df4f81627df9460343f166}
+      \strng{authorfullhash}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
+      \strng{authorfullhashraw}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Generative {{Adversarial Nets}}}
+      \verb{file}
+      \verb /Users/david/Zotero/storage/73T2WDSN/Goodfellow et al. - Generative Adversarial Nets.pdf
+      \endverb
+    \endentry
+    \entry{halderPhysicsBasedRenderingImproving2019}{misc}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d83f56643bcda629175c7f8423bcffb6}{%
+           family={Halder},
+           familyi={H\bibinitperiod},
+           given={Shirsendu\bibnamedelima Sukanta},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48e8790ffa6c3802f13cef1d0d0307fa}{%
+           family={Lalonde},
+           familyi={L\bibinitperiod},
+           given={Jean-François},
+           giveni={J\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46c259725d926149d24951e864c2c0a4}{%
+           family={Charette},
+           familyi={C\bibinitperiod},
+           given={Raoul},
+           giveni={R\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{b9ad41355c55eaa4d7a7e8c71f579a1d}
+      \strng{fullhash}{6e78344d02646111ccc9852e2b4e74f6}
+      \strng{fullhashraw}{6e78344d02646111ccc9852e2b4e74f6}
+      \strng{bibnamehash}{6e78344d02646111ccc9852e2b4e74f6}
+      \strng{authorbibnamehash}{6e78344d02646111ccc9852e2b4e74f6}
+      \strng{authornamehash}{b9ad41355c55eaa4d7a7e8c71f579a1d}
+      \strng{authorfullhash}{6e78344d02646111ccc9852e2b4e74f6}
+      \strng{authorfullhashraw}{6e78344d02646111ccc9852e2b4e74f6}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{To improve the robustness to rain, we present a physically-based rain rendering pipeline for realistically inserting rain into clear weather images. Our rendering relies on a physical particle simulator, an estimation of the scene lighting and an accurate rain photometric modeling to augment images with arbitrary amount of realistic rain or fog. We validate our rendering with a user study, proving our rain is judged 40\% more realistic that state-of-the-art. Using our generated weather augmented Kitti and Cityscapes dataset, we conduct a thorough evaluation of deep object detection and semantic segmentation algorithms and show that their performance decreases in degraded weather, on the order of 15\% for object detection and 60\% for semantic segmentation. Furthermore, we show refining existing networks with our augmented images improves the robustness of both object detection and semantic segmentation algorithms. We experiment on nuScenes and measure an improvement of 15\% for object detection and 35\% for semantic segmentation compared to original rainy performance. Augmented databases and code are available on the project page.}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{month}{8}
+      \field{number}{arXiv:1908.10335}
+      \field{title}{Physics-{{Based Rendering}} for {{Improving Robustness}} to {{Rain}}}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1908.10335
+      \endverb
+      \verb{eprint}
+      \verb 1908.10335
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/8INZ2ZWQ/Halder et al. - 2019 - Physics-Based Rendering for Improving Robustness to Rain.pdf
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition,Computer Science - Graphics,Computer Science - Machine Learning,Electrical Engineering and Systems Science - Image and Video Processing}
+    \endentry
+    \entry{hold-geoffroyDeepOutdoorIllumination2018}{misc}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=e3f6f2af7197d4a04395ac10b7f8db9d}{%
+           family={{Hold-Geoffroy}},
+           familyi={H\bibinitperiod},
+           given={Yannick},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7290b005248bb35197192165ddb02fc}{%
+           family={Sunkavalli},
+           familyi={S\bibinitperiod},
+           given={Kalyan},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=76de8d5b6efd0730a9db2832e20e9a92}{%
+           family={Hadap},
+           familyi={H\bibinitperiod},
+           given={Sunil},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dc70f39b2376e06c48e34e8585715da7}{%
+           family={Gambaretto},
+           familyi={G\bibinitperiod},
+           given={Emiliano},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48e8790ffa6c3802f13cef1d0d0307fa}{%
+           family={Lalonde},
+           familyi={L\bibinitperiod},
+           given={Jean-François},
+           giveni={J\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{480493ddac84b3cae8a07c66dcefe43b}
+      \strng{fullhash}{ae991ec0bad75dbb0fdd1cfc98772e04}
+      \strng{fullhashraw}{ae991ec0bad75dbb0fdd1cfc98772e04}
+      \strng{bibnamehash}{ae991ec0bad75dbb0fdd1cfc98772e04}
+      \strng{authorbibnamehash}{ae991ec0bad75dbb0fdd1cfc98772e04}
+      \strng{authornamehash}{480493ddac84b3cae8a07c66dcefe43b}
+      \strng{authorfullhash}{ae991ec0bad75dbb0fdd1cfc98772e04}
+      \strng{authorfullhashraw}{ae991ec0bad75dbb0fdd1cfc98772e04}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a CNN-based technique to estimate high-dynamic range outdoor illumination from a single low dynamic range image. To train the CNN, we leverage a large dataset of outdoor panoramas. We fit a low-dimensional physically-based outdoor illumination model to the skies in these panoramas giving us a compact set of parameters (including sun position, atmospheric conditions, and camera parameters). We extract limited field-of-view images from the panoramas, and train a CNN with this large set of input image--output lighting parameter pairs. Given a test image, this network can be used to infer illumination parameters that can, in turn, be used to reconstruct an outdoor illumination environment map. We demonstrate that our approach allows the recovery of plausible illumination conditions and enables photorealistic virtual object insertion from a single image. An extensive evaluation on both the panorama dataset and captured HDR environment maps shows that our technique significantly outperforms previous solutions to this problem.}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{month}{4}
+      \field{number}{arXiv:1611.06403}
+      \field{title}{Deep {{Outdoor Illumination Estimation}}}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1611.06403
+      \endverb
+      \verb{eprint}
+      \verb 1611.06403
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/WH653BMA/Hold-Geoffroy et al. - 2018 - Deep Outdoor Illumination Estimation.pdf;/Users/david/Zotero/storage/QUJ4KMIT/1611.html
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{huangMultimodalUnsupervisedImagetoImage2018}{inbook}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=18e2748019898f7b8be59e77f5b8b20e}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Xun},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c3c4604957af5f2ce5f1537fdbaa510}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Ming-Yu},
+           giveni={M\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=044d1db5259b74e4975282f599d8e767}{%
+           family={Belongie},
+           familyi={B\bibinitperiod},
+           given={Serge},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=08129312c062dd971f82ea43031cdef0}{%
+           family={Kautz},
+           familyi={K\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=2d9b2bb140830bf8f7f642c17692a8e4}{%
+           family={Ferrari},
+           familyi={F\bibinitperiod},
+           given={Vittorio},
+           giveni={V\bibinitperiod}}}%
+        {{hash=c4c76fca369ecb436d9729820e745123}{%
+           family={Hebert},
+           familyi={H\bibinitperiod},
+           given={Martial},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bd7af1e31d4938e27dbc867b4bb71e9d}{%
+           family={Sminchisescu},
+           familyi={S\bibinitperiod},
+           given={Cristian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=214a71ab353c5570ed4acb95cf84f539}{%
+           family={Weiss},
+           familyi={W\bibinitperiod},
+           given={Yair},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{f993e2acea1585a04ec2d4e5c8aafed1}
+      \strng{fullhash}{725a0e6d42ca311be7ea127c137ae36c}
+      \strng{fullhashraw}{725a0e6d42ca311be7ea127c137ae36c}
+      \strng{bibnamehash}{725a0e6d42ca311be7ea127c137ae36c}
+      \strng{authorbibnamehash}{725a0e6d42ca311be7ea127c137ae36c}
+      \strng{authornamehash}{f993e2acea1585a04ec2d4e5c8aafed1}
+      \strng{authorfullhash}{725a0e6d42ca311be7ea127c137ae36c}
+      \strng{authorfullhashraw}{725a0e6d42ca311be7ea127c137ae36c}
+      \strng{editorbibnamehash}{0d71006df560b3f7aa8fdb55efa8491f}
+      \strng{editornamehash}{55075d71201f5d17a91f0ae9d748d278}
+      \strng{editorfullhash}{0d71006df560b3f7aa8fdb55efa8491f}
+      \strng{editorfullhashraw}{0d71006df560b3f7aa8fdb55efa8491f}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Unsupervised image-to-image translation is an important and challenging problem in computer vision. Given an image in the source domain, the goal is to learn the conditional distribution of corresponding images in the target domain, without seeing any examples of corresponding image pairs. While this conditional distribution is inherently multimodal, existing approaches make an overly simplified assumption, modeling it as a deterministic one-to-one mapping. As a result, they fail to generate diverse outputs from a given source domain image. To address this limitation, we propose a Multimodal Unsupervised Image-to-image \$\$\textbackslash text\textbraceleft{} Translation \textbraceright{} \textbackslash text\textbraceleft (MUNIT) \textbraceright\$\$framework. We assume that the image representation can be decomposed into a content code that is domain-invariant, and a style code that captures domain-specific properties. To translate an image to another domain, we recombine its content code with a random style code sampled from the style space of the target domain. We analyze the proposed framework and establish several theoretical results. Extensive experiments with comparisons to state-of-the-art approaches further demonstrate the advantage of the proposed framework. Moreover, our framework allows users to control the style of translation outputs by providing an example style image. Code and pretrained models are available at https://github.com/nvlabs/MUNIT.}
+      \field{booktitle}{Computer {{Vision}} -- {{ECCV}} 2018}
+      \field{isbn}{978-3-030-01219-9}
+      \field{langid}{english}
+      \field{title}{Multimodal {{Unsupervised Image-to-Image Translation}}}
+      \field{year}{2018}
+      \field{pages}{179\bibrangedash 196}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/978-3-030-01219-9_11
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/3B8QJGT5/Huang et al. - 2018 - Multimodal Unsupervised Image-to-Image Translation.pdf
+      \endverb
+      \keyw{GANs,Image-to-image translation,Style transfer}
+    \endentry
+    \entry{isolaImagetoImageTranslationConditional2018}{misc}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=cae9f806bc99a5f19fadea538fc2db04}{%
+           family={Isola},
+           familyi={I\bibinitperiod},
+           given={Phillip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9fbb4b31963f07f34a13b375b4997338}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Jun-Yan},
+           giveni={J\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fbb5fac74ecd20c0f90a3884d6a93cdf}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Tinghui},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a663b27298722834a8cf09bb93d8c94}{%
+           family={Efros},
+           familyi={E\bibinitperiod},
+           given={Alexei\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{dd9b478c7b76d20d978868251cf3ad35}
+      \strng{fullhash}{18664a8c078ce7dff4c499de4e40bf2f}
+      \strng{fullhashraw}{18664a8c078ce7dff4c499de4e40bf2f}
+      \strng{bibnamehash}{18664a8c078ce7dff4c499de4e40bf2f}
+      \strng{authorbibnamehash}{18664a8c078ce7dff4c499de4e40bf2f}
+      \strng{authornamehash}{dd9b478c7b76d20d978868251cf3ad35}
+      \strng{authorfullhash}{18664a8c078ce7dff4c499de4e40bf2f}
+      \strng{authorfullhashraw}{18664a8c078ce7dff4c499de4e40bf2f}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We investigate conditional adversarial networks as a general-purpose solution to image-to-image translation problems. These networks not only learn the mapping from input image to output image, but also learn a loss function to train this mapping. This makes it possible to apply the same generic approach to problems that traditionally would require very different loss formulations. We demonstrate that this approach is effective at synthesizing photos from label maps, reconstructing objects from edge maps, and colorizing images, among other tasks. Indeed, since the release of the pix2pix software associated with this paper, a large number of internet users (many of them artists) have posted their own experiments with our system, further demonstrating its wide applicability and ease of adoption without the need for parameter tweaking. As a community, we no longer hand-engineer our mapping functions, and this work suggests we can achieve reasonable results without hand-engineering our loss functions either.}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{month}{11}
+      \field{number}{arXiv:1611.07004}
+      \field{title}{Image-to-{{Image Translation}} with {{Conditional Adversarial Networks}}}
+      \field{urlday}{16}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1611.07004
+      \endverb
+      \verb{eprint}
+      \verb 1611.07004
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/V4K28EHP/Isola et al. - 2018 - Image-to-Image Translation with Conditional Adversarial Networks.pdf;/Users/david/Zotero/storage/6RS9SY4A/1611.html
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{jaritzSparseDenseData2018}{misc}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=be1c434dd4af4c4fe6330250a6234c9b}{%
+           family={Jaritz},
+           familyi={J\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46c259725d926149d24951e864c2c0a4}{%
+           family={Charette},
+           familyi={C\bibinitperiod},
+           given={Raoul},
+           giveni={R\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=b8fbf5cf93b0965fe3832fd82e8666cb}{%
+           family={Wirbel},
+           familyi={W\bibinitperiod},
+           given={Emilie},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33e85dcd91a9791809d037ec60bb3549}{%
+           family={Perrotton},
+           familyi={P\bibinitperiod},
+           given={Xavier},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c58362f8b7c7f867e6683cb517df883}{%
+           family={Nashashibi},
+           familyi={N\bibinitperiod},
+           given={Fawzi},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{32906d7a46b6aecac1f249fe66b8a533}
+      \strng{fullhash}{1e6e2ec0e2413a323ff2b338396c3596}
+      \strng{fullhashraw}{1e6e2ec0e2413a323ff2b338396c3596}
+      \strng{bibnamehash}{1e6e2ec0e2413a323ff2b338396c3596}
+      \strng{authorbibnamehash}{1e6e2ec0e2413a323ff2b338396c3596}
+      \strng{authornamehash}{32906d7a46b6aecac1f249fe66b8a533}
+      \strng{authorfullhash}{1e6e2ec0e2413a323ff2b338396c3596}
+      \strng{authorfullhashraw}{1e6e2ec0e2413a323ff2b338396c3596}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Convolutional neural networks are designed for dense data, but vision data is often sparse (stereo depth, point clouds, pen stroke, etc.). We present a method to handle sparse depth data with optional dense RGB, and accomplish depth completion and semantic segmentation changing only the last layer. Our proposal efficiently learns sparse features without the need of an additional validity mask. We show how to ensure network robustness to varying input sparsities. Our method even works with densities as low as 0.8\% (8 layer lidar), and outperforms all published state-of-the-art on the Kitti depth completion benchmark.}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{month}{8}
+      \field{number}{arXiv:1808.00769}
+      \field{shorttitle}{Sparse and {{Dense Data}} with {{CNNs}}}
+      \field{title}{Sparse and {{Dense Data}} with {{CNNs}}: {{Depth Completion}} and {{Semantic Segmentation}}}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1808.00769
+      \endverb
+      \verb{eprint}
+      \verb 1808.00769
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/4DPY55YC/Jaritz et al. - 2018 - Sparse and Dense Data with CNNs Depth Completion and Semantic Segmentation.pdf;/Users/david/Zotero/storage/7QGDRUPN/1808.html
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{mohamedDataEfficiencyStudy2026}{misc}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=095b218a05a3ee63cf4be45e44af495c}{%
+           family={Mohamed},
+           familyi={M\bibinitperiod},
+           given={Mohamed\bibnamedelima Ahmed},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47d588fab147e39ea657fc07192df353}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Xiaowei},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{799d2b66fe26273ce6b14f65e077f8e8}
+      \strng{fullhash}{799d2b66fe26273ce6b14f65e077f8e8}
+      \strng{fullhashraw}{799d2b66fe26273ce6b14f65e077f8e8}
+      \strng{bibnamehash}{799d2b66fe26273ce6b14f65e077f8e8}
+      \strng{authorbibnamehash}{799d2b66fe26273ce6b14f65e077f8e8}
+      \strng{authornamehash}{799d2b66fe26273ce6b14f65e077f8e8}
+      \strng{authorfullhash}{799d2b66fe26273ce6b14f65e077f8e8}
+      \strng{authorfullhashraw}{799d2b66fe26273ce6b14f65e077f8e8}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Object detection in adverse weather is critical for the safety of autonomous vehicles; however, the scarcity of labelled, real-world foggy data remains a significant bottleneck. In this paper, we propose Clear2Fog (C2F), an end-to-end, physics-based pipeline that simulates fog on clear-weather datasets while ensuring sensor-level consistency across camera and LiDAR. By using monocular depth estimation and a novel atmospheric light estimation method, C2F overcomes structural artifacts and chromatic biases common in existing techniques. A human perceptual study confirms C2F's physical realism, with the generated images being preferred 92.95\% of the time over an established method. Utilising a training set of 270,000 images from the Waymo Open Dataset, we conduct an extensive data efficiency study to investigate how environmental diversity influences model robustness. Our findings reveal that models trained on mixed-density fog datasets at 75\% scale outperform those trained on fixed-density datasets at 100\% scale. Furthermore, we investigate the sim-to-real transfer by fine-tuning pre-trained models on real-world foggy data. We demonstrate that a tenfold increase over the default fine-tuning learning rate successfully overcomes negative transfer from synthetic biases, resulting in a 1.67 mAP improvement over real-only baselines. The C2F pipeline provides a scalable framework for enhancing the reliability of autonomous systems in adverse weather and demonstrates the potential of diverse synthetic datasets for efficient model training.}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{month}{5}
+      \field{number}{arXiv:2605.12608}
+      \field{title}{A {{Data Efficiency Study}} of {{Synthetic Fog}} for {{Object Detection Using}} the {{Clear2Fog Pipeline}}}
+      \field{urlday}{18}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2605.12608
+      \endverb
+      \verb{eprint}
+      \verb 2605.12608
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/QBFQN46E/Mohamed and Huang - 2026 - A Data Efficiency Study of Synthetic Fog for Object Detection Using the Clear2Fog Pipeline.pdf;/Users/david/Zotero/storage/4AMDKGJ5/2605.html
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{muhammadaliqureshiDistortionClassificationComputer}{misc}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=1369680afd907c606ddb3c6d69fb3439}{%
+           family={{Muhammad Ali Qureshi}},
+           familyi={M\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=8c3bbd4f2b44f7936b511557440d7e94}{%
+           family={{AZEDDINE BEGHDADI}},
+           familyi={A\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=8c3ae90dccb20d8ced73517175ca427c}{%
+           family={{MUHAMMAD ALI QURESHI}},
+           familyi={M\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=6d43881e97ddd80dc21641cc24fc679e}{%
+           family={{FAOUZI ALAYA CHEIKH}},
+           familyi={F\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=832ef7880d97b008b955dc65c74bb4f2}{%
+           family={{MOHIB ULLAH}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{0b4657f5e63dce2cc6ee0ca86e24bc44}
+      \strng{fullhash}{be12439dbb3dde19e7bc7ad089473e37}
+      \strng{fullhashraw}{be12439dbb3dde19e7bc7ad089473e37}
+      \strng{bibnamehash}{be12439dbb3dde19e7bc7ad089473e37}
+      \strng{authorbibnamehash}{be12439dbb3dde19e7bc7ad089473e37}
+      \strng{authornamehash}{0b4657f5e63dce2cc6ee0ca86e24bc44}
+      \strng{authorfullhash}{be12439dbb3dde19e7bc7ad089473e37}
+      \strng{authorfullhashraw}{be12439dbb3dde19e7bc7ad089473e37}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://dl.acm.org/doi/10.1145/3773023}
+      \field{title}{Distortion {{Classification}} in {{Computer Vision Applications}}: {{Current Progress}}, {{Challenges}}, and {{Perspectives}} |{} {{ACM Computing Surveys}}}
+      \field{urlday}{10}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/david/Zotero/storage/9ZGHSE5B/Muhammad Ali Qureshi et al. - Distortion Classification in Computer Vision Applications Current Progress, Challenges, and Perspec.pdf;/Users/david/Zotero/storage/CSZDV9SC/Distortion Review Research Notes.docx;/Users/david/Zotero/storage/8N9HWDZG/3773023.html
+      \endverb
+    \endentry
+    \entry{perezEffectivenessDataAugmentation2017}{misc}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5d14c73e0ea9e2665d0f5a6daa866b12}{%
+           family={Perez},
+           familyi={P\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d7f045e3b98936cc2c803d3519c6012}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{e5b22156b4f2a447e8a20b66ad7ff099}
+      \strng{fullhash}{e5b22156b4f2a447e8a20b66ad7ff099}
+      \strng{fullhashraw}{e5b22156b4f2a447e8a20b66ad7ff099}
+      \strng{bibnamehash}{e5b22156b4f2a447e8a20b66ad7ff099}
+      \strng{authorbibnamehash}{e5b22156b4f2a447e8a20b66ad7ff099}
+      \strng{authornamehash}{e5b22156b4f2a447e8a20b66ad7ff099}
+      \strng{authorfullhash}{e5b22156b4f2a447e8a20b66ad7ff099}
+      \strng{authorfullhashraw}{e5b22156b4f2a447e8a20b66ad7ff099}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we explore and compare multiple solutions to the problem of data augmentation in image classification. Previous work has demonstrated the effectiveness of data augmentation through simple techniques, such as cropping, rotating, and flipping input images. We artificially constrain our access to data to a small subset of the ImageNet dataset, and compare each data augmentation technique in turn. One of the more successful data augmentations strategies is the traditional transformations mentioned above. We also experiment with GANs to generate images of different styles. Finally, we propose a method to allow a neural net to learn augmentations that best improve the classifier, which we call neural augmentation. We discuss the successes and shortcomings of this method on various datasets.}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{month}{12}
+      \field{number}{arXiv:1712.04621}
+      \field{title}{The {{Effectiveness}} of {{Data Augmentation}} in {{Image Classification}} Using {{Deep Learning}}}
+      \field{urlday}{5}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1712.04621
+      \endverb
+      \verb{eprint}
+      \verb 1712.04621
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/553ZFAUB/Perez and Wang - 2017 - The Effectiveness of Data Augmentation in Image Classification using Deep Learning.pdf;/Users/david/Zotero/storage/CUUMWRQM/1712.html
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{sakaridisSemanticFoggyScene2018}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4bcaf1e909c373c8d1b0b19722fc580e}{%
+           family={Sakaridis},
+           familyi={S\bibinitperiod},
+           given={Christos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=18dd1a18471fd1f5b26b954a35dbd8c2}{%
+           family={Dai},
+           familyi={D\bibinitperiod},
+           given={Dengxin},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3bc7b9be5061411a87f19fcdf39499c}{%
+           family={Van\bibnamedelima Gool},
+           familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{13c7d3a5723101b8f0620864ca02874f}
+      \strng{fullhash}{209e73d24e8964654dea42e461e07a9d}
+      \strng{fullhashraw}{209e73d24e8964654dea42e461e07a9d}
+      \strng{bibnamehash}{209e73d24e8964654dea42e461e07a9d}
+      \strng{authorbibnamehash}{209e73d24e8964654dea42e461e07a9d}
+      \strng{authornamehash}{13c7d3a5723101b8f0620864ca02874f}
+      \strng{authorfullhash}{209e73d24e8964654dea42e461e07a9d}
+      \strng{authorfullhashraw}{209e73d24e8964654dea42e461e07a9d}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This work addresses the problem of semantic foggy scene understanding (SFSU). Although extensive research has been performed on image dehazing and on semantic scene understanding with clear-weather images, little attention has been paid to SFSU. Due to the difficulty of collecting and annotating foggy images, we choose to generate synthetic fog on real images that depict clear-weather outdoor scenes, and then leverage these partially synthetic data for SFSU by employing state-of-the-art convolutional neural networks (CNN). In particular, a complete pipeline to add synthetic fog to real, clear-weather images using incomplete depth information is developed. We apply our fog synthesis on the Cityscapes dataset and generate Foggy Cityscapes with 20,550 images. SFSU is tackled in two ways: (1) with typical supervised learning, and (2) with a novel type of semi-supervised learning, which combines (1) with an unsupervised supervision transfer from clear-weather images to their synthetic foggy counterparts. In addition, we carefully study the usefulness of image dehazing for SFSU. For evaluation, we present Foggy Driving, a dataset with 101 real-world images depicting foggy driving scenes, which come with ground truth annotations for semantic segmentation and object detection. Extensive experiments show that (1) supervised learning with our synthetic data significantly improves the performance of state-of-the-art CNN for SFSU on Foggy Driving; (2) our semi-supervised learning strategy further improves performance; and (3) image dehazing marginally advances SFSU with our learning strategy. The datasets, models and code are made publicly available.}
+      \field{issn}{1573-1405}
+      \field{journaltitle}{International Journal of Computer Vision}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{Semantic {{Foggy Scene Understanding}} with {{Synthetic Data}}}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{126}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{973\bibrangedash 992}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/s11263-018-1072-8
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/XMMZTHLG/Sakaridis et al. - 2018 - Semantic Foggy Scene Understanding with Synthetic Data.pdf
+      \endverb
+      \keyw{Dehazing,Depth denoising and completion,Foggy scene understanding,Object detection,Semantic segmentation,Transfer learning}
+    \endentry
+    \entry{sakaridisACDCAdverseConditions2021}{misc}{}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=4bcaf1e909c373c8d1b0b19722fc580e}{%
+           family={Sakaridis},
+           familyi={S\bibinitperiod},
+           given={Christos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ecbdeaec835537d95d1ebf3f676fb38}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Haoran},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=815a2cdb03036dc2884fcf0472f759cf}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Ke},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a52358a2d6716000917bdbdecfa8b8f}{%
+           family={Zurbrügg},
+           familyi={Z\bibinitperiod},
+           given={René},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5ffa3c9fe4144a0b58e598381142a442}{%
+           family={Jadon},
+           familyi={J\bibinitperiod},
+           given={Arpit},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ca3141ee554786682a1eccd4f491ed2e}{%
+           family={Abbeloos},
+           familyi={A\bibinitperiod},
+           given={Wim},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=90764707b67b71b316d95117c27031db}{%
+           family={Reino},
+           familyi={R\bibinitperiod},
+           given={Daniel\bibnamedelima Olmeda},
+           giveni={D\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3bc7b9be5061411a87f19fcdf39499c}{%
+           family={Van\bibnamedelima Gool},
+           familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=18dd1a18471fd1f5b26b954a35dbd8c2}{%
+           family={Dai},
+           familyi={D\bibinitperiod},
+           given={Dengxin},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{13c7d3a5723101b8f0620864ca02874f}
+      \strng{fullhash}{4fd8d7687851ce035bc6eae168ecf5d5}
+      \strng{fullhashraw}{4fd8d7687851ce035bc6eae168ecf5d5}
+      \strng{bibnamehash}{4fd8d7687851ce035bc6eae168ecf5d5}
+      \strng{authorbibnamehash}{4fd8d7687851ce035bc6eae168ecf5d5}
+      \strng{authornamehash}{13c7d3a5723101b8f0620864ca02874f}
+      \strng{authorfullhash}{4fd8d7687851ce035bc6eae168ecf5d5}
+      \strng{authorfullhashraw}{4fd8d7687851ce035bc6eae168ecf5d5}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Level-5 driving automation requires a robust visual perception system that can parse input images under any condition. However, existing driving datasets for dense semantic perception are either dominated by images captured under normal conditions or are small in scale. To address this, we introduce ACDC, the Adverse Conditions Dataset with Correspondences for training and testing methods for diverse semantic perception tasks on adverse visual conditions. ACDC consists of a large set of 8012 images, half of which (4006) are equally distributed between four common adverse conditions: fog, nighttime, rain, and snow. Each adverse-condition image comes with a high-quality pixel-level panoptic annotation, a corresponding image of the same scene under normal conditions, and a binary mask that distinguishes between intra-image regions of clear and uncertain semantic content. 1503 of the corresponding normal-condition images feature panoptic annotations, raising the total annotated images to 5509. ACDC supports the standard tasks of semantic segmentation, object detection, instance segmentation, and panoptic segmentation, as well as the newly introduced uncertainty-aware semantic segmentation. A detailed empirical study demonstrates the challenges that the adverse domains of ACDC pose to state-of-the-art supervised and unsupervised approaches and indicates the value of our dataset in steering future progress in the field. Our dataset and benchmark are publicly available at https://acdc.vision.ee.ethz.ch}
+      \field{howpublished}{https://arxiv.org/abs/2104.13395v5}
+      \field{journaltitle}{arXiv.org}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{shorttitle}{{{ACDC}}}
+      \field{title}{{{ACDC}}: {{The Adverse Conditions Dataset}} with {{Correspondences}} for {{Robust Semantic Driving Scene Perception}}}
+      \field{urlday}{24}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/david/Zotero/storage/JBT6GD9B/Sakaridis et al. - 2021 - ACDC The Adverse Conditions Dataset with Correspondences for Robust Semantic Driving Scene Percepti.pdf
+      \endverb
+    \endentry
+    \entry{tremblayRainRenderingEvaluating2021}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=4983df5ca883aa219ae315aee594c0be}{%
+           family={Tremblay},
+           familyi={T\bibinitperiod},
+           given={Maxime},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d83f56643bcda629175c7f8423bcffb6}{%
+           family={Halder},
+           familyi={H\bibinitperiod},
+           given={Shirsendu\bibnamedelima Sukanta},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f20e500efe4b89838d550054662ff11}{%
+           family={{de Charette}},
+           familyi={d\bibinitperiod},
+           given={Raoul},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48e8790ffa6c3802f13cef1d0d0307fa}{%
+           family={Lalonde},
+           familyi={L\bibinitperiod},
+           given={Jean-François},
+           giveni={J\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{69c00348c63375cb372556a81cec6298}
+      \strng{fullhash}{c6607c377487c24c61efbf99526e7736}
+      \strng{fullhashraw}{c6607c377487c24c61efbf99526e7736}
+      \strng{bibnamehash}{c6607c377487c24c61efbf99526e7736}
+      \strng{authorbibnamehash}{c6607c377487c24c61efbf99526e7736}
+      \strng{authornamehash}{69c00348c63375cb372556a81cec6298}
+      \strng{authorfullhash}{c6607c377487c24c61efbf99526e7736}
+      \strng{authorfullhashraw}{c6607c377487c24c61efbf99526e7736}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Rain fills the atmosphere with water particles, which breaks the common assumption that light travels unaltered from the scene to the camera. While it is well-known that rain affects computer vision algorithms, quantifying its impact is difficult. In this context, we present a rain rendering pipeline that enables the systematic evaluation of common computer vision algorithms to controlled amounts of rain. We present three different ways to add synthetic rain to existing images datasets: completely physic-based; completely data-driven; and a combination of both. The physic-based rain augmentation combines a physical particle simulator and accurate rain photometric modeling. We validate our rendering methods with a user study, demonstrating our rain is judged as much as 73\% more realistic than the state-of-the-art. Using our generated rain-augmented KITTI, Cityscapes, and nuScenes datasets, we conduct a thorough evaluation of object detection, semantic segmentation, and depth estimation algorithms and show that their performance decreases in degraded weather, on the order of 15\% for object detection, 60\% for semantic segmentation, and 6-fold increase in depth estimation error. Finetuning on our augmented synthetic data results in improvements of 21\% on object detection, 37\% on semantic segmentation, and 8\% on depth estimation.}
+      \field{issn}{1573-1405}
+      \field{journaltitle}{International Journal of Computer Vision}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Rain {{Rendering}} for {{Evaluating}} and {{Improving Robustness}} to {{Bad Weather}}}
+      \field{urlday}{10}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{129}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{341\bibrangedash 360}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/s11263-020-01366-3
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/HN43MFGK/Tremblay et al. - 2021 - Rain Rendering for Evaluating and Improving Robustness to Bad Weather.pdf
+      \endverb
+      \keyw{Adverse weather,GAN,Image to image translation,Physics-based rendering,Vision and rain}
+    \endentry
+    \entry{WhatYOLOv8InDepth}{misc}{}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://arxiv.org/html/2408.15857v1}
+      \field{title}{What Is {{YOLOv8}}: {{An In-Depth Exploration}} of the {{Internal Features}} of the {{Next-Generation Object Detector}}}
+      \field{urlday}{3}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/david/Zotero/storage/5Z9GU2G4/2408.html
+      \endverb
+    \endentry
+    \entry{wolfeBDD100KLargescaleDiverse}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=44d1b745df165ec509d95e4152ac3f29}{%
+           family={Wolfe},
+           familyi={W\bibinitperiod},
+           given={C.\bibnamedelimi K.},
+           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{44d1b745df165ec509d95e4152ac3f29}
+      \strng{fullhash}{44d1b745df165ec509d95e4152ac3f29}
+      \strng{fullhashraw}{44d1b745df165ec509d95e4152ac3f29}
+      \strng{bibnamehash}{44d1b745df165ec509d95e4152ac3f29}
+      \strng{authorbibnamehash}{44d1b745df165ec509d95e4152ac3f29}
+      \strng{authornamehash}{44d1b745df165ec509d95e4152ac3f29}
+      \strng{authorfullhash}{44d1b745df165ec509d95e4152ac3f29}
+      \strng{authorfullhashraw}{44d1b745df165ec509d95e4152ac3f29}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The BAIR Blog}
+      \field{shorttitle}{{{BDD100K}}}
+      \field{title}{{{BDD100K}}: {{A Large-scale Diverse Driving Video Database}}}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/david/Zotero/storage/WGQJ5PFN/bdd.html
+      \endverb
+    \endentry
+    \entry{yangDepthAnythingV22024}{misc}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=f1eeb2dd1fc5922091709e59023496f5}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Lihe},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f00adc70822a55eef709dcde125a234b}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Bingyi},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=800352834f20c08bfb9c71e2873d3d37}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Zilong},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=768a78f72c9bf8b5ea782a3124e5c695}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Zhen},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=517d6a07fe7557d7f01c4e145ea3b2b6}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaogang},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee4de6563d3aa74999c7a69f8f345e56}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Jiashi},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2c00b2ccbbe98f22709d2cb8ccc0bba}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Hengshuang},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0999263125149a3258b75c988279e7ac}
+      \strng{fullhash}{6430ca374a67896a00bdac35d13834e2}
+      \strng{fullhashraw}{6430ca374a67896a00bdac35d13834e2}
+      \strng{bibnamehash}{6430ca374a67896a00bdac35d13834e2}
+      \strng{authorbibnamehash}{6430ca374a67896a00bdac35d13834e2}
+      \strng{authornamehash}{0999263125149a3258b75c988279e7ac}
+      \strng{authorfullhash}{6430ca374a67896a00bdac35d13834e2}
+      \strng{authorfullhashraw}{6430ca374a67896a00bdac35d13834e2}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This work presents Depth Anything V2. Without pursuing fancy techniques, we aim to reveal crucial findings to pave the way towards building a powerful monocular depth estimation model. Notably, compared with V1, this version produces much finer and more robust depth predictions through three key practices: 1) replacing all labeled real images with synthetic images, 2) scaling up the capacity of our teacher model, and 3) teaching student models via the bridge of large-scale pseudo-labeled real images. Compared with the latest models built on Stable Diffusion, our models are significantly more efficient (more than 10x faster) and more accurate. We offer models of different scales (ranging from 25M to 1.3B params) to support extensive scenarios. Benefiting from their strong generalization capability, we fine-tune them with metric depth labels to obtain our metric depth models. In addition to our models, considering the limited diversity and frequent noise in current test sets, we construct a versatile evaluation benchmark with precise annotations and diverse scenes to facilitate future research.}
+      \field{howpublished}{https://arxiv.org/abs/2406.09414v2}
+      \field{journaltitle}{arXiv.org}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{title}{Depth {{Anything V2}}}
+      \field{urlday}{24}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/david/Zotero/storage/L2HR8LDU/Yang et al. - 2024 - Depth Anything V2.pdf
+      \endverb
+    \endentry
+    \entry{yuBDD100KDiverseDriving2018}{misc}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=7d644ffcde545cbf48ce06126689b74c}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Fisher},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b8fa82c747322d8345a9172cebc85ea7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Haofeng},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03d3e23852937fa39b0e34246c4ecd1d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c93885ce64107dd06ced5179f7f1e589}{%
+           family={Xian},
+           familyi={X\bibinitperiod},
+           given={Wenqi},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=da6c79f9546ad88a2e796febc7e145da}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yingying},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ad0d24bb008c9b37c59a3279f34cd576}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Fangchen},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f1c0df53b87aa308e99e41904c28b1d}{%
+           family={Madhavan},
+           familyi={M\bibinitperiod},
+           given={Vashisht},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=90180e1a30742e0d15328bfe637c2ef4}{%
+           family={Darrell},
+           familyi={D\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cc2a6fc8dcf01707f6150fb813b13113}
+      \strng{fullhash}{9ccddb15b10cb3ea1933ecc9cd1470ea}
+      \strng{fullhashraw}{9ccddb15b10cb3ea1933ecc9cd1470ea}
+      \strng{bibnamehash}{9ccddb15b10cb3ea1933ecc9cd1470ea}
+      \strng{authorbibnamehash}{9ccddb15b10cb3ea1933ecc9cd1470ea}
+      \strng{authornamehash}{cc2a6fc8dcf01707f6150fb813b13113}
+      \strng{authorfullhash}{9ccddb15b10cb3ea1933ecc9cd1470ea}
+      \strng{authorfullhashraw}{9ccddb15b10cb3ea1933ecc9cd1470ea}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Datasets drive vision progress, yet existing driving datasets are impoverished in terms of visual content and supported tasks to study multitask learning for autonomous driving. Researchers are usually constrained to study a small set of problems on one dataset, while real-world computer vision applications require performing tasks of various complexities. We construct BDD100K, the largest driving video dataset with 100K videos and 10 tasks to evaluate the exciting progress of image recognition algorithms on autonomous driving. The dataset possesses geographic, environmental, and weather diversity, which is useful for training models that are less likely to be surprised by new conditions. Based on this diverse dataset, we build a benchmark for heterogeneous multitask learning and study how to solve the tasks together. Our experiments show that special training strategies are needed for existing models to perform such heterogeneous tasks. BDD100K opens the door for future studies in this important venue.}
+      \field{howpublished}{https://arxiv.org/abs/1805.04687v2}
+      \field{journaltitle}{arXiv.org}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{shorttitle}{{{BDD100K}}}
+      \field{title}{{{BDD100K}}: {{A Diverse Driving Dataset}} for {{Heterogeneous Multitask Learning}}}
+      \field{urlday}{24}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/david/Zotero/storage/ZRK7QMVC/Yu et al. - 2018 - BDD100K A Diverse Driving Dataset for Heterogeneous Multitask Learning.pdf
+      \endverb
+    \endentry
+    \entry{zhangAllWeatherDeepOutdoor2019}{misc}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=74f3067f20603e85bac325f904c6b552}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jinsong},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7290b005248bb35197192165ddb02fc}{%
+           family={Sunkavalli},
+           familyi={S\bibinitperiod},
+           given={Kalyan},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e3f6f2af7197d4a04395ac10b7f8db9d}{%
+           family={{Hold-Geoffroy}},
+           familyi={H\bibinitperiod},
+           given={Yannick},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=76de8d5b6efd0730a9db2832e20e9a92}{%
+           family={Hadap},
+           familyi={H\bibinitperiod},
+           given={Sunil},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5226094b77445d4169e30218679a2b6e}{%
+           family={Eisenmann},
+           familyi={E\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48e8790ffa6c3802f13cef1d0d0307fa}{%
+           family={Lalonde},
+           familyi={L\bibinitperiod},
+           given={Jean-François},
+           giveni={J\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{584f3f87b00bca6432e367b1cda5e331}
+      \strng{fullhash}{ed06cf0af00c752a4c03b2e9bf40111e}
+      \strng{fullhashraw}{ed06cf0af00c752a4c03b2e9bf40111e}
+      \strng{bibnamehash}{ed06cf0af00c752a4c03b2e9bf40111e}
+      \strng{authorbibnamehash}{ed06cf0af00c752a4c03b2e9bf40111e}
+      \strng{authornamehash}{584f3f87b00bca6432e367b1cda5e331}
+      \strng{authorfullhash}{ed06cf0af00c752a4c03b2e9bf40111e}
+      \strng{authorfullhashraw}{ed06cf0af00c752a4c03b2e9bf40111e}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a neural network that predicts HDR outdoor illumination from a single LDR image. At the heart of our work is a method to accurately learn HDR lighting from LDR panoramas under any weather condition. We achieve this by training another CNN (on a combination of synthetic and real images) to take as input an LDR panorama, and regress the parameters of the Lalonde-Matthews outdoor illumination model. This model is trained such that it a) reconstructs the appearance of the sky, and b) renders the appearance of objects lit by this illumination. We use this network to label a large-scale dataset of LDR panoramas with lighting parameters and use them to train our single image outdoor lighting estimation network. We demonstrate, via extensive experiments, that both our panorama and single image networks outperform the state of the art, and unlike prior work, are able to handle weather conditions ranging from fully sunny to overcast skies.}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{month}{6}
+      \field{number}{arXiv:1906.04909}
+      \field{title}{All-{{Weather Deep Outdoor Lighting Estimation}}}
+      \field{urlday}{16}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1906.04909
+      \endverb
+      \verb{eprint}
+      \verb 1906.04909
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/7LPSJWG4/Zhang et al. - 2019 - All-Weather Deep Outdoor Lighting Estimation.pdf;/Users/david/Zotero/storage/VUMVTBV7/1906.html
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{zhuUnpairedImagetoImageTranslation2020}{misc}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=9fbb4b31963f07f34a13b375b4997338}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Jun-Yan},
+           giveni={J\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b036e0ed5c21929ab46890b9a1033163}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Taesung},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cae9f806bc99a5f19fadea538fc2db04}{%
+           family={Isola},
+           familyi={I\bibinitperiod},
+           given={Phillip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a663b27298722834a8cf09bb93d8c94}{%
+           family={Efros},
+           familyi={E\bibinitperiod},
+           given={Alexei\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{6bbc73cad9d67ffe67a198aaeed8ce61}
+      \strng{fullhash}{69bc0b2da0c2e1bc9b8395c1d38556bb}
+      \strng{fullhashraw}{69bc0b2da0c2e1bc9b8395c1d38556bb}
+      \strng{bibnamehash}{69bc0b2da0c2e1bc9b8395c1d38556bb}
+      \strng{authorbibnamehash}{69bc0b2da0c2e1bc9b8395c1d38556bb}
+      \strng{authornamehash}{6bbc73cad9d67ffe67a198aaeed8ce61}
+      \strng{authorfullhash}{69bc0b2da0c2e1bc9b8395c1d38556bb}
+      \strng{authorfullhashraw}{69bc0b2da0c2e1bc9b8395c1d38556bb}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Image-to-image translation is a class of vision and graphics problems where the goal is to learn the mapping between an input image and an output image using a training set of aligned image pairs. However, for many tasks, paired training data will not be available. We present an approach for learning to translate an image from a source domain \$X\$ to a target domain \$Y\$ in the absence of paired examples. Our goal is to learn a mapping \$G: X \textbackslash rightarrow Y\$ such that the distribution of images from \$G(X)\$ is indistinguishable from the distribution \$Y\$ using an adversarial loss. Because this mapping is highly under-constrained, we couple it with an inverse mapping \$F: Y \textbackslash rightarrow X\$ and introduce a cycle consistency loss to push \$F(G(X)) \textbackslash approx X\$ (and vice versa). Qualitative results are presented on several tasks where paired training data does not exist, including collection style transfer, object transfiguration, season transfer, photo enhancement, etc. Quantitative comparisons against several prior methods demonstrate the superiority of our approach.}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{month}{8}
+      \field{number}{arXiv:1703.10593}
+      \field{title}{Unpaired {{Image-to-Image Translation}} Using {{Cycle-Consistent Adversarial Networks}}}
+      \field{urlday}{30}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1703.10593
+      \endverb
+      \verb{eprint}
+      \verb 1703.10593
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/SGND2GY9/Zhu et al. - 2020 - Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks.pdf;/Users/david/Zotero/storage/W94M99IG/1703.html
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+  \enddatalist
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{ahnImageDistortionDetection2017}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=907e0e35870f48a0bf73a73681c97d1b}{%
+           family={Ahn},
+           familyi={A\bibinitperiod},
+           given={Namhyuk},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b248681884ab3e3b83c729b6d7cf8089}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Byungkon},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a96e38bb31042990dde78174eb92f949}{%
+           family={Sohn},
+           familyi={S\bibinitperiod},
+           given={Kyung-Ah},
+           giveni={K\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Nanjing, China}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{983e2edc7bf179048d4a1227b4795f19}
+      \strng{fullhash}{afc2d31658182eec611420e6e826eb02}
+      \strng{fullhashraw}{afc2d31658182eec611420e6e826eb02}
+      \strng{bibnamehash}{afc2d31658182eec611420e6e826eb02}
+      \strng{authorbibnamehash}{afc2d31658182eec611420e6e826eb02}
+      \strng{authornamehash}{983e2edc7bf179048d4a1227b4795f19}
+      \strng{authorfullhash}{afc2d31658182eec611420e6e826eb02}
+      \strng{authorfullhashraw}{afc2d31658182eec611420e6e826eb02}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-5386-3354-0}
+      \field{journaltitle}{2017 4th {{IAPR Asian Conference}} on {{Pattern Recognition}} ({{ACPR}})}
+      \field{month}{11}
+      \field{title}{Image {{Distortion Detection Using Convolutional Neural Network}}}
+      \field{urlday}{10}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{220\bibrangedash 225}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ACPR.2017.95
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/Z9S4MRIQ/Ahn et al. - 2017 - Image Distortion Detection Using Convolutional Neural Network.pdf
+      \endverb
+    \endentry
+    \entry{bijelicSeeingFogSeeing2020}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=2d8bb4f69d41491c1a1572b91f37318f}{%
+           family={Bijelic},
+           familyi={B\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ef3f9fff8c37663c2e80a6c5ac1e639}{%
+           family={Gruber},
+           familyi={G\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6e0f8920db831925fcdf16c430f36df9}{%
+           family={Mannan},
+           familyi={M\bibinitperiod},
+           given={Fahim},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d5fa511313088859d5833467b78a44e4}{%
+           family={Kraus},
+           familyi={K\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=076985ffe4e1604f46c00e64e2fd4afe}{%
+           family={Ritter},
+           familyi={R\bibinitperiod},
+           given={Werner},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2f1c83e71a33d1c7df6e6b4962d375bb}{%
+           family={Dietmayer},
+           familyi={D\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2487c826a0790a643c4f24e93cbfd4eb}{%
+           family={Heide},
+           familyi={H\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e4c4dd1a0c5095b2b6606d72980fcd00}
+      \strng{fullhash}{1ea3a4a20988f1b3e2d6209ec7365311}
+      \strng{fullhashraw}{1ea3a4a20988f1b3e2d6209ec7365311}
+      \strng{bibnamehash}{1ea3a4a20988f1b3e2d6209ec7365311}
+      \strng{authorbibnamehash}{1ea3a4a20988f1b3e2d6209ec7365311}
+      \strng{authornamehash}{e4c4dd1a0c5095b2b6606d72980fcd00}
+      \strng{authorfullhash}{1ea3a4a20988f1b3e2d6209ec7365311}
+      \strng{authorfullhashraw}{1ea3a4a20988f1b3e2d6209ec7365311}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})}
+      \field{month}{6}
+      \field{title}{Seeing {{Through Fog Without Seeing Fog}}: {{Deep Multimodal Sensor Fusion}} in {{Unseen Adverse Weather}}}
+      \field{year}{2020}
+      \field{pages}{11682\bibrangedash 11692}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/CVPR42600.2020.01170
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/3S5VT9UB/Bijelic et al. - 2020 - Seeing Through Fog Without Seeing Fog Deep Multimodal Sensor Fusion in Unseen Adverse Weather.pdf
+      \endverb
+    \endentry
+    \entry{cordtsCityscapesDatasetSemantic2016}{misc}{}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=51a6c58200922aa207f1eb5b87370852}{%
+           family={Cordts},
+           familyi={C\bibinitperiod},
+           given={Marius},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a67129b4cc460ffe2151ef557de4284e}{%
+           family={Omran},
+           familyi={O\bibinitperiod},
+           given={Mohamed},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38d7c0cd81e6578aa4006ed0d723e223}{%
+           family={Ramos},
+           familyi={R\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=abf9780f694eb55731358b7ce25f6747}{%
+           family={Rehfeld},
+           familyi={R\bibinitperiod},
+           given={Timo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc0b5ffe4782bf03abc1388a401f92e5}{%
+           family={Enzweiler},
+           familyi={E\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b85b9efefe92bdad29985847fb978d46}{%
+           family={Benenson},
+           familyi={B\bibinitperiod},
+           given={Rodrigo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d996aac909f5d2ef612d23aaebcb75ce}{%
+           family={Franke},
+           familyi={F\bibinitperiod},
+           given={Uwe},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=507b5db9b42e37f1dc7fd50bac7cd869}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=457dd3049a60059cf69e775a47f0c154}{%
+           family={Schiele},
+           familyi={S\bibinitperiod},
+           given={Bernt},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{9d24662d1803e2774f8899435bffa2b5}
+      \strng{fullhash}{cc545828e2bf016705d2e732a65c3d91}
+      \strng{fullhashraw}{cc545828e2bf016705d2e732a65c3d91}
+      \strng{bibnamehash}{cc545828e2bf016705d2e732a65c3d91}
+      \strng{authorbibnamehash}{cc545828e2bf016705d2e732a65c3d91}
+      \strng{authornamehash}{9d24662d1803e2774f8899435bffa2b5}
+      \strng{authorfullhash}{cc545828e2bf016705d2e732a65c3d91}
+      \strng{authorfullhashraw}{cc545828e2bf016705d2e732a65c3d91}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Visual understanding of complex urban street scenes is an enabling factor for a wide range of applications. Object detection has benefited enormously from large-scale datasets, especially in the context of deep learning. For semantic urban scene understanding, however, no current dataset adequately captures the complexity of real-world urban scenes. To address this, we introduce Cityscapes, a benchmark suite and large-scale dataset to train and test approaches for pixel-level and instance-level semantic labeling. Cityscapes is comprised of a large, diverse set of stereo video sequences recorded in streets from 50 different cities. 5000 of these images have high quality pixel-level annotations; 20000 additional images have coarse annotations to enable methods that leverage large volumes of weakly-labeled data. Crucially, our effort exceeds previous attempts in terms of dataset size, annotation richness, scene variability, and complexity. Our accompanying empirical study provides an in-depth analysis of the dataset characteristics, as well as a performance evaluation of several state-of-the-art approaches based on our benchmark.}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{month}{4}
+      \field{number}{arXiv:1604.01685}
+      \field{title}{The {{Cityscapes Dataset}} for {{Semantic Urban Scene Understanding}}}
+      \field{urlday}{2}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1604.01685
+      \endverb
+      \verb{eprint}
+      \verb 1604.01685
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/64X59ZLB/Cordts et al. - 2016 - The Cityscapes Dataset for Semantic Urban Scene Understanding.pdf;/Users/david/Zotero/storage/A4SIRELP/1604.html
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{ExploreUltralyticsYOLOv82023}{misc}{}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Discover Ultralytics YOLOv8, an advancement in real-time object detection, optimizing performance with an array of pretrained models for diverse tasks.}
+      \field{howpublished}{https://docs.ultralytics.com/models/yolov8}
+      \field{journaltitle}{Ultralytics Docs}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{title}{Explore {{Ultralytics YOLOv8}}}
+      \field{urlday}{3}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{gargVisionRain2007}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=31ca05cd3ce3d31313057b3cf34065b9}{%
+           family={Garg},
+           familyi={G\bibinitperiod},
+           given={Kshitiz},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9272cbc8c0135d92b32e936f50633bf2}{%
+           family={Nayar},
+           familyi={N\bibinitperiod},
+           given={Shree\bibnamedelima K.},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{327bfbda98f748d6ca06453a826f0dca}
+      \strng{fullhash}{327bfbda98f748d6ca06453a826f0dca}
+      \strng{fullhashraw}{327bfbda98f748d6ca06453a826f0dca}
+      \strng{bibnamehash}{327bfbda98f748d6ca06453a826f0dca}
+      \strng{authorbibnamehash}{327bfbda98f748d6ca06453a826f0dca}
+      \strng{authornamehash}{327bfbda98f748d6ca06453a826f0dca}
+      \strng{authorfullhash}{327bfbda98f748d6ca06453a826f0dca}
+      \strng{authorfullhashraw}{327bfbda98f748d6ca06453a826f0dca}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The visual effects of rain are complex. Rain produces sharp intensity changes in images and videos that can severely impair the performance of outdoor vision systems. In this paper, we provide a comprehensive analysis of the visual effects of rain and the various factors that affect it. Based on this analysis, we develop efficient algorithms for handling rain in computer vision as well as for photorealistic rendering of rain in computer graphics. We first develop a photometric model that describes the intensities produced by individual rain streaks and a dynamic model that captures the spatio-temporal properties of rain. Together, these models describe the complete visual appearance of rain. Using these models, we develop a simple and effective post-processing algorithm for detection and removal of rain from videos. We show that our algorithm can distinguish rain from complex motion of scene objects and other time-varying textures. We then extend our analysis by studying how various factors such as camera parameters, rain properties and scene brightness affect the appearance of rain. We show that the unique physical properties of rain---its small size, high velocity and spatial distribution---makes its visibility depend strongly on camera parameters. This dependence is used to reduce the visibility of rain during image acquisition by judiciously selecting camera parameters. Conversely, camera parameters can also be chosen to enhance the visibility of rain. This ability can be used to develop an inexpensive and portable camera-based rain gauge that provides instantaneous rain-rate measurements. Finally, we develop a rain streak appearance model that accounts for the rapid shape distortions (i.e. oscillations) that a raindrop undergoes as it falls. We show that modeling these distortions allows us to faithfully render the complex intensity patterns that are visible in the case of raindrops that are close to the camera.}
+      \field{issn}{1573-1405}
+      \field{journaltitle}{International Journal of Computer Vision}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{1}
+      \field{title}{Vision and {{Rain}}}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{75}
+      \field{year}{2007}
+      \field{urldateera}{ce}
+      \field{pages}{3\bibrangedash 27}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1007/s11263-006-0028-6
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/XFATYZ4U/Garg and Nayar - 2007 - Vision and Rain.pdf
+      \endverb
+      \keyw{appearance modeling,atmospheric scattering,natural phenomena,outdoor vision and weather,physics-based vision,video analysis,video enhancement}
+    \endentry
+    \entry{goodfellowGenerativeAdversarialNets}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=d4f74ef4c79f3bb1e51e378184d8850e}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian\bibnamedelima J},
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a341d25f80a8118cdbb90b272adc8b4f}{%
+           family={{Pouget-Abadie}},
+           familyi={P\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e80f4779b032f68a6106e1424345450}{%
+           family={Mirza},
+           familyi={M\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=743dd6cdaa6639320289d219d351d7b7}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Bing},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e8151f1b8f85a048cacb34f374ec922b}{%
+           family={{Warde-Farley}},
+           familyi={W\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ca00ffd7cc35f7cfb8f698aa9239c76}{%
+           family={Ozair},
+           familyi={O\bibinitperiod},
+           given={Sherjil},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ccec1ccd2e1aa86960eb2e872c6b7020}{%
+           family={Courville},
+           familyi={C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8b5c7065f4df4f81627df9460343f166}
+      \strng{fullhash}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
+      \strng{fullhashraw}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
+      \strng{bibnamehash}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
+      \strng{authorbibnamehash}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
+      \strng{authornamehash}{8b5c7065f4df4f81627df9460343f166}
+      \strng{authorfullhash}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
+      \strng{authorfullhashraw}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Generative {{Adversarial Nets}}}
+      \verb{file}
+      \verb /Users/david/Zotero/storage/73T2WDSN/Goodfellow et al. - Generative Adversarial Nets.pdf
+      \endverb
+    \endentry
+    \entry{halderPhysicsBasedRenderingImproving2019}{misc}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d83f56643bcda629175c7f8423bcffb6}{%
+           family={Halder},
+           familyi={H\bibinitperiod},
+           given={Shirsendu\bibnamedelima Sukanta},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48e8790ffa6c3802f13cef1d0d0307fa}{%
+           family={Lalonde},
+           familyi={L\bibinitperiod},
+           given={Jean-François},
+           giveni={J\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46c259725d926149d24951e864c2c0a4}{%
+           family={Charette},
+           familyi={C\bibinitperiod},
+           given={Raoul},
+           giveni={R\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{b9ad41355c55eaa4d7a7e8c71f579a1d}
+      \strng{fullhash}{6e78344d02646111ccc9852e2b4e74f6}
+      \strng{fullhashraw}{6e78344d02646111ccc9852e2b4e74f6}
+      \strng{bibnamehash}{6e78344d02646111ccc9852e2b4e74f6}
+      \strng{authorbibnamehash}{6e78344d02646111ccc9852e2b4e74f6}
+      \strng{authornamehash}{b9ad41355c55eaa4d7a7e8c71f579a1d}
+      \strng{authorfullhash}{6e78344d02646111ccc9852e2b4e74f6}
+      \strng{authorfullhashraw}{6e78344d02646111ccc9852e2b4e74f6}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{To improve the robustness to rain, we present a physically-based rain rendering pipeline for realistically inserting rain into clear weather images. Our rendering relies on a physical particle simulator, an estimation of the scene lighting and an accurate rain photometric modeling to augment images with arbitrary amount of realistic rain or fog. We validate our rendering with a user study, proving our rain is judged 40\% more realistic that state-of-the-art. Using our generated weather augmented Kitti and Cityscapes dataset, we conduct a thorough evaluation of deep object detection and semantic segmentation algorithms and show that their performance decreases in degraded weather, on the order of 15\% for object detection and 60\% for semantic segmentation. Furthermore, we show refining existing networks with our augmented images improves the robustness of both object detection and semantic segmentation algorithms. We experiment on nuScenes and measure an improvement of 15\% for object detection and 35\% for semantic segmentation compared to original rainy performance. Augmented databases and code are available on the project page.}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{month}{8}
+      \field{number}{arXiv:1908.10335}
+      \field{title}{Physics-{{Based Rendering}} for {{Improving Robustness}} to {{Rain}}}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1908.10335
+      \endverb
+      \verb{eprint}
+      \verb 1908.10335
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/8INZ2ZWQ/Halder et al. - 2019 - Physics-Based Rendering for Improving Robustness to Rain.pdf
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition,Computer Science - Graphics,Computer Science - Machine Learning,Electrical Engineering and Systems Science - Image and Video Processing}
+    \endentry
+    \entry{hold-geoffroyDeepOutdoorIllumination2018}{misc}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=e3f6f2af7197d4a04395ac10b7f8db9d}{%
+           family={{Hold-Geoffroy}},
+           familyi={H\bibinitperiod},
+           given={Yannick},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7290b005248bb35197192165ddb02fc}{%
+           family={Sunkavalli},
+           familyi={S\bibinitperiod},
+           given={Kalyan},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=76de8d5b6efd0730a9db2832e20e9a92}{%
+           family={Hadap},
+           familyi={H\bibinitperiod},
+           given={Sunil},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dc70f39b2376e06c48e34e8585715da7}{%
+           family={Gambaretto},
+           familyi={G\bibinitperiod},
+           given={Emiliano},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48e8790ffa6c3802f13cef1d0d0307fa}{%
+           family={Lalonde},
+           familyi={L\bibinitperiod},
+           given={Jean-François},
+           giveni={J\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{480493ddac84b3cae8a07c66dcefe43b}
+      \strng{fullhash}{ae991ec0bad75dbb0fdd1cfc98772e04}
+      \strng{fullhashraw}{ae991ec0bad75dbb0fdd1cfc98772e04}
+      \strng{bibnamehash}{ae991ec0bad75dbb0fdd1cfc98772e04}
+      \strng{authorbibnamehash}{ae991ec0bad75dbb0fdd1cfc98772e04}
+      \strng{authornamehash}{480493ddac84b3cae8a07c66dcefe43b}
+      \strng{authorfullhash}{ae991ec0bad75dbb0fdd1cfc98772e04}
+      \strng{authorfullhashraw}{ae991ec0bad75dbb0fdd1cfc98772e04}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a CNN-based technique to estimate high-dynamic range outdoor illumination from a single low dynamic range image. To train the CNN, we leverage a large dataset of outdoor panoramas. We fit a low-dimensional physically-based outdoor illumination model to the skies in these panoramas giving us a compact set of parameters (including sun position, atmospheric conditions, and camera parameters). We extract limited field-of-view images from the panoramas, and train a CNN with this large set of input image--output lighting parameter pairs. Given a test image, this network can be used to infer illumination parameters that can, in turn, be used to reconstruct an outdoor illumination environment map. We demonstrate that our approach allows the recovery of plausible illumination conditions and enables photorealistic virtual object insertion from a single image. An extensive evaluation on both the panorama dataset and captured HDR environment maps shows that our technique significantly outperforms previous solutions to this problem.}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{month}{4}
+      \field{number}{arXiv:1611.06403}
+      \field{title}{Deep {{Outdoor Illumination Estimation}}}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1611.06403
+      \endverb
+      \verb{eprint}
+      \verb 1611.06403
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/WH653BMA/Hold-Geoffroy et al. - 2018 - Deep Outdoor Illumination Estimation.pdf;/Users/david/Zotero/storage/QUJ4KMIT/1611.html
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{huangMultimodalUnsupervisedImagetoImage2018}{inbook}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=18e2748019898f7b8be59e77f5b8b20e}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Xun},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c3c4604957af5f2ce5f1537fdbaa510}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Ming-Yu},
+           giveni={M\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=044d1db5259b74e4975282f599d8e767}{%
+           family={Belongie},
+           familyi={B\bibinitperiod},
+           given={Serge},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=08129312c062dd971f82ea43031cdef0}{%
+           family={Kautz},
+           familyi={K\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=2d9b2bb140830bf8f7f642c17692a8e4}{%
+           family={Ferrari},
+           familyi={F\bibinitperiod},
+           given={Vittorio},
+           giveni={V\bibinitperiod}}}%
+        {{hash=c4c76fca369ecb436d9729820e745123}{%
+           family={Hebert},
+           familyi={H\bibinitperiod},
+           given={Martial},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bd7af1e31d4938e27dbc867b4bb71e9d}{%
+           family={Sminchisescu},
+           familyi={S\bibinitperiod},
+           given={Cristian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=214a71ab353c5570ed4acb95cf84f539}{%
+           family={Weiss},
+           familyi={W\bibinitperiod},
+           given={Yair},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{f993e2acea1585a04ec2d4e5c8aafed1}
+      \strng{fullhash}{725a0e6d42ca311be7ea127c137ae36c}
+      \strng{fullhashraw}{725a0e6d42ca311be7ea127c137ae36c}
+      \strng{bibnamehash}{725a0e6d42ca311be7ea127c137ae36c}
+      \strng{authorbibnamehash}{725a0e6d42ca311be7ea127c137ae36c}
+      \strng{authornamehash}{f993e2acea1585a04ec2d4e5c8aafed1}
+      \strng{authorfullhash}{725a0e6d42ca311be7ea127c137ae36c}
+      \strng{authorfullhashraw}{725a0e6d42ca311be7ea127c137ae36c}
+      \strng{editorbibnamehash}{0d71006df560b3f7aa8fdb55efa8491f}
+      \strng{editornamehash}{55075d71201f5d17a91f0ae9d748d278}
+      \strng{editorfullhash}{0d71006df560b3f7aa8fdb55efa8491f}
+      \strng{editorfullhashraw}{0d71006df560b3f7aa8fdb55efa8491f}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Unsupervised image-to-image translation is an important and challenging problem in computer vision. Given an image in the source domain, the goal is to learn the conditional distribution of corresponding images in the target domain, without seeing any examples of corresponding image pairs. While this conditional distribution is inherently multimodal, existing approaches make an overly simplified assumption, modeling it as a deterministic one-to-one mapping. As a result, they fail to generate diverse outputs from a given source domain image. To address this limitation, we propose a Multimodal Unsupervised Image-to-image \$\$\textbackslash text\textbraceleft{} Translation \textbraceright{} \textbackslash text\textbraceleft (MUNIT) \textbraceright\$\$framework. We assume that the image representation can be decomposed into a content code that is domain-invariant, and a style code that captures domain-specific properties. To translate an image to another domain, we recombine its content code with a random style code sampled from the style space of the target domain. We analyze the proposed framework and establish several theoretical results. Extensive experiments with comparisons to state-of-the-art approaches further demonstrate the advantage of the proposed framework. Moreover, our framework allows users to control the style of translation outputs by providing an example style image. Code and pretrained models are available at https://github.com/nvlabs/MUNIT.}
+      \field{booktitle}{Computer {{Vision}} -- {{ECCV}} 2018}
+      \field{isbn}{978-3-030-01219-9}
+      \field{langid}{english}
+      \field{title}{Multimodal {{Unsupervised Image-to-Image Translation}}}
+      \field{year}{2018}
+      \field{pages}{179\bibrangedash 196}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/978-3-030-01219-9_11
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/3B8QJGT5/Huang et al. - 2018 - Multimodal Unsupervised Image-to-Image Translation.pdf
+      \endverb
+      \keyw{GANs,Image-to-image translation,Style transfer}
+    \endentry
+    \entry{isolaImagetoImageTranslationConditional2018}{misc}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=cae9f806bc99a5f19fadea538fc2db04}{%
+           family={Isola},
+           familyi={I\bibinitperiod},
+           given={Phillip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9fbb4b31963f07f34a13b375b4997338}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Jun-Yan},
+           giveni={J\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fbb5fac74ecd20c0f90a3884d6a93cdf}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Tinghui},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a663b27298722834a8cf09bb93d8c94}{%
+           family={Efros},
+           familyi={E\bibinitperiod},
+           given={Alexei\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{dd9b478c7b76d20d978868251cf3ad35}
+      \strng{fullhash}{18664a8c078ce7dff4c499de4e40bf2f}
+      \strng{fullhashraw}{18664a8c078ce7dff4c499de4e40bf2f}
+      \strng{bibnamehash}{18664a8c078ce7dff4c499de4e40bf2f}
+      \strng{authorbibnamehash}{18664a8c078ce7dff4c499de4e40bf2f}
+      \strng{authornamehash}{dd9b478c7b76d20d978868251cf3ad35}
+      \strng{authorfullhash}{18664a8c078ce7dff4c499de4e40bf2f}
+      \strng{authorfullhashraw}{18664a8c078ce7dff4c499de4e40bf2f}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We investigate conditional adversarial networks as a general-purpose solution to image-to-image translation problems. These networks not only learn the mapping from input image to output image, but also learn a loss function to train this mapping. This makes it possible to apply the same generic approach to problems that traditionally would require very different loss formulations. We demonstrate that this approach is effective at synthesizing photos from label maps, reconstructing objects from edge maps, and colorizing images, among other tasks. Indeed, since the release of the pix2pix software associated with this paper, a large number of internet users (many of them artists) have posted their own experiments with our system, further demonstrating its wide applicability and ease of adoption without the need for parameter tweaking. As a community, we no longer hand-engineer our mapping functions, and this work suggests we can achieve reasonable results without hand-engineering our loss functions either.}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{month}{11}
+      \field{number}{arXiv:1611.07004}
+      \field{title}{Image-to-{{Image Translation}} with {{Conditional Adversarial Networks}}}
+      \field{urlday}{16}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1611.07004
+      \endverb
+      \verb{eprint}
+      \verb 1611.07004
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/V4K28EHP/Isola et al. - 2018 - Image-to-Image Translation with Conditional Adversarial Networks.pdf;/Users/david/Zotero/storage/6RS9SY4A/1611.html
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{jaritzSparseDenseData2018}{misc}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=be1c434dd4af4c4fe6330250a6234c9b}{%
+           family={Jaritz},
+           familyi={J\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46c259725d926149d24951e864c2c0a4}{%
+           family={Charette},
+           familyi={C\bibinitperiod},
+           given={Raoul},
+           giveni={R\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=b8fbf5cf93b0965fe3832fd82e8666cb}{%
+           family={Wirbel},
+           familyi={W\bibinitperiod},
+           given={Emilie},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33e85dcd91a9791809d037ec60bb3549}{%
+           family={Perrotton},
+           familyi={P\bibinitperiod},
+           given={Xavier},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c58362f8b7c7f867e6683cb517df883}{%
+           family={Nashashibi},
+           familyi={N\bibinitperiod},
+           given={Fawzi},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{32906d7a46b6aecac1f249fe66b8a533}
+      \strng{fullhash}{1e6e2ec0e2413a323ff2b338396c3596}
+      \strng{fullhashraw}{1e6e2ec0e2413a323ff2b338396c3596}
+      \strng{bibnamehash}{1e6e2ec0e2413a323ff2b338396c3596}
+      \strng{authorbibnamehash}{1e6e2ec0e2413a323ff2b338396c3596}
+      \strng{authornamehash}{32906d7a46b6aecac1f249fe66b8a533}
+      \strng{authorfullhash}{1e6e2ec0e2413a323ff2b338396c3596}
+      \strng{authorfullhashraw}{1e6e2ec0e2413a323ff2b338396c3596}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Convolutional neural networks are designed for dense data, but vision data is often sparse (stereo depth, point clouds, pen stroke, etc.). We present a method to handle sparse depth data with optional dense RGB, and accomplish depth completion and semantic segmentation changing only the last layer. Our proposal efficiently learns sparse features without the need of an additional validity mask. We show how to ensure network robustness to varying input sparsities. Our method even works with densities as low as 0.8\% (8 layer lidar), and outperforms all published state-of-the-art on the Kitti depth completion benchmark.}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{month}{8}
+      \field{number}{arXiv:1808.00769}
+      \field{shorttitle}{Sparse and {{Dense Data}} with {{CNNs}}}
+      \field{title}{Sparse and {{Dense Data}} with {{CNNs}}: {{Depth Completion}} and {{Semantic Segmentation}}}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1808.00769
+      \endverb
+      \verb{eprint}
+      \verb 1808.00769
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/4DPY55YC/Jaritz et al. - 2018 - Sparse and Dense Data with CNNs Depth Completion and Semantic Segmentation.pdf;/Users/david/Zotero/storage/7QGDRUPN/1808.html
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{mohamedDataEfficiencyStudy2026}{misc}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=095b218a05a3ee63cf4be45e44af495c}{%
+           family={Mohamed},
+           familyi={M\bibinitperiod},
+           given={Mohamed\bibnamedelima Ahmed},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47d588fab147e39ea657fc07192df353}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Xiaowei},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{799d2b66fe26273ce6b14f65e077f8e8}
+      \strng{fullhash}{799d2b66fe26273ce6b14f65e077f8e8}
+      \strng{fullhashraw}{799d2b66fe26273ce6b14f65e077f8e8}
+      \strng{bibnamehash}{799d2b66fe26273ce6b14f65e077f8e8}
+      \strng{authorbibnamehash}{799d2b66fe26273ce6b14f65e077f8e8}
+      \strng{authornamehash}{799d2b66fe26273ce6b14f65e077f8e8}
+      \strng{authorfullhash}{799d2b66fe26273ce6b14f65e077f8e8}
+      \strng{authorfullhashraw}{799d2b66fe26273ce6b14f65e077f8e8}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Object detection in adverse weather is critical for the safety of autonomous vehicles; however, the scarcity of labelled, real-world foggy data remains a significant bottleneck. In this paper, we propose Clear2Fog (C2F), an end-to-end, physics-based pipeline that simulates fog on clear-weather datasets while ensuring sensor-level consistency across camera and LiDAR. By using monocular depth estimation and a novel atmospheric light estimation method, C2F overcomes structural artifacts and chromatic biases common in existing techniques. A human perceptual study confirms C2F's physical realism, with the generated images being preferred 92.95\% of the time over an established method. Utilising a training set of 270,000 images from the Waymo Open Dataset, we conduct an extensive data efficiency study to investigate how environmental diversity influences model robustness. Our findings reveal that models trained on mixed-density fog datasets at 75\% scale outperform those trained on fixed-density datasets at 100\% scale. Furthermore, we investigate the sim-to-real transfer by fine-tuning pre-trained models on real-world foggy data. We demonstrate that a tenfold increase over the default fine-tuning learning rate successfully overcomes negative transfer from synthetic biases, resulting in a 1.67 mAP improvement over real-only baselines. The C2F pipeline provides a scalable framework for enhancing the reliability of autonomous systems in adverse weather and demonstrates the potential of diverse synthetic datasets for efficient model training.}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{month}{5}
+      \field{number}{arXiv:2605.12608}
+      \field{title}{A {{Data Efficiency Study}} of {{Synthetic Fog}} for {{Object Detection Using}} the {{Clear2Fog Pipeline}}}
+      \field{urlday}{18}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2605.12608
+      \endverb
+      \verb{eprint}
+      \verb 2605.12608
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/QBFQN46E/Mohamed and Huang - 2026 - A Data Efficiency Study of Synthetic Fog for Object Detection Using the Clear2Fog Pipeline.pdf;/Users/david/Zotero/storage/4AMDKGJ5/2605.html
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{muhammadaliqureshiDistortionClassificationComputer}{misc}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=1369680afd907c606ddb3c6d69fb3439}{%
+           family={{Muhammad Ali Qureshi}},
+           familyi={M\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=8c3bbd4f2b44f7936b511557440d7e94}{%
+           family={{AZEDDINE BEGHDADI}},
+           familyi={A\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=8c3ae90dccb20d8ced73517175ca427c}{%
+           family={{MUHAMMAD ALI QURESHI}},
+           familyi={M\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=6d43881e97ddd80dc21641cc24fc679e}{%
+           family={{FAOUZI ALAYA CHEIKH}},
+           familyi={F\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=832ef7880d97b008b955dc65c74bb4f2}{%
+           family={{MOHIB ULLAH}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{0b4657f5e63dce2cc6ee0ca86e24bc44}
+      \strng{fullhash}{be12439dbb3dde19e7bc7ad089473e37}
+      \strng{fullhashraw}{be12439dbb3dde19e7bc7ad089473e37}
+      \strng{bibnamehash}{be12439dbb3dde19e7bc7ad089473e37}
+      \strng{authorbibnamehash}{be12439dbb3dde19e7bc7ad089473e37}
+      \strng{authornamehash}{0b4657f5e63dce2cc6ee0ca86e24bc44}
+      \strng{authorfullhash}{be12439dbb3dde19e7bc7ad089473e37}
+      \strng{authorfullhashraw}{be12439dbb3dde19e7bc7ad089473e37}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://dl.acm.org/doi/10.1145/3773023}
+      \field{title}{Distortion {{Classification}} in {{Computer Vision Applications}}: {{Current Progress}}, {{Challenges}}, and {{Perspectives}} |{} {{ACM Computing Surveys}}}
+      \field{urlday}{10}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/david/Zotero/storage/9ZGHSE5B/Muhammad Ali Qureshi et al. - Distortion Classification in Computer Vision Applications Current Progress, Challenges, and Perspec.pdf;/Users/david/Zotero/storage/CSZDV9SC/Distortion Review Research Notes.docx;/Users/david/Zotero/storage/8N9HWDZG/3773023.html
+      \endverb
+    \endentry
+    \entry{perezEffectivenessDataAugmentation2017}{misc}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5d14c73e0ea9e2665d0f5a6daa866b12}{%
+           family={Perez},
+           familyi={P\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d7f045e3b98936cc2c803d3519c6012}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{e5b22156b4f2a447e8a20b66ad7ff099}
+      \strng{fullhash}{e5b22156b4f2a447e8a20b66ad7ff099}
+      \strng{fullhashraw}{e5b22156b4f2a447e8a20b66ad7ff099}
+      \strng{bibnamehash}{e5b22156b4f2a447e8a20b66ad7ff099}
+      \strng{authorbibnamehash}{e5b22156b4f2a447e8a20b66ad7ff099}
+      \strng{authornamehash}{e5b22156b4f2a447e8a20b66ad7ff099}
+      \strng{authorfullhash}{e5b22156b4f2a447e8a20b66ad7ff099}
+      \strng{authorfullhashraw}{e5b22156b4f2a447e8a20b66ad7ff099}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we explore and compare multiple solutions to the problem of data augmentation in image classification. Previous work has demonstrated the effectiveness of data augmentation through simple techniques, such as cropping, rotating, and flipping input images. We artificially constrain our access to data to a small subset of the ImageNet dataset, and compare each data augmentation technique in turn. One of the more successful data augmentations strategies is the traditional transformations mentioned above. We also experiment with GANs to generate images of different styles. Finally, we propose a method to allow a neural net to learn augmentations that best improve the classifier, which we call neural augmentation. We discuss the successes and shortcomings of this method on various datasets.}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{month}{12}
+      \field{number}{arXiv:1712.04621}
+      \field{title}{The {{Effectiveness}} of {{Data Augmentation}} in {{Image Classification}} Using {{Deep Learning}}}
+      \field{urlday}{5}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1712.04621
+      \endverb
+      \verb{eprint}
+      \verb 1712.04621
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/553ZFAUB/Perez and Wang - 2017 - The Effectiveness of Data Augmentation in Image Classification using Deep Learning.pdf;/Users/david/Zotero/storage/CUUMWRQM/1712.html
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{sakaridisSemanticFoggyScene2018}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4bcaf1e909c373c8d1b0b19722fc580e}{%
+           family={Sakaridis},
+           familyi={S\bibinitperiod},
+           given={Christos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=18dd1a18471fd1f5b26b954a35dbd8c2}{%
+           family={Dai},
+           familyi={D\bibinitperiod},
+           given={Dengxin},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3bc7b9be5061411a87f19fcdf39499c}{%
+           family={Van\bibnamedelima Gool},
+           familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{13c7d3a5723101b8f0620864ca02874f}
+      \strng{fullhash}{209e73d24e8964654dea42e461e07a9d}
+      \strng{fullhashraw}{209e73d24e8964654dea42e461e07a9d}
+      \strng{bibnamehash}{209e73d24e8964654dea42e461e07a9d}
+      \strng{authorbibnamehash}{209e73d24e8964654dea42e461e07a9d}
+      \strng{authornamehash}{13c7d3a5723101b8f0620864ca02874f}
+      \strng{authorfullhash}{209e73d24e8964654dea42e461e07a9d}
+      \strng{authorfullhashraw}{209e73d24e8964654dea42e461e07a9d}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This work addresses the problem of semantic foggy scene understanding (SFSU). Although extensive research has been performed on image dehazing and on semantic scene understanding with clear-weather images, little attention has been paid to SFSU. Due to the difficulty of collecting and annotating foggy images, we choose to generate synthetic fog on real images that depict clear-weather outdoor scenes, and then leverage these partially synthetic data for SFSU by employing state-of-the-art convolutional neural networks (CNN). In particular, a complete pipeline to add synthetic fog to real, clear-weather images using incomplete depth information is developed. We apply our fog synthesis on the Cityscapes dataset and generate Foggy Cityscapes with 20,550 images. SFSU is tackled in two ways: (1) with typical supervised learning, and (2) with a novel type of semi-supervised learning, which combines (1) with an unsupervised supervision transfer from clear-weather images to their synthetic foggy counterparts. In addition, we carefully study the usefulness of image dehazing for SFSU. For evaluation, we present Foggy Driving, a dataset with 101 real-world images depicting foggy driving scenes, which come with ground truth annotations for semantic segmentation and object detection. Extensive experiments show that (1) supervised learning with our synthetic data significantly improves the performance of state-of-the-art CNN for SFSU on Foggy Driving; (2) our semi-supervised learning strategy further improves performance; and (3) image dehazing marginally advances SFSU with our learning strategy. The datasets, models and code are made publicly available.}
+      \field{issn}{1573-1405}
+      \field{journaltitle}{International Journal of Computer Vision}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{Semantic {{Foggy Scene Understanding}} with {{Synthetic Data}}}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{126}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{973\bibrangedash 992}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/s11263-018-1072-8
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/XMMZTHLG/Sakaridis et al. - 2018 - Semantic Foggy Scene Understanding with Synthetic Data.pdf
+      \endverb
+      \keyw{Dehazing,Depth denoising and completion,Foggy scene understanding,Object detection,Semantic segmentation,Transfer learning}
+    \endentry
+    \entry{sakaridisACDCAdverseConditions2021}{misc}{}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=4bcaf1e909c373c8d1b0b19722fc580e}{%
+           family={Sakaridis},
+           familyi={S\bibinitperiod},
+           given={Christos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ecbdeaec835537d95d1ebf3f676fb38}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Haoran},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=815a2cdb03036dc2884fcf0472f759cf}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Ke},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a52358a2d6716000917bdbdecfa8b8f}{%
+           family={Zurbrügg},
+           familyi={Z\bibinitperiod},
+           given={René},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5ffa3c9fe4144a0b58e598381142a442}{%
+           family={Jadon},
+           familyi={J\bibinitperiod},
+           given={Arpit},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ca3141ee554786682a1eccd4f491ed2e}{%
+           family={Abbeloos},
+           familyi={A\bibinitperiod},
+           given={Wim},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=90764707b67b71b316d95117c27031db}{%
+           family={Reino},
+           familyi={R\bibinitperiod},
+           given={Daniel\bibnamedelima Olmeda},
+           giveni={D\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3bc7b9be5061411a87f19fcdf39499c}{%
+           family={Van\bibnamedelima Gool},
+           familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=18dd1a18471fd1f5b26b954a35dbd8c2}{%
+           family={Dai},
+           familyi={D\bibinitperiod},
+           given={Dengxin},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{13c7d3a5723101b8f0620864ca02874f}
+      \strng{fullhash}{4fd8d7687851ce035bc6eae168ecf5d5}
+      \strng{fullhashraw}{4fd8d7687851ce035bc6eae168ecf5d5}
+      \strng{bibnamehash}{4fd8d7687851ce035bc6eae168ecf5d5}
+      \strng{authorbibnamehash}{4fd8d7687851ce035bc6eae168ecf5d5}
+      \strng{authornamehash}{13c7d3a5723101b8f0620864ca02874f}
+      \strng{authorfullhash}{4fd8d7687851ce035bc6eae168ecf5d5}
+      \strng{authorfullhashraw}{4fd8d7687851ce035bc6eae168ecf5d5}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Level-5 driving automation requires a robust visual perception system that can parse input images under any condition. However, existing driving datasets for dense semantic perception are either dominated by images captured under normal conditions or are small in scale. To address this, we introduce ACDC, the Adverse Conditions Dataset with Correspondences for training and testing methods for diverse semantic perception tasks on adverse visual conditions. ACDC consists of a large set of 8012 images, half of which (4006) are equally distributed between four common adverse conditions: fog, nighttime, rain, and snow. Each adverse-condition image comes with a high-quality pixel-level panoptic annotation, a corresponding image of the same scene under normal conditions, and a binary mask that distinguishes between intra-image regions of clear and uncertain semantic content. 1503 of the corresponding normal-condition images feature panoptic annotations, raising the total annotated images to 5509. ACDC supports the standard tasks of semantic segmentation, object detection, instance segmentation, and panoptic segmentation, as well as the newly introduced uncertainty-aware semantic segmentation. A detailed empirical study demonstrates the challenges that the adverse domains of ACDC pose to state-of-the-art supervised and unsupervised approaches and indicates the value of our dataset in steering future progress in the field. Our dataset and benchmark are publicly available at https://acdc.vision.ee.ethz.ch}
+      \field{howpublished}{https://arxiv.org/abs/2104.13395v5}
+      \field{journaltitle}{arXiv.org}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{shorttitle}{{{ACDC}}}
+      \field{title}{{{ACDC}}: {{The Adverse Conditions Dataset}} with {{Correspondences}} for {{Robust Semantic Driving Scene Perception}}}
+      \field{urlday}{24}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/david/Zotero/storage/JBT6GD9B/Sakaridis et al. - 2021 - ACDC The Adverse Conditions Dataset with Correspondences for Robust Semantic Driving Scene Percepti.pdf
+      \endverb
+    \endentry
+    \entry{tremblayRainRenderingEvaluating2021}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=4983df5ca883aa219ae315aee594c0be}{%
+           family={Tremblay},
+           familyi={T\bibinitperiod},
+           given={Maxime},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d83f56643bcda629175c7f8423bcffb6}{%
+           family={Halder},
+           familyi={H\bibinitperiod},
+           given={Shirsendu\bibnamedelima Sukanta},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f20e500efe4b89838d550054662ff11}{%
+           family={{de Charette}},
+           familyi={d\bibinitperiod},
+           given={Raoul},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48e8790ffa6c3802f13cef1d0d0307fa}{%
+           family={Lalonde},
+           familyi={L\bibinitperiod},
+           given={Jean-François},
+           giveni={J\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{69c00348c63375cb372556a81cec6298}
+      \strng{fullhash}{c6607c377487c24c61efbf99526e7736}
+      \strng{fullhashraw}{c6607c377487c24c61efbf99526e7736}
+      \strng{bibnamehash}{c6607c377487c24c61efbf99526e7736}
+      \strng{authorbibnamehash}{c6607c377487c24c61efbf99526e7736}
+      \strng{authornamehash}{69c00348c63375cb372556a81cec6298}
+      \strng{authorfullhash}{c6607c377487c24c61efbf99526e7736}
+      \strng{authorfullhashraw}{c6607c377487c24c61efbf99526e7736}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Rain fills the atmosphere with water particles, which breaks the common assumption that light travels unaltered from the scene to the camera. While it is well-known that rain affects computer vision algorithms, quantifying its impact is difficult. In this context, we present a rain rendering pipeline that enables the systematic evaluation of common computer vision algorithms to controlled amounts of rain. We present three different ways to add synthetic rain to existing images datasets: completely physic-based; completely data-driven; and a combination of both. The physic-based rain augmentation combines a physical particle simulator and accurate rain photometric modeling. We validate our rendering methods with a user study, demonstrating our rain is judged as much as 73\% more realistic than the state-of-the-art. Using our generated rain-augmented KITTI, Cityscapes, and nuScenes datasets, we conduct a thorough evaluation of object detection, semantic segmentation, and depth estimation algorithms and show that their performance decreases in degraded weather, on the order of 15\% for object detection, 60\% for semantic segmentation, and 6-fold increase in depth estimation error. Finetuning on our augmented synthetic data results in improvements of 21\% on object detection, 37\% on semantic segmentation, and 8\% on depth estimation.}
+      \field{issn}{1573-1405}
+      \field{journaltitle}{International Journal of Computer Vision}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Rain {{Rendering}} for {{Evaluating}} and {{Improving Robustness}} to {{Bad Weather}}}
+      \field{urlday}{10}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{129}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{341\bibrangedash 360}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/s11263-020-01366-3
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/HN43MFGK/Tremblay et al. - 2021 - Rain Rendering for Evaluating and Improving Robustness to Bad Weather.pdf
+      \endverb
+      \keyw{Adverse weather,GAN,Image to image translation,Physics-based rendering,Vision and rain}
+    \endentry
+    \entry{WhatYOLOv8InDepth}{misc}{}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://arxiv.org/html/2408.15857v1}
+      \field{title}{What Is {{YOLOv8}}: {{An In-Depth Exploration}} of the {{Internal Features}} of the {{Next-Generation Object Detector}}}
+      \field{urlday}{3}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/david/Zotero/storage/5Z9GU2G4/2408.html
+      \endverb
+    \endentry
+    \entry{wolfeBDD100KLargescaleDiverse}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=44d1b745df165ec509d95e4152ac3f29}{%
+           family={Wolfe},
+           familyi={W\bibinitperiod},
+           given={C.\bibnamedelimi K.},
+           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{44d1b745df165ec509d95e4152ac3f29}
+      \strng{fullhash}{44d1b745df165ec509d95e4152ac3f29}
+      \strng{fullhashraw}{44d1b745df165ec509d95e4152ac3f29}
+      \strng{bibnamehash}{44d1b745df165ec509d95e4152ac3f29}
+      \strng{authorbibnamehash}{44d1b745df165ec509d95e4152ac3f29}
+      \strng{authornamehash}{44d1b745df165ec509d95e4152ac3f29}
+      \strng{authorfullhash}{44d1b745df165ec509d95e4152ac3f29}
+      \strng{authorfullhashraw}{44d1b745df165ec509d95e4152ac3f29}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The BAIR Blog}
+      \field{shorttitle}{{{BDD100K}}}
+      \field{title}{{{BDD100K}}: {{A Large-scale Diverse Driving Video Database}}}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/david/Zotero/storage/WGQJ5PFN/bdd.html
+      \endverb
+    \endentry
+    \entry{yangDepthAnythingV22024}{misc}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=f1eeb2dd1fc5922091709e59023496f5}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Lihe},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f00adc70822a55eef709dcde125a234b}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Bingyi},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=800352834f20c08bfb9c71e2873d3d37}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Zilong},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=768a78f72c9bf8b5ea782a3124e5c695}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Zhen},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=517d6a07fe7557d7f01c4e145ea3b2b6}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaogang},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee4de6563d3aa74999c7a69f8f345e56}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Jiashi},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2c00b2ccbbe98f22709d2cb8ccc0bba}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Hengshuang},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0999263125149a3258b75c988279e7ac}
+      \strng{fullhash}{6430ca374a67896a00bdac35d13834e2}
+      \strng{fullhashraw}{6430ca374a67896a00bdac35d13834e2}
+      \strng{bibnamehash}{6430ca374a67896a00bdac35d13834e2}
+      \strng{authorbibnamehash}{6430ca374a67896a00bdac35d13834e2}
+      \strng{authornamehash}{0999263125149a3258b75c988279e7ac}
+      \strng{authorfullhash}{6430ca374a67896a00bdac35d13834e2}
+      \strng{authorfullhashraw}{6430ca374a67896a00bdac35d13834e2}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This work presents Depth Anything V2. Without pursuing fancy techniques, we aim to reveal crucial findings to pave the way towards building a powerful monocular depth estimation model. Notably, compared with V1, this version produces much finer and more robust depth predictions through three key practices: 1) replacing all labeled real images with synthetic images, 2) scaling up the capacity of our teacher model, and 3) teaching student models via the bridge of large-scale pseudo-labeled real images. Compared with the latest models built on Stable Diffusion, our models are significantly more efficient (more than 10x faster) and more accurate. We offer models of different scales (ranging from 25M to 1.3B params) to support extensive scenarios. Benefiting from their strong generalization capability, we fine-tune them with metric depth labels to obtain our metric depth models. In addition to our models, considering the limited diversity and frequent noise in current test sets, we construct a versatile evaluation benchmark with precise annotations and diverse scenes to facilitate future research.}
+      \field{howpublished}{https://arxiv.org/abs/2406.09414v2}
+      \field{journaltitle}{arXiv.org}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{title}{Depth {{Anything V2}}}
+      \field{urlday}{24}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/david/Zotero/storage/L2HR8LDU/Yang et al. - 2024 - Depth Anything V2.pdf
+      \endverb
+    \endentry
+    \entry{yuBDD100KDiverseDriving2018}{misc}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=7d644ffcde545cbf48ce06126689b74c}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Fisher},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b8fa82c747322d8345a9172cebc85ea7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Haofeng},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03d3e23852937fa39b0e34246c4ecd1d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c93885ce64107dd06ced5179f7f1e589}{%
+           family={Xian},
+           familyi={X\bibinitperiod},
+           given={Wenqi},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=da6c79f9546ad88a2e796febc7e145da}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yingying},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ad0d24bb008c9b37c59a3279f34cd576}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Fangchen},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f1c0df53b87aa308e99e41904c28b1d}{%
+           family={Madhavan},
+           familyi={M\bibinitperiod},
+           given={Vashisht},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=90180e1a30742e0d15328bfe637c2ef4}{%
+           family={Darrell},
+           familyi={D\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cc2a6fc8dcf01707f6150fb813b13113}
+      \strng{fullhash}{9ccddb15b10cb3ea1933ecc9cd1470ea}
+      \strng{fullhashraw}{9ccddb15b10cb3ea1933ecc9cd1470ea}
+      \strng{bibnamehash}{9ccddb15b10cb3ea1933ecc9cd1470ea}
+      \strng{authorbibnamehash}{9ccddb15b10cb3ea1933ecc9cd1470ea}
+      \strng{authornamehash}{cc2a6fc8dcf01707f6150fb813b13113}
+      \strng{authorfullhash}{9ccddb15b10cb3ea1933ecc9cd1470ea}
+      \strng{authorfullhashraw}{9ccddb15b10cb3ea1933ecc9cd1470ea}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Datasets drive vision progress, yet existing driving datasets are impoverished in terms of visual content and supported tasks to study multitask learning for autonomous driving. Researchers are usually constrained to study a small set of problems on one dataset, while real-world computer vision applications require performing tasks of various complexities. We construct BDD100K, the largest driving video dataset with 100K videos and 10 tasks to evaluate the exciting progress of image recognition algorithms on autonomous driving. The dataset possesses geographic, environmental, and weather diversity, which is useful for training models that are less likely to be surprised by new conditions. Based on this diverse dataset, we build a benchmark for heterogeneous multitask learning and study how to solve the tasks together. Our experiments show that special training strategies are needed for existing models to perform such heterogeneous tasks. BDD100K opens the door for future studies in this important venue.}
+      \field{howpublished}{https://arxiv.org/abs/1805.04687v2}
+      \field{journaltitle}{arXiv.org}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{shorttitle}{{{BDD100K}}}
+      \field{title}{{{BDD100K}}: {{A Diverse Driving Dataset}} for {{Heterogeneous Multitask Learning}}}
+      \field{urlday}{24}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/david/Zotero/storage/ZRK7QMVC/Yu et al. - 2018 - BDD100K A Diverse Driving Dataset for Heterogeneous Multitask Learning.pdf
+      \endverb
+    \endentry
+    \entry{zhangAllWeatherDeepOutdoor2019}{misc}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=74f3067f20603e85bac325f904c6b552}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jinsong},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7290b005248bb35197192165ddb02fc}{%
+           family={Sunkavalli},
+           familyi={S\bibinitperiod},
+           given={Kalyan},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e3f6f2af7197d4a04395ac10b7f8db9d}{%
+           family={{Hold-Geoffroy}},
+           familyi={H\bibinitperiod},
+           given={Yannick},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=76de8d5b6efd0730a9db2832e20e9a92}{%
+           family={Hadap},
+           familyi={H\bibinitperiod},
+           given={Sunil},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5226094b77445d4169e30218679a2b6e}{%
+           family={Eisenmann},
+           familyi={E\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48e8790ffa6c3802f13cef1d0d0307fa}{%
+           family={Lalonde},
+           familyi={L\bibinitperiod},
+           given={Jean-François},
+           giveni={J\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{584f3f87b00bca6432e367b1cda5e331}
+      \strng{fullhash}{ed06cf0af00c752a4c03b2e9bf40111e}
+      \strng{fullhashraw}{ed06cf0af00c752a4c03b2e9bf40111e}
+      \strng{bibnamehash}{ed06cf0af00c752a4c03b2e9bf40111e}
+      \strng{authorbibnamehash}{ed06cf0af00c752a4c03b2e9bf40111e}
+      \strng{authornamehash}{584f3f87b00bca6432e367b1cda5e331}
+      \strng{authorfullhash}{ed06cf0af00c752a4c03b2e9bf40111e}
+      \strng{authorfullhashraw}{ed06cf0af00c752a4c03b2e9bf40111e}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a neural network that predicts HDR outdoor illumination from a single LDR image. At the heart of our work is a method to accurately learn HDR lighting from LDR panoramas under any weather condition. We achieve this by training another CNN (on a combination of synthetic and real images) to take as input an LDR panorama, and regress the parameters of the Lalonde-Matthews outdoor illumination model. This model is trained such that it a) reconstructs the appearance of the sky, and b) renders the appearance of objects lit by this illumination. We use this network to label a large-scale dataset of LDR panoramas with lighting parameters and use them to train our single image outdoor lighting estimation network. We demonstrate, via extensive experiments, that both our panorama and single image networks outperform the state of the art, and unlike prior work, are able to handle weather conditions ranging from fully sunny to overcast skies.}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{month}{6}
+      \field{number}{arXiv:1906.04909}
+      \field{title}{All-{{Weather Deep Outdoor Lighting Estimation}}}
+      \field{urlday}{16}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1906.04909
+      \endverb
+      \verb{eprint}
+      \verb 1906.04909
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/7LPSJWG4/Zhang et al. - 2019 - All-Weather Deep Outdoor Lighting Estimation.pdf;/Users/david/Zotero/storage/VUMVTBV7/1906.html
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{zhuUnpairedImagetoImageTranslation2020}{misc}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=9fbb4b31963f07f34a13b375b4997338}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Jun-Yan},
+           giveni={J\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b036e0ed5c21929ab46890b9a1033163}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Taesung},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cae9f806bc99a5f19fadea538fc2db04}{%
+           family={Isola},
+           familyi={I\bibinitperiod},
+           given={Phillip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a663b27298722834a8cf09bb93d8c94}{%
+           family={Efros},
+           familyi={E\bibinitperiod},
+           given={Alexei\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{6bbc73cad9d67ffe67a198aaeed8ce61}
+      \strng{fullhash}{69bc0b2da0c2e1bc9b8395c1d38556bb}
+      \strng{fullhashraw}{69bc0b2da0c2e1bc9b8395c1d38556bb}
+      \strng{bibnamehash}{69bc0b2da0c2e1bc9b8395c1d38556bb}
+      \strng{authorbibnamehash}{69bc0b2da0c2e1bc9b8395c1d38556bb}
+      \strng{authornamehash}{6bbc73cad9d67ffe67a198aaeed8ce61}
+      \strng{authorfullhash}{69bc0b2da0c2e1bc9b8395c1d38556bb}
+      \strng{authorfullhashraw}{69bc0b2da0c2e1bc9b8395c1d38556bb}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Image-to-image translation is a class of vision and graphics problems where the goal is to learn the mapping between an input image and an output image using a training set of aligned image pairs. However, for many tasks, paired training data will not be available. We present an approach for learning to translate an image from a source domain \$X\$ to a target domain \$Y\$ in the absence of paired examples. Our goal is to learn a mapping \$G: X \textbackslash rightarrow Y\$ such that the distribution of images from \$G(X)\$ is indistinguishable from the distribution \$Y\$ using an adversarial loss. Because this mapping is highly under-constrained, we couple it with an inverse mapping \$F: Y \textbackslash rightarrow X\$ and introduce a cycle consistency loss to push \$F(G(X)) \textbackslash approx X\$ (and vice versa). Qualitative results are presented on several tasks where paired training data does not exist, including collection style transfer, object transfiguration, season transfer, photo enhancement, etc. Quantitative comparisons against several prior methods demonstrate the superiority of our approach.}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{month}{8}
+      \field{number}{arXiv:1703.10593}
+      \field{title}{Unpaired {{Image-to-Image Translation}} Using {{Cycle-Consistent Adversarial Networks}}}
+      \field{urlday}{30}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1703.10593
+      \endverb
+      \verb{eprint}
+      \verb 1703.10593
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/SGND2GY9/Zhu et al. - 2020 - Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks.pdf;/Users/david/Zotero/storage/W94M99IG/1703.html
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

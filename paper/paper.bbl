@@ -79,57 +79,39 @@
       \verb /Users/david/Zotero/storage/Z9S4MRIQ/Ahn et al. - 2017 - Image Distortion Detection Using Convolutional Neural Network.pdf
       \endverb
     \endentry
-    \entry{anwarVisionEnhancementSingle2017}{article}{}{}
+    \entry{bakosPrototypeInteractiveDynamic}{article}{}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=5d32d11f3e550e0978b20013ff3787bb}{%
-           family={Anwar},
-           familyi={A\bibinitperiod},
-           given={Md.\bibnamedelimi Imtiyaz},
-           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod},
+        {{un=0,uniquepart=base,hash=5c77e97b5899a6a86fb1405b94011001}{%
+           family={Bakos},
+           familyi={B\bibinitperiod},
+           given={Niklas},
+           giveni={N\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=712a03f80a7acb11b64dcf0646b2bd35}{%
-           family={Khosla},
-           familyi={K\bibinitperiod},
-           given={Arun},
-           giveni={A\bibinitperiod},
+        {{un=0,uniquepart=base,hash=3be5d8c259cb754bdb0902adf9a0fe5a}{%
+           family={Ollila},
+           familyi={O\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{fa1a0f0918032c1acf05c7595ab80dfe}
-      \strng{fullhash}{fa1a0f0918032c1acf05c7595ab80dfe}
-      \strng{fullhashraw}{fa1a0f0918032c1acf05c7595ab80dfe}
-      \strng{bibnamehash}{fa1a0f0918032c1acf05c7595ab80dfe}
-      \strng{authorbibnamehash}{fa1a0f0918032c1acf05c7595ab80dfe}
-      \strng{authornamehash}{fa1a0f0918032c1acf05c7595ab80dfe}
-      \strng{authorfullhash}{fa1a0f0918032c1acf05c7595ab80dfe}
-      \strng{authorfullhashraw}{fa1a0f0918032c1acf05c7595ab80dfe}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \strng{namehash}{69b5753e084611f4f74eaa014da8f18e}
+      \strng{fullhash}{69b5753e084611f4f74eaa014da8f18e}
+      \strng{fullhashraw}{69b5753e084611f4f74eaa014da8f18e}
+      \strng{bibnamehash}{69b5753e084611f4f74eaa014da8f18e}
+      \strng{authorbibnamehash}{69b5753e084611f4f74eaa014da8f18e}
+      \strng{authornamehash}{69b5753e084611f4f74eaa014da8f18e}
+      \strng{authorfullhash}{69b5753e084611f4f74eaa014da8f18e}
+      \strng{authorfullhashraw}{69b5753e084611f4f74eaa014da8f18e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labeldatesource}{nodate}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Contrast and color of the captured pictures are degraded under foggy weather conditions and this degradation is often attributed to attenuation and airlight. To reduce the number of road accidents through vision enhancement in turbid weather, an efficient fog removal technique plays a vital role as fog greatly reduces the visibility and hence affects the computer vision algorithms such as surveillance, tracking and Fog Vision Enhancement System (FVES). In this paper, a novel and effective algorithm is proposed for single image fog removal that's capable of handling images of gray and color channels. The proposed algorithm introduces Dark Channel Prior (DCP) followed by Weighted Least Square (WLS) and High Dynamic Range (HDR) based fog removal scheme. The qualitative and quantitative analysis is applied for the assessment of defogged images obtained from the proposed methodology and is additionally compared with the different fog removal algorithms to establish its superiority. The foremost dominant advantage of the proposed algorithm is its capability to preserve sharp details whereas maintaining the color quality.}
-      \field{issn}{22150986}
-      \field{journaltitle}{Engineering Science and Technology, an International Journal}
       \field{langid}{english}
-      \field{month}{6}
-      \field{number}{3}
-      \field{title}{Vision Enhancement through Single Image Fog Removal}
-      \field{urlday}{18}
-      \field{urlmonth}{6}
-      \field{urlyear}{2026}
-      \field{volume}{20}
-      \field{year}{2017}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \field{pages}{1075\bibrangedash 1083}
-      \range{pages}{9}
-      \verb{doi}
-      \verb 10.1016/j.jestch.2016.11.015
-      \endverb
+      \field{title}{A {{Prototype}} for an {{Interactive}} and {{Dynamic Image-Based Relief Rendering System}}}
       \verb{file}
-      \verb /Users/david/Zotero/storage/X75VUSLF/Anwar and Khosla - 2017 - Vision enhancement through single image fog removal.pdf
+      \verb /Users/david/Zotero/storage/UEP2WETC/Bakos and Ollila - A Prototype for an Interactive and Dynamic Image-Based Relief Rendering System.pdf
       \endverb
     \endentry
     \entry{bijelicSeeingFogSeeing2020}{article}{}{}
@@ -204,6 +186,43 @@
       \verb{file}
       \verb /Users/david/Zotero/storage/3S5VT9UB/Bijelic et al. - 2020 - Seeing Through Fog Without Seeing Fog Deep Multimodal Sensor Fusion in Unseen Adverse Weather.pdf
       \endverb
+    \endentry
+    \entry{manning2008introduction}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=73724f34be752246ac5d6638a7ac52dd}{%
+           family={{Christopher D. Manning}},
+           familyi={C\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=a730b01582aceeb4ac698fe69df3347d}{%
+           family={{Prabhakar Raghavan}},
+           familyi={P\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=fffae1b3bfab3233d970ba6b2fbbd3eb}{%
+           family={{Hinrich Schütze}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{ed38d6051fca26bf8b6e9a5bb7e5c790}
+      \strng{fullhash}{484cc16c2a41a3109c9075f62bc4a459}
+      \strng{fullhashraw}{484cc16c2a41a3109c9075f62bc4a459}
+      \strng{bibnamehash}{484cc16c2a41a3109c9075f62bc4a459}
+      \strng{authorbibnamehash}{484cc16c2a41a3109c9075f62bc4a459}
+      \strng{authornamehash}{ed38d6051fca26bf8b6e9a5bb7e5c790}
+      \strng{authorfullhash}{484cc16c2a41a3109c9075f62bc4a459}
+      \strng{authorfullhashraw}{484cc16c2a41a3109c9075f62bc4a459}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{978-0-521-86571-5}
+      \field{title}{Introduction to {{Information Retrieval}}}
+      \field{year}{2008}
     \endentry
     \entry{cordtsCityscapesDatasetSemantic2016}{misc}{}{}
       \name{author}{9}{}{%
@@ -839,10 +858,8 @@
       \strng{authornamehash}{799d2b66fe26273ce6b14f65e077f8e8}
       \strng{authorfullhash}{799d2b66fe26273ce6b14f65e077f8e8}
       \strng{authorfullhashraw}{799d2b66fe26273ce6b14f65e077f8e8}
-      \field{extraname}{1}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
@@ -870,52 +887,33 @@
       \endverb
       \keyw{Computer Science - Computer Vision and Pattern Recognition}
     \endentry
-    \entry{mohamedDataEfficiencyStudy2026a}{misc}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=095b218a05a3ee63cf4be45e44af495c}{%
-           family={Mohamed},
+    \entry{mondalSemisupervisedSemanticSegmentation}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a8c46af18bf216925d199b8c42e2f02a}{%
+           family={Mondal},
            familyi={M\bibinitperiod},
-           given={Mohamed\bibnamedelima Ahmed},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=47d588fab147e39ea657fc07192df353}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Xiaowei},
-           giveni={X\bibinitperiod},
+           given={Arnab\bibnamedelima Kumar},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{799d2b66fe26273ce6b14f65e077f8e8}
-      \strng{fullhash}{799d2b66fe26273ce6b14f65e077f8e8}
-      \strng{fullhashraw}{799d2b66fe26273ce6b14f65e077f8e8}
-      \strng{bibnamehash}{799d2b66fe26273ce6b14f65e077f8e8}
-      \strng{authorbibnamehash}{799d2b66fe26273ce6b14f65e077f8e8}
-      \strng{authornamehash}{799d2b66fe26273ce6b14f65e077f8e8}
-      \strng{authorfullhash}{799d2b66fe26273ce6b14f65e077f8e8}
-      \strng{authorfullhashraw}{799d2b66fe26273ce6b14f65e077f8e8}
-      \field{extraname}{2}
+      \strng{namehash}{a8c46af18bf216925d199b8c42e2f02a}
+      \strng{fullhash}{a8c46af18bf216925d199b8c42e2f02a}
+      \strng{fullhashraw}{a8c46af18bf216925d199b8c42e2f02a}
+      \strng{bibnamehash}{a8c46af18bf216925d199b8c42e2f02a}
+      \strng{authorbibnamehash}{a8c46af18bf216925d199b8c42e2f02a}
+      \strng{authornamehash}{a8c46af18bf216925d199b8c42e2f02a}
+      \strng{authorfullhash}{a8c46af18bf216925d199b8c42e2f02a}
+      \strng{authorfullhashraw}{a8c46af18bf216925d199b8c42e2f02a}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradate}{2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{nodate}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Object detection in adverse weather is critical for the safety of autonomous vehicles; however, the scarcity of labelled, real-world foggy data remains a significant bottleneck. In this paper, we propose Clear2Fog (C2F), an end-to-end, physics-based pipeline that simulates fog on clear-weather datasets while ensuring sensor-level consistency across camera and LiDAR. By using monocular depth estimation and a novel atmospheric light estimation method, C2F overcomes structural artifacts and chromatic biases common in existing techniques. A human perceptual study confirms C2F's physical realism, with the generated images being preferred 92.95\% of the time over an established method. Utilising a training set of 270,000 images from the Waymo Open Dataset, we conduct an extensive data efficiency study to investigate how environmental diversity influences model robustness. Our findings reveal that models trained on mixed-density fog datasets at 75\% scale outperform those trained on fixed-density datasets at 100\% scale. Furthermore, we investigate the sim-to-real transfer by fine-tuning pre-trained models on real-world foggy data. We demonstrate that a tenfold increase over the default fine-tuning learning rate successfully overcomes negative transfer from synthetic biases, resulting in a 1.67 mAP improvement over real-only baselines. The C2F pipeline provides a scalable framework for enhancing the reliability of autonomous systems in adverse weather and demonstrates the potential of diverse synthetic datasets for efficient model training.}
-      \field{howpublished}{https://arxiv.org/abs/2605.12608v1}
-      \field{journaltitle}{arXiv.org}
       \field{langid}{english}
-      \field{month}{5}
-      \field{title}{A {{Data Efficiency Study}} of {{Synthetic Fog}} for {{Object Detection Using}} the {{Clear2Fog Pipeline}}}
-      \field{urlday}{24}
-      \field{urlmonth}{6}
-      \field{urlyear}{2026}
-      \field{year}{2026}
-      \field{urldateera}{ce}
-      \true{nocite}
+      \field{title}{Semi-Supervised {{Semantic Segmentation}}: {{Different GAN}} Based Approaches}
       \verb{file}
-      \verb /Users/david/Zotero/storage/MY9TS7H5/Mohamed and Huang - 2026 - A Data Efficiency Study of Synthetic Fog for Object Detection Using the Clear2Fog Pipeline.pdf
+      \verb /Users/david/Zotero/storage/4HI3JQNM/Mondal - Semi-supervised Semantic Segmentation Different GAN based approaches.pdf
       \endverb
     \endentry
     \entry{muhammadaliqureshiDistortionClassificationComputer}{misc}{}{}
@@ -923,27 +921,27 @@
         {{un=0,uniquepart=base,hash=1369680afd907c606ddb3c6d69fb3439}{%
            family={{Muhammad Ali Qureshi}},
            familyi={M\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=8c3bbd4f2b44f7936b511557440d7e94}{%
-           family={{AZEDDINE BEGHDADI}},
+        {{un=0,uniquepart=base,hash=7cead3d25dd6d0b8e9d29d81a7b4a090}{%
+           family={{Azeddine Beghdadi}},
            familyi={A\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=8c3ae90dccb20d8ced73517175ca427c}{%
-           family={{MUHAMMAD ALI QURESHI}},
+        {{un=0,uniquepart=base,hash=1369680afd907c606ddb3c6d69fb3439}{%
+           family={{Muhammad Ali Qureshi}},
            familyi={M\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=6d43881e97ddd80dc21641cc24fc679e}{%
-           family={{FAOUZI ALAYA CHEIKH}},
+        {{un=0,uniquepart=base,hash=e437cacccd081d1470bf1790c71cbe0d}{%
+           family={{Faouzi Alaya Cheikh}},
            familyi={F\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=832ef7880d97b008b955dc65c74bb4f2}{%
-           family={{MOHIB ULLAH}},
+        {{un=0,uniquepart=base,hash=81afbf6332b47a8e5ee847fcf9d7a5c6}{%
+           family={{Mohib Ullah}},
            familyi={M\bibinitperiod}}}%
       }
       \strng{namehash}{0b4657f5e63dce2cc6ee0ca86e24bc44}
-      \strng{fullhash}{be12439dbb3dde19e7bc7ad089473e37}
-      \strng{fullhashraw}{be12439dbb3dde19e7bc7ad089473e37}
-      \strng{bibnamehash}{be12439dbb3dde19e7bc7ad089473e37}
-      \strng{authorbibnamehash}{be12439dbb3dde19e7bc7ad089473e37}
+      \strng{fullhash}{2f7701de1b169a70ca9a130f4c176ea1}
+      \strng{fullhashraw}{2f7701de1b169a70ca9a130f4c176ea1}
+      \strng{bibnamehash}{2f7701de1b169a70ca9a130f4c176ea1}
+      \strng{authorbibnamehash}{2f7701de1b169a70ca9a130f4c176ea1}
       \strng{authornamehash}{0b4657f5e63dce2cc6ee0ca86e24bc44}
-      \strng{authorfullhash}{be12439dbb3dde19e7bc7ad089473e37}
-      \strng{authorfullhashraw}{be12439dbb3dde19e7bc7ad089473e37}
+      \strng{authorfullhash}{2f7701de1b169a70ca9a130f4c176ea1}
+      \strng{authorfullhashraw}{2f7701de1b169a70ca9a130f4c176ea1}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labeldatesource}{nodate}
@@ -968,12 +966,12 @@
            given={Luis},
            giveni={L\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=5d7f045e3b98936cc2c803d3519c6012}{%
+        {{un=1,uniquepart=given,hash=5d7f045e3b98936cc2c803d3519c6012}{%
            family={Wang},
            familyi={W\bibinitperiod},
            given={Jason},
            giveni={J\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
       \list{publisher}{1}{%
         {arXiv}%
@@ -1164,20 +1162,39 @@
       \verb /Users/david/Zotero/storage/JBT6GD9B/Sakaridis et al. - 2021 - ACDC The Adverse Conditions Dataset with Correspondences for Robust Semantic Driving Scene Percepti.pdf
       \endverb
     \endentry
-    \entry{SurveyUnderwaterComputer}{misc}{}{}
+    \entry{szeliski2011computer}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f2e556c93256e7d70895d67702e14f1a}{%
+           family={Szeliski},
+           familyi={S\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer London}%
+      }
+      \strng{namehash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{fullhash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{fullhashraw}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{bibnamehash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{authorbibnamehash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{authornamehash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{authorfullhash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{authorfullhashraw}{f2e556c93256e7d70895d67702e14f1a}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{https://dl.acm.org/doi/10.1145/3578516}
-      \field{title}{A {{Survey}} on {{Underwater Computer Vision}} |{} {{ACM Computing Surveys}}}
-      \field{urlday}{10}
-      \field{urlmonth}{6}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \verb{file}
-      \verb /Users/david/Zotero/storage/7W4WK3GL/3578516.html
+      \field{isbn}{978-1-84882-935-0}
+      \field{series}{Texts in {{Computer Science}}}
+      \field{title}{Computer {{Vision}}: {{Algorithms}} and {{Applications}}}
+      \field{year}{2011}
+      \verb{doi}
+      \verb 10.1007/978-1-84882-935-0
       \endverb
     \endentry
     \entry{tremblayRainRenderingEvaluating2021}{article}{}{}
@@ -1244,6 +1261,87 @@
       \verb /Users/david/Zotero/storage/HN43MFGK/Tremblay et al. - 2021 - Rain Rendering for Evaluating and Improving Robustness to Bad Weather.pdf
       \endverb
       \keyw{Adverse weather,GAN,Image to image translation,Physics-based rendering,Vision and rain}
+    \endentry
+    \entry{wangCWDETREfficientDetection2026}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=1,uniquepart=given,hash=e6471eb7f76915e327fcf4c5d512eb26}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Tianpeng},
+           giveni={T\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=36154fac3c9b672e7c419f9ded68f137}{%
+           family={Teng},
+           familyi={T\bibinitperiod},
+           given={Qiaoshuang},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e142c8378837384489291d81edf378d2}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Shangyu},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89b98caf827019a9360544e2837956b1}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Weidong},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e39f3d6b4a7bd72ec6f42d8161b5498}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jinhe},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=699eafbf3b489eecbb9430667614cb63}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yuxuan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{5d0d87452139002ef2f20e5e1d4deae6}
+      \strng{fullhash}{3231134db8562559d4463689f4766df6}
+      \strng{fullhashraw}{3231134db8562559d4463689f4766df6}
+      \strng{bibnamehash}{3231134db8562559d4463689f4766df6}
+      \strng{authorbibnamehash}{3231134db8562559d4463689f4766df6}
+      \strng{authornamehash}{5d0d87452139002ef2f20e5e1d4deae6}
+      \strng{authorfullhash}{3231134db8562559d4463689f4766df6}
+      \strng{authorfullhashraw}{3231134db8562559d4463689f4766df6}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Traffic sign detection under adverse weather conditions remains challenging due to severe feature degradation caused by rain, fog, and snow, which significantly impairs the performance of existing detection systems. This study presents the CW-DETR (Complex Weather Detection Transformer), an end-to-end detection framework designed to address weather-induced feature deterioration in real-time applications. Building upon the RT-DETR, our approach integrates four key innovations: a multipath feature enhancement network (FPFENet) for preserving fine-grained textures, a Multiscale Edge Enhancement Module (MEEM) for combating boundary degradation, an adaptive dual-stream bidirectional feature pyramid network (ADBF-FPN) for cross-scale feature compensation, and a multiscale convolutional gating module (MCGM) for suppressing semantic--spatial confusion. Extensive experiments on the CCTSDB2021 dataset demonstrate that the CW-DETR achieves 69.0\% AP and 94.4\% AP50, outperforming state-of-the-art real-time detectors by 2.3--5.7 percentage points while maintaining computational efficiency (56.8 GFLOPs). A cross-dataset evaluation on TT100K, the TSRD, CNTSSS, and real-world snow conditions (LNTU-TSD) confirms the robust generalization capabilities of the proposed model. These results establish CW-DETR as an effective solution for all-weather traffic sign detection in intelligent transportation systems.}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shorttitle}{{{CW-DETR}}}
+      \field{title}{{{CW-DETR}}: {{An Efficient Detection Transformer}} for {{Traffic Signs}} in {{Complex Weather}}}
+      \field{urlday}{15}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{26}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \field{pages}{325}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s26010325
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/4D8UTYKC/Wang et al. - 2026 - CW-DETR An Efficient Detection Transformer for Traffic Signs in Complex Weather.pdf
+      \endverb
+      \keyw{complex weather,detection transformer,edge enhancement,multiscale feature fusion,real-time detection,traffic sign detection}
     \endentry
     \entry{WhatYOLOv8InDepth}{misc}{}{}
       \field{sortinit}{W}
@@ -1659,57 +1757,39 @@
       \verb /Users/david/Zotero/storage/Z9S4MRIQ/Ahn et al. - 2017 - Image Distortion Detection Using Convolutional Neural Network.pdf
       \endverb
     \endentry
-    \entry{anwarVisionEnhancementSingle2017}{article}{}{}
+    \entry{bakosPrototypeInteractiveDynamic}{article}{}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=5d32d11f3e550e0978b20013ff3787bb}{%
-           family={Anwar},
-           familyi={A\bibinitperiod},
-           given={Md.\bibnamedelimi Imtiyaz},
-           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod},
+        {{un=0,uniquepart=base,hash=5c77e97b5899a6a86fb1405b94011001}{%
+           family={Bakos},
+           familyi={B\bibinitperiod},
+           given={Niklas},
+           giveni={N\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=712a03f80a7acb11b64dcf0646b2bd35}{%
-           family={Khosla},
-           familyi={K\bibinitperiod},
-           given={Arun},
-           giveni={A\bibinitperiod},
+        {{un=0,uniquepart=base,hash=3be5d8c259cb754bdb0902adf9a0fe5a}{%
+           family={Ollila},
+           familyi={O\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{fa1a0f0918032c1acf05c7595ab80dfe}
-      \strng{fullhash}{fa1a0f0918032c1acf05c7595ab80dfe}
-      \strng{fullhashraw}{fa1a0f0918032c1acf05c7595ab80dfe}
-      \strng{bibnamehash}{fa1a0f0918032c1acf05c7595ab80dfe}
-      \strng{authorbibnamehash}{fa1a0f0918032c1acf05c7595ab80dfe}
-      \strng{authornamehash}{fa1a0f0918032c1acf05c7595ab80dfe}
-      \strng{authorfullhash}{fa1a0f0918032c1acf05c7595ab80dfe}
-      \strng{authorfullhashraw}{fa1a0f0918032c1acf05c7595ab80dfe}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \strng{namehash}{69b5753e084611f4f74eaa014da8f18e}
+      \strng{fullhash}{69b5753e084611f4f74eaa014da8f18e}
+      \strng{fullhashraw}{69b5753e084611f4f74eaa014da8f18e}
+      \strng{bibnamehash}{69b5753e084611f4f74eaa014da8f18e}
+      \strng{authorbibnamehash}{69b5753e084611f4f74eaa014da8f18e}
+      \strng{authornamehash}{69b5753e084611f4f74eaa014da8f18e}
+      \strng{authorfullhash}{69b5753e084611f4f74eaa014da8f18e}
+      \strng{authorfullhashraw}{69b5753e084611f4f74eaa014da8f18e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labeldatesource}{nodate}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Contrast and color of the captured pictures are degraded under foggy weather conditions and this degradation is often attributed to attenuation and airlight. To reduce the number of road accidents through vision enhancement in turbid weather, an efficient fog removal technique plays a vital role as fog greatly reduces the visibility and hence affects the computer vision algorithms such as surveillance, tracking and Fog Vision Enhancement System (FVES). In this paper, a novel and effective algorithm is proposed for single image fog removal that's capable of handling images of gray and color channels. The proposed algorithm introduces Dark Channel Prior (DCP) followed by Weighted Least Square (WLS) and High Dynamic Range (HDR) based fog removal scheme. The qualitative and quantitative analysis is applied for the assessment of defogged images obtained from the proposed methodology and is additionally compared with the different fog removal algorithms to establish its superiority. The foremost dominant advantage of the proposed algorithm is its capability to preserve sharp details whereas maintaining the color quality.}
-      \field{issn}{22150986}
-      \field{journaltitle}{Engineering Science and Technology, an International Journal}
       \field{langid}{english}
-      \field{month}{6}
-      \field{number}{3}
-      \field{title}{Vision Enhancement through Single Image Fog Removal}
-      \field{urlday}{18}
-      \field{urlmonth}{6}
-      \field{urlyear}{2026}
-      \field{volume}{20}
-      \field{year}{2017}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \field{pages}{1075\bibrangedash 1083}
-      \range{pages}{9}
-      \verb{doi}
-      \verb 10.1016/j.jestch.2016.11.015
-      \endverb
+      \field{title}{A {{Prototype}} for an {{Interactive}} and {{Dynamic Image-Based Relief Rendering System}}}
       \verb{file}
-      \verb /Users/david/Zotero/storage/X75VUSLF/Anwar and Khosla - 2017 - Vision enhancement through single image fog removal.pdf
+      \verb /Users/david/Zotero/storage/UEP2WETC/Bakos and Ollila - A Prototype for an Interactive and Dynamic Image-Based Relief Rendering System.pdf
       \endverb
     \endentry
     \entry{bijelicSeeingFogSeeing2020}{article}{}{}
@@ -1784,6 +1864,43 @@
       \verb{file}
       \verb /Users/david/Zotero/storage/3S5VT9UB/Bijelic et al. - 2020 - Seeing Through Fog Without Seeing Fog Deep Multimodal Sensor Fusion in Unseen Adverse Weather.pdf
       \endverb
+    \endentry
+    \entry{manning2008introduction}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=73724f34be752246ac5d6638a7ac52dd}{%
+           family={{Christopher D. Manning}},
+           familyi={C\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=a730b01582aceeb4ac698fe69df3347d}{%
+           family={{Prabhakar Raghavan}},
+           familyi={P\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=fffae1b3bfab3233d970ba6b2fbbd3eb}{%
+           family={{Hinrich Schütze}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{ed38d6051fca26bf8b6e9a5bb7e5c790}
+      \strng{fullhash}{484cc16c2a41a3109c9075f62bc4a459}
+      \strng{fullhashraw}{484cc16c2a41a3109c9075f62bc4a459}
+      \strng{bibnamehash}{484cc16c2a41a3109c9075f62bc4a459}
+      \strng{authorbibnamehash}{484cc16c2a41a3109c9075f62bc4a459}
+      \strng{authornamehash}{ed38d6051fca26bf8b6e9a5bb7e5c790}
+      \strng{authorfullhash}{484cc16c2a41a3109c9075f62bc4a459}
+      \strng{authorfullhashraw}{484cc16c2a41a3109c9075f62bc4a459}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{978-0-521-86571-5}
+      \field{title}{Introduction to {{Information Retrieval}}}
+      \field{year}{2008}
     \endentry
     \entry{cordtsCityscapesDatasetSemantic2016}{misc}{}{}
       \name{author}{9}{}{%
@@ -2419,10 +2536,8 @@
       \strng{authornamehash}{799d2b66fe26273ce6b14f65e077f8e8}
       \strng{authorfullhash}{799d2b66fe26273ce6b14f65e077f8e8}
       \strng{authorfullhashraw}{799d2b66fe26273ce6b14f65e077f8e8}
-      \field{extraname}{1}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
@@ -2450,52 +2565,33 @@
       \endverb
       \keyw{Computer Science - Computer Vision and Pattern Recognition}
     \endentry
-    \entry{mohamedDataEfficiencyStudy2026a}{misc}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=095b218a05a3ee63cf4be45e44af495c}{%
-           family={Mohamed},
+    \entry{mondalSemisupervisedSemanticSegmentation}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a8c46af18bf216925d199b8c42e2f02a}{%
+           family={Mondal},
            familyi={M\bibinitperiod},
-           given={Mohamed\bibnamedelima Ahmed},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=47d588fab147e39ea657fc07192df353}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Xiaowei},
-           giveni={X\bibinitperiod},
+           given={Arnab\bibnamedelima Kumar},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{799d2b66fe26273ce6b14f65e077f8e8}
-      \strng{fullhash}{799d2b66fe26273ce6b14f65e077f8e8}
-      \strng{fullhashraw}{799d2b66fe26273ce6b14f65e077f8e8}
-      \strng{bibnamehash}{799d2b66fe26273ce6b14f65e077f8e8}
-      \strng{authorbibnamehash}{799d2b66fe26273ce6b14f65e077f8e8}
-      \strng{authornamehash}{799d2b66fe26273ce6b14f65e077f8e8}
-      \strng{authorfullhash}{799d2b66fe26273ce6b14f65e077f8e8}
-      \strng{authorfullhashraw}{799d2b66fe26273ce6b14f65e077f8e8}
-      \field{extraname}{2}
+      \strng{namehash}{a8c46af18bf216925d199b8c42e2f02a}
+      \strng{fullhash}{a8c46af18bf216925d199b8c42e2f02a}
+      \strng{fullhashraw}{a8c46af18bf216925d199b8c42e2f02a}
+      \strng{bibnamehash}{a8c46af18bf216925d199b8c42e2f02a}
+      \strng{authorbibnamehash}{a8c46af18bf216925d199b8c42e2f02a}
+      \strng{authornamehash}{a8c46af18bf216925d199b8c42e2f02a}
+      \strng{authorfullhash}{a8c46af18bf216925d199b8c42e2f02a}
+      \strng{authorfullhashraw}{a8c46af18bf216925d199b8c42e2f02a}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradate}{2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{nodate}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Object detection in adverse weather is critical for the safety of autonomous vehicles; however, the scarcity of labelled, real-world foggy data remains a significant bottleneck. In this paper, we propose Clear2Fog (C2F), an end-to-end, physics-based pipeline that simulates fog on clear-weather datasets while ensuring sensor-level consistency across camera and LiDAR. By using monocular depth estimation and a novel atmospheric light estimation method, C2F overcomes structural artifacts and chromatic biases common in existing techniques. A human perceptual study confirms C2F's physical realism, with the generated images being preferred 92.95\% of the time over an established method. Utilising a training set of 270,000 images from the Waymo Open Dataset, we conduct an extensive data efficiency study to investigate how environmental diversity influences model robustness. Our findings reveal that models trained on mixed-density fog datasets at 75\% scale outperform those trained on fixed-density datasets at 100\% scale. Furthermore, we investigate the sim-to-real transfer by fine-tuning pre-trained models on real-world foggy data. We demonstrate that a tenfold increase over the default fine-tuning learning rate successfully overcomes negative transfer from synthetic biases, resulting in a 1.67 mAP improvement over real-only baselines. The C2F pipeline provides a scalable framework for enhancing the reliability of autonomous systems in adverse weather and demonstrates the potential of diverse synthetic datasets for efficient model training.}
-      \field{howpublished}{https://arxiv.org/abs/2605.12608v1}
-      \field{journaltitle}{arXiv.org}
       \field{langid}{english}
-      \field{month}{5}
-      \field{title}{A {{Data Efficiency Study}} of {{Synthetic Fog}} for {{Object Detection Using}} the {{Clear2Fog Pipeline}}}
-      \field{urlday}{24}
-      \field{urlmonth}{6}
-      \field{urlyear}{2026}
-      \field{year}{2026}
-      \field{urldateera}{ce}
-      \true{nocite}
+      \field{title}{Semi-Supervised {{Semantic Segmentation}}: {{Different GAN}} Based Approaches}
       \verb{file}
-      \verb /Users/david/Zotero/storage/MY9TS7H5/Mohamed and Huang - 2026 - A Data Efficiency Study of Synthetic Fog for Object Detection Using the Clear2Fog Pipeline.pdf
+      \verb /Users/david/Zotero/storage/4HI3JQNM/Mondal - Semi-supervised Semantic Segmentation Different GAN based approaches.pdf
       \endverb
     \endentry
     \entry{muhammadaliqureshiDistortionClassificationComputer}{misc}{}{}
@@ -2503,27 +2599,27 @@
         {{un=0,uniquepart=base,hash=1369680afd907c606ddb3c6d69fb3439}{%
            family={{Muhammad Ali Qureshi}},
            familyi={M\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=8c3bbd4f2b44f7936b511557440d7e94}{%
-           family={{AZEDDINE BEGHDADI}},
+        {{un=0,uniquepart=base,hash=7cead3d25dd6d0b8e9d29d81a7b4a090}{%
+           family={{Azeddine Beghdadi}},
            familyi={A\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=8c3ae90dccb20d8ced73517175ca427c}{%
-           family={{MUHAMMAD ALI QURESHI}},
+        {{un=0,uniquepart=base,hash=1369680afd907c606ddb3c6d69fb3439}{%
+           family={{Muhammad Ali Qureshi}},
            familyi={M\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=6d43881e97ddd80dc21641cc24fc679e}{%
-           family={{FAOUZI ALAYA CHEIKH}},
+        {{un=0,uniquepart=base,hash=e437cacccd081d1470bf1790c71cbe0d}{%
+           family={{Faouzi Alaya Cheikh}},
            familyi={F\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=832ef7880d97b008b955dc65c74bb4f2}{%
-           family={{MOHIB ULLAH}},
+        {{un=0,uniquepart=base,hash=81afbf6332b47a8e5ee847fcf9d7a5c6}{%
+           family={{Mohib Ullah}},
            familyi={M\bibinitperiod}}}%
       }
       \strng{namehash}{0b4657f5e63dce2cc6ee0ca86e24bc44}
-      \strng{fullhash}{be12439dbb3dde19e7bc7ad089473e37}
-      \strng{fullhashraw}{be12439dbb3dde19e7bc7ad089473e37}
-      \strng{bibnamehash}{be12439dbb3dde19e7bc7ad089473e37}
-      \strng{authorbibnamehash}{be12439dbb3dde19e7bc7ad089473e37}
+      \strng{fullhash}{2f7701de1b169a70ca9a130f4c176ea1}
+      \strng{fullhashraw}{2f7701de1b169a70ca9a130f4c176ea1}
+      \strng{bibnamehash}{2f7701de1b169a70ca9a130f4c176ea1}
+      \strng{authorbibnamehash}{2f7701de1b169a70ca9a130f4c176ea1}
       \strng{authornamehash}{0b4657f5e63dce2cc6ee0ca86e24bc44}
-      \strng{authorfullhash}{be12439dbb3dde19e7bc7ad089473e37}
-      \strng{authorfullhashraw}{be12439dbb3dde19e7bc7ad089473e37}
+      \strng{authorfullhash}{2f7701de1b169a70ca9a130f4c176ea1}
+      \strng{authorfullhashraw}{2f7701de1b169a70ca9a130f4c176ea1}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labeldatesource}{nodate}
@@ -2548,12 +2644,12 @@
            given={Luis},
            giveni={L\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=5d7f045e3b98936cc2c803d3519c6012}{%
+        {{un=1,uniquepart=given,hash=5d7f045e3b98936cc2c803d3519c6012}{%
            family={Wang},
            familyi={W\bibinitperiod},
            given={Jason},
            giveni={J\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
       \list{publisher}{1}{%
         {arXiv}%
@@ -2744,20 +2840,39 @@
       \verb /Users/david/Zotero/storage/JBT6GD9B/Sakaridis et al. - 2021 - ACDC The Adverse Conditions Dataset with Correspondences for Robust Semantic Driving Scene Percepti.pdf
       \endverb
     \endentry
-    \entry{SurveyUnderwaterComputer}{misc}{}{}
+    \entry{szeliski2011computer}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f2e556c93256e7d70895d67702e14f1a}{%
+           family={Szeliski},
+           familyi={S\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer London}%
+      }
+      \strng{namehash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{fullhash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{fullhashraw}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{bibnamehash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{authorbibnamehash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{authornamehash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{authorfullhash}{f2e556c93256e7d70895d67702e14f1a}
+      \strng{authorfullhashraw}{f2e556c93256e7d70895d67702e14f1a}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{https://dl.acm.org/doi/10.1145/3578516}
-      \field{title}{A {{Survey}} on {{Underwater Computer Vision}} |{} {{ACM Computing Surveys}}}
-      \field{urlday}{10}
-      \field{urlmonth}{6}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \verb{file}
-      \verb /Users/david/Zotero/storage/7W4WK3GL/3578516.html
+      \field{isbn}{978-1-84882-935-0}
+      \field{series}{Texts in {{Computer Science}}}
+      \field{title}{Computer {{Vision}}: {{Algorithms}} and {{Applications}}}
+      \field{year}{2011}
+      \verb{doi}
+      \verb 10.1007/978-1-84882-935-0
       \endverb
     \endentry
     \entry{tremblayRainRenderingEvaluating2021}{article}{}{}
@@ -2824,6 +2939,87 @@
       \verb /Users/david/Zotero/storage/HN43MFGK/Tremblay et al. - 2021 - Rain Rendering for Evaluating and Improving Robustness to Bad Weather.pdf
       \endverb
       \keyw{Adverse weather,GAN,Image to image translation,Physics-based rendering,Vision and rain}
+    \endentry
+    \entry{wangCWDETREfficientDetection2026}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=1,uniquepart=given,hash=e6471eb7f76915e327fcf4c5d512eb26}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Tianpeng},
+           giveni={T\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=36154fac3c9b672e7c419f9ded68f137}{%
+           family={Teng},
+           familyi={T\bibinitperiod},
+           given={Qiaoshuang},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e142c8378837384489291d81edf378d2}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Shangyu},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89b98caf827019a9360544e2837956b1}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Weidong},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e39f3d6b4a7bd72ec6f42d8161b5498}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jinhe},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=699eafbf3b489eecbb9430667614cb63}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yuxuan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{5d0d87452139002ef2f20e5e1d4deae6}
+      \strng{fullhash}{3231134db8562559d4463689f4766df6}
+      \strng{fullhashraw}{3231134db8562559d4463689f4766df6}
+      \strng{bibnamehash}{3231134db8562559d4463689f4766df6}
+      \strng{authorbibnamehash}{3231134db8562559d4463689f4766df6}
+      \strng{authornamehash}{5d0d87452139002ef2f20e5e1d4deae6}
+      \strng{authorfullhash}{3231134db8562559d4463689f4766df6}
+      \strng{authorfullhashraw}{3231134db8562559d4463689f4766df6}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Traffic sign detection under adverse weather conditions remains challenging due to severe feature degradation caused by rain, fog, and snow, which significantly impairs the performance of existing detection systems. This study presents the CW-DETR (Complex Weather Detection Transformer), an end-to-end detection framework designed to address weather-induced feature deterioration in real-time applications. Building upon the RT-DETR, our approach integrates four key innovations: a multipath feature enhancement network (FPFENet) for preserving fine-grained textures, a Multiscale Edge Enhancement Module (MEEM) for combating boundary degradation, an adaptive dual-stream bidirectional feature pyramid network (ADBF-FPN) for cross-scale feature compensation, and a multiscale convolutional gating module (MCGM) for suppressing semantic--spatial confusion. Extensive experiments on the CCTSDB2021 dataset demonstrate that the CW-DETR achieves 69.0\% AP and 94.4\% AP50, outperforming state-of-the-art real-time detectors by 2.3--5.7 percentage points while maintaining computational efficiency (56.8 GFLOPs). A cross-dataset evaluation on TT100K, the TSRD, CNTSSS, and real-world snow conditions (LNTU-TSD) confirms the robust generalization capabilities of the proposed model. These results establish CW-DETR as an effective solution for all-weather traffic sign detection in intelligent transportation systems.}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shorttitle}{{{CW-DETR}}}
+      \field{title}{{{CW-DETR}}: {{An Efficient Detection Transformer}} for {{Traffic Signs}} in {{Complex Weather}}}
+      \field{urlday}{15}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{26}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \field{pages}{325}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s26010325
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/4D8UTYKC/Wang et al. - 2026 - CW-DETR An Efficient Detection Transformer for Traffic Signs in Complex Weather.pdf
+      \endverb
+      \keyw{complex weather,detection transformer,edge enhancement,multiscale feature fusion,real-time detection,traffic sign detection}
     \endentry
     \entry{WhatYOLOv8InDepth}{misc}{}{}
       \field{sortinit}{W}

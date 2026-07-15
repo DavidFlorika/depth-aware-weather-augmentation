@@ -1,0 +1,19 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'paper.blg'
+[27] biber-darwin:340> INFO - === Wed Jul 15, 2026, 14:08:32
+[35] Biber.pm:420> INFO - Reading 'paper.bcf'
+[74] Biber.pm:994> INFO - Found 28 citekeys in bib section 0
+[82] Biber.pm:4463> INFO - Processing section 0
+[86] Biber.pm:4654> INFO - Looking for bibtex file 'ComputerVision.bib' for section 0
+[89] bibtex.pm:1713> INFO - LaTeX decoding ...
+[107] bibtex.pm:1519> INFO - Found BibTeX data source 'ComputerVision.bib'
+[226] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[227] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[227] Biber.pm:4283> INFO - Sorting list 'nyt/apasortcite//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[227] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[257] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[257] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[257] Biber.pm:4283> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[257] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[272] bbl.pm:676> INFO - Writing 'paper.bbl' with encoding 'UTF-8'
+[289] bbl.pm:779> INFO - Output to paper.bbl

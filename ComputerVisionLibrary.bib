@@ -10,30 +10,6 @@
   doi = {10.1109/ACPR.2017.95},
   urldate = {2026-06-10},
   isbn = {978-1-5386-3354-0},
-  note = {``The first application of deep learning on distortion detection task``
-\par
-The model uses CNN for both distortion classification and detection. 
-\par
-This paper lacks natural distortions.
-\par
-Feature:
-\par
-\begin{itemize}
-
-\item ``The overall structure we use is a `Y'-shaped CNN that performs distortion classification and detection simultaneously.'' (Ahn et al., 2017, p. 2)
-
-\end{itemize}
-
-\par
-Contribution:
-\par
-\begin{enumerate}
-
-\item ``We create a dataset for distortion classification and detection task'' (Ahn et al., 2017, p. 2)
-\item ``We finetune a pre-trained CNN to this dataset to get high performance'' (Ahn et al., 2017, p. 2)
-\item ``We propose a distortion detection system that uses an existing CNN model trained to achieve good performance in object detection task'' (Ahn et al., 2017, p. 2)
-
-\end{enumerate}},
   file = {/Users/david/Zotero/storage/Z9S4MRIQ/Ahn et al. - 2017 - Image Distortion Detection Using Convolutional Neural Network.pdf}
 }
 
@@ -52,6 +28,13 @@ Contribution:
   abstract = {Contrast and color of the captured pictures are degraded under foggy weather conditions and this degradation is often attributed to attenuation and airlight. To reduce the number of road accidents through vision enhancement in turbid weather, an efficient fog removal technique plays a vital role as fog greatly reduces the visibility and hence affects the computer vision algorithms such as surveillance, tracking and Fog Vision Enhancement System (FVES). In this paper, a novel and effective algorithm is proposed for single image fog removal that's capable of handling images of gray and color channels. The proposed algorithm introduces Dark Channel Prior (DCP) followed by Weighted Least Square (WLS) and High Dynamic Range (HDR) based fog removal scheme. The qualitative and quantitative analysis is applied for the assessment of defogged images obtained from the proposed methodology and is additionally compared with the different fog removal algorithms to establish its superiority. The foremost dominant advantage of the proposed algorithm is its capability to preserve sharp details whereas maintaining the color quality.},
   langid = {english},
   file = {/Users/david/Zotero/storage/X75VUSLF/Anwar and Khosla - 2017 - Vision enhancement through single image fog removal.pdf}
+}
+
+@article{bakosPrototypeInteractiveDynamic,
+  title = {A {{Prototype}} for an {{Interactive}} and {{Dynamic Image-Based Relief Rendering System}}},
+  author = {Bakos, Niklas and Ollila, Mark},
+  langid = {english},
+  file = {/Users/david/Zotero/storage/UEP2WETC/Bakos and Ollila - A Prototype for an Interactive and Dynamic Image-Based Relief Rendering System.pdf}
 }
 
 @inproceedings{bijelicSeeingFogSeeing2020,
@@ -149,7 +132,6 @@ Contribution:
   abstract = {We present a CNN-based technique to estimate high-dynamic range outdoor illumination from a single low dynamic range image. To train the CNN, we leverage a large dataset of outdoor panoramas. We fit a low-dimensional physically-based outdoor illumination model to the skies in these panoramas giving us a compact set of parameters (including sun position, atmospheric conditions, and camera parameters). We extract limited field-of-view images from the panoramas, and train a CNN with this large set of input image--output lighting parameter pairs. Given a test image, this network can be used to infer illumination parameters that can, in turn, be used to reconstruct an outdoor illumination environment map. We demonstrate that our approach allows the recovery of plausible illumination conditions and enables photorealistic virtual object insertion from a single image. An extensive evaluation on both the panorama dataset and captured HDR environment maps shows that our technique significantly outperforms previous solutions to this problem.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition},
-  note = {Comment: CVPR'17 preprint, 8 pages + 2 pages of citations, 12 figures},
   file = {/Users/david/Zotero/storage/WH653BMA/Hold-Geoffroy et al. - 2018 - Deep Outdoor Illumination Estimation.pdf;/Users/david/Zotero/storage/QUJ4KMIT/1611.html}
 }
 
@@ -184,7 +166,6 @@ Contribution:
   abstract = {We investigate conditional adversarial networks as a general-purpose solution to image-to-image translation problems. These networks not only learn the mapping from input image to output image, but also learn a loss function to train this mapping. This makes it possible to apply the same generic approach to problems that traditionally would require very different loss formulations. We demonstrate that this approach is effective at synthesizing photos from label maps, reconstructing objects from edge maps, and colorizing images, among other tasks. Indeed, since the release of the pix2pix software associated with this paper, a large number of internet users (many of them artists) have posted their own experiments with our system, further demonstrating its wide applicability and ease of adoption without the need for parameter tweaking. As a community, we no longer hand-engineer our mapping functions, and this work suggests we can achieve reasonable results without hand-engineering our loss functions either.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition},
-  note = {Comment: Website: https://phillipi.github.io/pix2pix/, CVPR 2017},
   file = {/Users/david/Zotero/storage/V4K28EHP/Isola et al. - 2018 - Image-to-Image Translation with Conditional Adversarial Networks.pdf;/Users/david/Zotero/storage/6RS9SY4A/1611.html}
 }
 
@@ -203,8 +184,16 @@ Contribution:
   abstract = {Convolutional neural networks are designed for dense data, but vision data is often sparse (stereo depth, point clouds, pen stroke, etc.). We present a method to handle sparse depth data with optional dense RGB, and accomplish depth completion and semantic segmentation changing only the last layer. Our proposal efficiently learns sparse features without the need of an additional validity mask. We show how to ensure network robustness to varying input sparsities. Our method even works with densities as low as 0.8\% (8 layer lidar), and outperforms all published state-of-the-art on the Kitti depth completion benchmark.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition},
-  note = {Comment: 3DV 2018},
   file = {/Users/david/Zotero/storage/4DPY55YC/Jaritz et al. - 2018 - Sparse and Dense Data with CNNs Depth Completion and Semantic Segmentation.pdf;/Users/david/Zotero/storage/7QGDRUPN/1808.html}
+}
+
+@book{manning2008introduction,
+  title = {Introduction to {{Information Retrieval}}},
+  author = {{Christopher D. Manning} and {Prabhakar Raghavan} and {Hinrich Sch\"utze}},
+  year = 2008,
+  publisher = {Cambridge University Press},
+  address = {Cambridge},
+  issn = {978-0-521-86571-5}
 }
 
 @misc{mohamedDataEfficiencyStudy2026,
@@ -221,9 +210,6 @@ Contribution:
   abstract = {Object detection in adverse weather is critical for the safety of autonomous vehicles; however, the scarcity of labelled, real-world foggy data remains a significant bottleneck. In this paper, we propose Clear2Fog (C2F), an end-to-end, physics-based pipeline that simulates fog on clear-weather datasets while ensuring sensor-level consistency across camera and LiDAR. By using monocular depth estimation and a novel atmospheric light estimation method, C2F overcomes structural artifacts and chromatic biases common in existing techniques. A human perceptual study confirms C2F's physical realism, with the generated images being preferred 92.95\% of the time over an established method. Utilising a training set of 270,000 images from the Waymo Open Dataset, we conduct an extensive data efficiency study to investigate how environmental diversity influences model robustness. Our findings reveal that models trained on mixed-density fog datasets at 75\% scale outperform those trained on fixed-density datasets at 100\% scale. Furthermore, we investigate the sim-to-real transfer by fine-tuning pre-trained models on real-world foggy data. We demonstrate that a tenfold increase over the default fine-tuning learning rate successfully overcomes negative transfer from synthetic biases, resulting in a 1.67 mAP improvement over real-only baselines. The C2F pipeline provides a scalable framework for enhancing the reliability of autonomous systems in adverse weather and demonstrates the potential of diverse synthetic datasets for efficient model training.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition},
-  note = {Comment: Project code and experimental configs available at https://github.com/mmohamed28/Clear2Fog
-\par
-Data Efficiency Study of Synthetic Fog for Object Detection Using the Clear2Fog Pipeline},
   file = {/Users/david/Zotero/storage/QBFQN46E/Mohamed and Huang - 2026 - A Data Efficiency Study of Synthetic Fog for Object Detection Using the Clear2Fog Pipeline.pdf;/Users/david/Zotero/storage/4AMDKGJ5/2605.html}
 }
 
@@ -238,6 +224,13 @@ Data Efficiency Study of Synthetic Fog for Object Detection Using the Clear2Fog 
   howpublished = {https://arxiv.org/abs/2605.12608v1},
   langid = {english},
   file = {/Users/david/Zotero/storage/MY9TS7H5/Mohamed and Huang - 2026 - A Data Efficiency Study of Synthetic Fog for Object Detection Using the Clear2Fog Pipeline.pdf}
+}
+
+@article{mondalSemisupervisedSemanticSegmentation,
+  title = {Semi-Supervised {{Semantic Segmentation}}: {{Different GAN}} Based Approaches},
+  author = {Mondal, Arnab Kumar},
+  langid = {english},
+  file = {/Users/david/Zotero/storage/4HI3JQNM/Mondal - Semi-supervised Semantic Segmentation Different GAN based approaches.pdf}
 }
 
 @misc{muhammadaliqureshiDistortionClassificationComputer,
@@ -263,6 +256,15 @@ Data Efficiency Study of Synthetic Fog for Object Detection Using the Clear2Fog 
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition},
   file = {/Users/david/Zotero/storage/553ZFAUB/Perez and Wang - 2017 - The Effectiveness of Data Augmentation in Image Classification using Deep Learning.pdf;/Users/david/Zotero/storage/CUUMWRQM/1712.html}
+}
+
+@book{rivas2020deep,
+  title = {Deep {{Learning}} for {{Beginners}}: {{A Beginner}}'s {{Guide}} to {{Getting Up}} and {{Running}} with {{Deep Learning}} from {{Scratch Using Python}}},
+  author = {{Pablo Rivas} and {Laura Montoya}},
+  year = 2020,
+  month = sep,
+  publisher = {Packt Publishing},
+  doi = {9781838640859}
 }
 
 @misc{sakaridisACDCAdverseConditions2021,
@@ -304,6 +306,16 @@ Data Efficiency Study of Synthetic Fog for Object Detection Using the Clear2Fog 
   file = {/Users/david/Zotero/storage/7W4WK3GL/3578516.html}
 }
 
+@book{szeliski2011computer,
+  title = {Computer {{Vision}}: {{Algorithms}} and {{Application}}},
+  author = {Szeliski, Richard},
+  year = 2011,
+  series = {Texts in {{Computer Science}}},
+  publisher = {Springer London},
+  doi = {10.1007/978-1-84882-935-0},
+  isbn = {978-1-84882-935-0}
+}
+
 @article{tremblayRainRenderingEvaluating2021,
   title = {Rain {{Rendering}} for {{Evaluating}} and {{Improving Robustness}} to {{Bad Weather}}},
   author = {Tremblay, Maxime and Halder, Shirsendu Sukanta and {de Charette}, Raoul and Lalonde, Jean-Fran{\c c}ois},
@@ -320,6 +332,37 @@ Data Efficiency Study of Synthetic Fog for Object Detection Using the Clear2Fog 
   langid = {english},
   keywords = {Adverse weather,GAN,Image to image translation,Physics-based rendering,Vision and rain},
   file = {/Users/david/Zotero/storage/HN43MFGK/Tremblay et al. - 2021 - Rain Rendering for Evaluating and Improving Robustness to Bad Weather.pdf}
+}
+
+@misc{UnderstandingDeepLearning2023-11-21-0402:00:23+00:00,
+  title = {Understanding {{Deep Learning}} [{{Draft}}\&nbsp;Ed.]},
+  year = {2023-11-21-0402:00:23+00:00},
+  journal = {ebin.pub},
+  urldate = {2026-07-15},
+  abstract = {An authoritative, accessible, and up-to-date treatment of deep learning that strikes a pragmatic middle ground between t...},
+  howpublished = {https://ebin.pub/understanding-deep-learning-draftnbsped-o-3430906.html},
+  langid = {english}
+}
+
+@article{wangCWDETREfficientDetection2026,
+  title = {{{CW-DETR}}: {{An Efficient Detection Transformer}} for {{Traffic Signs}} in {{Complex Weather}}},
+  shorttitle = {{{CW-DETR}}},
+  author = {Wang, Tianpeng and Teng, Qiaoshuang and Sun, Shangyu and Song, Weidong and Zhang, Jinhe and Li, Yuxuan},
+  year = 2026,
+  month = jan,
+  journal = {Sensors},
+  volume = {26},
+  number = {1},
+  pages = {325},
+  publisher = {Multidisciplinary Digital Publishing Institute},
+  issn = {1424-8220},
+  doi = {10.3390/s26010325},
+  urldate = {2026-07-15},
+  abstract = {Traffic sign detection under adverse weather conditions remains challenging due to severe feature degradation caused by rain, fog, and snow, which significantly impairs the performance of existing detection systems. This study presents the CW-DETR (Complex Weather Detection Transformer), an end-to-end detection framework designed to address weather-induced feature deterioration in real-time applications. Building upon the RT-DETR, our approach integrates four key innovations: a multipath feature enhancement network (FPFENet) for preserving fine-grained textures, a Multiscale Edge Enhancement Module (MEEM) for combating boundary degradation, an adaptive dual-stream bidirectional feature pyramid network (ADBF-FPN) for cross-scale feature compensation, and a multiscale convolutional gating module (MCGM) for suppressing semantic--spatial confusion. Extensive experiments on the CCTSDB2021 dataset demonstrate that the CW-DETR achieves 69.0\% AP and 94.4\% AP50, outperforming state-of-the-art real-time detectors by 2.3--5.7 percentage points while maintaining computational efficiency (56.8 GFLOPs). A cross-dataset evaluation on TT100K, the TSRD, CNTSSS, and real-world snow conditions (LNTU-TSD) confirms the robust generalization capabilities of the proposed model. These results establish CW-DETR as an effective solution for all-weather traffic sign detection in intelligent transportation systems.},
+  copyright = {http://creativecommons.org/licenses/by/3.0/},
+  langid = {english},
+  keywords = {complex weather,detection transformer,edge enhancement,multiscale feature fusion,real-time detection,traffic sign detection},
+  file = {/Users/david/Zotero/storage/4D8UTYKC/Wang et al. - 2026 - CW-DETR An Efficient Detection Transformer for Traffic Signs in Complex Weather.pdf}
 }
 
 @misc{WhatYOLOv8InDepth,
@@ -379,7 +422,6 @@ Data Efficiency Study of Synthetic Fog for Object Detection Using the Clear2Fog 
   abstract = {We present a neural network that predicts HDR outdoor illumination from a single LDR image. At the heart of our work is a method to accurately learn HDR lighting from LDR panoramas under any weather condition. We achieve this by training another CNN (on a combination of synthetic and real images) to take as input an LDR panorama, and regress the parameters of the Lalonde-Matthews outdoor illumination model. This model is trained such that it a) reconstructs the appearance of the sky, and b) renders the appearance of objects lit by this illumination. We use this network to label a large-scale dataset of LDR panoramas with lighting parameters and use them to train our single image outdoor lighting estimation network. We demonstrate, via extensive experiments, that both our panorama and single image networks outperform the state of the art, and unlike prior work, are able to handle weather conditions ranging from fully sunny to overcast skies.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition},
-  note = {Comment: 8 pages, CVPR 19. Project page: http://lvsn.github.io/allweather},
   file = {/Users/david/Zotero/storage/7LPSJWG4/Zhang et al. - 2019 - All-Weather Deep Outdoor Lighting Estimation.pdf;/Users/david/Zotero/storage/VUMVTBV7/1906.html}
 }
 
