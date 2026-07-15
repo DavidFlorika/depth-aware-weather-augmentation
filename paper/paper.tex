@@ -222,17 +222,17 @@ augmented dataset.
 
 \section{Background}
 
-\textbf{Generative Adversarial Network} (GAN) is a deep learning model that consists of two networks that c
-ompete against each other: a generator G and a discriminator D. The generator G tries to generate 
+\textbf{Generative Adversarial Network} (GAN) is a deep learning model that consists of two networks that 
+compete against each other: a generator G and a discriminator D. The generator G tries to generate 
 realistic images from a target domain X, while the discriminator D tries
 to discriminate generated images from real images. That is, the generator learns a mapping: $G: X \rightarrow Y$.
 For example, in the context of my work, the generator G tries to create rainy or foggy looking images from clear images,
 while the discriminator D tries to distinguish between real rainy or foggy images and generated images. The generator and
 discriminator are trained in an adversarial manner, where the adversarial framework's objective is to minimize the generator
 loss and maximize the discriminator loss. The loss function of GAN is given below, defined by Goodfellow et al\cite{goodfellowGenerativeAdversarialNets}.
-\begin{equation}
+\[
 \min_G \max_D \quad \mathbb{E}_{x \sim p_{\mathrm{data}}(x)}[\log D(x)] + \mathbb{E}_{z \sim p_z(z)}[\log(1 - D(G(z)))].
-\end{equation}
+\]
 
 Traditional GANs use paired training data, which consists of training examples $\{x_i, y_i\}_{i=1}^N$, where 
 $x_i$ is the input and $y_i$ is the corresponding output. GAN is useful for image-to-image translation tasks, such as photo 
@@ -257,9 +257,9 @@ $F: Y \rightarrow X$ transforms images from domain $Y$ to domain $X$. The first 
 generated images from generator $G$; the second discriminator $D_X$ distinguishes between real images in domain $X$ and generated images 
 from generator $F$. The Cycle-GAN framework uses a cycle-consistency loss to ensure that the generated images can be transformed back to the original domain.
 The cycle-consistency loss is given below, defined by Zhu et al\cite{zhuUnpairedImagetoImageTranslation2020}.
-\begin{equation}
+\[
 \mathcal{L}_{\mathrm{cyc}}(G,F) = \mathbb{E}_{x \sim p_{\mathrm{data}}(x)} \left[\|F(G(x)) - x\|_1\right] + \mathbb{E}_{y \sim p_{\mathrm{data}}(y)} \left[\|G(F(y)) - y\|_1\right].
-\end{equation}
+\]
 
 The objective of Cycle-GAN is to minimize the adversarial loss, maximize the discriminator loss, and minimize
 the cycle-consistency loss. The key idea for Cycle-GAN is that if an image is transformed from domain $X$ to domain $Y$ by G, and then it is transformed back to domain $X$ by F, 
@@ -525,16 +525,139 @@ Rain appears as dynamic-looking particles and brings a rainy effect to the image
 Tremblay et al \cite{tremblayRainRenderingEvaluating2021}, my rain rendering method uses a physics-based rain 
 rendering method that simulates raindrops and a Cycle-GAN model that creates rainy effects. 
 
-\subsubsection{Physics-based Rendering (PRB)}
-To generate synthetic raindrop appearance, my physics-based rain rendering (PBR) method combines
-image-rspace rain streak synthesis, atmospheric scattering and linear-light compositing, based on the
+\subsubsection{Simple Rain Rendering}
+
+Simple rain rendering is used as a baseline physics-based augmentation method. This method does not use a depth map or estimate the 3D position of objects in the scene. 
+Instead, it adds rain directly in the 2D image plane. The purpose of this method is to create a controllable comparison point for evaluating whether depth information improves the realism and usefulness of rain augmentation.
+
+Given an input RGB/BGR image $I$ with height $H$ and width $W$, the simple rain renderer first defines an image area scale $A=HW/1000$ and a minimum image dimension $m=min(H,W)$. A severity value $s$ controls the strength of the rain. 
+In the simple rain rendering setting, three severities ("light", "medium", "heavy") refer to three fixed severity values, determining the number of rain streaks, the streak length, the streak width, opacity, etc.
+Higher severity values produce denser rain, longer motion trails, and a darker rainy appearance.
+
+The renderer creates rain using three 2D streak layers. These layers represent different visual scales of rain: 
+a layer of longer and thicker streaks, a layer of medium streaks, and a layer of shorter fine streaks. 
+Each layer $l$ has a streak count $N_l$, streak length $L_l$, streak width $W_l$, base opacity $\alpha_l$, brightness coefficient $\epsilon_l$, and shadow suppression coefficient $\eta_l$. 
+For example, the longest-streak layer uses:
+
+\begin{equation}
+N_1=A(0.45+1.55s) \quad L_1=m(0.025+0.042s) \quad W_1=1.15+0.75s \quad \alpha_1=0.050+0.095s
+\label{eq:simple-layer-params}
+\end{equation}
+
+The medium and fine layers follow the same structure, but use shorter and thinner streaks 
+with larger particle counts. This layered design prevents the rain pattern from looking like a 
+single repeated texture, serving as a simplified solution to simulate the depth-related appearance of rain.
+
+Individual rain streaks are generated using an anisotropic motion kernal, which is a kernal that blurs
+differently in different directions, rather than hard lines. The streaks start with a fixed streak angle of 105 degrees, with slight random variations within streaks and images. 
+For a streak angle $\theta$, each kernal pixel is projected into coordinates along and across the
+rain direction:
+\begin{equation}
+u=x\,cos\theta + y\,sin\theta \quad v = -x\,sin\theta + y\,cos\theta
+\label{eq:rain-kernel-coordinates}
+\end{equation}
+
+where $u$ is distance along the rain streak and $v$ is distance across the rain streak.
+
+The streak intensity (how strong each pixel of a rain streak is inside the filter) is tapered along its length
+and Gaussian blurred along its width:
+\begin{equation}
+K(u,v)=\left[\max\left(0,1-\frac{|u|}{L/2}\right)\right]^p \cdot \exp\left(-\frac{1}{2}\left(\frac{v}{\sigma_w}\right)^2\right)
+\label{eq:anisotropic-motion-kernel}
+\end{equation}
+where $p=1.45$ controls tapering and:
+\begin{equation}
+\sigma_w = max(0.35, 0.55W_l)
+\label{eq:rain-kernel-width}
+\end{equation}
+
+The kernel is normalized, so its peak value is one. By applying this kernel on point-like rain particle, it creates
+motional rain streaks that resembles real rain's photometry rather than opaque white streaks.
+
+The brightness of each streak is adjusted according to the local image brightness. The renderer converts the image to linear light and computes a local luminance value $Y$ for each sampled point:
+\begin{equation}
+Y=0.0722B+0.7152G+0.2126R
+\label{eq:linear-luminance}
+\end{equation}
+
+Rain is more visible over darker regions and less visible over bright regions, so the contrast factor is defined as:
+\begin{equation}
+C=0.26+0.72(1-Y)^{0.78}
+\label{eq:simple-contrast}
+\end{equation}
+
+The pixel intensity change for a sampled streak is then:
+\begin{equation}
+\Delta_i=\epsilon_l C-\eta_l Y^{1.20}+\mathcal{N}(0,2.2+2.8s)
+\label{eq:simple-delta}
+\end{equation}
+where $\epsilon_l$ controls highlight strength and $\eta_l$ suppresses overly bright streaks on bright backgrounds. The opacity of each streak is sampled from a log-normal distribution:
+\begin{equation}
+\alpha_i=\operatorname{clip}(\alpha_l \cdot LogNormal(0,0.20),0.0015,0.180)
+\label{eq:simple-opacity}
+\end{equation}
+This random variation avoids perfectly uniform rain streaks across the image.
+
+The simple renderer accumulates all streaks into an optical thickness map $\tau(x,y)$ and a brightness-change map $\tau\Delta(x,y)$. The accumulated brightness change is computed as:
+\begin{equation}
+\tau\Delta(x,y)=\sum_i \tau_i(x,y)\Delta_i
+\label{eq:rain-delta-accumulation}
+\end{equation}
+The final rain alpha is then computed as:
+\begin{equation}
+\alpha_{rain}=\operatorname{clip}(1-e^{-\tau(2.10+1.20s)},0,0.42)
+\label{eq:simple-rain-alpha}
+\end{equation}
+The final rain color change $\Delta_{rain}$ is the opacity-weighted average of the accumulated streak brightness changes:
+\[
+\Delta_{rain}(x,y)=\frac{\tau\Delta(x,y)}{\tau(x,y)+\epsilon}
+\]
+
+The rain color change $\Delta_{rain}$ is added with the original image $I$ to produce $I_{rain}$, the original image added with simple rain streaks.
+
+Before compositing the streaks, the renderer slightly darkens the whole image to imitate reduced illumination during rain; the darkened image is denoted as $I_{dark}$. 
+The final image is formed by blending the darkened image with the rain-adjusted image according to $\alpha_{rain}$:
+
+\begin{equation}
+I_{out} = I_{dark}(1-\alpha_{rain}) + I_{rain}\alpha_{rain}
+\end{equation}
+
+Overall, simple rain rendering is fast, controllable, and does not require a depth-estimation model. 
+The simple rain rendering method is applied on the BDD100K dataset, generating 3000 simple-rain augmented images and saving the object detection labels in YOLOv8 format.
+\autoref{fig:simple-rain} contains three examples from the simple rain augmented BDD100K dataset.
+Its main limitation is that it does not decide whether a rain streak should appear in front of or behind nearby objects. 
+As a result, streaks may be placed uniformly across cars, buildings, road signs, and background regions even when this placement is not physically accurate. This limitation motivates the depth-aware physics-based renderer described in the next subsection.
+
+\begin{figure}[!htbp]
+  \centering
+  \begin{subfigure}{0.32\linewidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.16\textheight,keepaspectratio]{src/images/simple_rain1.jpg}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}{0.32\linewidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.16\textheight,keepaspectratio]{src/images/simple_rain2.jpg}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}{0.32\linewidth}
+    \centering
+    \includegraphics[width=\linewidth,height=0.16\textheight,keepaspectratio]{src/images/simple_rain3.jpg}
+  \end{subfigure}
+  \caption{Examples of simple-rain augmented images}
+  \label{fig:simple-rain}
+\end{figure}
+
+\subsubsection{Depth-Aware Physics-Based Rain Rendering}
+To generate synthetic raindrop appearance with scene geometry, the depth-aware physics-based rain rendering (PBR) method combines
+image-space rain streak synthesis, atmospheric scattering and linear-light compositing, based on the
 monocular depth map produced by Depth Anything V2\cite{yangDepthAnythingV22024}. The objective of this
 renderer is to produce controllable raindrops while being consistent with scene geometry and depth.
 
 Given an input RGB/BGR image $I$, Depth Anything V2 outputs an estimated depth map $D$ from the input $I$. The raw depth values are normalized into a relative distance map:
-\begin{equation}
-D_n = \frac{\operatorname{clip}(D, p_1, p_{99})-min(D)}{max(D)-min_(D) + \epsilon}
-\end{equation}
+\[
+D_n = \frac{\operatorname{clip}(D, p_1, p_{99})-min(D)}{max(D)-min(D) + \epsilon}
+\]
 where $p_1$ and $p_{99}$ are the 1st and 99th percentiles of the depth values used to exclude extreme values, and $\epsilon$ is a small constant to avoid division by zero. 
 The normalized scene distance is then defined as $d(x,y) = 1 - D_{n}(x,y)$, where a $d(x,y)=0$ represents foreground regions close to the camera and
 $d(x,y)=1$ represents distant scene regions.
@@ -542,7 +665,8 @@ $d(x,y)=1$ represents distant scene regions.
 The renderer models rain as layered rain streaks. Four rain-depth layers are used: near, mid, far, and background.
 Each layer $l$ has a fixed normalized depth $z_l$, a streak count $N_l$, streak length $L_l$, streak width $W_l$, base opacity $\alpha_l$, 
 defocus blur, and angular jitter. For an image of height H, width W, minimum dimension $m = min(H, W)$, 
-area scale $A=HW/1000$, and rain severity $s$. Given that each layer has a fixed severity $s$, the formulae for other parameters are constructed through experimentation. 
+area scale $A=HW/1000$, and rain severity $s$, it follows the same parameter structure as the simple renderer in \autoref{eq:simple-layer-params}. 
+Given the three severities ("light", "medium", "heavy") each corresponds to a fixed severity value $s$, the formulae for other parameters are constructed through experimentation. 
 The layer parameters are defined as functions of severity. For example, 
 the near layer uses:
 \[
@@ -558,7 +682,11 @@ scene surface. Raindrops from a given layer do not suddenly appear or dissapper;
 close to a layer's fixed normalized depth $z_l$. A visibility function tells how visible a rain streak at coordinate $(x,y)$ is, and it is computed using a smooth transition function:
 
 \begin{equation}
-V_l(x,y)=smoothstep(-\delta, \delta, d(x,y)-z_l) \quad V_l: [0,1]\rightarrow[0,1]
+\begin{aligned}
+V_l(x,y)=smoothstep(-\delta, \delta, d(x,y)-z_l)\\
+V_l: [0,1]\rightarrow[0,1]
+\end{aligned}
+\label{eq:depth-layer-visibility}
 \end{equation}
 
 where $\delta_l$ is the layer softness parameter that controls how rapidly the raindrops fade in or out. A smaller $\delta_l$ means 
@@ -566,7 +694,10 @@ a sharper transition, while a larger $\delta_l$ means a smoother transition. The
 $\delta_l$. The smoothstep function is:
 
 \[
-smoothstep(a, b, x) = t^2(3-2t) \quad t = \operatorname{clip}(\frac{x-a}{b-a+\epsilon}, 0, 1)
+\begin{aligned}
+smoothstep(a, b, x) = t^2(3-2t) \\
+t = \operatorname{clip}(\frac{x-a}{b-a+\epsilon}, 0, 1)
+\end{aligned}
 \]
 
 In the smoothstep function, $t$ is clipped to a value between 0 and 1. Therefore, the domain of visibility $V_l$ is $[0, 1]$, and its range is $[0, 1]$.
@@ -576,72 +707,45 @@ a larger visibility value, while a streak that is more distant has a smaller vis
 This prevenst distant rain from being visible in front of foreground objects. The smoothstep function and visibility
 function prevents discontinuities in the rain appearance at a depth-edge. It also prevents halo spaces around object boundaries.
 
-Individual rain streaks are generated using an anisotropic motion kernal, which is a kernal that blurs
-differently in different directions, rather than hard lines. For a streak angle $\theta$, each kernal pixel is projected into coordinates along and across the
-rain direction:
+Individual rain streaks are then generated using the same anisotropic motion kernal defined in \autoref{eq:rain-kernel-coordinates}, \autoref{eq:anisotropic-motion-kernel}, and \autoref{eq:rain-kernel-width}. The difference is that each depth-aware layer is multiplied by the visibility function in \autoref{eq:depth-layer-visibility}, so the same motion-streak model is clipped against the estimated scene geometry rather than being placed uniformly across the image.
+
+For each sampled rain streak, the opacity follows the same log-normal sampling idea as \autoref{eq:simple-opacity}. However, the depth-aware renderer uses 
+a slightly wider log-normal distribution and clips the result to the range $(0.001,0.18)$:
 \[
-u=x\,cos\theta + y\,sin\theta \quad v = -x\,sin\theta + y\,cos\theta
+\alpha_i=\operatorname{clip}(\alpha_l \cdot LogNormal(0,0.22),0.001,0.180)
 \]
-where $u$ is distance along the rain streak and $v$ is distance across the rain streak.
-
-The streak intensity (how strong each pixel of a rain streak is inside the filter) is tapered along its length
-and Gaussian blurred along its width:
-\begin{equation}
-K(u,v)=\left[\max\left(0,1-\frac{|u|}{L/2}\right)\right]^p \cdot \exp\left(-\frac{1}{2}\left(\frac{v}{\sigma_w}\right)^2\right)
-\end{equation}
-where $p=1.45$ controls tapering and:
-\[
-\sigma_w = max(0.35, 0.55W_l)
-\]
-
-The kernel is normalized, so its peak value is one. By applying this kernel on point-like rain particle, it creates
-motional rain streaks that resembles real rain's photometry rather than opaque white streaks.
-
-For each sampled rain streak, the opacity $\alpha_i$ is defined by a log-nromal distribution and the layer opacity:
-\[
-\alpha_i = \operatorname{clip}(\alpha_l \cdot LogNormal(0, 0.22), 0.001, 0.18)
-\]
-
-The brightness level $Y$ of a streak is made dependent on the local scene brightness. The local scene brightness is obtained from
-converting the image to linear light:
-\[
-Y=0.0722B+0.7152G+0.2126R
-\]
-
-The rain streak contrast factor controls how visible a rain streak should be depending on local brightness.
-It is stronger over dark regions and weaker over bright regions:
+This allows the opacity to change gradually, creating a smooth degradation in opacity as the streaks get more distant. 
+The brightness level $Y$ is computed from the same linear-light luminance equation in \autoref{eq:linear-luminance}. 
+The rain streak contrast factor also follows the brightness-dependent design in \autoref{eq:simple-contrast}, but uses the depth-aware constants:
 \[
 C=0.34+1.05(1-Y)^{0.72}
 \]
-
-The pixel intensity delta for a rain streak is its change in brightness compared to the scene brightness $Y$:
+The pixel intensity delta follows the same form as \autoref{eq:simple-delta}, but it uses depth-aware constants and is clipped to prevent extreme values:
 \[
-\Delta_i=\epsilon_l C-\eta_l Y^{1.15}+\mathcal{N}(0,4+5\alpha_l)
-\]
-where $\epsilon_l$ is the layer highlight strength constant and $\eta_l$ is a shadow suppression constant. Delta is then
-clipped to a range $\operatorname{clip}(\Delta_i, -16, 135)$.
-
-The renderer then accumulates rain as an optical thickness map. Each raindrop's pixel intensity $\Delta_i$, convolved with the motion kernel, is added to the map. 
-The optical thickness map is denoted as $\tau(x,y)$. Then, the renderer generates an opacity-weighted brightness map as:
-\[
-\tau\Delta(x,y)=\sum_{l}\tau(x,y)\Delta_i
+\Delta_i=\operatorname{clip}(\epsilon_l C-\eta_lY^{1.15}+\mathcal{N}(0,4+5\alpha_l), -16, 135)
 \]
 
-The final rain alpha is defined as:
+The renderer then accumulates rain as an optical thickness map in the same way as \autoref{eq:rain-delta-accumulation}. Each raindrop's pixel intensity $\Delta_i$, convolved with the motion kernel, is added to the map. The optical thickness map is denoted as $\tau(x,y)$, same as that in simple rain rendering. 
+The final rain alpha follows the same optical-thickness form as \autoref{eq:simple-rain-alpha}, but uses depth-aware clipping:
 \[
-\alpha_{rain} = \operatorname{clip}(1-e^{-\operatorname{clip(\tau,0,3.5)}},0,0.62)
+\alpha_{rain} = \operatorname{clip}(1-e^{-\operatorname{clip}(\tau,0,3.5)},0,0.62)
 \]
 
-The final rain color delta map $\Delta_{rain}$ is the opacity-weighted average and clipped within the plausible range $(-18, 145)$.
+The final rain color delta map $\Delta_{rain}$ is the opacity-weighted average and clipped within the plausible range $(-18, 145)$:
+\[
+\Delta_{rain}(x,y)=\operatorname{clip}\left(\frac{\tau\Delta(x,y)}{\tau(x,y)+\epsilon}, -18, 145\right)
+\]
+This restricts the values of rain color differences to a reasonable range.
 
-A light mist layer is applied before compositing the streaks, based on the depth map. The mist intensity depends on layer, where a more distant layer has a higher intensity,
-a smoothstep function is applied, preventing abrupt change in mist appearance between across layers. The mist map is denoted as $I_{mist}$, and it is then added with the slightly tinted 
+A light mist layer is applied before compositing the streaks, based on the depth map. The mist intensity depends on layer, where a more distant layer has a higher intensity.
+A smoothstep function is applied, preventing abrupt change in mist appearance between across layers. 
+The mist map is denoted as $I_{mist}$, and it is then added with the slightly tinted 
 rain delta map $\Delta_{rain}$ to produce a weather augmentation mask, $I_{target}$.
 
 The output image is then:
-\begin{equation}
+\[
 I_{out} = I_{mist}(1-\alpha_{rain})+I_{target} \alpha_{rain}
-\end{equation}
+\]
 
 Overall, the renderer combines depth estimation with physics-based optical accumulation. \autoref{fig:depth-aware-rain} includes three input-output pairs, justaposing the original and the output images for comparison. 
 The depth-based layer visibility prevents rain from incorrectly appearing over foreground objects.
@@ -795,6 +899,151 @@ By applying PBR after Cycle-GAN, the result may consistently keep the global rai
 Compared with Cycle-GAN alone, the hybrid framework provides direct control over rain intensity and depth placement. Compared with PBR alone, 
 it produces a more complete rainy scene because it includes wetness and lighting changes. Therefore, the combined PBR and Rain Cycle-GAN framework
 assembles real rainy images better than PBR or GAN alone, and it can produce controlled rainy training data with a smaller visual gap between synthetic rain and real rainy scenes.
+
+In addition, \autoref{fig:comparison-rain} compares the effect of all four rain augmentation approaches: simple rain, PBR, Rain Cycle-GAN and PBR plus GAN. 
+The images involving PBR appear to be more realistic than the image using simple rain; the PBR plus GAN approach appears to be the most realistic and coherent over the entire scene from looking.
+
+\begin{figure}[!htbp]
+    \centering
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.20\textheight,keepaspectratio]{src/images/combined_clean.jpg}
+        \caption{Clean input image}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.20\textheight,keepaspectratio]{src/images/combined_simple.jpg}
+        \caption{Simple rain}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.20\textheight,keepaspectratio]{src/images/combined_depth.jpg}
+        \caption{PBR}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.20\textheight,keepaspectratio]{src/images/combined_gan.jpg}
+        \caption{Rain Cycle-GAN}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.20\textheight,keepaspectratio]{src/images/combined.jpg}
+        \caption{PBR+GAN}
+    \end{subfigure}
+    \caption{A comparison of all four rain augmentation approach on the same clean image}
+    \label{fig:comparison-rain}
+\end{figure}
+
+\subsection{Fog Augmentation}
+Foggy images usually contain bright skies, reduced contrast, desaturated colors, softened distant objects, and lower visibility across the scene. Although fog can be simulated 
+with physics-based atmospheric scattering models (ASM), realistic fog depends on depth, illumination, atmospheric light, and camera exposure~\cite{cordtsCityscapesDatasetSemantic2016}. Simple brightness or color transformations are therefore 
+not enough to produce convincing foggy driving scenes. In this work, I use Cycle-GAN for fog augmentation because it learns the overall visual style of fog from data while approximately 
+preserving the road layout, vehicles, buildings, and other scene structures from the input image.
+
+The BDD100K contains very few foggy images: there are only 130 foggy images in the training split and 13 in the validation split. Since this is too small for a stable, robust Cycle-GAN training,
+I trained the Fog Cycle-GAN model using the Cityscapes clear images as domain $X$ and Foggy Cityscapes as domain $Y$~\cite{cordtsCityscapesDatasetSemantic2016,sakaridisSemanticFoggyScene2018}. 
+The Foggy Cityscapes dataset is synthetically generated from the clean Cityscapes images for Computer Vision training, using the Atmospheric Scattering Model(ASM), which blends clear-weather 
+images with a uniform atmospheric light based on scene depth and a fog density coefficient~\cite{cordtsCityscapesDatasetSemantic2016}. 
+It supports a more consistent and stable training for my Fog Cycle-GAN model, while it contains similar urban driving images as the foggy BDD100K subset.
+
+The Fog Cycle-GAN follows the same unpaired image-to-image translation framework as the Rain Cycle-GAN~\cite{zhuUnpairedImagetoImageTranslation2020}. 
+Domain $X$ contains clear Cityscapes images, and domain $Y$ contains Foggy Cityscapes images. A fog density of 0.02 refers to how quickly visibility decreases over distance. 
+This density corresponds to a visibility range of around 150 metres, and it is the densest fog density in the Foggy Cityscapes dataset~\cite{cordtsCityscapesDatasetSemantic2016}. It is chosen to create a more distinguished difference between 
+domain $X$, the clear images and domain $Y$, the foggy images. The training dataset contains 3000 clear images 
+and 3000 foggy images, with 400 clear and 400 foggy images used for testing. Images are loaded at width 512 and randomly cropped to 384 
+during training. The model is trained with batch size 1, learning rate 0.0001, identity loss weight 1.0, no horizontal flipping, 10 epochs 
+with constant learning rate, and 10 decaying epochs.
+
+After training, the clear-to-fog generator is applied on the same 3000 clear images from the BDD100K dataset used in rain augmentation, generating 3000 clear-foggy image pairs.
+The generated outputs are resized back to the original BDD100K image dimensions and saved as fog-augmented training images. Since Cycle-GAN changes the visual appearance but preserves 
+the main scene layout, the original BDD100K object-detection labels are reused and exported in YOLOv8 format. This produces a fog-augmented BDD100K training set with 3000 images and 
+corresponding bounding-box labels.
+
+The Fog Cycle-GAN outputs preserve structures from inputs, and they contain most foggy features, such as washed-out skies, reduced contratst, desaturatedcolors, softened distant objects, and lower visibility, as shown in \autoref{fig:fog-cycle-gan}. 
+
+\begin{figure}[!htbp]
+    \centering
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.155\textheight,keepaspectratio]{src/images/foggan1_clean.jpg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.155\textheight,keepaspectratio]{src/images/foggan1_fog.jpg}
+    \end{subfigure}
+
+    \vspace{1mm}
+
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.155\textheight,keepaspectratio]{src/images/foggan2_clean.jpg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.155\textheight,keepaspectratio]{src/images/foggan2_fog.jpg}
+    \end{subfigure}
+
+    \vspace{1mm}
+
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.155\textheight,keepaspectratio]{src/images/foggan3_clean.jpg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.155\textheight,keepaspectratio]{src/images/foggan3_fog.jpg}
+    \end{subfigure}
+
+    \vspace{1mm}
+
+    \makebox[0.48\textwidth][c]{\small Clear weather input}
+    \hfill
+    \makebox[0.48\textwidth][c]{\small Fog augmented output}
+
+    \caption{Images in the left column are the clear-weather-labeled inputs from the BDD100K dataset.
+    Images in the right column are the corresponding fog augmented output}
+    \label{fig:fog-cycle-gan}
+\end{figure}
+
+The limitations of the fog Cycle-GAN include over desaturation, exemplified in \autoref{fig:over-desaturation}; overexposion, exemplified in \autoref{fig:overexposion}; unrealistic clustered fog, exemplified in \autoref{fig:clustered-fog}, etc.
+A solution to solve these limitations is to increase the training dataset size and image resolution, so the model can stablize its performance and better learn features from domains.
+
+\begin{figure}[!htbp]
+    \centering
+
+    \begin{subfigure}{0.32\linewidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.16\textheight,keepaspectratio]{src/images/badfog1.jpg}
+        \caption{Over desaturation}
+        \label{fig:over-desaturation}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.32\linewidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.16\textheight,keepaspectratio]{src/images/badfog2.jpg}
+        \caption{Overexposion}
+        \label{fig:overexposion}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.32\linewidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.16\textheight,keepaspectratio]{src/images/badfog3.jpg}
+        \caption{Unrealistic clustered fog}
+        \label{fig:clustered-fog}
+    \end{subfigure}
+    \caption{Examples of some limitations of Fog Cycle-GAN}
+    \label{fig:three-images}
+    \label{fig:three-traditional-rain-augmentation}
+\end{figure}
+
+\section{Results}
 
 
 

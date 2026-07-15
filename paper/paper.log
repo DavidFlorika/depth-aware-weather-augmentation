@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  13 JUL 2026 00:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  14 JUL 2026 02:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -640,7 +640,14 @@ Package csquotes Info: Redefining alias 'default' -> 'american'.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 84.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-) (./paper.aux)
+) (./paper.aux
+
+LaTeX Warning: Label `fig:three-images' multiply defined.
+
+
+LaTeX Warning: Label `fig:three-traditional-rain-augmentation' multiply defined.
+
+)
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
@@ -866,17 +873,17 @@ Package pdftex.def Info: src/images/paired_unpaired2.png  used on input line 247
 [2 <./src/images/distortionA.png> <./src/images/distortionB.png> <./src/images/distortionC.png> <./src/images/distortionD.png> <./src/images/distortionE.png> <./src/images/distortionF.png> <./src/images/distortionG.png> <./src/images/distortionH.png> <./src/images/distortionI.png>]
 
 [3 <./src/images/paired_unpaired2.png>]
-<src/images/rain100H.png, id=98, 513.92pt x 385.44pt>
+<src/images/rain100H.png, id=96, 513.92pt x 385.44pt>
 File: src/images/rain100H.png Graphic file (type png)
 <use src/images/rain100H.png>
 Package pdftex.def Info: src/images/rain100H.png  used on input line 336.
 (pdftex.def)             Requested size: 138.76024pt x 104.07019pt.
-<src/images/rain800.jpg, id=99, 385.44pt x 289.08pt>
+<src/images/rain800.jpg, id=97, 385.44pt x 289.08pt>
 File: src/images/rain800.jpg Graphic file (type jpg)
 <use src/images/rain800.jpg>
 Package pdftex.def Info: src/images/rain800.jpg  used on input line 343.
 (pdftex.def)             Requested size: 138.75829pt x 104.06871pt.
-<src/images/did-MDN.jpg, id=100, 123.3408pt x 92.5056pt>
+<src/images/did-MDN.jpg, id=98, 123.3408pt x 92.5056pt>
 File: src/images/did-MDN.jpg Graphic file (type jpg)
 <use src/images/did-MDN.jpg>
 Package pdftex.def Info: src/images/did-MDN.jpg  used on input line 350.
@@ -886,17 +893,17 @@ Package pdftex.def Info: src/images/did-MDN.jpg  used on input line 350.
 [4 <./src/images/rain100H.png (PNG copy)> <./src/images/rain800.jpg> <./src/images/did-MDN.jpg>]
 
 [5]
-<src/images/bdd100k_clear.jpg, id=150, 1284.8pt x 722.7pt>
+<src/images/bdd100k_clear.jpg, id=149, 1284.8pt x 722.7pt>
 File: src/images/bdd100k_clear.jpg Graphic file (type jpg)
 <use src/images/bdd100k_clear.jpg>
 Package pdftex.def Info: src/images/bdd100k_clear.jpg  used on input line 483.
 (pdftex.def)             Requested size: 150.30727pt x 84.54784pt.
-<src/images/bdd100k_rainy.jpg, id=151, 1284.8pt x 722.7pt>
+<src/images/bdd100k_rainy.jpg, id=150, 1284.8pt x 722.7pt>
 File: src/images/bdd100k_rainy.jpg Graphic file (type jpg)
 <use src/images/bdd100k_rainy.jpg>
 Package pdftex.def Info: src/images/bdd100k_rainy.jpg  used on input line 490.
 (pdftex.def)             Requested size: 150.30727pt x 84.54784pt.
-<src/images/bdd100k_foggy.jpg, id=152, 1284.8pt x 722.7pt>
+<src/images/bdd100k_foggy.jpg, id=151, 1284.8pt x 722.7pt>
 File: src/images/bdd100k_foggy.jpg Graphic file (type jpg)
 <use src/images/bdd100k_foggy.jpg>
 Package pdftex.def Info: src/images/bdd100k_foggy.jpg  used on input line 497.
@@ -906,103 +913,202 @@ Package pdftex.def Info: src/images/bdd100k_foggy.jpg  used on input line 497.
 [6 <./src/images/bdd100k_clear.jpg> <./src/images/bdd100k_rainy.jpg> <./src/images/bdd100k_foggy.jpg>]
 
 [7]
-<src/images/depth1_clear.jpg, id=178, 1284.8pt x 722.7pt>
+<src/images/simple_rain1.jpg, id=182, 1284.8pt x 722.7pt>
+File: src/images/simple_rain1.jpg Graphic file (type jpg)
+<use src/images/simple_rain1.jpg>
+Package pdftex.def Info: src/images/simple_rain1.jpg  used on input line 635.
+(pdftex.def)             Requested size: 150.30727pt x 84.54784pt.
+<src/images/simple_rain2.jpg, id=183, 1284.8pt x 722.7pt>
+File: src/images/simple_rain2.jpg Graphic file (type jpg)
+<use src/images/simple_rain2.jpg>
+Package pdftex.def Info: src/images/simple_rain2.jpg  used on input line 640.
+(pdftex.def)             Requested size: 150.30727pt x 84.54784pt.
+<src/images/simple_rain3.jpg, id=184, 1284.8pt x 722.7pt>
+File: src/images/simple_rain3.jpg Graphic file (type jpg)
+<use src/images/simple_rain3.jpg>
+Package pdftex.def Info: src/images/simple_rain3.jpg  used on input line 645.
+(pdftex.def)             Requested size: 150.30727pt x 84.54784pt.
+
+
+[8 <./src/images/simple_rain1.jpg> <./src/images/simple_rain2.jpg> <./src/images/simple_rain3.jpg>]
+
+[9]
+<src/images/depth1_clear.jpg, id=213, 1284.8pt x 722.7pt>
 File: src/images/depth1_clear.jpg Graphic file (type jpg)
 <use src/images/depth1_clear.jpg>
-Package pdftex.def Info: src/images/depth1_clear.jpg  used on input line 656.
+Package pdftex.def Info: src/images/depth1_clear.jpg  used on input line 760.
 (pdftex.def)             Requested size: 179.22383pt x 100.8134pt.
-<src/images/depth1_rain.jpg, id=179, 1284.8pt x 722.7pt>
+<src/images/depth1_rain.jpg, id=214, 1284.8pt x 722.7pt>
 File: src/images/depth1_rain.jpg Graphic file (type jpg)
 <use src/images/depth1_rain.jpg>
-Package pdftex.def Info: src/images/depth1_rain.jpg  used on input line 661.
+Package pdftex.def Info: src/images/depth1_rain.jpg  used on input line 765.
 (pdftex.def)             Requested size: 179.22383pt x 100.8134pt.
-<src/images/depth2_clear.jpg, id=180, 1284.8pt x 722.7pt>
+<src/images/depth2_clear.jpg, id=215, 1284.8pt x 722.7pt>
 File: src/images/depth2_clear.jpg Graphic file (type jpg)
 <use src/images/depth2_clear.jpg>
-Package pdftex.def Info: src/images/depth2_clear.jpg  used on input line 668.
+Package pdftex.def Info: src/images/depth2_clear.jpg  used on input line 772.
 (pdftex.def)             Requested size: 179.22383pt x 100.8134pt.
-<src/images/depth2_rain.jpg, id=181, 1284.8pt x 722.7pt>
+<src/images/depth2_rain.jpg, id=216, 1284.8pt x 722.7pt>
 File: src/images/depth2_rain.jpg Graphic file (type jpg)
 <use src/images/depth2_rain.jpg>
-Package pdftex.def Info: src/images/depth2_rain.jpg  used on input line 673.
+Package pdftex.def Info: src/images/depth2_rain.jpg  used on input line 777.
 (pdftex.def)             Requested size: 179.22383pt x 100.8134pt.
-<src/images/depth3_clean.jpg, id=182, 1284.8pt x 722.7pt>
+<src/images/depth3_clean.jpg, id=217, 1284.8pt x 722.7pt>
 File: src/images/depth3_clean.jpg Graphic file (type jpg)
 <use src/images/depth3_clean.jpg>
-Package pdftex.def Info: src/images/depth3_clean.jpg  used on input line 680.
+Package pdftex.def Info: src/images/depth3_clean.jpg  used on input line 784.
 (pdftex.def)             Requested size: 179.22383pt x 100.8134pt.
-<src/images/depth3_rain.jpg, id=183, 1284.8pt x 722.7pt>
+<src/images/depth3_rain.jpg, id=218, 1284.8pt x 722.7pt>
 File: src/images/depth3_rain.jpg Graphic file (type jpg)
 <use src/images/depth3_rain.jpg>
-Package pdftex.def Info: src/images/depth3_rain.jpg  used on input line 685.
+Package pdftex.def Info: src/images/depth3_rain.jpg  used on input line 789.
 (pdftex.def)             Requested size: 179.22383pt x 100.8134pt.
-
-
-[8]
-<src/images/rainGAN1_clean.jpg, id=192, 1284.8pt x 722.7pt>
+<src/images/rainGAN1_clean.jpg, id=219, 1284.8pt x 722.7pt>
 File: src/images/rainGAN1_clean.jpg Graphic file (type jpg)
 <use src/images/rainGAN1_clean.jpg>
-Package pdftex.def Info: src/images/rainGAN1_clean.jpg  used on input line 722.
+Package pdftex.def Info: src/images/rainGAN1_clean.jpg  used on input line 826.
 (pdftex.def)             Requested size: 208.12077pt x 117.06793pt.
-<src/images/rainGAN1_gan.jpg, id=193, 1284.8pt x 722.7pt>
+<src/images/rainGAN1_gan.jpg, id=220, 1284.8pt x 722.7pt>
 File: src/images/rainGAN1_gan.jpg Graphic file (type jpg)
 <use src/images/rainGAN1_gan.jpg>
-Package pdftex.def Info: src/images/rainGAN1_gan.jpg  used on input line 727.
+Package pdftex.def Info: src/images/rainGAN1_gan.jpg  used on input line 831.
 (pdftex.def)             Requested size: 208.12077pt x 117.06793pt.
-<src/images/rainGAN2_clean.jpg, id=194, 1284.8pt x 722.7pt>
+<src/images/rainGAN2_clean.jpg, id=221, 1284.8pt x 722.7pt>
 File: src/images/rainGAN2_clean.jpg Graphic file (type jpg)
 <use src/images/rainGAN2_clean.jpg>
-Package pdftex.def Info: src/images/rainGAN2_clean.jpg  used on input line 734.
+Package pdftex.def Info: src/images/rainGAN2_clean.jpg  used on input line 838.
 (pdftex.def)             Requested size: 208.12077pt x 117.06793pt.
-<src/images/rainGAN2_gan.jpg, id=195, 1284.8pt x 722.7pt>
+<src/images/rainGAN2_gan.jpg, id=222, 1284.8pt x 722.7pt>
 File: src/images/rainGAN2_gan.jpg Graphic file (type jpg)
 <use src/images/rainGAN2_gan.jpg>
-Package pdftex.def Info: src/images/rainGAN2_gan.jpg  used on input line 739.
+Package pdftex.def Info: src/images/rainGAN2_gan.jpg  used on input line 843.
 (pdftex.def)             Requested size: 208.12077pt x 117.06793pt.
-<src/images/GANnoise_clean.jpg, id=198, 1284.8pt x 722.7pt>
+<src/images/GANnoise_clean.jpg, id=225, 1284.8pt x 722.7pt>
 File: src/images/GANnoise_clean.jpg Graphic file (type jpg)
 <use src/images/GANnoise_clean.jpg>
-Package pdftex.def Info: src/images/GANnoise_clean.jpg  used on input line 762.
+Package pdftex.def Info: src/images/GANnoise_clean.jpg  used on input line 866.
 (pdftex.def)             Requested size: 225.4707pt x 126.82727pt.
-<src/images/GANnoise_gan.jpg, id=199, 1284.8pt x 722.7pt>
+<src/images/GANnoise_gan.jpg, id=226, 1284.8pt x 722.7pt>
 File: src/images/GANnoise_gan.jpg Graphic file (type jpg)
 <use src/images/GANnoise_gan.jpg>
-Package pdftex.def Info: src/images/GANnoise_gan.jpg  used on input line 768.
+Package pdftex.def Info: src/images/GANnoise_gan.jpg  used on input line 872.
 (pdftex.def)             Requested size: 225.4707pt x 126.82727pt.
 
 
-[9 <./src/images/depth1_clear.jpg> <./src/images/depth1_rain.jpg> <./src/images/depth2_clear.jpg> <./src/images/depth2_rain.jpg> <./src/images/depth3_clean.jpg> <./src/images/depth3_rain.jpg>]
+[10]
+<src/images/combined_clean.jpg, id=237, 1284.8pt x 722.7pt>
+File: src/images/combined_clean.jpg Graphic file (type jpg)
+<use src/images/combined_clean.jpg>
+Package pdftex.def Info: src/images/combined_clean.jpg  used on input line 910.
+(pdftex.def)             Requested size: 225.4707pt x 126.82727pt.
+<src/images/combined_simple.jpg, id=238, 1284.8pt x 722.7pt>
+File: src/images/combined_simple.jpg Graphic file (type jpg)
+<use src/images/combined_simple.jpg>
+Package pdftex.def Info: src/images/combined_simple.jpg  used on input line 916.
+(pdftex.def)             Requested size: 225.4707pt x 126.82727pt.
+<src/images/combined_depth.jpg, id=239, 1284.8pt x 722.7pt>
+File: src/images/combined_depth.jpg Graphic file (type jpg)
+<use src/images/combined_depth.jpg>
+Package pdftex.def Info: src/images/combined_depth.jpg  used on input line 922.
+(pdftex.def)             Requested size: 225.4707pt x 126.82727pt.
+<src/images/combined_gan.jpg, id=240, 1284.8pt x 722.7pt>
+File: src/images/combined_gan.jpg Graphic file (type jpg)
+<use src/images/combined_gan.jpg>
+Package pdftex.def Info: src/images/combined_gan.jpg  used on input line 928.
+(pdftex.def)             Requested size: 225.4707pt x 126.82727pt.
+<src/images/combined.jpg, id=241, 1284.8pt x 722.7pt>
+File: src/images/combined.jpg Graphic file (type jpg)
+<use src/images/combined.jpg>
+Package pdftex.def Info: src/images/combined.jpg  used on input line 934.
+(pdftex.def)             Requested size: 225.4707pt x 126.82727pt.
 
-[10 <./src/images/rainGAN1_clean.jpg> <./src/images/rainGAN1_gan.jpg> <./src/images/rainGAN2_clean.jpg> <./src/images/rainGAN2_gan.jpg> <./src/images/GANnoise_clean.jpg> <./src/images/GANnoise_gan.jpg>]
 
-[11]
+[11 <./src/images/depth1_clear.jpg> <./src/images/depth1_rain.jpg> <./src/images/depth2_clear.jpg> <./src/images/depth2_rain.jpg> <./src/images/depth3_clean.jpg> <./src/images/depth3_rain.jpg>]
 
-[12
+[12 <./src/images/rainGAN1_clean.jpg> <./src/images/rainGAN1_gan.jpg> <./src/images/rainGAN2_clean.jpg> <./src/images/rainGAN2_gan.jpg> <./src/images/GANnoise_clean.jpg> <./src/images/GANnoise_gan.jpg>]
+
+[13 <./src/images/combined_clean.jpg> <./src/images/combined_simple.jpg> <./src/images/combined_depth.jpg> <./src/images/combined_gan.jpg> <./src/images/combined.jpg>]
+<src/images/foggan1_clean.jpg, id=264, 1284.8pt x 722.7pt>
+File: src/images/foggan1_clean.jpg Graphic file (type jpg)
+<use src/images/foggan1_clean.jpg>
+Package pdftex.def Info: src/images/foggan1_clean.jpg  used on input line 972.
+(pdftex.def)             Requested size: 179.22383pt x 100.8134pt.
+<src/images/foggan1_fog.jpg, id=265, 1284.8pt x 722.7pt>
+File: src/images/foggan1_fog.jpg Graphic file (type jpg)
+<use src/images/foggan1_fog.jpg>
+Package pdftex.def Info: src/images/foggan1_fog.jpg  used on input line 977.
+(pdftex.def)             Requested size: 179.22383pt x 100.8134pt.
+<src/images/foggan2_clean.jpg, id=266, 1284.8pt x 722.7pt>
+File: src/images/foggan2_clean.jpg Graphic file (type jpg)
+<use src/images/foggan2_clean.jpg>
+Package pdftex.def Info: src/images/foggan2_clean.jpg  used on input line 984.
+(pdftex.def)             Requested size: 179.22383pt x 100.8134pt.
+<src/images/foggan2_fog.jpg, id=267, 1284.8pt x 722.7pt>
+File: src/images/foggan2_fog.jpg Graphic file (type jpg)
+<use src/images/foggan2_fog.jpg>
+Package pdftex.def Info: src/images/foggan2_fog.jpg  used on input line 989.
+(pdftex.def)             Requested size: 179.22383pt x 100.8134pt.
+<src/images/foggan3_clean.jpg, id=268, 1284.8pt x 722.7pt>
+File: src/images/foggan3_clean.jpg Graphic file (type jpg)
+<use src/images/foggan3_clean.jpg>
+Package pdftex.def Info: src/images/foggan3_clean.jpg  used on input line 996.
+(pdftex.def)             Requested size: 179.22383pt x 100.8134pt.
+<src/images/foggan3_fog.jpg, id=269, 1284.8pt x 722.7pt>
+File: src/images/foggan3_fog.jpg Graphic file (type jpg)
+<use src/images/foggan3_fog.jpg>
+Package pdftex.def Info: src/images/foggan3_fog.jpg  used on input line 1001.
+(pdftex.def)             Requested size: 179.22383pt x 100.8134pt.
+<src/images/badfog1.jpg, id=273, 1284.8pt x 722.7pt>
+File: src/images/badfog1.jpg Graphic file (type jpg)
+<use src/images/badfog1.jpg>
+Package pdftex.def Info: src/images/badfog1.jpg  used on input line 1023.
+(pdftex.def)             Requested size: 150.30727pt x 84.54784pt.
+<src/images/badfog2.jpg, id=274, 1284.8pt x 722.7pt>
+File: src/images/badfog2.jpg Graphic file (type jpg)
+<use src/images/badfog2.jpg>
+Package pdftex.def Info: src/images/badfog2.jpg  used on input line 1030.
+(pdftex.def)             Requested size: 150.30727pt x 84.54784pt.
+<src/images/badfog3.jpg, id=275, 1284.8pt x 722.7pt>
+File: src/images/badfog3.jpg Graphic file (type jpg)
+<use src/images/badfog3.jpg>
+Package pdftex.def Info: src/images/badfog3.jpg  used on input line 1037.
+(pdftex.def)             Requested size: 150.30727pt x 84.54784pt.
+
+
+[14 <./src/images/foggan1_clean.jpg> <./src/images/foggan1_fog.jpg> <./src/images/foggan2_clean.jpg> <./src/images/foggan2_fog.jpg> <./src/images/foggan3_clean.jpg> <./src/images/foggan3_fog.jpg> <./src/images/badfog1.jpg> <./src/images/badfog2.jpg> <./src/images/badfog3.jpg>]
+
+[15]
+
+[16
 
 ]
 
-[13] (./paper.aux)
+[17] (./paper.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'paper.run.xml'.
 \openout1 = `paper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24627 strings out of 473190
- 441462 string characters out of 5715801
- 1406201 words of memory out of 5000000
- 47285 multiletter control sequences out of 15000+600000
+ 24791 strings out of 473190
+ 446177 string characters out of 5715801
+ 1407372 words of memory out of 5000000
+ 47432 multiletter control sequences out of 15000+600000
  597278 words of font info for 240 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,81p,2110b,5239s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (13 pages, 9227800 bytes).
+Output written on paper.pdf (17 pages, 11856009 bytes).
 PDF statistics:
- 337 PDF objects out of 1000 (max. 8388607)
- 248 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
- 57997 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 410 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
+ 86 named destinations out of 1000 (max. 500000)
+ 58082 words of extra memory for PDF output out of 61914 (max. 10000000)
 
