@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber paper"] 1784149711.69637 "paper.bcf" "paper.bbl" "paper" 1784151953.62203 0
+["biber paper"] 1784149711.69637 "paper.bcf" "paper.bbl" "paper" 1784155704.01974 0
   "ComputerVision.bib" 1784149665.42902 43152 e32a6acb53c21cc98bc5af8950895355 ""
-  "paper.bcf" 1784151953.55158 141855 00ab59f5c960b904be871ec14f2aba59 "pdflatex"
+  "paper.bcf" 1784155703.94538 141855 00ab59f5c960b904be871ec14f2aba59 "pdflatex"
   (generated)
   "paper.bbl"
   "paper.blg"
   (rewritten before read)
-["pdflatex"] 1784151951.43092 "/Users/david/Desktop/CV_Research/paper/paper.tex" "paper.pdf" "paper" 1784151953.62231 0
-  "/Users/david/Desktop/CV_Research/paper/paper.tex" 1784149688.05557 80552 4dc53a9f0328f19e608f882d2e097fcb ""
+["pdflatex"] 1784155701.63879 "/Users/david/Desktop/CV_Research/paper/paper.tex" "paper.pdf" "paper" 1784155704.02001 0
+  "/Users/david/Desktop/CV_Research/paper/paper.tex" 1784155701.32812 80565 35ee7966da47256dd7e1bddaaa1cb91d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -161,10 +161,10 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1757549450 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "paper.aux" 1784151953.54299 31589 e5b3556ab15325d6beb66acad632e2c5 "pdflatex"
+  "paper.aux" 1784155703.9371 31589 e5b3556ab15325d6beb66acad632e2c5 "pdflatex"
   "paper.bbl" 1784149713.11226 180316 70a399754c522271be3dd89df8eafe64 "biber paper"
-  "paper.run.xml" 1784151953.55229 2438 87c0def36a4b0ceeda4bb8141adaabe6 "pdflatex"
-  "paper.tex" 1784149688.05557 80552 4dc53a9f0328f19e608f882d2e097fcb ""
+  "paper.run.xml" 1784155703.94631 2438 87c0def36a4b0ceeda4bb8141adaabe6 "pdflatex"
+  "paper.tex" 1784155701.32812 80565 35ee7966da47256dd7e1bddaaa1cb91d ""
   "src/images/GANnoise_clean.jpg" 1783921071.12281 96868 7bb13f1cc4e43fc85b70689cf948d550 ""
   "src/images/GANnoise_gan.jpg" 1783921058.35389 248321 671f820cf3b992ae7a99dbae5700d9f7 ""
   "src/images/badfog1.jpg" 1784007766.67801 141018 b72f1be4243468de34b9c8632dbe5d0c ""
