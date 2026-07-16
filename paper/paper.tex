@@ -422,9 +422,9 @@ in far regions rather than applying it uniformly across the image. Training with
 semantic foggy scene understanding, but results depend on depth quality, density choices, and
 the synthetic-to-real gap~\cite{sakaridisSemanticFoggyScene2018}.
 
-Clear2Fog extends this direction with monocular depth estimation and atmospheric light
+\textcite{mohamedDataEfficiencyStudy2026} extends this direction with monocular depth estimation and atmospheric light
 estimation. Monocular depth estimation does not require 3D constructions such as LiDAR; rather,
-this paper uses Apple Depth Pro to produce an estimated depth map. The pipeline simulates fog
+Clear2Fog paper uses Apple Depth Pro to produce an estimated depth map. The pipeline simulates fog
 on clear-weather driving datasets and tries to preserve camera-LiDAR consistency. Without
 relying on LiDAR, Clear2Fog remains stable under extreme conditions like fog, snow or haze.
 \textcite{bijelicSeeingFogSeeing2020} focus on multimodal perception rather than rendering.
@@ -505,7 +505,7 @@ turn BDD100K into a controlled robustness testbed while keeping real driving div
     \caption{Foggy image from BDD100K}
     \label{fig:bdd-fog}
   \end{subfigure}
-  \caption{Examples of clear, rainy, and foggy images from BDD100K~\textcite{yuBDD100KDiverseDriving2018}}
+  \caption{Examples of clear, rainy, and foggy images from BDD100K, adapted from \textcite{yuBDD100KDiverseDriving2018}}
   \label{fig:bdd100k}
 \end{figure}
 
@@ -523,7 +523,7 @@ Data augmentation is the primary method to increase a dataset's size and variety
 In the context of this paper, it refers to adding rain and fog to images. As discussed 
 in previous sections, collecting data with various natural distortions for an outdoor 
 dataset is challenging. Therefore, using data augmentation to render natural distortions 
-is expected to improve performance of deep learning models. My work focuses on rain and fog 
+is expected to improve the performance of deep learning models. My work focuses on rain and fog 
 distortions in outdoor RGB images.
 
 \subsection{Rain Rendering}
@@ -599,7 +599,7 @@ The pixel intensity change for a sampled streak is then:
 \end{equation}
 where $\epsilon_l$ controls highlight strength and $\eta_l$ suppresses overly bright streaks on bright backgrounds. The opacity of each streak is sampled from a log-normal distribution:
 \begin{equation}
-\alpha_i=\operatorname{clip}(\alpha_l \cdot LogNormal(0,0.20),0.0015,0.180)
+\alpha_i=\operatorname{clip}(\alpha_l \cdot \operatorname{LogNormal}(0,0.20),0.0015,0.180)
 \label{eq:simple-opacity}
 \end{equation}
 This random variation avoids perfectly uniform rain streaks across the image.
@@ -718,7 +718,7 @@ Individual rain streaks are then generated using the same anisotropic motion ker
 For each sampled rain streak, the opacity follows the same log-normal sampling idea as \autoref{eq:simple-opacity}. However, the depth-aware renderer uses 
 a slightly wider log-normal distribution and clips the result to the range $(0.001,0.18)$:
 \[
-\alpha_i=\operatorname{clip}(\alpha_l \cdot LogNormal(0,0.22),0.001,0.180)
+\alpha_i=\operatorname{clip}(\alpha_l \cdot \operatorname{LogNormal}(0,0.22),0.001,0.180)
 \]
 This allows the opacity to change gradually, creating a smooth degradation in opacity as the streaks get more distant. 
 The brightness level $Y$ is computed from the same linear-light luminance equation in \autoref{eq:linear-luminance}. 
@@ -861,7 +861,7 @@ is optimized for 10 epochs and 10 decaying epochs, a learning rate of 0.0001 and
     \label{fig:rain-cyclegan}
 \end{figure}
 
-\autoref{fig:rain-cyclegan} demonstrates two pairs of input-output images from the rain Cycle-GAN. The generated images share foggier and more desaturated skies and wet effects on the ground. However, some 
+\autoref{fig:rain-cyclegan} demonstrates two pairs of input-output images from the rain Cycle-GAN. The generated images show foggier and more desaturated skies and wet effects on the ground. However, some 
 of them have random white noise, as demonstrated in \autoref{fig:noise-gan}. This issue is common when the size of training images is too small, 
 or the size of the training split is small. This could be fixed by increasing image resolution or using a 
 larger training dataset.
@@ -969,7 +969,7 @@ The Fog Cycle-GAN follows the same unpaired image-to-image translation framework
 Domain $X$ contains clear Cityscapes images, and domain $Y$ contains Foggy Cityscapes images. A fog density of 0.02 refers to how quickly visibility decreases over distance. 
 This density corresponds to a visibility range of around 150 meters, and it is the densest fog density in the Foggy Cityscapes dataset~\cite{cordtsCityscapesDatasetSemantic2016}. It is chosen to create a more distinct difference between 
 domain $X$ (the clear images) and domain $Y$ (the foggy images). The training dataset contains 3000 clear images 
-and 3000 foggy images, with 400 clear and 400 foggy images used for testing. Images are loaded at width 512 and randomly cropped to 384 
+and 3000 foggy images, with 400 clear and 400 foggy images used for testing. Images are resized to $512\times512$ and randomly cropped to $384\times384$ 
 during training. The model is trained using a batch size of 1, a learning rate of 0.0001, an identity loss weight of 1.0, no horizontal flipping, 10 epochs 
 with constant learning rate, and 10 decaying epochs.
 
@@ -1066,7 +1066,7 @@ and a class label. YOLO models serve as the baseline object detection models, an
 
 This project uses the YOLOv8n model, which is a lightweight nano version of YOLOv8, as a downstream detection model to be trained on the rain and fog augmented datasets. 
 Specifically, YOLOv8n is trained and evaluated on clear, rainy, foggy, and augmented BDD100K image splits. Its performance on
-object detection tasks is then used for comparison. \autoref{fig:yolo-examples} illustrates the predicted bounding boxes by the YOLOv8n model, randomly picked from the validation process.
+object detection tasks is then used for comparison. \autoref{fig:yolo-examples} illustrates the predicted bounding boxes by the YOLOv8n model, randomly selected from the validation outputs.
 
 \begin{figure}[!htbp]
   \centering
@@ -1196,7 +1196,7 @@ decrease the model's ability to generalize well across all features and maintain
 In this case, augmentation may not fail because weather simulation is useless, but because the pretrained model already provides a strong starting point and
 adding augmented data to the training dataset may not benefit the model overall, as it introduces a domain shift.
 
-Second, the Rain and Fog Cycle-GAN models are trained using images cropped at size $384\times384$, which is small compared with the original BDD100K size $1280\times720$ and the original Cityscapes size $2048\times1024$. 
+Second, the Rain and Fog Cycle-GAN models are trained using images cropped to $384\times384$, which is small compared with the original BDD100K size $1280\times720$ and the original Cityscapes size $2048\times1024$. 
 Despite speeding up the training process, a small crop size sacrifices stability and performance. The trained Cycle-GAN models are unstable: the presence of white random noise and the unrealistic appearance of rain and fog in the augmented datasets negatively affect the performance of the YOLOv8n model trained on them. 
 
 Third, as discussed in Section \ref{sec:section-rain-gan}, the BDD100K rainy images are mostly captured post-rainfall; therefore, the differences between rainy and clear images appear to be minor. 
@@ -1235,7 +1235,7 @@ Additional downstream tasks, such as image segmentation or depth estimation, cou
 The current clean-plus-augmented training dataset for the YOLOv8n model contains 3,000 clean images and 3,000 augmented images. As discussed in \autoref{sec:section-limitations}, this may lead to overrepresentation or underrepresentation of specific features or domains.
 Future work should consider optimizing the clear-to-augmented ratio, so the object detection model balances performance across adverse-weather conditions.
 
-Finally, future work should study the effect of different severity levels on data augmentation. Due to the length of this study, this work does not investigate or compare the effects of different rain severities on data augmentation.
+Finally, future work should study the effect of different severity levels on data augmentation. Due to the scope of this study, this work does not investigate or compare the effects of different rain severities on data augmentation.
 In fact, this is a valuable extension to the research area, as it provides a more detailed and coherent understanding of the effects of severity in adverse-weather data augmentation.
 
 \section{Conclusion}
@@ -1269,7 +1269,7 @@ cross-dataset benchmarks, compare pretrained and from-scratch object detection m
 
 \clearpage
 {\doublespacing
-\printbibliography[heading=bibliography,title={Bibliography}]
+\printbibliography[heading=bibliography,title={References}]
 }
 
 \end{document}

@@ -79,37 +79,42 @@
       \verb /Users/david/Zotero/storage/Z9S4MRIQ/Ahn et al. - 2017 - Image Distortion Detection Using Convolutional Neural Network.pdf
       \endverb
     \endentry
-    \entry{bakosPrototypeInteractiveDynamic}{article}{}{}
-      \name{author}{2}{}{%
+    \entry{bakosPrototypeInteractiveDynamic}{thesis}{}{}
+      \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=5c77e97b5899a6a86fb1405b94011001}{%
            family={Bakos},
            familyi={B\bibinitperiod},
            given={Niklas},
            giveni={N\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=3be5d8c259cb754bdb0902adf9a0fe5a}{%
-           family={Ollila},
-           familyi={O\bibinitperiod},
-           given={Mark},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
       }
-      \strng{namehash}{69b5753e084611f4f74eaa014da8f18e}
-      \strng{fullhash}{69b5753e084611f4f74eaa014da8f18e}
-      \strng{fullhashraw}{69b5753e084611f4f74eaa014da8f18e}
-      \strng{bibnamehash}{69b5753e084611f4f74eaa014da8f18e}
-      \strng{authorbibnamehash}{69b5753e084611f4f74eaa014da8f18e}
-      \strng{authornamehash}{69b5753e084611f4f74eaa014da8f18e}
-      \strng{authorfullhash}{69b5753e084611f4f74eaa014da8f18e}
-      \strng{authorfullhashraw}{69b5753e084611f4f74eaa014da8f18e}
+      \list{institution}{1}{%
+        {Linköping University}%
+      }
+      \list{location}{1}{%
+        {Norrköping, Sweden}%
+      }
+      \strng{namehash}{5c77e97b5899a6a86fb1405b94011001}
+      \strng{fullhash}{5c77e97b5899a6a86fb1405b94011001}
+      \strng{fullhashraw}{5c77e97b5899a6a86fb1405b94011001}
+      \strng{bibnamehash}{5c77e97b5899a6a86fb1405b94011001}
+      \strng{authorbibnamehash}{5c77e97b5899a6a86fb1405b94011001}
+      \strng{authornamehash}{5c77e97b5899a6a86fb1405b94011001}
+      \strng{authorfullhash}{5c77e97b5899a6a86fb1405b94011001}
+      \strng{authorfullhashraw}{5c77e97b5899a6a86fb1405b94011001}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
+      \field{month}{5}
+      \field{number}{LITH-ITN-MT-21-SE}
       \field{title}{A {{Prototype}} for an {{Interactive}} and {{Dynamic Image-Based Relief Rendering System}}}
+      \field{type}{Master's thesis}
+      \field{year}{2002}
       \verb{file}
       \verb /Users/david/Zotero/storage/UEP2WETC/Bakos and Ollila - A Prototype for an Interactive and Dynamic Image-Based Relief Rendering System.pdf
       \endverb
@@ -392,6 +397,73 @@
       \endverb
       \keyw{appearance modeling,atmospheric scattering,natural phenomena,outdoor vision and weather,physics-based vision,video analysis,video enhancement}
     \endentry
+    \entry{muhammadaliqureshiDistortionClassificationComputer}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=f27f3469aade8ddd4d1ed9aafa8c5142}{%
+           family={Gillani},
+           familyi={G\bibinitperiod},
+           given={Hammad\bibnamedelima Hassan},
+           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aabaf39f16de1db01ac501995796313b}{%
+           family={Qureshi},
+           familyi={Q\bibinitperiod},
+           given={Muhammad\bibnamedelima Ali},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=093f8fc6cbf85cb7a313587454b53a10}{%
+           family={Beghdadi},
+           familyi={B\bibinitperiod},
+           given={Azeddine},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=08099558aa2c38d4789026231c425d93}{%
+           family={Cheikh},
+           familyi={C\bibinitperiod},
+           given={Faouzi\bibnamedelima Alaya},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb8f6703ba5a681a6c3785fd9df76e89}{%
+           family={Ullah},
+           familyi={U\bibinitperiod},
+           given={Mohib},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{77a706ee5af10dbeac5c99d1540b15c1}
+      \strng{fullhash}{917792b65c9a0ff19c19fd01e84d8024}
+      \strng{fullhashraw}{917792b65c9a0ff19c19fd01e84d8024}
+      \strng{bibnamehash}{917792b65c9a0ff19c19fd01e84d8024}
+      \strng{authorbibnamehash}{917792b65c9a0ff19c19fd01e84d8024}
+      \strng{authornamehash}{77a706ee5af10dbeac5c99d1540b15c1}
+      \strng{authorfullhash}{917792b65c9a0ff19c19fd01e84d8024}
+      \strng{authorfullhashraw}{917792b65c9a0ff19c19fd01e84d8024}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Computing Surveys}
+      \field{month}{12}
+      \field{number}{6}
+      \field{title}{Distortion {{Classification}} in {{Computer Vision Applications}}: {{Current Progress}}, {{Challenges}}, and {{Perspectives}}}
+      \field{urlday}{10}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{58}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 36}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1145/3773023
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/9ZGHSE5B/Muhammad Ali Qureshi et al. - 2025 - Distortion Classification in Computer Vision Applications Current Progress, Challenges, and Perspec.pdf;/Users/david/Zotero/storage/CSZDV9SC/Distortion Review Research Notes.docx;/Users/david/Zotero/storage/8N9HWDZG/3773023.html
+      \endverb
+    \endentry
     \entry{goodfellowGenerativeAdversarialNets}{article}{}{}
       \name{author}{8}{}{%
         {{un=0,uniquepart=base,hash=d4f74ef4c79f3bb1e51e378184d8850e}{%
@@ -443,6 +515,9 @@
            giveni={Y\bibinitperiod},
            givenun=0}}%
       }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
       \strng{namehash}{8b5c7065f4df4f81627df9460343f166}
       \strng{fullhash}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
       \strng{fullhashraw}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
@@ -453,12 +528,18 @@
       \strng{authorfullhashraw}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in Neural Information Processing Systems}
       \field{langid}{english}
       \field{title}{Generative {{Adversarial Nets}}}
+      \field{volume}{27}
+      \field{year}{2014}
+      \field{pages}{2672\bibrangedash 2680}
+      \range{pages}{9}
       \verb{file}
       \verb /Users/david/Zotero/storage/73T2WDSN/Goodfellow et al. - Generative Adversarial Nets.pdf
       \endverb
@@ -887,7 +968,7 @@
       \endverb
       \keyw{Computer Science - Computer Vision and Pattern Recognition}
     \endentry
-    \entry{mondalSemisupervisedSemanticSegmentation}{article}{}{}
+    \entry{mondalSemisupervisedSemanticSegmentation}{report}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=a8c46af18bf216925d199b8c42e2f02a}{%
            family={Mondal},
@@ -895,6 +976,9 @@
            given={Arnab\bibnamedelima Kumar},
            giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
            givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Indian Institute of Technology Kharagpur}%
       }
       \strng{namehash}{a8c46af18bf216925d199b8c42e2f02a}
       \strng{fullhash}{a8c46af18bf216925d199b8c42e2f02a}
@@ -906,56 +990,18 @@
       \strng{authorfullhashraw}{a8c46af18bf216925d199b8c42e2f02a}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
+      \field{month}{5}
       \field{title}{Semi-Supervised {{Semantic Segmentation}}: {{Different GAN}} Based Approaches}
+      \field{type}{Master's project report}
+      \field{year}{2019}
       \verb{file}
       \verb /Users/david/Zotero/storage/4HI3JQNM/Mondal - Semi-supervised Semantic Segmentation Different GAN based approaches.pdf
-      \endverb
-    \endentry
-    \entry{muhammadaliqureshiDistortionClassificationComputer}{misc}{}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=1369680afd907c606ddb3c6d69fb3439}{%
-           family={{Muhammad Ali Qureshi}},
-           familyi={M\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=7cead3d25dd6d0b8e9d29d81a7b4a090}{%
-           family={{Azeddine Beghdadi}},
-           familyi={A\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=1369680afd907c606ddb3c6d69fb3439}{%
-           family={{Muhammad Ali Qureshi}},
-           familyi={M\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=e437cacccd081d1470bf1790c71cbe0d}{%
-           family={{Faouzi Alaya Cheikh}},
-           familyi={F\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=81afbf6332b47a8e5ee847fcf9d7a5c6}{%
-           family={{Mohib Ullah}},
-           familyi={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{0b4657f5e63dce2cc6ee0ca86e24bc44}
-      \strng{fullhash}{2f7701de1b169a70ca9a130f4c176ea1}
-      \strng{fullhashraw}{2f7701de1b169a70ca9a130f4c176ea1}
-      \strng{bibnamehash}{2f7701de1b169a70ca9a130f4c176ea1}
-      \strng{authorbibnamehash}{2f7701de1b169a70ca9a130f4c176ea1}
-      \strng{authornamehash}{0b4657f5e63dce2cc6ee0ca86e24bc44}
-      \strng{authorfullhash}{2f7701de1b169a70ca9a130f4c176ea1}
-      \strng{authorfullhashraw}{2f7701de1b169a70ca9a130f4c176ea1}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{https://dl.acm.org/doi/10.1145/3773023}
-      \field{title}{Distortion {{Classification}} in {{Computer Vision Applications}}: {{Current Progress}}, {{Challenges}}, and {{Perspectives}} |{} {{ACM Computing Surveys}}}
-      \field{urlday}{10}
-      \field{urlmonth}{6}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb /Users/david/Zotero/storage/9ZGHSE5B/Muhammad Ali Qureshi et al. - Distortion Classification in Computer Vision Applications Current Progress, Challenges, and Perspec.pdf;/Users/david/Zotero/storage/CSZDV9SC/Distortion Review Research Notes.docx;/Users/david/Zotero/storage/8N9HWDZG/3773023.html
       \endverb
     \endentry
     \entry{perezEffectivenessDataAugmentation2017}{misc}{}{}
@@ -1343,55 +1389,6 @@
       \endverb
       \keyw{complex weather,detection transformer,edge enhancement,multiscale feature fusion,real-time detection,traffic sign detection}
     \endentry
-    \entry{WhatYOLOv8InDepth}{misc}{}{}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{labeldatesource}{nodate}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{https://arxiv.org/html/2408.15857v1}
-      \field{title}{What Is {{YOLOv8}}: {{An In-Depth Exploration}} of the {{Internal Features}} of the {{Next-Generation Object Detector}}}
-      \field{urlday}{3}
-      \field{urlmonth}{7}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb /Users/david/Zotero/storage/5Z9GU2G4/2408.html
-      \endverb
-    \endentry
-    \entry{wolfeBDD100KLargescaleDiverse}{misc}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=44d1b745df165ec509d95e4152ac3f29}{%
-           family={Wolfe},
-           familyi={W\bibinitperiod},
-           given={C.\bibnamedelimi K.},
-           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{44d1b745df165ec509d95e4152ac3f29}
-      \strng{fullhash}{44d1b745df165ec509d95e4152ac3f29}
-      \strng{fullhashraw}{44d1b745df165ec509d95e4152ac3f29}
-      \strng{bibnamehash}{44d1b745df165ec509d95e4152ac3f29}
-      \strng{authorbibnamehash}{44d1b745df165ec509d95e4152ac3f29}
-      \strng{authornamehash}{44d1b745df165ec509d95e4152ac3f29}
-      \strng{authorfullhash}{44d1b745df165ec509d95e4152ac3f29}
-      \strng{authorfullhashraw}{44d1b745df165ec509d95e4152ac3f29}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{The BAIR Blog}
-      \field{shorttitle}{{{BDD100K}}}
-      \field{title}{{{BDD100K}}: {{A Large-scale Diverse Driving Video Database}}}
-      \field{urlday}{14}
-      \field{urlmonth}{6}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb /Users/david/Zotero/storage/WGQJ5PFN/bdd.html
-      \endverb
-    \endentry
     \entry{yangDepthAnythingV22024}{misc}{}{}
       \name{author}{7}{}{%
         {{un=0,uniquepart=base,hash=f1eeb2dd1fc5922091709e59023496f5}{%
@@ -1465,6 +1462,98 @@
       \field{urldateera}{ce}
       \verb{file}
       \verb /Users/david/Zotero/storage/L2HR8LDU/Yang et al. - 2024 - Depth Anything V2.pdf
+      \endverb
+    \endentry
+    \entry{WhatYOLOv8InDepth}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5eec75ed6272db6ea5cc80721e9f7521}{%
+           family={Yaseen},
+           familyi={Y\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{5eec75ed6272db6ea5cc80721e9f7521}
+      \strng{fullhash}{5eec75ed6272db6ea5cc80721e9f7521}
+      \strng{fullhashraw}{5eec75ed6272db6ea5cc80721e9f7521}
+      \strng{bibnamehash}{5eec75ed6272db6ea5cc80721e9f7521}
+      \strng{authorbibnamehash}{5eec75ed6272db6ea5cc80721e9f7521}
+      \strng{authornamehash}{5eec75ed6272db6ea5cc80721e9f7521}
+      \strng{authorfullhash}{5eec75ed6272db6ea5cc80721e9f7521}
+      \strng{authorfullhashraw}{5eec75ed6272db6ea5cc80721e9f7521}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{howpublished}{https://arxiv.org/html/2408.15857v1}
+      \field{month}{8}
+      \field{number}{arXiv:2408.15857}
+      \field{title}{What Is {{YOLOv8}}: {{An In-Depth Exploration}} of the {{Internal Features}} of the {{Next-Generation Object Detector}}}
+      \field{urlday}{3}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2408.15857
+      \endverb
+      \verb{eprint}
+      \verb 2408.15857
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/5Z9GU2G4/2408.html
+      \endverb
+    \endentry
+    \entry{wolfeBDD100KLargescaleDiverse}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7d644ffcde545cbf48ce06126689b74c}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Fisher},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {The Berkeley Artificial Intelligence Research Blog}%
+      }
+      \strng{namehash}{7d644ffcde545cbf48ce06126689b74c}
+      \strng{fullhash}{7d644ffcde545cbf48ce06126689b74c}
+      \strng{fullhashraw}{7d644ffcde545cbf48ce06126689b74c}
+      \strng{bibnamehash}{7d644ffcde545cbf48ce06126689b74c}
+      \strng{authorbibnamehash}{7d644ffcde545cbf48ce06126689b74c}
+      \strng{authornamehash}{7d644ffcde545cbf48ce06126689b74c}
+      \strng{authorfullhash}{7d644ffcde545cbf48ce06126689b74c}
+      \strng{authorfullhashraw}{7d644ffcde545cbf48ce06126689b74c}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{month}{5}
+      \field{shorttitle}{{{BDD100K}}}
+      \field{title}{{{BDD100K}}: {{A Large-scale Diverse Driving Video Database}}}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/david/Zotero/storage/WGQJ5PFN/bdd.html
+      \endverb
+      \verb{urlraw}
+      \verb https://bair.berkeley.edu/blog/2018/05/30/bdd/
+      \endverb
+      \verb{url}
+      \verb https://bair.berkeley.edu/blog/2018/05/30/bdd/
       \endverb
     \endentry
     \entry{yuBDD100KDiverseDriving2018}{misc}{}{}
@@ -1757,37 +1846,42 @@
       \verb /Users/david/Zotero/storage/Z9S4MRIQ/Ahn et al. - 2017 - Image Distortion Detection Using Convolutional Neural Network.pdf
       \endverb
     \endentry
-    \entry{bakosPrototypeInteractiveDynamic}{article}{}{}
-      \name{author}{2}{}{%
+    \entry{bakosPrototypeInteractiveDynamic}{thesis}{}{}
+      \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=5c77e97b5899a6a86fb1405b94011001}{%
            family={Bakos},
            familyi={B\bibinitperiod},
            given={Niklas},
            giveni={N\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=3be5d8c259cb754bdb0902adf9a0fe5a}{%
-           family={Ollila},
-           familyi={O\bibinitperiod},
-           given={Mark},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
       }
-      \strng{namehash}{69b5753e084611f4f74eaa014da8f18e}
-      \strng{fullhash}{69b5753e084611f4f74eaa014da8f18e}
-      \strng{fullhashraw}{69b5753e084611f4f74eaa014da8f18e}
-      \strng{bibnamehash}{69b5753e084611f4f74eaa014da8f18e}
-      \strng{authorbibnamehash}{69b5753e084611f4f74eaa014da8f18e}
-      \strng{authornamehash}{69b5753e084611f4f74eaa014da8f18e}
-      \strng{authorfullhash}{69b5753e084611f4f74eaa014da8f18e}
-      \strng{authorfullhashraw}{69b5753e084611f4f74eaa014da8f18e}
+      \list{institution}{1}{%
+        {Linköping University}%
+      }
+      \list{location}{1}{%
+        {Norrköping, Sweden}%
+      }
+      \strng{namehash}{5c77e97b5899a6a86fb1405b94011001}
+      \strng{fullhash}{5c77e97b5899a6a86fb1405b94011001}
+      \strng{fullhashraw}{5c77e97b5899a6a86fb1405b94011001}
+      \strng{bibnamehash}{5c77e97b5899a6a86fb1405b94011001}
+      \strng{authorbibnamehash}{5c77e97b5899a6a86fb1405b94011001}
+      \strng{authornamehash}{5c77e97b5899a6a86fb1405b94011001}
+      \strng{authorfullhash}{5c77e97b5899a6a86fb1405b94011001}
+      \strng{authorfullhashraw}{5c77e97b5899a6a86fb1405b94011001}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
+      \field{month}{5}
+      \field{number}{LITH-ITN-MT-21-SE}
       \field{title}{A {{Prototype}} for an {{Interactive}} and {{Dynamic Image-Based Relief Rendering System}}}
+      \field{type}{Master's thesis}
+      \field{year}{2002}
       \verb{file}
       \verb /Users/david/Zotero/storage/UEP2WETC/Bakos and Ollila - A Prototype for an Interactive and Dynamic Image-Based Relief Rendering System.pdf
       \endverb
@@ -2070,6 +2164,73 @@
       \endverb
       \keyw{appearance modeling,atmospheric scattering,natural phenomena,outdoor vision and weather,physics-based vision,video analysis,video enhancement}
     \endentry
+    \entry{muhammadaliqureshiDistortionClassificationComputer}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=f27f3469aade8ddd4d1ed9aafa8c5142}{%
+           family={Gillani},
+           familyi={G\bibinitperiod},
+           given={Hammad\bibnamedelima Hassan},
+           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aabaf39f16de1db01ac501995796313b}{%
+           family={Qureshi},
+           familyi={Q\bibinitperiod},
+           given={Muhammad\bibnamedelima Ali},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=093f8fc6cbf85cb7a313587454b53a10}{%
+           family={Beghdadi},
+           familyi={B\bibinitperiod},
+           given={Azeddine},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=08099558aa2c38d4789026231c425d93}{%
+           family={Cheikh},
+           familyi={C\bibinitperiod},
+           given={Faouzi\bibnamedelima Alaya},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb8f6703ba5a681a6c3785fd9df76e89}{%
+           family={Ullah},
+           familyi={U\bibinitperiod},
+           given={Mohib},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{77a706ee5af10dbeac5c99d1540b15c1}
+      \strng{fullhash}{917792b65c9a0ff19c19fd01e84d8024}
+      \strng{fullhashraw}{917792b65c9a0ff19c19fd01e84d8024}
+      \strng{bibnamehash}{917792b65c9a0ff19c19fd01e84d8024}
+      \strng{authorbibnamehash}{917792b65c9a0ff19c19fd01e84d8024}
+      \strng{authornamehash}{77a706ee5af10dbeac5c99d1540b15c1}
+      \strng{authorfullhash}{917792b65c9a0ff19c19fd01e84d8024}
+      \strng{authorfullhashraw}{917792b65c9a0ff19c19fd01e84d8024}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Computing Surveys}
+      \field{month}{12}
+      \field{number}{6}
+      \field{title}{Distortion {{Classification}} in {{Computer Vision Applications}}: {{Current Progress}}, {{Challenges}}, and {{Perspectives}}}
+      \field{urlday}{10}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{58}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 36}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1145/3773023
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/9ZGHSE5B/Muhammad Ali Qureshi et al. - 2025 - Distortion Classification in Computer Vision Applications Current Progress, Challenges, and Perspec.pdf;/Users/david/Zotero/storage/CSZDV9SC/Distortion Review Research Notes.docx;/Users/david/Zotero/storage/8N9HWDZG/3773023.html
+      \endverb
+    \endentry
     \entry{goodfellowGenerativeAdversarialNets}{article}{}{}
       \name{author}{8}{}{%
         {{un=0,uniquepart=base,hash=d4f74ef4c79f3bb1e51e378184d8850e}{%
@@ -2121,6 +2282,9 @@
            giveni={Y\bibinitperiod},
            givenun=0}}%
       }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
       \strng{namehash}{8b5c7065f4df4f81627df9460343f166}
       \strng{fullhash}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
       \strng{fullhashraw}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
@@ -2131,12 +2295,18 @@
       \strng{authorfullhashraw}{5afe3eb3246d0b46f32cdc5ff3e9d6b8}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in Neural Information Processing Systems}
       \field{langid}{english}
       \field{title}{Generative {{Adversarial Nets}}}
+      \field{volume}{27}
+      \field{year}{2014}
+      \field{pages}{2672\bibrangedash 2680}
+      \range{pages}{9}
       \verb{file}
       \verb /Users/david/Zotero/storage/73T2WDSN/Goodfellow et al. - Generative Adversarial Nets.pdf
       \endverb
@@ -2565,7 +2735,7 @@
       \endverb
       \keyw{Computer Science - Computer Vision and Pattern Recognition}
     \endentry
-    \entry{mondalSemisupervisedSemanticSegmentation}{article}{}{}
+    \entry{mondalSemisupervisedSemanticSegmentation}{report}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=a8c46af18bf216925d199b8c42e2f02a}{%
            family={Mondal},
@@ -2573,6 +2743,9 @@
            given={Arnab\bibnamedelima Kumar},
            giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
            givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Indian Institute of Technology Kharagpur}%
       }
       \strng{namehash}{a8c46af18bf216925d199b8c42e2f02a}
       \strng{fullhash}{a8c46af18bf216925d199b8c42e2f02a}
@@ -2584,56 +2757,18 @@
       \strng{authorfullhashraw}{a8c46af18bf216925d199b8c42e2f02a}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
+      \field{month}{5}
       \field{title}{Semi-Supervised {{Semantic Segmentation}}: {{Different GAN}} Based Approaches}
+      \field{type}{Master's project report}
+      \field{year}{2019}
       \verb{file}
       \verb /Users/david/Zotero/storage/4HI3JQNM/Mondal - Semi-supervised Semantic Segmentation Different GAN based approaches.pdf
-      \endverb
-    \endentry
-    \entry{muhammadaliqureshiDistortionClassificationComputer}{misc}{}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=1369680afd907c606ddb3c6d69fb3439}{%
-           family={{Muhammad Ali Qureshi}},
-           familyi={M\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=7cead3d25dd6d0b8e9d29d81a7b4a090}{%
-           family={{Azeddine Beghdadi}},
-           familyi={A\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=1369680afd907c606ddb3c6d69fb3439}{%
-           family={{Muhammad Ali Qureshi}},
-           familyi={M\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=e437cacccd081d1470bf1790c71cbe0d}{%
-           family={{Faouzi Alaya Cheikh}},
-           familyi={F\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=81afbf6332b47a8e5ee847fcf9d7a5c6}{%
-           family={{Mohib Ullah}},
-           familyi={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{0b4657f5e63dce2cc6ee0ca86e24bc44}
-      \strng{fullhash}{2f7701de1b169a70ca9a130f4c176ea1}
-      \strng{fullhashraw}{2f7701de1b169a70ca9a130f4c176ea1}
-      \strng{bibnamehash}{2f7701de1b169a70ca9a130f4c176ea1}
-      \strng{authorbibnamehash}{2f7701de1b169a70ca9a130f4c176ea1}
-      \strng{authornamehash}{0b4657f5e63dce2cc6ee0ca86e24bc44}
-      \strng{authorfullhash}{2f7701de1b169a70ca9a130f4c176ea1}
-      \strng{authorfullhashraw}{2f7701de1b169a70ca9a130f4c176ea1}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{https://dl.acm.org/doi/10.1145/3773023}
-      \field{title}{Distortion {{Classification}} in {{Computer Vision Applications}}: {{Current Progress}}, {{Challenges}}, and {{Perspectives}} |{} {{ACM Computing Surveys}}}
-      \field{urlday}{10}
-      \field{urlmonth}{6}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb /Users/david/Zotero/storage/9ZGHSE5B/Muhammad Ali Qureshi et al. - Distortion Classification in Computer Vision Applications Current Progress, Challenges, and Perspec.pdf;/Users/david/Zotero/storage/CSZDV9SC/Distortion Review Research Notes.docx;/Users/david/Zotero/storage/8N9HWDZG/3773023.html
       \endverb
     \endentry
     \entry{perezEffectivenessDataAugmentation2017}{misc}{}{}
@@ -3021,55 +3156,6 @@
       \endverb
       \keyw{complex weather,detection transformer,edge enhancement,multiscale feature fusion,real-time detection,traffic sign detection}
     \endentry
-    \entry{WhatYOLOv8InDepth}{misc}{}{}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{labeldatesource}{nodate}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{https://arxiv.org/html/2408.15857v1}
-      \field{title}{What Is {{YOLOv8}}: {{An In-Depth Exploration}} of the {{Internal Features}} of the {{Next-Generation Object Detector}}}
-      \field{urlday}{3}
-      \field{urlmonth}{7}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb /Users/david/Zotero/storage/5Z9GU2G4/2408.html
-      \endverb
-    \endentry
-    \entry{wolfeBDD100KLargescaleDiverse}{misc}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=44d1b745df165ec509d95e4152ac3f29}{%
-           family={Wolfe},
-           familyi={W\bibinitperiod},
-           given={C.\bibnamedelimi K.},
-           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{44d1b745df165ec509d95e4152ac3f29}
-      \strng{fullhash}{44d1b745df165ec509d95e4152ac3f29}
-      \strng{fullhashraw}{44d1b745df165ec509d95e4152ac3f29}
-      \strng{bibnamehash}{44d1b745df165ec509d95e4152ac3f29}
-      \strng{authorbibnamehash}{44d1b745df165ec509d95e4152ac3f29}
-      \strng{authornamehash}{44d1b745df165ec509d95e4152ac3f29}
-      \strng{authorfullhash}{44d1b745df165ec509d95e4152ac3f29}
-      \strng{authorfullhashraw}{44d1b745df165ec509d95e4152ac3f29}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{labeldatesource}{nodate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{The BAIR Blog}
-      \field{shorttitle}{{{BDD100K}}}
-      \field{title}{{{BDD100K}}: {{A Large-scale Diverse Driving Video Database}}}
-      \field{urlday}{14}
-      \field{urlmonth}{6}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb /Users/david/Zotero/storage/WGQJ5PFN/bdd.html
-      \endverb
-    \endentry
     \entry{yangDepthAnythingV22024}{misc}{}{}
       \name{author}{7}{}{%
         {{un=0,uniquepart=base,hash=f1eeb2dd1fc5922091709e59023496f5}{%
@@ -3143,6 +3229,98 @@
       \field{urldateera}{ce}
       \verb{file}
       \verb /Users/david/Zotero/storage/L2HR8LDU/Yang et al. - 2024 - Depth Anything V2.pdf
+      \endverb
+    \endentry
+    \entry{WhatYOLOv8InDepth}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5eec75ed6272db6ea5cc80721e9f7521}{%
+           family={Yaseen},
+           familyi={Y\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{5eec75ed6272db6ea5cc80721e9f7521}
+      \strng{fullhash}{5eec75ed6272db6ea5cc80721e9f7521}
+      \strng{fullhashraw}{5eec75ed6272db6ea5cc80721e9f7521}
+      \strng{bibnamehash}{5eec75ed6272db6ea5cc80721e9f7521}
+      \strng{authorbibnamehash}{5eec75ed6272db6ea5cc80721e9f7521}
+      \strng{authornamehash}{5eec75ed6272db6ea5cc80721e9f7521}
+      \strng{authorfullhash}{5eec75ed6272db6ea5cc80721e9f7521}
+      \strng{authorfullhashraw}{5eec75ed6272db6ea5cc80721e9f7521}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{howpublished}{https://arxiv.org/html/2408.15857v1}
+      \field{month}{8}
+      \field{number}{arXiv:2408.15857}
+      \field{title}{What Is {{YOLOv8}}: {{An In-Depth Exploration}} of the {{Internal Features}} of the {{Next-Generation Object Detector}}}
+      \field{urlday}{3}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2408.15857
+      \endverb
+      \verb{eprint}
+      \verb 2408.15857
+      \endverb
+      \verb{file}
+      \verb /Users/david/Zotero/storage/5Z9GU2G4/2408.html
+      \endverb
+    \endentry
+    \entry{wolfeBDD100KLargescaleDiverse}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7d644ffcde545cbf48ce06126689b74c}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Fisher},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {The Berkeley Artificial Intelligence Research Blog}%
+      }
+      \strng{namehash}{7d644ffcde545cbf48ce06126689b74c}
+      \strng{fullhash}{7d644ffcde545cbf48ce06126689b74c}
+      \strng{fullhashraw}{7d644ffcde545cbf48ce06126689b74c}
+      \strng{bibnamehash}{7d644ffcde545cbf48ce06126689b74c}
+      \strng{authorbibnamehash}{7d644ffcde545cbf48ce06126689b74c}
+      \strng{authornamehash}{7d644ffcde545cbf48ce06126689b74c}
+      \strng{authorfullhash}{7d644ffcde545cbf48ce06126689b74c}
+      \strng{authorfullhashraw}{7d644ffcde545cbf48ce06126689b74c}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{month}{5}
+      \field{shorttitle}{{{BDD100K}}}
+      \field{title}{{{BDD100K}}: {{A Large-scale Diverse Driving Video Database}}}
+      \field{urlday}{14}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/david/Zotero/storage/WGQJ5PFN/bdd.html
+      \endverb
+      \verb{urlraw}
+      \verb https://bair.berkeley.edu/blog/2018/05/30/bdd/
+      \endverb
+      \verb{url}
+      \verb https://bair.berkeley.edu/blog/2018/05/30/bdd/
       \endverb
     \endentry
     \entry{yuBDD100KDiverseDriving2018}{misc}{}{}
